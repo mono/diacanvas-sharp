@@ -1,2 +1,2 @@
-SUBDIRS=Dia DiaSharp
+SUBDIRS=Dia
 EXTRA_DIST= *.xml

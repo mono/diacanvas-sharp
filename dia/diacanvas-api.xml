@@ -1616,7 +1616,7 @@
       <field cname="x" type="DiaVariable*" />
       <field cname="y" type="DiaVariable*" />
     </struct>
-    <struct name="Shape" cname="DiaShape">
+    <struct name="Shape" cname="DiaShape" opaque="1">
       <field cname="type" type="DiaShapeType" />
       <field cname="visibility" bits="4" type="guint" />
       <field cname="update_cnt" bits="28" type="guint" />
@@ -2163,7 +2163,7 @@
         </parameters>
       </method>
     </struct>
-    <struct name="Variable" cname="DiaVariable">
+    <struct name="Variable" cname="DiaVariable" opaque="1">
       <field cname="parent" type="GObject" />
       <field cname="value" type="gdouble" />
       <field cname="strength" type="DiaStrength" />

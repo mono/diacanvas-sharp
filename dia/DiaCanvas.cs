@@ -6,9 +6,11 @@
 //
 // This code is inserted after the automatically generated code.
 
-public class DiaCanvas {
-	public static void Init()
-	{
-		GtkSharp.DiacanvasSharp.ObjectManager.Initialize();
+namespace Dia {
+	public class DiaCanvas {
+		public static void Init()
+		{
+			GtkSharp.DiacanvasSharp.ObjectManager.Initialize();
+		}
 	}
 }

@@ -13,9 +13,9 @@ public class CanvasFigure : CanvasBox {
 	public CanvasFigure() : base (gtype)
 	{
 		ShapeEllipse ellipse = new ShapeEllipse();
-		ellipse.center = new Point (20, 20);
-		ellipse.width = 20;
-		ellipse.height = 20;
-		ellipse.line_width = 1;
+		ellipse.Center = new Point (20, 20);
+		ellipse.Width = 20;
+		ellipse.Height = 20;
+		ellipse.LineWidth = 1;
 	}
 }

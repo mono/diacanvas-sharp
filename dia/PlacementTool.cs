@@ -29,10 +29,10 @@ namespace Dia {
 			this.properties = properties;
 			this.type = type;
 
-			ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (ButtonPress);
+			ButtonPressEvent += new ButtonPressEventHandler (ButtonPress);
 		}
 
-		void ButtonPress (object o, DiaSharp.ButtonPressEventArgs args)
+		void ButtonPress (object o, ButtonPressEventArgs args)
 		{
 			CanvasItem item = CreateItem();
 			args.View.Canvas.Root.Add (item);
@@ -66,7 +66,7 @@ namespace Dia {
 		void MoveItem (CanvasView view, Gdk.EventButton evnt, CanvasItem item)
 		{
 			double wx, wy;
-			view.WindowToWorld (evnt.x, evnt.y, out wx, out wy);
+			view.WindowToWorld (evnt.X, evnt.Y, out wx, out wy);
 			item.Move (wx, wy);
 		}
 

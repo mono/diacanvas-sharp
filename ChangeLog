@@ -1,3 +1,14 @@
+2004-03-02  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/Dia.metadata: Marked Shape and Variable opaque.
+	* dia/PlacementTool.cs: Target Mono-0.30.2 and Gtk#-0.17
+	* dia/Point.custom: Ditto
+	* sample/sample.cs: Ditto
+	* sample/CanvasFigure.cs: Ditto
+	* doc/en/DiaSharp.xml: Removed
+	* doc/en/makefile.am: Removed reference to dir DiaSharp
+	* configure.in: Ditto
+
 2004-02-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasBox.custom: Redundant code in ctor removed.
@@ -14,7 +25,7 @@
 	  DiaCanvas#, it has a DiaCanvas.Init method which 
 	  initializes the module.
 	* sample/sample.cs: Uses DiaCanvas.Init()
-	* PROBLEMS: One problem whent away with gtk#-0.16 some others
+	* PROBLEMS: One problem went away with gtk#-0.16 some others
           entered ;)
 
 2004-02-07  Martin Willemoes Hansen  <mwh@sysrq.dk>

@@ -22,7 +22,6 @@ using System.Collections;
 using Dia;
 using GLib;
 using Gtk;
-using GtkSharp;
 using Gdk;
 using Pango;
 using Glade;
@@ -117,9 +116,9 @@ public class Sample {
 
 		if (zoom_enabled) {
 			view.Tool = new Tool (IntPtr.Zero);
-			view.ButtonPressEvent += new ButtonPressEventHandler (Zoom);
+			view.ButtonPressEvent += new Gtk.ButtonPressEventHandler (Zoom);
 		} else
-			view.ButtonPressEvent -= new ButtonPressEventHandler (Zoom);		
+			view.ButtonPressEvent -= new Gtk.ButtonPressEventHandler (Zoom);		
 	}
 
 	void LineTool (object sender, EventArgs args)
@@ -127,13 +126,13 @@ public class Sample {
 		view.Tool = new PlacementTool (typeof (Dia.CanvasLine), 
 					       "LineWidth", 8, 
 					       "Color", 480975UL); 
-		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new Dia.ButtonPressEventHandler (UnsetTool);
 	}
 
 	void BoxTool (object sender, EventArgs args)
 	{
 		view.Tool = new PlacementTool (typeof (CanvasBox));
-		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new Dia.ButtonPressEventHandler (UnsetTool);
 	}
 
 	void ImageTool (object sender, EventArgs args)
@@ -143,24 +142,24 @@ public class Sample {
 					       "Image", pixbuf,
 					       "Width", pixbuf.Width,
 					       "Height", pixbuf.Height);
-		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new Dia.ButtonPressEventHandler (UnsetTool);
 	}
 
 	[Glade.Widget] RadioButton tool1;
-	void UnsetTool (object sender, DiaSharp.ButtonPressEventArgs args)
+	void UnsetTool (object sender, Dia.ButtonPressEventArgs args)
 	{
-		if ((args.Button.state & (uint)ModifierType.ControlMask) == 
-		    (uint)ModifierType.ControlMask)
+		if ((args.Button.State & ModifierType.ControlMask) == 
+		    ModifierType.ControlMask)
 			return;
 
 		tool1.Active = true;
 	}
 
-	void Zoom (object sender, ButtonPressEventArgs args)
+	void Zoom (object sender, Gtk.ButtonPressEventArgs args)
 	{
 		
-		if ((args.Event.state & (uint)ModifierType.ControlMask) == 
-		    (uint)ModifierType.ControlMask)
+		if ((args.Event.State & ModifierType.ControlMask) == 
+		    ModifierType.ControlMask)
 			ZoomOut (this, null);
 		else
 			ZoomIn (this, null);

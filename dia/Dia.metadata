@@ -34,6 +34,8 @@
   <attr path="//object[@cname='DiaPlacementTool']" name="hidden">1</attr>
   <attr path="//struct[@cname='DiaExpression']" name="hidden">1</attr>
   <attr path="//struct[@cname='DiaShape']/method[@name='GetViewInfo']" name="hidden">1</attr>
+  <attr path="//struct[@cname='DiaShape']" name="opaque">1</attr>
   <attr path="//struct[@cname='DiaShapeViewInfo']" name="hidden">1</attr>
   <attr path="//struct[@cname='DiaVariableClass']" name="hidden">1</attr>
+  <attr path="//struct[@cname='DiaVariable']" name="opaque">1</attr>
 </metadata>
