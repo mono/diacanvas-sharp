@@ -39,17 +39,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasImage (GLib.Type gtype);" />
+      <MemberSignature Language="C#" Value="protected CanvasImage (GLib.GType gtype);" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters>
-        <Parameter Name="gtype" Type="GLib.Type" />
+        <Parameter Name="gtype" Type="GLib.GType" />
       </Parameters>
       <Docs>
         <summary>Internal constructor.</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /> for the this type.</param>
-        <returns>a <see cref="T:Dia.CanvasImage" /> created using the provided <see cref="T:GLib.Type" />.</returns>
-        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.</remarks>
+        <param name="gtype">a <see cref="T:GLib.GType" /> for the this type.</param>
+        <returns>a <see cref="T:Dia.CanvasImage" /> created using the provided <see cref="T:GLib.GType" />.</returns>
+        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.GType" /> assigned to it. This is not typically used by C# code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,15 +92,15 @@
       </Docs>
     </Member>
     <Member MemberName="GType">
-      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>GLib.GType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.CanvasImage" /></summary>
-        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <returns>A <see cref="T:GLib.GType" /> representing this type</returns>
         <remarks>
         </remarks>
       </Docs>

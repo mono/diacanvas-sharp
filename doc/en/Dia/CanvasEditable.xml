@@ -83,10 +83,10 @@
       </Docs>
     </Member>
     <Member MemberName="EditingDone">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.EditingDoneHandler EditingDone;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.EditingDoneHandler EditingDone;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.EditingDoneHandler</ReturnType>
+        <ReturnType>Dia.EditingDoneHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -95,10 +95,10 @@
       </Docs>
     </Member>
     <Member MemberName="StartEditing">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.StartEditingHandler StartEditing;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.StartEditingHandler StartEditing;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.StartEditingHandler</ReturnType>
+        <ReturnType>Dia.StartEditingHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -108,10 +108,10 @@
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.TextChangedHandler TextChanged;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.TextChangedHandler TextChanged;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.TextChangedHandler</ReturnType>
+        <ReturnType>Dia.TextChangedHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>

@@ -18,98 +18,6 @@
   <Interfaces />
   <Attributes />
   <Members>
-    <Member MemberName="Zero">
-      <MemberSignature Language="C#" Value="public static Dia.Shape Zero;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Shape</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="type">
-      <MemberSignature Language="C#" Value="public Dia.ShapeType type;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.ShapeType</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="visibility">
-      <MemberSignature Language="C#" Value="public uint visibility;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="update_cnt">
-      <MemberSignature Language="C#" Value="public uint update_cnt;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="color">
-      <MemberSignature Language="C#" Value="public uint color;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Shape New (IntPtr raw);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Shape</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Shape" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Shape New (Dia.ShapeType type);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Shape</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="type" Type="Dia.ShapeType" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="type">a <see cref="T:Dia.ShapeType" /></param>
-        <returns>a <see cref="T:Dia.Shape" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="XGetPangoLayout">
       <MemberSignature Language="C#" Value="public static Pango.Layout XGetPangoLayout ();" />
       <MemberType>Method</MemberType>
@@ -427,15 +335,15 @@
       </Docs>
     </Member>
     <Member MemberName="GType">
-      <MemberSignature Language="C#" Value="public uint GType { get; };" />
+      <MemberSignature Language="C#" Value="public GLib.GType GType { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>GLib.GType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.Shape" /></summary>
-        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <returns>A <see cref="T:GLib.GType" /> representing this type</returns>
         <remarks>
         </remarks>
       </Docs>
@@ -481,6 +389,45 @@
         <param name="clip_path">a <see cref="T:Art.SVP" /></param>
         <param name="flags">a <see cref="T:System.Int32" /></param>
         <returns>a <see cref="T:Art.SVP" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Shape (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Shape" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Shape (Dia.ShapeType type);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="type" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="type">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:Dia.Shape" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Shape ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.Shape" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

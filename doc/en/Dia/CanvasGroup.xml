@@ -236,17 +236,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasGroup (GLib.Type gtype);" />
+      <MemberSignature Language="C#" Value="protected CanvasGroup (GLib.GType gtype);" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters>
-        <Parameter Name="gtype" Type="GLib.Type" />
+        <Parameter Name="gtype" Type="GLib.GType" />
       </Parameters>
       <Docs>
         <summary>Internal constructor.</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /> for the this type.</param>
-        <returns>a <see cref="T:Dia.CanvasGroup" /> created using the provided <see cref="T:GLib.Type" />.</returns>
-        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.</remarks>
+        <param name="gtype">a <see cref="T:GLib.GType" /> for the this type.</param>
+        <returns>a <see cref="T:Dia.CanvasGroup" /> created using the provided <see cref="T:GLib.GType" />.</returns>
+        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.GType" /> assigned to it. This is not typically used by C# code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -275,24 +275,24 @@
       </Docs>
     </Member>
     <Member MemberName="GType">
-      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>GLib.GType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.CanvasGroup" /></summary>
-        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <returns>A <see cref="T:GLib.GType" /> representing this type</returns>
         <remarks>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="Removed">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.RemovedHandler Removed;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.RemovedHandler</ReturnType>
+        <ReturnType>Dia.RemovedHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -301,14 +301,76 @@
       </Docs>
     </Member>
     <Member MemberName="Added">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.AddedHandler Added;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.AddedHandler</ReturnType>
+        <ReturnType>Dia.AddedHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideRemoved">
+      <MemberSignature Language="C#" Value="protected static void OverrideRemoved (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideAdded">
+      <MemberSignature Language="C#" Value="protected static void OverrideAdded (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemoved">
+      <MemberSignature Language="C#" Value="protected virtual bool OnRemoved (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAdded">
+      <MemberSignature Language="C#" Value="protected virtual bool OnAdded (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

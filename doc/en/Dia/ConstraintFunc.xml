@@ -1,5 +1,5 @@
 <Type Name="ConstraintFunc" FullName="Dia.ConstraintFunc">
-  <TypeSignature Language="C#" Value="public sealed delegate void ConstraintFunc ();" Maintainer="auto" />
+  <TypeSignature Language="C#" Maintainer="auto" Value="public sealed delegate void ConstraintFunc (Dia.Constraint constraint, Dia.Variable variable, double constant);" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey />

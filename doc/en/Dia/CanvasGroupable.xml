@@ -208,10 +208,10 @@
       </Docs>
     </Member>
     <Member MemberName="Removed">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.RemovedHandler Removed;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.RemovedHandler</ReturnType>
+        <ReturnType>Dia.RemovedHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -221,10 +221,10 @@
       </Docs>
     </Member>
     <Member MemberName="Added">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
+      <MemberSignature Language="C#" Value="public virtual event Dia.AddedHandler Added;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.AddedHandler</ReturnType>
+        <ReturnType>Dia.AddedHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>

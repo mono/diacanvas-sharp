@@ -129,17 +129,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected Tool (GLib.Type gtype);" />
+      <MemberSignature Language="C#" Value="protected Tool (GLib.GType gtype);" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters>
-        <Parameter Name="gtype" Type="GLib.Type" />
+        <Parameter Name="gtype" Type="GLib.GType" />
       </Parameters>
       <Docs>
         <summary>Internal constructor.</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /> for the this type.</param>
-        <returns>a <see cref="T:Dia.Tool" /> created using the provided <see cref="T:GLib.Type" />.</returns>
-        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.</remarks>
+        <param name="gtype">a <see cref="T:GLib.GType" /> for the this type.</param>
+        <returns>a <see cref="T:Dia.Tool" /> created using the provided <see cref="T:GLib.GType" />.</returns>
+        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.GType" /> assigned to it. This is not typically used by C# code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,24 +168,24 @@
       </Docs>
     </Member>
     <Member MemberName="GType">
-      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberSignature Language="C#" Value="public static GLib.GType GType { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>GLib.GType</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.Tool" /></summary>
-        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <returns>A <see cref="T:GLib.GType" /> representing this type</returns>
         <remarks>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonPressEvent">
-      <MemberSignature Language="C#" Value="public event DiaSharp.ButtonPressEventHandler ButtonPressEvent;" />
+      <MemberSignature Language="C#" Value="public event Dia.ButtonPressEventHandler ButtonPressEvent;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.ButtonPressEventHandler</ReturnType>
+        <ReturnType>Dia.ButtonPressEventHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -194,10 +194,10 @@
       </Docs>
     </Member>
     <Member MemberName="MotionNotifyEvent">
-      <MemberSignature Language="C#" Value="public event DiaSharp.MotionNotifyEventHandler MotionNotifyEvent;" />
+      <MemberSignature Language="C#" Value="public event Dia.MotionNotifyEventHandler MotionNotifyEvent;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.MotionNotifyEventHandler</ReturnType>
+        <ReturnType>Dia.MotionNotifyEventHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -206,10 +206,10 @@
       </Docs>
     </Member>
     <Member MemberName="ButtonReleaseEvent">
-      <MemberSignature Language="C#" Value="public event DiaSharp.ButtonReleaseEventHandler ButtonReleaseEvent;" />
+      <MemberSignature Language="C#" Value="public event Dia.ButtonReleaseEventHandler ButtonReleaseEvent;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.ButtonReleaseEventHandler</ReturnType>
+        <ReturnType>Dia.ButtonReleaseEventHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -218,10 +218,10 @@
       </Docs>
     </Member>
     <Member MemberName="KeyPressEvent">
-      <MemberSignature Language="C#" Value="public event DiaSharp.KeyPressEventHandler KeyPressEvent;" />
+      <MemberSignature Language="C#" Value="public event Dia.KeyPressEventHandler KeyPressEvent;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.KeyPressEventHandler</ReturnType>
+        <ReturnType>Dia.KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -230,14 +230,179 @@
       </Docs>
     </Member>
     <Member MemberName="KeyReleaseEvent">
-      <MemberSignature Language="C#" Value="public event DiaSharp.KeyReleaseEventHandler KeyReleaseEvent;" />
+      <MemberSignature Language="C#" Value="public event Dia.KeyReleaseEventHandler KeyReleaseEvent;" />
       <MemberType>Event</MemberType>
       <ReturnValue>
-        <ReturnType>DiaSharp.KeyReleaseEventHandler</ReturnType>
+        <ReturnType>Dia.KeyReleaseEventHandler</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideButtonPressEvent">
+      <MemberSignature Language="C#" Value="protected static void OverrideButtonPressEvent (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideMotionNotifyEvent">
+      <MemberSignature Language="C#" Value="protected static void OverrideMotionNotifyEvent (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideButtonReleaseEvent">
+      <MemberSignature Language="C#" Value="protected static void OverrideButtonReleaseEvent (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideKeyPressEvent">
+      <MemberSignature Language="C#" Value="protected static void OverrideKeyPressEvent (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverrideKeyReleaseEvent">
+      <MemberSignature Language="C#" Value="protected static void OverrideKeyReleaseEvent (GLib.GType gtype);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.GType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">a <see cref="T:GLib.GType" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnButtonPressEvent">
+      <MemberSignature Language="C#" Value="protected virtual bool OnButtonPressEvent (Dia.CanvasView view, Gdk.EventButton button);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Dia.CanvasView" />
+        <Parameter Name="button" Type="Gdk.EventButton" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="view">a <see cref="T:Dia.CanvasView" /></param>
+        <param name="button">a <see cref="T:Gdk.EventButton" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMotionNotifyEvent">
+      <MemberSignature Language="C#" Value="protected virtual bool OnMotionNotifyEvent (Dia.CanvasView view, Gdk.EventMotion button);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Dia.CanvasView" />
+        <Parameter Name="button" Type="Gdk.EventMotion" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="view">a <see cref="T:Dia.CanvasView" /></param>
+        <param name="button">a <see cref="T:Gdk.EventMotion" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnButtonReleaseEvent">
+      <MemberSignature Language="C#" Value="protected virtual bool OnButtonReleaseEvent (Dia.CanvasView view, Gdk.EventButton button);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Dia.CanvasView" />
+        <Parameter Name="button" Type="Gdk.EventButton" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="view">a <see cref="T:Dia.CanvasView" /></param>
+        <param name="button">a <see cref="T:Gdk.EventButton" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyPressEvent">
+      <MemberSignature Language="C#" Value="protected virtual bool OnKeyPressEvent (Dia.CanvasView view, Gdk.EventKey button);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Dia.CanvasView" />
+        <Parameter Name="button" Type="Gdk.EventKey" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="view">a <see cref="T:Dia.CanvasView" /></param>
+        <param name="button">a <see cref="T:Gdk.EventKey" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyReleaseEvent">
+      <MemberSignature Language="C#" Value="protected virtual bool OnKeyReleaseEvent (Dia.CanvasView view, Gdk.EventKey button);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="Dia.CanvasView" />
+        <Parameter Name="button" Type="Gdk.EventKey" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="view">a <see cref="T:Dia.CanvasView" /></param>
+        <param name="button">a <see cref="T:Gdk.EventKey" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

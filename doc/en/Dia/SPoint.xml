@@ -47,7 +47,7 @@
       </Docs>
     </Member>
     <Member MemberName="x">
-      <MemberSignature Language="C#" Value="public Dia.Variable x { get; };" />
+      <MemberSignature Language="C#" Value="public Dia.Variable x { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Variable</ReturnType>
@@ -60,7 +60,7 @@
       </Docs>
     </Member>
     <Member MemberName="y">
-      <MemberSignature Language="C#" Value="public Dia.Variable y { get; };" />
+      <MemberSignature Language="C#" Value="public Dia.Variable y { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Variable</ReturnType>

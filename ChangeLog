@@ -54,6 +54,43 @@
 	* doc/en/Dia/ZOrderArgs.xml: Ditto
 	* doc/en/Dia/ZOrderHandler.xml: Ditto
 	* doc/en/Dia/*.xml: Ran through scan-deprecations.exe
+	* doc/en/Dia/Canvas.xml: Updated to reflect change in the code
+	* doc/en/Dia/CanvasBox.xml: Ditto
+	* doc/en/Dia/CanvasElement.xml: Ditto
+	* doc/en/Dia/CanvasGroup.xml: Ditto
+	* doc/en/Dia/CanvasGroupable.xml: Ditto	
+	* doc/en/Dia/CanvasImage.xml: Ditto
+	* doc/en/Dia/CanvasItem.xml: Ditto
+	* doc/en/Dia/CanvasIter.xml: Ditto
+	* doc/en/Dia/CanvasLine.xml: Ditto
+	* doc/en/Dia/CanvasText.xml: Ditto
+	* doc/en/Dia/CanvasView.xml: Ditto
+	* doc/en/Dia/CanvasViewItem.xml: Ditto
+	* doc/en/Dia/Constraint.xml: Ditto
+	* doc/en/Dia/ConstraintFunc.xml: Ditto
+	* doc/en/Dia/EventButton.xml: Ditto
+	* doc/en/Dia/EventFocus.xml: Ditto
+	* doc/en/Dia/EventKey.xml: Ditto
+	* doc/en/Dia/EventMotion.xml: Ditto
+	* doc/en/Dia/ExportSVG.xml: Ditto
+	* doc/en/Dia/Global.xml: Ditto	
+	* doc/en/Dia/Handle.xml: Ditto
+	* doc/en/Dia/HandleLayer.xml: Ditto
+	* doc/en/Dia/Point.xml: Ditto
+	* doc/en/Dia/Rectangle.xml: Ditto
+	* doc/en/Dia/SPoint.xml: Ditto
+	* doc/en/Dia/Selector.xml: Ditto
+	* doc/en/Dia/Shape.xml: Ditto
+	* doc/en/Dia/ShapeBezier.xml: Ditto
+	* doc/en/Dia/ShapeClip.xml: Ditto
+	* doc/en/Dia/ShapeEllipse.xml: Ditto
+	* doc/en/Dia/ShapeImage.xml: Ditto
+	* doc/en/Dia/ShapePath.xml: Ditto
+	* doc/en/Dia/ShapeText.xml: Ditto
+	* doc/en/Dia/Solver.xml: Ditto
+	* doc/en/Dia/StackTool.xml: Ditto
+	* doc/en/Dia/Tool.xml: Ditto
+	* doc/en/Dia/Variable.xml: Ditto
 
 2004-02-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
