@@ -1,3 +1,37 @@
+2004-07-14  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* configure.in: Moved glue makefile
+	  Added diacanvas-sharp.pc
+	  Added diacanvas-sharp-sample
+	  Added AssemblyInfo.cs
+	  Check for GAC
+	  Check for Mono or .NET
+	* diacanvas-sharp.pc.in: Added
+	* makefile.am: Removed glue dir
+	* NEWS: Updated
+	* dia/AssemblyInfo.cs.in: Added
+	* dia/diacanvas-api.raw: Added
+	* dia/diacanvas-api.xml: Removed
+	* dia/makefile.am: Use the build method Gtk# uses
+	  Added glue dir
+	* dia/.cvsignore: Ignore diacanvas-api.xml
+	* dia/diacanvas-sharp.snk: Added
+	* dia/glue/dia-canvas-item.c: Added
+	* dia/glue/dia-canvas.c: Added
+	* dia/glue/dia-canvas-line.c: Added
+	* dia/glue/dia-canvas-line.c.new: Added
+	* dia/glue/dia-canvas-view.c: Added
+	* dia/glue/dia-event.c: Added
+	* dia/glue/makefile.am: Added
+	* glue: Removed, moved into dia
+	* sample/makefile.am: Install sample
+	* sample/diacanvas-sharp-sample.in: Runscript added
+	* sample/.cvsignore: Added Runscript
+	* sources/diacanvas-sharp-sources.xml: Target DiaCanvas-0.13.0
+	  Output to .raw instead of .xml
+	* sources/makefile: Target DiaCanvas-0.13.0
+
+
 2004-07-10  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/Dia.metadata: replaced disabledefaultconstructor 

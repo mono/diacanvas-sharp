@@ -1,4 +1,5 @@
-sample.exe
+diacanvas-sharp-sample
 makefile
 makefile.in
-test.svg
+*.exe
+*.svg

@@ -1,0 +1,9 @@
+prefix=@prefix@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+
+Name: DiaCanvas#
+Description: DiaCanvas# - DiaCanvas .NET Binding
+Version: @VERSION@
+Libs: -r:${libdir}/mono/@PACKAGE@/diacanvas-sharp.dll

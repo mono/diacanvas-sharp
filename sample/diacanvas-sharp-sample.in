@@ -1,0 +1,2 @@
+#!/bin/sh
+@RUNTIME@ @prefix@/bin/diacanvas-sharp-sample.exe "$@"

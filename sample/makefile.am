@@ -10,12 +10,17 @@ RESOURCES=	-resource:glade/gui.glade,gui.glade			\
 		-resource:pixmaps/glade-image.png,glade-image.png 	\
 		-resource:pixmaps/text.png,text.png
 
-SAMPLE=		sample.exe
+SAMPLE=		diacanvas-sharp-sample.exe
+SCRIPT=		diacanvas-sharp-sample
 
 all: $(SAMPLE)
 
 $(SAMPLE): *.cs ../dia/diacanvas-sharp.dll
 	mcs -pkg:gnome-sharp,glade-sharp -r ../dia/diacanvas-sharp $(RESOURCES) *.cs -o $(SAMPLE)
+
+install:
+	$(INSTALL) -m 644 $(SAMPLE) $(bindir)
+	$(INSTALL) -m 755 $(SCRIPT) $(bindir)
 
 clean:
 	rm -f $(SAMPLE)

@@ -5,6 +5,7 @@ config.log
 config.status
 config.sub
 configure
+diacanvas-sharp.pc
 libtool
 ltmain.sh
 makefile

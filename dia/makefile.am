@@ -1,7 +1,14 @@
-LIBRARY=	diacanvas-sharp.dll
-APIS=		diacanvas-api.xml diacanvas-symbols.xml
+SUBDIRS=	. glue
 
-INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml		\
+API=		diacanvas-api.xml
+RAW_API=	diacanvas-api.raw
+ADDITIONAL_API=	diacanvas-symbols.xml
+METADATA=	Dia.metadata
+ASSEMBLY_NAME=	diacanvas-sharp
+
+references= 	-pkg:gnome-sharp
+
+INCLUDE_API=	@prefix@/share/gapi/art-api.xml		\
 		@prefix@/share/gapi/pango-api.xml	\
 		@prefix@/share/gapi/atk-api.xml		\
 		@prefix@/share/gapi/gnome-api.xml	\
@@ -9,26 +16,63 @@ INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml		\
 		@prefix@/share/gapi/gdk-api.xml		\
 		@prefix@/share/gapi/gdk-symbols.xml
 
-EXTRA_DIST= 	*.cs *.custom *.metadata *.xml
+ASSEMBLY= 	$(ASSEMBLY_NAME).dll
+TARGET= 	$(ASSEMBLY)
 
-diacanvassharpdir = $(libdir)
-diacanvassharp_DATA = $(LIBRARY)
+gapidir= 	$(datadir)/gapi
+noinst_DATA = 	$(ASSEMBLY)
+gapi_DATA= 	$(API) $(ADDITIONAL_API)
+CLEANFILES = 	$(ASSEMBLY) generated-stamp generated/*.cs $(API)
+DISTCLEANFILES= AssemblyInfo.cs
 
-all: $(LIBRARY)
+sources=	DashStyle.cs	\
+		DiaCanvas.cs	\
+		Event.cs	\
+		PlacementTool.cs
 
-generated-stamp: $(APIS) *.custom *.metadata
-	$(GAPI_FIXUP) --api=diacanvas-api.xml --metadata=Dia.metadata && \
-	$(GAPI_CODEGEN) --include $(INCLUDE_APIS) --generate $(APIS) \
-	--outdir=generated --customdir=. --assembly-name=diacanvas-sharp && touch generated-stamp
+build_sources=	$(addprefix $(srcdir)/, $(sources)) AssemblyInfo.cs
 
-$(LIBRARY): generated-stamp *.cs
-	$(MCS) --unsafe --target library -pkg:gnome-sharp --recurse '*.cs' -o $(LIBRARY)
+customs=	Canvas.custom		\
+		CanvasBox.custom	\
+		CanvasImage.custom	\
+		CanvasItem.custom	\
+		CanvasLine.custom	\
+		CanvasText.custom	\
+		CanvasView.custom	\
+		Point.custom
 
-install:
-	for i in $(APIS); do						\
-		$(INSTALL) -m 644 $$i @prefix@/share/gapi || true;	\
-	done &&								\
-	$(INSTALL) -m 644 $(LIBRARY) $(libdir)
+build_customs = $(addprefix $(srcdir)/, $(customs))
 
-clean:
-	rm -rf $(LIBRARY) generated-stamp generated
+EXTRA_DIST=	AssemblyInfo.cs.in	\
+		$(RAW_API)		\
+		$(ADDITIONAL_API)	\
+		$(METADATA)		\
+		$(customs)		\
+		$(sources)		\
+		diacanvas-sharp.snk
+
+$(API): $(srcdir)/$(RAW_API) $(srcdir)/$(METADATA)
+	cp $(srcdir)/$(RAW_API) $(API)
+	chmod u+w $(API)
+	$(GAPI_FIXUP) --api=$(API) --metadata=$(srcdir)/$(METADATA)
+
+generated-stamp: $(API) $(ADDITIONAL_API) *.custom
+	$(GAPI_CODEGEN) --include $(INCLUDE_API) --generate $(API)	\
+	 $(ADDITIONAL_API) --outdir=generated --customdir=. 		\
+	--assembly-name=diacanvas-sharp && touch generated-stamp
+
+$(ASSEMBLY): generated-stamp *.cs
+	$(CSC) /unsafe /out:$(ASSEMBLY) /target:library			\
+	$(references) $(build_sources) $(GENERATED_SOURCES)
+
+install-data-local:
+	@if test -n '$(TARGET)'; then					\
+	  echo "$(GACUTIL) /i $(ASSEMBLY) /f $(GACUTIL_FLAGS)"; 	\
+	  $(GACUTIL) /i $(ASSEMBLY) /f $(GACUTIL_FLAGS) || exit 1;      \
+	fi
+
+uninstall-local:
+	@if test -n '$(TARGET)'; then					\
+	  echo "$(GACUTIL) /u $(ASSEMBLY_NAME) $(GACUTIL_FLAGS)";	\
+	$(GACUTIL) /u $(ASSEMBLY_NAME) $(GACUTIL_FLAGS) || exit 1;	\
+	fi

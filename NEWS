@@ -2,8 +2,15 @@
 =====
 
 * Bugfixes
-* API updated
-* Targets DiaCanvas2-0.12.0
+* Updated API
+* Targets DiaCanvas2-0.13.0
+* Targets Mono-1.0
+* Targets Gtk#-1.0
+* pkgconfig .pc file
+* Build system inline with Gtk#
+* Sample program
+* Assembly signed with a StrongName
+* cross-platform compilation
 
 0.3.0
 =====

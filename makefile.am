@@ -1,1 +1,8 @@
-SUBDIRS=glue dia sample doc
+SUBDIRS=dia sample doc
+
+pkgconfigdir= 	$(libdir)/pkgconfig
+pkgconfig_DATA= diacanvas-sharp.pc
+
+EXTRA_DIST= 	diacanvas-sharp.pc
+
+DISTCLEANFILES=	diacanvas-sharp.pc
