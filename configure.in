@@ -80,5 +80,4 @@ glue/makefile
 sample/makefile
 sample/pixmaps/makefile
 sample/glade/makefile
-sources/makefile
 ])

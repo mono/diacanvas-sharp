@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<api><!--
+<api>
+<!--
 
         This file was automatically generated.
         Please DO NOT MODIFY THIS FILE, modify .metadata files instead.
@@ -7,2275 +8,2275 @@
 -->
   <namespace name="Dia" library="diacanvas2">
     <enum name="CanvasElementHandle" cname="DiaCanvasElementHandle" type="enum">
-      <member cname="DIA_HANDLE_N" name="N" />
-      <member cname="DIA_HANDLE_NW" name="Nw" />
-      <member cname="DIA_HANDLE_NE" name="Ne" />
-      <member cname="DIA_HANDLE_S" name="S" />
-      <member cname="DIA_HANDLE_W" name="W" />
-      <member cname="DIA_HANDLE_E" name="E" />
-      <member cname="DIA_HANDLE_SW" name="Sw" />
-      <member cname="DIA_HANDLE_SE" name="Se" />
+      <member cname="DIA_HANDLE_N" name="N"/>
+      <member cname="DIA_HANDLE_NW" name="Nw"/>
+      <member cname="DIA_HANDLE_NE" name="Ne"/>
+      <member cname="DIA_HANDLE_S" name="S"/>
+      <member cname="DIA_HANDLE_W" name="W"/>
+      <member cname="DIA_HANDLE_E" name="E"/>
+      <member cname="DIA_HANDLE_SW" name="Sw"/>
+      <member cname="DIA_HANDLE_SE" name="Se"/>
     </enum>
     <enum name="CanvasItemFlags" cname="DiaCanvasItemFlags" type="flags">
-      <member cname="DIA_VISIBLE" name="Visible" value="1" />
-      <member cname="DIA_INTERACTIVE" name="Interactive" value="1 &lt;&lt; 1" />
-      <member cname="DIA_COMPOSITE" name="Composite" value="1 &lt;&lt; 2" />
-      <member cname="DIA_NEED_UPDATE" name="NeedUpdate" value="1 &lt;&lt; 3" />
-      <member cname="DIA_UPDATE_ALL" name="UpdateAll" value="1 &lt;&lt; 4" />
+      <member cname="DIA_VISIBLE" name="Visible" value="1"/>
+      <member cname="DIA_INTERACTIVE" name="Interactive" value="1 &lt;&lt; 1"/>
+      <member cname="DIA_COMPOSITE" name="Composite" value="1 &lt;&lt; 2"/>
+      <member cname="DIA_NEED_UPDATE" name="NeedUpdate" value="1 &lt;&lt; 3"/>
+      <member cname="DIA_UPDATE_ALL" name="UpdateAll" value="1 &lt;&lt; 4"/>
     </enum>
     <enum name="CanvasItemUIStateFlags" cname="DiaCanvasItemUIStateFlags" type="enum">
-      <member cname="DIA_UI_STATE_UNSELECTED" name="Unselected" />
-      <member cname="DIA_UI_STATE_SELECTED" name="Selected" />
-      <member cname="DIA_UI_STATE_FOCUSED" name="Focused" />
-      <member cname="DIA_UI_STATE_GRABBED" name="Grabbed" />
-      <member cname="DIA_UI_STATE_UNCHANGED" name="Unchanged" />
+      <member cname="DIA_UI_STATE_UNSELECTED" name="Unselected"/>
+      <member cname="DIA_UI_STATE_SELECTED" name="Selected"/>
+      <member cname="DIA_UI_STATE_FOCUSED" name="Focused"/>
+      <member cname="DIA_UI_STATE_GRABBED" name="Grabbed"/>
+      <member cname="DIA_UI_STATE_UNCHANGED" name="Unchanged"/>
     </enum>
     <enum name="CapStyle" cname="DiaCapStyle" type="enum">
-      <member cname="DIA_CAP_BUTT" name="Butt" />
-      <member cname="DIA_CAP_ROUND" name="Round" />
-      <member cname="DIA_CAP_SQUARE" name="Square" />
+      <member cname="DIA_CAP_BUTT" name="Butt"/>
+      <member cname="DIA_CAP_ROUND" name="Round"/>
+      <member cname="DIA_CAP_SQUARE" name="Square"/>
     </enum>
     <enum name="EventMask" cname="DiaEventMask" type="flags">
-      <member cname="DIA_EVENT_MASK_SHIFT" name="Shift" value="1 &lt;&lt; 0" />
-      <member cname="DIA_EVENT_MASK_LOCK" name="Lock" value="1 &lt;&lt; 1" />
-      <member cname="DIA_EVENT_MASK_CTRL" name="Ctrl" value="1 &lt;&lt; 2" />
-      <member cname="DIA_EVENT_MASK_MOD1" name="Mod1" value="1 &lt;&lt; 3" />
-      <member cname="DIA_EVENT_MASK_ALT" name="Alt" />
-      <member cname="DIA_EVENT_MASK_MOD2" name="Mod2" value="1 &lt;&lt; 4" />
-      <member cname="DIA_EVENT_MASK_MOD3" name="Mod3" value="1 &lt;&lt; 5" />
-      <member cname="DIA_EVENT_MASK_MOD4" name="Mod4" value="1 &lt;&lt; 6" />
-      <member cname="DIA_EVENT_MASK_MOD5" name="Mod5" value="1 &lt;&lt; 7" />
-      <member cname="DIA_EVENT_MASK_BUTTON1" name="Button1" value="1 &lt;&lt; 8" />
-      <member cname="DIA_EVENT_MASK_BUTTON2" name="Button2" value="1 &lt;&lt; 9" />
-      <member cname="DIA_EVENT_MASK_BUTTON3" name="Button3" value="1 &lt;&lt; 10" />
-      <member cname="DIA_EVENT_MASK_BUTTON4" name="Button4" value="1 &lt;&lt; 11" />
-      <member cname="DIA_EVENT_MASK_BUTTON5" name="Button5" value="1 &lt;&lt; 12" />
+      <member cname="DIA_EVENT_MASK_SHIFT" name="Shift" value="1 &lt;&lt; 0"/>
+      <member cname="DIA_EVENT_MASK_LOCK" name="Lock" value="1 &lt;&lt; 1"/>
+      <member cname="DIA_EVENT_MASK_CTRL" name="Ctrl" value="1 &lt;&lt; 2"/>
+      <member cname="DIA_EVENT_MASK_MOD1" name="Mod1" value="1 &lt;&lt; 3"/>
+      <member cname="DIA_EVENT_MASK_ALT" name="Alt"/>
+      <member cname="DIA_EVENT_MASK_MOD2" name="Mod2" value="1 &lt;&lt; 4"/>
+      <member cname="DIA_EVENT_MASK_MOD3" name="Mod3" value="1 &lt;&lt; 5"/>
+      <member cname="DIA_EVENT_MASK_MOD4" name="Mod4" value="1 &lt;&lt; 6"/>
+      <member cname="DIA_EVENT_MASK_MOD5" name="Mod5" value="1 &lt;&lt; 7"/>
+      <member cname="DIA_EVENT_MASK_BUTTON1" name="Button1" value="1 &lt;&lt; 8"/>
+      <member cname="DIA_EVENT_MASK_BUTTON2" name="Button2" value="1 &lt;&lt; 9"/>
+      <member cname="DIA_EVENT_MASK_BUTTON3" name="Button3" value="1 &lt;&lt; 10"/>
+      <member cname="DIA_EVENT_MASK_BUTTON4" name="Button4" value="1 &lt;&lt; 11"/>
+      <member cname="DIA_EVENT_MASK_BUTTON5" name="Button5" value="1 &lt;&lt; 12"/>
     </enum>
     <enum name="EventType" cname="DiaEventType" type="enum">
-      <member cname="DIA_EVENT_BUTTON_PRESS" name="ButtonPress" />
-      <member cname="DIA_EVENT_2BUTTON_PRESS" name="TwoButtonPress" />
-      <member cname="DIA_EVENT_3BUTTON_PRESS" name="ThreeButtonPress" />
-      <member cname="DIA_EVENT_BUTTON_RELEASE" name="ButtonRelease" />
-      <member cname="DIA_EVENT_MOTION" name="Motion" />
-      <member cname="DIA_EVENT_KEY_PRESS" name="KeyPress" />
-      <member cname="DIA_EVENT_KEY_RELEASE" name="KeyRelease" />
-      <member cname="DIA_EVENT_FOCUS_IN" name="FocusIn" />
-      <member cname="DIA_EVENT_FOCUS_OUT" name="FocusOut" />
+      <member cname="DIA_EVENT_BUTTON_PRESS" name="ButtonPress"/>
+      <member cname="DIA_EVENT_2BUTTON_PRESS" name="TwoButtonPress"/>
+      <member cname="DIA_EVENT_3BUTTON_PRESS" name="ThreeButtonPress"/>
+      <member cname="DIA_EVENT_BUTTON_RELEASE" name="ButtonRelease"/>
+      <member cname="DIA_EVENT_MOTION" name="Motion"/>
+      <member cname="DIA_EVENT_KEY_PRESS" name="KeyPress"/>
+      <member cname="DIA_EVENT_KEY_RELEASE" name="KeyRelease"/>
+      <member cname="DIA_EVENT_FOCUS_IN" name="FocusIn"/>
+      <member cname="DIA_EVENT_FOCUS_OUT" name="FocusOut"/>
     </enum>
     <enum name="FillStyle" cname="DiaFillStyle" type="enum">
-      <member cname="DIA_FILL_NONE" name="None" />
-      <member cname="DIA_FILL_SOLID" name="Solid" />
+      <member cname="DIA_FILL_NONE" name="None"/>
+      <member cname="DIA_FILL_SOLID" name="Solid"/>
     </enum>
     <enum name="JoinStyle" cname="DiaJoinStyle" type="enum">
-      <member cname="DIA_JOIN_MITER" name="Miter" />
-      <member cname="DIA_JOIN_ROUND" name="Round" />
-      <member cname="DIA_JOIN_BEVEL" name="Bevel" />
+      <member cname="DIA_JOIN_MITER" name="Miter"/>
+      <member cname="DIA_JOIN_ROUND" name="Round"/>
+      <member cname="DIA_JOIN_BEVEL" name="Bevel"/>
     </enum>
     <enum name="ShapeType" cname="DiaShapeType" type="enum">
-      <member cname="DIA_SHAPE_NONE" name="None" />
-      <member cname="DIA_SHAPE_PATH" name="Path" />
-      <member cname="DIA_SHAPE_BEZIER" name="Bezier" />
-      <member cname="DIA_SHAPE_ELLIPSE" name="Ellipse" />
-      <member cname="DIA_SHAPE_TEXT" name="Text" />
-      <member cname="DIA_SHAPE_IMAGE" name="Image" />
-      <member cname="DIA_SHAPE_WIDGET" name="Widget" />
-      <member cname="DIA_SHAPE_CLIP" name="Clip" />
+      <member cname="DIA_SHAPE_NONE" name="None"/>
+      <member cname="DIA_SHAPE_PATH" name="Path"/>
+      <member cname="DIA_SHAPE_BEZIER" name="Bezier"/>
+      <member cname="DIA_SHAPE_ELLIPSE" name="Ellipse"/>
+      <member cname="DIA_SHAPE_TEXT" name="Text"/>
+      <member cname="DIA_SHAPE_IMAGE" name="Image"/>
+      <member cname="DIA_SHAPE_WIDGET" name="Widget"/>
+      <member cname="DIA_SHAPE_CLIP" name="Clip"/>
     </enum>
     <enum name="ShapeVisibility" cname="DiaShapeVisibility" type="enum">
-      <member cname="DIA_SHAPE_HIDDEN" name="Hidden" />
-      <member cname="DIA_SHAPE_VISIBLE" name="Visible" />
-      <member cname="DIA_SHAPE_VISIBLE_IF_SELECTED" name="VisibleIfSelected" />
-      <member cname="DIA_SHAPE_VISIBLE_IF_FOCUSED" name="VisibleIfFocused" />
-      <member cname="DIA_SHAPE_VISIBLE_IF_GRABBED" name="VisibleIfGrabbed" />
+      <member cname="DIA_SHAPE_HIDDEN" name="Hidden"/>
+      <member cname="DIA_SHAPE_VISIBLE" name="Visible"/>
+      <member cname="DIA_SHAPE_VISIBLE_IF_SELECTED" name="VisibleIfSelected"/>
+      <member cname="DIA_SHAPE_VISIBLE_IF_FOCUSED" name="VisibleIfFocused"/>
+      <member cname="DIA_SHAPE_VISIBLE_IF_GRABBED" name="VisibleIfGrabbed"/>
     </enum>
     <enum name="Strength" cname="DiaStrength" type="enum">
-      <member cname="DIA_STRENGTH_VERY_WEAK" name="VeryWeak" />
-      <member cname="DIA_STRENGTH_WEAK" name="Weak" />
-      <member cname="DIA_STRENGTH_MEDIUM" name="Medium" />
-      <member cname="DIA_STRENGTH_STRONG" name="Strong" />
-      <member cname="DIA_STRENGTH_VERY_STRONG" name="VeryStrong" />
-      <member cname="DIA_STRENGTH_REQUIRED" name="Required" />
+      <member cname="DIA_STRENGTH_VERY_WEAK" name="VeryWeak"/>
+      <member cname="DIA_STRENGTH_WEAK" name="Weak"/>
+      <member cname="DIA_STRENGTH_MEDIUM" name="Medium"/>
+      <member cname="DIA_STRENGTH_STRONG" name="Strong"/>
+      <member cname="DIA_STRENGTH_VERY_STRONG" name="VeryStrong"/>
+      <member cname="DIA_STRENGTH_REQUIRED" name="Required"/>
     </enum>
     <enum name="WrapMode" cname="DiaWrapMode" type="enum">
-      <member cname="DIA_WRAP_NONE" name="None" />
-      <member cname="DIA_WRAP_CHAR" name="Char" />
-      <member cname="DIA_WRAP_WORD" name="Word" />
+      <member cname="DIA_WRAP_NONE" name="None"/>
+      <member cname="DIA_WRAP_CHAR" name="Char"/>
+      <member cname="DIA_WRAP_WORD" name="Word"/>
     </enum>
     <callback name="CanvasItemForeachFunc" cname="DiaCanvasItemForeachFunc">
-      <return-type type="gint" />
+      <return-type type="gint"/>
       <parameters>
-        <parameter type="DiaCanvasItem*" name="item" />
-        <parameter type="gpointer" name="data" />
+        <parameter type="DiaCanvasItem*" name="item"/>
+        <parameter type="gpointer" name="data"/>
       </parameters>
     </callback>
     <callback name="CanvasViewItemForeachFunc" cname="DiaCanvasViewItemForeachFunc">
-      <return-type type="gint" />
+      <return-type type="gint"/>
       <parameters>
-        <parameter type="DiaCanvasViewItem*" name="item" />
-        <parameter type="gpointer" name="data" />
+        <parameter type="DiaCanvasViewItem*" name="item"/>
+        <parameter type="gpointer" name="data"/>
       </parameters>
     </callback>
     <callback name="ConstraintFunc" cname="DiaConstraintFunc">
-      <return-type type="void" />
+      <return-type type="void"/>
       <parameters>
-        <parameter type="DiaConstraint*raint" name="arg1" />
-        <parameter type="DiaVariable*" name="variable" />
-        <parameter type="gdouble" name="constant" />
-        <parameter type="gpointer" name="user_data" />
+        <parameter type="DiaConstraint*raint" name="arg1"/>
+        <parameter type="DiaVariable*" name="variable"/>
+        <parameter type="gdouble" name="constant"/>
+        <parameter type="gpointer" name="user_data"/>
       </parameters>
     </callback>
-    <callback name="ShapeViewInfoFree" cname="DiaShapeViewInfoFree" hidden="1">
-      <return-type type="void" />
+    <callback name="ShapeViewInfoFree" cname="DiaShapeViewInfoFree">
+      <return-type type="void"/>
       <parameters>
-        <parameter type="DiaShapeViewInfo*" name="item_info" />
+        <parameter type="DiaShapeViewInfo*" name="item_info"/>
       </parameters>
     </callback>
     <interface name="CanvasEditable" cname="DiaCanvasEditable">
       <signal name="StartEditing" cname="start_editing" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasEditable*" name="editable" />
-          <parameter type="DiaShapeText*" name="text_shape" />
+          <parameter type="DiaCanvasEditable*" name="editable"/>
+          <parameter type="DiaShapeText*" name="text_shape"/>
         </parameters>
       </signal>
       <signal name="EditingDone" cname="editing_done" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasEditable*" name="editable" />
-          <parameter type="DiaShapeText*" name="text_shape" />
-          <parameter type="const-gchar*" name="new_text" />
+          <parameter type="DiaCanvasEditable*" name="editable"/>
+          <parameter type="DiaShapeText*" name="text_shape"/>
+          <parameter type="const-gchar*" name="new_text"/>
         </parameters>
       </signal>
       <signal name="TextChanged" cname="text_changed" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasEditable*" name="editable" />
-          <parameter type="DiaShapeText*" name="text_shape" />
-          <parameter type="const-gchar*" name="new_text" />
+          <parameter type="DiaCanvasEditable*" name="editable"/>
+          <parameter type="DiaShapeText*" name="text_shape"/>
+          <parameter type="const-gchar*" name="new_text"/>
         </parameters>
       </signal>
-      <method cname="dia_canvas_editable_editing_done" name="DoneEditing">
-        <return-type type="void" />
+      <method name="EditingDone" cname="dia_canvas_editable_editing_done">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShapeText*" name="text_shape" />
-          <parameter type="const-gchar*" name="new_text" />
+          <parameter type="DiaShapeText*" name="text_shape"/>
+          <parameter type="const-gchar*" name="new_text"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_editable_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
-      <method cname="dia_canvas_editable_start_editing" name="EditingStart">
-        <return-type type="void" />
+      <method name="StartEditing" cname="dia_canvas_editable_start_editing">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShapeText*" name="text_shape" />
+          <parameter type="DiaShapeText*" name="text_shape"/>
         </parameters>
       </method>
-      <method cname="dia_canvas_editable_text_changed" name="ChangeText">
-        <return-type type="void" />
+      <method name="TextChanged" cname="dia_canvas_editable_text_changed">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShapeText*" name="text_shape" />
-          <parameter type="const-gchar*" name="new_text" />
+          <parameter type="DiaShapeText*" name="text_shape"/>
+          <parameter type="const-gchar*" name="new_text"/>
         </parameters>
       </method>
     </interface>
     <interface name="CanvasGroupable" cname="DiaCanvasGroupable">
-      <signal cname="add" when="LAST" name="Added">
-        <return-type type="gboolean" />
+      <signal name="Add" cname="add" when="LAST">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasGroupable*" name="group" />
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasGroupable*" name="group"/>
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </signal>
-      <signal cname="remove" when="LAST" name="Removed">
-        <return-type type="gboolean" />
+      <signal name="Remove" cname="remove" when="LAST">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasGroupable*" name="group" />
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasGroupable*" name="group"/>
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </signal>
       <method name="Add" cname="dia_canvas_groupable_add">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="AddConstruction" cname="dia_canvas_groupable_add_construction">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="GetIter" cname="dia_canvas_groupable_get_iter">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_groupable_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="Length" cname="dia_canvas_groupable_length">
-        <return-type type="gint" />
+        <return-type type="gint"/>
       </method>
       <method name="Next" cname="dia_canvas_groupable_next">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
       <method name="Pos" cname="dia_canvas_groupable_pos">
-        <return-type type="gint" />
+        <return-type type="gint"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="Remove" cname="dia_canvas_groupable_remove">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="RemoveDestruction" cname="dia_canvas_groupable_remove_destruction">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="Value" cname="dia_canvas_groupable_value">
-        <return-type type="DiaCanvasItem*" />
+        <return-type type="DiaCanvasItem*"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
     </interface>
     <object name="Canvas" cname="DiaCanvas" parent="GObject">
-      <field cname="static_extents" bits="1" type="gboolean" />
-      <field cname="snap_to_grid" bits="1" type="gboolean" />
-      <field cname="allow_undo" bits="1" type="gboolean" />
-      <field cname="allow_state_requests" bits="1" type="gboolean" />
-      <field cname="in_undo" bits="1" type="gboolean" />
-      <field cname="extents" type="DiaRectangle" />
-      <field cname="root" type="DiaCanvasItem*" />
-      <field cname="interval_x" type="gdouble" />
-      <field cname="interval_y" type="gdouble" />
-      <field cname="offset_x" type="gdouble" />
-      <field cname="offset_y" type="gdouble" />
-      <field cname="grid_color" type="DiaColor" />
-      <field cname="grid_bg" type="DiaColor" />
-      <field cname="solver" type="DiaSolver*" />
-      <field cname="idle_id" type="guint" />
-      <field cname="stack_depth" type="guint" />
-      <field cname="undo" type="GSList*" />
-      <field cname="redo" type="GSList*" />
-      <field cname="undo_entry" type="gpointer" />
+      <field cname="static_extents" bits="1" type="gboolean"/>
+      <field cname="snap_to_grid" bits="1" type="gboolean"/>
+      <field cname="allow_undo" bits="1" type="gboolean"/>
+      <field cname="allow_state_requests" bits="1" type="gboolean"/>
+      <field cname="in_undo" bits="1" type="gboolean"/>
+      <field cname="extents" type="DiaRectangle"/>
+      <field cname="root" type="DiaCanvasItem*"/>
+      <field cname="interval_x" type="gdouble"/>
+      <field cname="interval_y" type="gdouble"/>
+      <field cname="offset_x" type="gdouble"/>
+      <field cname="offset_y" type="gdouble"/>
+      <field cname="grid_color" type="DiaColor"/>
+      <field cname="grid_bg" type="DiaColor"/>
+      <field cname="solver" type="DiaSolver*"/>
+      <field cname="idle_id" type="guint"/>
+      <field cname="stack_depth" type="guint"/>
+      <field cname="undo" type="GSList*"/>
+      <field cname="redo" type="GSList*"/>
+      <field cname="undo_entry" type="gpointer"/>
       <signal name="ExtentsChanged" cname="extents_changed" when="FIRST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
-          <parameter type="DiaRectangle*" name="new_extents" />
+          <parameter type="DiaCanvas*" name="canvas"/>
+          <parameter type="DiaRectangle*" name="new_extents"/>
         </parameters>
       </signal>
       <signal name="RedrawView" cname="redraw_view" when="FIRST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
+          <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </signal>
       <signal name="Undo" cname="undo" when="FIRST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
+          <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </signal>
-      <property name="SnapToGrid" cname="snap_to_grid" type="gboolean" readable="true" writeable="true" />
-      <property name="StaticExtents" cname="static_extents" type="gboolean" readable="true" writeable="true" />
-      <property name="Extents" cname="extents" type="DiaRectangle" readable="true" writeable="true" />
-      <property name="AllowStateRequests" cname="allow_state_requests" type="gboolean" readable="true" writeable="true" />
-      <property name="AllowUndo" cname="allow_undo" type="gboolean" readable="true" writeable="true" />
-      <property name="GridIntX" cname="grid_int_x" type="gdouble" readable="true" writeable="true" />
-      <property name="GridIntY" cname="grid_int_y" type="gdouble" readable="true" writeable="true" />
-      <property name="GridOfsX" cname="grid_ofs_x" type="gdouble" readable="true" writeable="true" />
-      <property name="GridOfsY" cname="grid_ofs_y" type="gdouble" readable="true" writeable="true" />
-      <property name="GridColor" cname="grid_color" type="ulong" readable="true" writeable="true" />
-      <property name="GridBg" cname="grid_bg" type="ulong" readable="true" writeable="true" />
-      <property name="PangoLayout" cname="pango_layout" type="PangoLayout" readable="true" />
+      <property name="SnapToGrid" cname="snap_to_grid" type="gboolean" readable="true" writeable="true"/>
+      <property name="StaticExtents" cname="static_extents" type="gboolean" readable="true" writeable="true"/>
+      <property name="Extents" cname="extents" type="DiaRectangle" readable="true" writeable="true"/>
+      <property name="AllowStateRequests" cname="allow_state_requests" type="gboolean" readable="true" writeable="true"/>
+      <property name="AllowUndo" cname="allow_undo" type="gboolean" readable="true" writeable="true"/>
+      <property name="GridIntX" cname="grid_int_x" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridIntY" cname="grid_int_y" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridOfsX" cname="grid_ofs_x" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridOfsY" cname="grid_ofs_y" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridColor" cname="grid_color" type="ulong" readable="true" writeable="true"/>
+      <property name="GridBg" cname="grid_bg" type="ulong" readable="true" writeable="true"/>
+      <property name="PangoLayout" cname="pango_layout" type="PangoLayout" readable="true"/>
       <method name="AddConstraint" cname="dia_canvas_add_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*" name="c" />
+          <parameter type="DiaConstraint*" name="c"/>
         </parameters>
       </method>
       <method name="ClearRedo" cname="dia_canvas_clear_redo">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="ClearUndo" cname="dia_canvas_clear_undo">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="FindObjectsInRectangle" cname="dia_canvas_find_objects_in_rectangle">
-        <return-type type="GList*" />
+        <return-type type="GList*"/>
         <parameters>
-          <parameter type="DiaRectangle*" name="rect" />
+          <parameter type="DiaRectangle*" name="rect"/>
         </parameters>
       </method>
       <method name="GetPangoLayout" cname="dia_canvas_get_pango_layout" shared="true">
-        <return-type type="PangoLayout*" />
+        <return-type type="PangoLayout*"/>
       </method>
       <method name="GetRedoDepth" cname="dia_canvas_get_redo_depth">
-        <return-type type="guint" />
+        <return-type type="guint"/>
       </method>
       <method name="GetType" cname="dia_canvas_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="GetUndoDepth" cname="dia_canvas_get_undo_depth">
-        <return-type type="guint" />
+        <return-type type="guint"/>
       </method>
       <method name="GetUndoStackDepth" cname="dia_canvas_get_undo_stack_depth">
-        <return-type type="guint" />
+        <return-type type="guint"/>
       </method>
       <method name="GlueHandle" cname="dia_canvas_glue_handle">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="const-DiaHandle*" name="handle" />
-          <parameter type="const-gdouble" name="dest_x" />
-          <parameter type="const-gdouble" name="dest_y" />
-          <parameter type="gdouble*" name="glue_x" />
-          <parameter type="gdouble*" name="glue_y" />
-          <parameter type="DiaCanvasItem**" name="item" />
+          <parameter type="const-DiaHandle*" name="handle"/>
+          <parameter type="const-gdouble" name="dest_x"/>
+          <parameter type="const-gdouble" name="dest_y"/>
+          <parameter type="gdouble*" name="glue_x"/>
+          <parameter type="gdouble*" name="glue_y"/>
+          <parameter type="DiaCanvasItem**" name="item"/>
         </parameters>
       </method>
-      <constructor cname="dia_canvas_new" />
+      <constructor cname="dia_canvas_new"/>
       <method name="PopRedo" cname="dia_canvas_pop_redo">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="PopUndo" cname="dia_canvas_pop_undo">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Preserve" cname="dia_canvas_preserve">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
-          <parameter type="const-GValue*" name="value" />
-          <parameter type="gboolean" name="last" />
+          <parameter type="GObject*" name="object"/>
+          <parameter type="const-char*" name="property_name"/>
+          <parameter type="const-GValue*" name="value"/>
+          <parameter type="gboolean" name="last"/>
         </parameters>
       </method>
       <method name="PreserveProperty" cname="dia_canvas_preserve_property">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
+          <parameter type="GObject*" name="object"/>
+          <parameter type="const-char*" name="property_name"/>
         </parameters>
       </method>
       <method name="PreservePropertyLast" cname="dia_canvas_preserve_property_last">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
+          <parameter type="GObject*" name="object"/>
+          <parameter type="const-char*" name="property_name"/>
         </parameters>
       </method>
       <method name="PushUndo" cname="dia_canvas_push_undo">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-char*" name="optional_comment" />
+          <parameter type="const-char*" name="optional_comment"/>
         </parameters>
       </method>
       <method name="RedrawViews" cname="dia_canvas_redraw_views">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="RemoveConstraint" cname="dia_canvas_remove_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*" name="c" />
+          <parameter type="DiaConstraint*" name="c"/>
         </parameters>
       </method>
       <method name="RequestUpdate" cname="dia_canvas_request_update">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="ResolveNow" cname="dia_canvas_resolve_now">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="SetExtents" cname="dia_canvas_set_extents">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-DiaRectangle*" name="extents" />
+          <parameter type="const-DiaRectangle*" name="extents"/>
         </parameters>
       </method>
       <method name="SetSnapToGrid" cname="dia_canvas_set_snap_to_grid">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gboolean" name="snap" />
+          <parameter type="gboolean" name="snap"/>
         </parameters>
       </method>
       <method name="SetStaticExtents" cname="dia_canvas_set_static_extents">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gboolean" name="stat" />
+          <parameter type="gboolean" name="stat"/>
         </parameters>
       </method>
       <method name="SetUndoStackDepth" cname="dia_canvas_set_undo_stack_depth">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="guint" name="depth" />
+          <parameter type="guint" name="depth"/>
         </parameters>
       </method>
-      <method cname="dia_canvas_snap_to_grid" name="SnapToGridCoordinates">
-        <return-type type="void" />
+      <method name="SnapToGrid" cname="dia_canvas_snap_to_grid">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x" />
-          <parameter type="gdouble*" name="y" />
+          <parameter type="gdouble*" name="x"/>
+          <parameter type="gdouble*" name="y"/>
         </parameters>
       </method>
       <method name="UpdateNow" cname="dia_canvas_update_now">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
     </object>
-    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement" disabledefaultconstructor="1">
-      <field cname="color" type="DiaColor" />
-      <field cname="fill_color" type="DiaColor" />
-      <field cname="border_width" type="gdouble" />
-      <field cname="border" type="DiaShape*" />
-      <property name="Color" cname="color" type="ulong" readable="true" writeable="true" />
-      <property name="FillColor" cname="fill_color" type="ulong" readable="true" writeable="true" />
-      <property name="BorderWidth" cname="border_width" type="gdouble" readable="true" writeable="true" />
-      <property name="BgColor" cname="bg_color" type="ulong" readable="true" writeable="true" />
-      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true" />
+    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement">
+      <field cname="color" type="DiaColor"/>
+      <field cname="fill_color" type="DiaColor"/>
+      <field cname="border_width" type="gdouble"/>
+      <field cname="border" type="DiaShape*"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="FillColor" cname="fill_color" type="ulong" readable="true" writeable="true"/>
+      <property name="BorderWidth" cname="border_width" type="gdouble" readable="true" writeable="true"/>
+      <property name="BgColor" cname="bg_color" type="ulong" readable="true" writeable="true"/>
+      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_canvas_box_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </object>
     <object name="CanvasElement" cname="DiaCanvasElement" parent="DiaCanvasItem">
-      <field cname="width" type="gdouble" />
-      <field cname="height" type="gdouble" />
-      <field cname="min_width" type="gdouble" />
-      <field cname="min_height" type="gdouble" />
-      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true" />
-      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true" />
-      <property name="MinWidth" cname="min_width" type="gdouble" readable="true" writeable="true" />
-      <property name="MinHeight" cname="min_height" type="gdouble" readable="true" writeable="true" />
+      <field cname="width" type="gdouble"/>
+      <field cname="height" type="gdouble"/>
+      <field cname="min_width" type="gdouble"/>
+      <field cname="min_height" type="gdouble"/>
+      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true"/>
+      <property name="MinWidth" cname="min_width" type="gdouble" readable="true" writeable="true"/>
+      <property name="MinHeight" cname="min_height" type="gdouble" readable="true" writeable="true"/>
       <method name="AlignHandles" cname="dia_canvas_element_align_handles">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetOppositeHandle" cname="dia_canvas_element_get_opposite_handle" shared="true">
-        <return-type type="DiaHandle*" />
+        <return-type type="DiaHandle*"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_element_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </object>
     <object name="CanvasGroup" cname="DiaCanvasGroup" parent="DiaCanvasItem">
-      <field cname="children" type="GList*" />
+      <field cname="children" type="GList*"/>
       <implements>
-        <interface cname="DiaCanvasGroupable" />
+        <interface cname="DiaCanvasGroupable"/>
       </implements>
       <method name="CreateItem" cname="dia_canvas_group_create_item">
-        <return-type type="DiaCanvasItem*" />
+        <return-type type="DiaCanvasItem*"/>
         <parameters>
-          <parameter type="GType" name="type" />
-          <parameter type="const-gchar*" name="first_arg_name" />
-          <parameter ellipsis="true" />
+          <parameter type="GType" name="type"/>
+          <parameter type="const-gchar*" name="first_arg_name"/>
+          <parameter ellipsis="true"/>
         </parameters>
       </method>
       <method name="Foreach" cname="dia_canvas_group_foreach" shared="true">
-        <return-type type="gint" />
+        <return-type type="gint"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="DiaCanvasItemForeachFunc" name="func" />
-          <parameter type="gpointer" name="data" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="DiaCanvasItemForeachFunc" name="func"/>
+          <parameter type="gpointer" name="data"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_group_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="LowerItem" cname="dia_canvas_group_lower_item">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gint" name="pos" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gint" name="pos"/>
         </parameters>
       </method>
       <method name="RaiseItem" cname="dia_canvas_group_raise_item">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gint" name="pos" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gint" name="pos"/>
         </parameters>
       </method>
     </object>
-    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement" disabledefaultconstructor="1">
-      <field cname="pixbuf" type="GdkPixbuf*" />
-      <field cname="clip" type="//DiaShape*" />
-      <field cname="image" type="DiaShape*" />
-      <property name="Image" cname="image" type="GdkPixbuf" readable="true" writeable="true" />
+    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement">
+      <field cname="pixbuf" type="GdkPixbuf*"/>
+      <field cname="clip" type="//DiaShape*"/>
+      <field cname="image" type="DiaShape*"/>
+      <property name="Image" cname="image" type="GdkPixbuf" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_canvas_image_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </object>
     <object name="CanvasItem" cname="DiaCanvasItem" parent="GObject">
-      <field cname="flags" type="guint32" />
-      <field cname="canvas" type="DiaCanvas*" />
-      <field cname="parent" type="DiaCanvasItem*" />
-      <field cname="bounds" type="DiaRectangle" />
-      <field cname="handles" type="GList*" />
-      <field cname="connected_handles" type="GList*" />
-      <field cname="affine" array_len="6" type="gdouble" />
+      <field cname="flags" type="guint32"/>
+      <field cname="canvas" type="DiaCanvas*"/>
+      <field cname="parent" type="DiaCanvasItem*"/>
+      <field cname="bounds" type="DiaRectangle"/>
+      <field cname="handles" type="GList*"/>
+      <field cname="connected_handles" type="GList*"/>
+      <field cname="affine" array_len="6" type="gdouble"/>
       <signal name="NeedUpdate" cname="need_update" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </signal>
       <signal name="ZOrder" cname="z_order" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gint" name="positions" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gint" name="positions"/>
         </parameters>
       </signal>
       <signal name="StateChanged" cname="state_changed" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gint" name="new_state" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gint" name="new_state"/>
         </parameters>
       </signal>
       <signal name="HasState" cname="has_state" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gint" name="state" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gint" name="state"/>
         </parameters>
       </signal>
-      <signal name="Event" cname="event" when="LAST" hidden="1">
-        <return-type type="gboolean" />
+      <signal name="Event" cname="event" when="LAST">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="DiaEvent*" name="event" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="DiaEvent*" name="event"/>
         </parameters>
       </signal>
-      <signal cname="move" when="LAST" name="Moved">
-        <return-type type="void" />
+      <signal name="Move" cname="move" when="LAST">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
-          <parameter type="gboolean" name="interactive" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
+          <parameter type="gboolean" name="interactive"/>
         </parameters>
       </signal>
-      <signal cname="connect" when="LAST" name="Connected">
-        <return-type type="gboolean" />
+      <signal name="Connect" cname="connect" when="LAST">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </signal>
-      <signal cname="disconnect" when="LAST" name="Disconnected">
-        <return-type type="gboolean" />
+      <signal name="Disconnect" cname="disconnect" when="LAST">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaCanvasItem*" name="item"/>
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </signal>
-      <property name="Parent" cname="parent" readable="true" writeable="true" type="DiaCanvasGroup" />
-      <property name="Visible" cname="visible" type="gboolean" readable="true" writeable="true" />
-      <property name="Connect" cname="connect" type="DiaHandle" writeable="true" />
-      <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true" />
-      <property name="Affine" cname="affine" type="DiaAffine" readable="true" writeable="true" />
-      <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true" writeable="true" />
+      <property name="Parent" cname="parent" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Visible" cname="visible" type="gboolean" readable="true" writeable="true"/>
+      <property name="Connect" cname="connect" type="DiaHandle" writeable="true"/>
+      <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true"/>
+      <property name="Affine" cname="affine" type="DiaAffine" readable="true" writeable="true"/>
+      <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true" writeable="true"/>
       <method name="AffineGetType" cname="dia_canvas_item_affine_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="AffineI2w" cname="dia_canvas_item_affine_i2w">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" array="true" name="affine" />
+          <parameter type="gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="AffinePointI2w" cname="dia_canvas_item_affine_point_i2w">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x" pass_as="out" />
-          <parameter type="gdouble*" name="y" pass_as="out" />
+          <parameter type="gdouble*" name="x"/>
+          <parameter type="gdouble*" name="y"/>
         </parameters>
       </method>
       <method name="AffinePointW2i" cname="dia_canvas_item_affine_point_w2i">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x" pass_as="out" />
-          <parameter type="gdouble*" name="y" pass_as="out" />
+          <parameter type="gdouble*" name="x"/>
+          <parameter type="gdouble*" name="y"/>
         </parameters>
       </method>
       <method name="AffineW2i" cname="dia_canvas_item_affine_w2i">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" array="true" name="affine" />
+          <parameter type="gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="BbAffine" cname="dia_canvas_item_bb_affine">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" array="true" name="affine" />
-          <parameter type="gdouble*" name="x1" />
-          <parameter type="gdouble*" name="y1" />
-          <parameter type="gdouble*" name="x2" />
-          <parameter type="gdouble*" name="y2" />
+          <parameter type="gdouble" array="true" name="affine"/>
+          <parameter type="gdouble*" name="x1"/>
+          <parameter type="gdouble*" name="y1"/>
+          <parameter type="gdouble*" name="x2"/>
+          <parameter type="gdouble*" name="y2"/>
         </parameters>
       </method>
-      <method cname="dia_canvas_item_connect" name="MakeConnect">
-        <return-type type="gboolean" />
+      <method name="Connect" cname="dia_canvas_item_connect">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </method>
       <method name="Create" cname="dia_canvas_item_create" shared="true">
-        <return-type type="DiaCanvasItem*" />
+        <return-type type="DiaCanvasItem*"/>
         <parameters>
-          <parameter type="GType" name="type" />
-          <parameter type="const-gchar*" name="first_arg_name" />
-          <parameter ellipsis="true" />
+          <parameter type="GType" name="type"/>
+          <parameter type="const-gchar*" name="first_arg_name"/>
+          <parameter ellipsis="true"/>
         </parameters>
       </method>
-      <method cname="dia_canvas_item_disconnect" name="MakeDisconnect">
-        <return-type type="gboolean" />
+      <method name="Disconnect" cname="dia_canvas_item_disconnect">
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </method>
       <method name="DisconnectHandles" cname="dia_canvas_item_disconnect_handles">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="ExpandBounds" cname="dia_canvas_item_expand_bounds">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="d" />
+          <parameter type="gdouble" name="d"/>
         </parameters>
       </method>
       <method name="Flip" cname="dia_canvas_item_flip">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gboolean" name="horz" />
-          <parameter type="gboolean" name="vert" />
+          <parameter type="gboolean" name="horz"/>
+          <parameter type="gboolean" name="vert"/>
         </parameters>
       </method>
       <method name="Focus" cname="dia_canvas_item_focus">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetShapeIter" cname="dia_canvas_item_get_shape_iter">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_item_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="Grab" cname="dia_canvas_item_grab">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="HandlesGetType" cname="dia_canvas_item_handles_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="Identity" cname="dia_canvas_item_identity">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Invisible" cname="dia_canvas_item_invisible">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="IsFocused" cname="dia_canvas_item_is_focused">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="IsGrabbed" cname="dia_canvas_item_is_grabbed">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="IsSelected" cname="dia_canvas_item_is_selected">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="IsVisible" cname="dia_canvas_item_is_visible">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="Move" cname="dia_canvas_item_move">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
         </parameters>
       </method>
       <method name="MoveInteractive" cname="dia_canvas_item_move_interactive">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
         </parameters>
       </method>
       <method name="PreserveProperty" cname="dia_canvas_item_preserve_property">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-gchar*" name="property_name" />
+          <parameter type="const-gchar*" name="property_name"/>
         </parameters>
       </method>
       <method name="RequestUpdate" cname="dia_canvas_item_request_update">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Rotate" cname="dia_canvas_item_rotate">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="degrees" />
+          <parameter type="gdouble" name="degrees"/>
         </parameters>
       </method>
       <method name="Scale" cname="dia_canvas_item_scale">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="sx" />
-          <parameter type="gdouble" name="sy" />
+          <parameter type="gdouble" name="sx"/>
+          <parameter type="gdouble" name="sy"/>
         </parameters>
       </method>
       <method name="Select" cname="dia_canvas_item_select">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="SetChildOf" cname="dia_canvas_item_set_child_of">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="new_parent" />
+          <parameter type="DiaCanvasItem*" name="new_parent"/>
         </parameters>
       </method>
       <method name="SetParent" cname="dia_canvas_item_set_parent">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter name="new_parent" type="DiaCanvasGroup" />
+          <parameter type="DiaCanvasItem*" name="new_parent"/>
         </parameters>
       </method>
       <method name="ShapeNext" cname="dia_canvas_item_shape_next">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
       <method name="ShapeValue" cname="dia_canvas_item_shape_value">
-        <return-type type="DiaShape*" />
+        <return-type type="DiaShape*"/>
         <parameters>
-          <parameter type="DiaCanvasIter*" name="iter" />
+          <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
       <method name="ShearX" cname="dia_canvas_item_shear_x">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
         </parameters>
       </method>
       <method name="ShearY" cname="dia_canvas_item_shear_y">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
         </parameters>
       </method>
       <method name="Unfocus" cname="dia_canvas_item_unfocus">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Ungrab" cname="dia_canvas_item_ungrab">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Unselect" cname="dia_canvas_item_unselect">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="UpdateChild" cname="dia_canvas_item_update_child">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="child" />
-          <parameter type="gdouble" array="true" name="affine" />
+          <parameter type="DiaCanvasItem*" name="child"/>
+          <parameter type="gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="UpdateHandlesI2w" cname="dia_canvas_item_update_handles_i2w">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="UpdateHandlesW2i" cname="dia_canvas_item_update_handles_w2i">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="UpdateNow" cname="dia_canvas_item_update_now">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
-      <method cname="dia_canvas_item_visible" name="MakeVisible">
-        <return-type type="void" />
+      <method name="Visible" cname="dia_canvas_item_visible">
+        <return-type type="void"/>
       </method>
     </object>
-    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem" disabledefaultconstructor="1">
-      <field cname="line_width" type="gdouble" />
-      <field cname="color" type="DiaColor" />
-      <field cname="cap" type="DiaCapStyle" />
-      <field cname="join" type="DiaJoinStyle" />
-      <field cname="cyclic" type="gboolean" />
-      <field cname="orthogonal" type="gboolean" />
-      <field cname="horizontal" type="gboolean" />
-      <field cname="n_dash" type="guint" />
-      <field cname="dash" type="gdouble*" />
-      <field cname="has_head" type="gboolean" />
-      <field cname="has_tail" type="gboolean" />
-      <field cname="head_a" type="gdouble" />
-      <field cname="head_b" type="gdouble" />
-      <field cname="head_c" type="gdouble" />
-      <field cname="head_d" type="gdouble" />
-      <field cname="tail_a" type="gdouble" />
-      <field cname="tail_b" type="gdouble" />
-      <field cname="tail_c" type="gdouble" />
-      <field cname="tail_d" type="gdouble" />
-      <field cname="head_color" type="DiaColor" />
-      <field cname="tail_color" type="DiaColor" />
-      <field cname="head_fill_color" type="DiaColor" />
-      <field cname="tail_fill_color" type="DiaColor" />
-      <field cname="line" type="DiaShape*" />
-      <field cname="head_arrow" type="DiaShape*" />
-      <field cname="tail_arrow" type="DiaShape*" />
-      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true" />
-      <property name="Color" cname="color" type="ulong" readable="true" writeable="true" />
-      <property name="Cap" cname="cap" type="DiaCapStyle" readable="true" writeable="true" />
-      <property name="Join" cname="join" type="DiaJoinStyle" readable="true" writeable="true" />
-      <property name="Cyclic" cname="cyclic" type="gboolean" readable="true" writeable="true" />
-      <property name="Orthogonal" cname="orthogonal" type="gboolean" readable="true" writeable="true" />
-      <property name="Horizontal" cname="horizontal" type="gboolean" readable="true" writeable="true" />
-      <property name="AddPoint" cname="add_point" type="DiaPoint" writeable="true" />
-      <property name="AddSegment" cname="add_segment" type="guint" writeable="true" />
-      <property name="DelSegment" cname="del_segment" type="guint" writeable="true" />
-      <property name="Dash" cname="dash" type="DiaDashStyle" readable="true" writeable="true" hidden="1" />
-      <property name="HeadPos" cname="head_pos" type="DiaPoint" readable="true" writeable="true" />
-      <property name="TailPos" cname="tail_pos" type="DiaPoint" readable="true" writeable="true" />
-      <property name="HasHead" cname="has_head" type="gboolean" readable="true" writeable="true" />
-      <property name="HasTail" cname="has_tail" type="gboolean" readable="true" writeable="true" />
-      <property name="HeadColor" cname="head_color" type="ulong" readable="true" writeable="true" />
-      <property name="TailColor" cname="tail_color" type="ulong" readable="true" writeable="true" />
-      <property name="HeadFillColor" cname="head_fill_color" type="ulong" readable="true" writeable="true" />
-      <property name="TailFillColor" cname="tail_fill_color" type="ulong" readable="true" writeable="true" />
-      <property name="HeadA" cname="head_a" type="gdouble" readable="true" writeable="true" />
-      <property name="HeadB" cname="head_b" type="gdouble" readable="true" writeable="true" />
-      <property name="HeadC" cname="head_c" type="gdouble" readable="true" writeable="true" />
-      <property name="HeadD" cname="head_d" type="gdouble" readable="true" writeable="true" />
-      <property name="TailA" cname="tail_a" type="gdouble" readable="true" writeable="true" />
-      <property name="TailB" cname="tail_b" type="gdouble" readable="true" writeable="true" />
-      <property name="TailC" cname="tail_c" type="gdouble" readable="true" writeable="true" />
-      <property name="TailD" cname="tail_d" type="gdouble" readable="true" writeable="true" />
+    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem">
+      <field cname="line_width" type="gdouble"/>
+      <field cname="color" type="DiaColor"/>
+      <field cname="cap" type="DiaCapStyle"/>
+      <field cname="join" type="DiaJoinStyle"/>
+      <field cname="cyclic" type="gboolean"/>
+      <field cname="orthogonal" type="gboolean"/>
+      <field cname="horizontal" type="gboolean"/>
+      <field cname="n_dash" type="guint"/>
+      <field cname="dash" type="gdouble*"/>
+      <field cname="has_head" type="gboolean"/>
+      <field cname="has_tail" type="gboolean"/>
+      <field cname="head_a" type="gdouble"/>
+      <field cname="head_b" type="gdouble"/>
+      <field cname="head_c" type="gdouble"/>
+      <field cname="head_d" type="gdouble"/>
+      <field cname="tail_a" type="gdouble"/>
+      <field cname="tail_b" type="gdouble"/>
+      <field cname="tail_c" type="gdouble"/>
+      <field cname="tail_d" type="gdouble"/>
+      <field cname="head_color" type="DiaColor"/>
+      <field cname="tail_color" type="DiaColor"/>
+      <field cname="head_fill_color" type="DiaColor"/>
+      <field cname="tail_fill_color" type="DiaColor"/>
+      <field cname="line" type="DiaShape*"/>
+      <field cname="head_arrow" type="DiaShape*"/>
+      <field cname="tail_arrow" type="DiaShape*"/>
+      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="Cap" cname="cap" type="DiaCapStyle" readable="true" writeable="true"/>
+      <property name="Join" cname="join" type="DiaJoinStyle" readable="true" writeable="true"/>
+      <property name="Cyclic" cname="cyclic" type="gboolean" readable="true" writeable="true"/>
+      <property name="Orthogonal" cname="orthogonal" type="gboolean" readable="true" writeable="true"/>
+      <property name="Horizontal" cname="horizontal" type="gboolean" readable="true" writeable="true"/>
+      <property name="AddPoint" cname="add_point" type="DiaPoint" writeable="true"/>
+      <property name="AddSegment" cname="add_segment" type="guint" writeable="true"/>
+      <property name="DelSegment" cname="del_segment" type="guint" writeable="true"/>
+      <property name="Dash" cname="dash" type="DiaDashStyle" readable="true" writeable="true"/>
+      <property name="HeadPos" cname="head_pos" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="TailPos" cname="tail_pos" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="HasHead" cname="has_head" type="gboolean" readable="true" writeable="true"/>
+      <property name="HasTail" cname="has_tail" type="gboolean" readable="true" writeable="true"/>
+      <property name="HeadColor" cname="head_color" type="ulong" readable="true" writeable="true"/>
+      <property name="TailColor" cname="tail_color" type="ulong" readable="true" writeable="true"/>
+      <property name="HeadFillColor" cname="head_fill_color" type="ulong" readable="true" writeable="true"/>
+      <property name="TailFillColor" cname="tail_fill_color" type="ulong" readable="true" writeable="true"/>
+      <property name="HeadA" cname="head_a" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadB" cname="head_b" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadC" cname="head_c" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadD" cname="head_d" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailA" cname="tail_a" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailB" cname="tail_b" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailC" cname="tail_c" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailD" cname="tail_d" type="gdouble" readable="true" writeable="true"/>
       <method name="GetClosestSegment" cname="dia_canvas_line_get_closest_segment">
-        <return-type type="gint" />
+        <return-type type="gint"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_line_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </object>
-    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem" disabledefaultconstructor="1">
-      <field cname="text" type="GString*" />
-      <field cname="width" type="gdouble" />
-      <field cname="height" type="gdouble" />
-      <field cname="cursor" type="gint" />
-      <field cname="wrap_word" type="gboolean" />
-      <field cname="multiline" type="gboolean" />
-      <field cname="editable" type="gboolean" />
-      <field cname="markup" type="gboolean" />
-      <field cname="text_shape" type="DiaShape*" />
-      <property name="Font" cname="font" type="PangoFontDescription" writeable="true" />
-      <property name="Text" cname="text" type="gchar*" readable="true" writeable="true" />
-      <property name="Cursor" cname="cursor" type="gint" readable="true" writeable="true" />
-      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true" />
-      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true" />
-      <property name="Editable" cname="editable" type="gboolean" readable="true" writeable="true" />
-      <property name="Markup" cname="markup" type="gboolean" readable="true" writeable="true" />
-      <property name="WrapWord" cname="wrap_word" type="gboolean" readable="true" writeable="true" />
-      <property name="Multiline" cname="multiline" type="gboolean" readable="true" writeable="true" />
-      <property name="Color" cname="color" type="ulong" readable="true" writeable="true" />
-      <property name="Alignment" cname="alignment" type="PangoAlignment" readable="true" writeable="true" />
-      <property name="Layout" cname="layout" type="PangoLayout" readable="true" />
+    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem">
+      <field cname="text" type="GString*"/>
+      <field cname="width" type="gdouble"/>
+      <field cname="height" type="gdouble"/>
+      <field cname="cursor" type="gint"/>
+      <field cname="wrap_word" type="gboolean"/>
+      <field cname="multiline" type="gboolean"/>
+      <field cname="editable" type="gboolean"/>
+      <field cname="markup" type="gboolean"/>
+      <field cname="text_shape" type="DiaShape*"/>
+      <property name="Font" cname="font" type="PangoFontDescription" writeable="true"/>
+      <property name="Text" cname="text" type="gchar*" readable="true" writeable="true"/>
+      <property name="Cursor" cname="cursor" type="gint" readable="true" writeable="true"/>
+      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true"/>
+      <property name="Editable" cname="editable" type="gboolean" readable="true" writeable="true"/>
+      <property name="Markup" cname="markup" type="gboolean" readable="true" writeable="true"/>
+      <property name="WrapWord" cname="wrap_word" type="gboolean" readable="true" writeable="true"/>
+      <property name="Multiline" cname="multiline" type="gboolean" readable="true" writeable="true"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="Alignment" cname="alignment" type="PangoAlignment" readable="true" writeable="true"/>
+      <property name="Layout" cname="layout" type="PangoLayout" readable="true"/>
       <implements>
-        <interface cname="DiaCanvasEditable" />
+        <interface cname="DiaCanvasEditable"/>
       </implements>
       <method name="GetType" cname="dia_canvas_text_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </object>
     <object name="CanvasView" cname="DiaCanvasView" parent="GnomeCanvas">
-      <field cname="canvas" type="DiaCanvas*" />
-      <field cname="root_item" type="DiaCanvasViewItem*" />
-      <field cname="handle_layer" type="GnomeCanvasItem*" />
-      <field cname="tool" type="DiaTool*" />
-      <field cname="selector" type="GnomeCanvasItem*" />
-      <field cname="focus_item" type="DiaCanvasViewItem*" />
-      <field cname="selected_items" type="GList*" />
-      <field cname="text_view" type="GtkTextView*" />
-      <field cname="edited_item" type="DiaCanvasViewItem*" />
-      <field cname="edited_shape" type="DiaShapeText*" />
-      <field cname="text_buffer_changed_id" type="guint" />
-      <field cname="last_item" type="DiaCanvasViewItem*" />
-      <field cname="old_x" type="gdouble" />
-      <field cname="old_y" type="gdouble" />
-      <field cname="button_press_handled" type="gboolean" />
-      <signal cname="focus_item" when="FIRST" name="FocusedItem">
-        <return-type type="void" />
+      <field cname="canvas" type="DiaCanvas*"/>
+      <field cname="root_item" type="DiaCanvasViewItem*"/>
+      <field cname="handle_layer" type="GnomeCanvasItem*"/>
+      <field cname="tool" type="DiaTool*"/>
+      <field cname="selector" type="GnomeCanvasItem*"/>
+      <field cname="focus_item" type="DiaCanvasViewItem*"/>
+      <field cname="selected_items" type="GList*"/>
+      <field cname="text_view" type="GtkTextView*"/>
+      <field cname="edited_item" type="DiaCanvasViewItem*"/>
+      <field cname="edited_shape" type="DiaShapeText*"/>
+      <field cname="text_buffer_changed_id" type="guint"/>
+      <field cname="last_item" type="DiaCanvasViewItem*"/>
+      <field cname="old_x" type="gdouble"/>
+      <field cname="old_y" type="gdouble"/>
+      <field cname="button_press_handled" type="gboolean"/>
+      <signal name="FocusItem" cname="focus_item" when="FIRST">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="DiaCanvasViewItem*" name="focused_item" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="DiaCanvasViewItem*" name="focused_item"/>
         </parameters>
       </signal>
-      <signal cname="select_item" when="FIRST" name="SelectedItem">
-        <return-type type="void" />
+      <signal name="SelectItem" cname="select_item" when="FIRST">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="DiaCanvasViewItem*" name="selected_item" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="DiaCanvasViewItem*" name="selected_item"/>
         </parameters>
       </signal>
-      <signal cname="unselect_item" when="FIRST" name="UnselectedItem">
-        <return-type type="void" />
+      <signal name="UnselectItem" cname="unselect_item" when="FIRST">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="DiaCanvasViewItem*" name="unselected_item" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="DiaCanvasViewItem*" name="unselected_item"/>
         </parameters>
       </signal>
-      <property name="Aa" cname="aa" type="gboolean" readable="true" writeable="true" />
-      <property name="Canvas" cname="canvas" type="DiaCanvas" readable="true" writeable="true" />
-      <property name="ActiveView" cname="active_view" type="DiaCanvasView" readable="true" />
-      <property name="Zoom" cname="zoom" type="gdouble" readable="true" writeable="true" />
-      <property name="Tool" cname="tool" type="DiaTool" readable="true" writeable="true" />
+      <property name="Aa" cname="aa" type="gboolean" readable="true" writeable="true"/>
+      <property name="Canvas" cname="canvas" type="DiaCanvas" readable="true" writeable="true"/>
+      <property name="ActiveView" cname="active_view" type="DiaCanvasView" readable="true"/>
+      <property name="Zoom" cname="zoom" type="gdouble" readable="true" writeable="true"/>
+      <property name="Tool" cname="tool" type="DiaTool" readable="true" writeable="true"/>
       <method name="AaNew" cname="dia_canvas_view_aa_new" shared="true">
-        <return-type type="GtkWidget*" />
+        <return-type type="GtkWidget*"/>
       </method>
       <method name="EditingDone" cname="dia_canvas_view_editing_done">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="FindViewItem" cname="dia_canvas_view_find_view_item">
-        <return-type type="DiaCanvasViewItem*" />
+        <return-type type="DiaCanvasViewItem*"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="Focus" cname="dia_canvas_view_focus">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
         </parameters>
       </method>
       <method name="GdkEventToDiaEvent" cname="dia_canvas_view_gdk_event_to_dia_event">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="GdkEvent*" name="gdk_event" />
-          <parameter type="DiaEvent*" name="dia_event" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="GdkEvent*" name="gdk_event"/>
+          <parameter type="DiaEvent*" name="dia_event"/>
         </parameters>
       </method>
       <method name="GetActiveView" cname="dia_canvas_view_get_active_view" shared="true">
-        <return-type type="DiaCanvasView*" />
+        <return-type type="DiaCanvasView*"/>
       </method>
       <method name="GetCanvas" cname="dia_canvas_view_get_canvas">
-        <return-type type="DiaCanvas*" />
+        <return-type type="DiaCanvas*"/>
       </method>
       <method name="GetType" cname="dia_canvas_view_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
       <method name="GetZoom" cname="dia_canvas_view_get_zoom">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
       </method>
       <method name="Move" cname="dia_canvas_view_move">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="dx" />
-          <parameter type="gdouble" name="dy" />
-          <parameter type="DiaCanvasViewItem*" name="originator" />
+          <parameter type="gdouble" name="dx"/>
+          <parameter type="gdouble" name="dy"/>
+          <parameter type="DiaCanvasViewItem*" name="originator"/>
         </parameters>
       </method>
       <constructor cname="dia_canvas_view_new">
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
-          <parameter type="gboolean" name="aa" />
+          <parameter type="DiaCanvas*" name="canvas"/>
+          <parameter type="gboolean" name="aa"/>
         </parameters>
       </constructor>
       <method name="RequestUpdate" cname="dia_canvas_view_request_update">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Select" cname="dia_canvas_view_select">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
         </parameters>
       </method>
       <method name="SelectAll" cname="dia_canvas_view_select_all">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="SelectRectangle" cname="dia_canvas_view_select_rectangle">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaRectangle*" name="rect" />
+          <parameter type="DiaRectangle*" name="rect"/>
         </parameters>
       </method>
       <method name="SetCanvas" cname="dia_canvas_view_set_canvas">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
+          <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </method>
       <method name="SetTool" cname="dia_canvas_view_set_tool">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
+          <parameter type="DiaTool*" name="tool"/>
         </parameters>
       </method>
       <method name="SetZoom" cname="dia_canvas_view_set_zoom">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="zoom" />
+          <parameter type="gdouble" name="zoom"/>
         </parameters>
       </method>
       <method name="StartEditing" cname="dia_canvas_view_start_editing">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="DiaShapeText*" name="text_shape" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="DiaShapeText*" name="text_shape"/>
         </parameters>
       </method>
       <method name="Unselect" cname="dia_canvas_view_unselect">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
         </parameters>
       </method>
       <method name="UnselectAll" cname="dia_canvas_view_unselect_all">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="UnsetCanvas" cname="dia_canvas_view_unset_canvas">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
     </object>
     <object name="CanvasViewItem" cname="DiaCanvasViewItem" parent="GnomeCanvasGroup">
-      <field cname="item" type="DiaCanvasItem*" />
-      <field cname="gc" type="GdkGC*" />
-      <field cname="n_handle_pos" type="guint" />
-      <field cname="handle_pos" type="gint*" />
-      <field cname="redraw_area" type="ArtUta*" />
-      <field cname="event_time" type="guint32" />
-      <property name="Item" cname="item" type="DiaCanvasItem" readable="true" writeable="true" />
-      <property name="Interactive" cname="interactive" type="gboolean" readable="true" writeable="true" />
-      <property name="Visible" cname="visible" type="gboolean" readable="true" writeable="true" />
+      <field cname="item" type="DiaCanvasItem*"/>
+      <field cname="gc" type="GdkGC*"/>
+      <field cname="n_handle_pos" type="guint"/>
+      <field cname="handle_pos" type="gint*"/>
+      <field cname="redraw_area" type="ArtUta*"/>
+      <field cname="event_time" type="guint32"/>
+      <property name="Item" cname="item" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Interactive" cname="interactive" type="gboolean" readable="true" writeable="true"/>
+      <property name="Visible" cname="visible" type="gboolean" readable="true" writeable="true"/>
       <method name="AddItems" cname="dia_canvas_view_item_add_items" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="GnomeCanvasGroup*" name="vitem" />
-          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="GnomeCanvasGroup*" name="vitem"/>
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="EmitEvent" cname="dia_canvas_view_item_emit_event">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaEvent*" name="event" />
+          <parameter type="DiaEvent*" name="event"/>
         </parameters>
       </method>
       <method name="Foreach" cname="dia_canvas_view_item_foreach">
-        <return-type type="gint" />
+        <return-type type="gint"/>
         <parameters>
-          <parameter type="DiaCanvasViewItemForeachFunc" name="func" />
-          <parameter type="gpointer" name="data" />
+          <parameter type="DiaCanvasViewItemForeachFunc" name="func"/>
+          <parameter type="gpointer" name="data"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_canvas_view_item_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
       <method name="IsFocused" cname="dia_canvas_view_item_is_focused">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="IsSelected" cname="dia_canvas_view_item_is_selected">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <method name="RequestRedrawUta" cname="dia_canvas_view_item_request_redraw_uta">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="ArtUta*" name="uta" />
+          <parameter type="ArtUta*" name="uta"/>
         </parameters>
       </method>
     </object>
     <object name="Constraint" cname="DiaConstraint" parent="GObject">
-      <field cname="immutable" type="guint" />
-      <field cname="expr" type="DiaExpression*" />
+      <field cname="immutable" type="guint"/>
+      <field cname="expr" type="DiaExpression*"/>
       <signal name="NeedResolve" cname="need_resolve" when="LAST">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
-          <parameter type="DiaVariable*" name="var" />
+          <parameter type="DiaConstraint*raint" name="arg1"/>
+          <parameter type="DiaVariable*" name="var"/>
         </parameters>
       </signal>
       <method name="Add" cname="dia_constraint_add">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaVariable*" name="var" />
-          <parameter type="gdouble" name="c" />
+          <parameter type="DiaVariable*" name="var"/>
+          <parameter type="gdouble" name="c"/>
         </parameters>
       </method>
-      <method name="AddExpression" cname="dia_constraint_add_expression" hidden="1">
-        <return-type type="void" />
+      <method name="AddExpression" cname="dia_constraint_add_expression">
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaExpression*" name="expr" />
+          <parameter type="DiaExpression*" name="expr"/>
         </parameters>
       </method>
       <method name="Foreach" cname="dia_constraint_foreach">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraintFunc" name="func" />
-          <parameter type="gpointer" name="user_data" />
+          <parameter type="DiaConstraintFunc" name="func"/>
+          <parameter type="gpointer" name="user_data"/>
         </parameters>
       </method>
       <method name="Freeze" cname="dia_constraint_freeze">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetType" cname="dia_constraint_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="HasVariables" cname="dia_constraint_has_variables">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
-      <constructor cname="dia_constraint_new" />
+      <constructor cname="dia_constraint_new"/>
       <method name="Optimize" cname="dia_constraint_optimize">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Solve" cname="dia_constraint_solve">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="DiaVariable*" name="var" />
+          <parameter type="DiaVariable*" name="var"/>
         </parameters>
       </method>
       <method name="Thaw" cname="dia_constraint_thaw">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Times" cname="dia_constraint_times">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="c" />
+          <parameter type="gdouble" name="c"/>
         </parameters>
       </method>
     </object>
     <object name="ExportSVG" cname="DiaExportSVG" parent="GObject">
-      <field cname="svg" type="GString*" />
+      <field cname="svg" type="GString*"/>
       <method name="GetType" cname="dia_export_svg_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
-      <constructor cname="dia_export_svg_new" />
+      <constructor cname="dia_export_svg_new"/>
       <method name="Render" cname="dia_export_svg_render">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvas*" name="canvas" />
+          <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </method>
       <method name="Save" cname="dia_export_svg_save">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-gchar*" name="filename" />
-          <parameter type="GError**" name="error" />
+          <parameter type="const-gchar*" name="filename"/>
+          <parameter type="GError**" name="error"/>
         </parameters>
       </method>
     </object>
     <object name="Handle" cname="DiaHandle" parent="GObject">
-      <field cname="movable" bits="1" type="gint" />
-      <field cname="connectable" bits="1" type="gint" />
-      <field cname="need_update_w2i" bits="1" type="gint" />
-      <field cname="owner" type="DiaCanvasItem*" />
-      <field cname="pos_i" type="DiaSPoint" />
-      <field cname="pos_w" type="DiaSPoint" />
-      <field cname="connected_to" type="DiaCanvasItem*" />
-      <field cname="constraints" type="GSList*" />
-      <property name="Owner" cname="owner" type="DiaCanvasItem" readable="true" writeable="true" />
-      <property name="Index" cname="index" type="gint" readable="true" writeable="true" />
-      <property name="PosI" cname="pos_i" type="DiaPoint" readable="true" writeable="true" />
-      <property name="PosW" cname="pos_w" type="DiaPoint" readable="true" writeable="true" />
-      <property name="Strength" cname="strength" type="DiaStrength" readable="true" writeable="true" />
-      <property name="Connect" cname="connect" type="DiaCanvasItem" readable="true" writeable="true" />
-      <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" readable="true" writeable="true" />
-      <property name="ConnectedTo" cname="connected_to" type="DiaCanvasItem" readable="true" />
-      <property name="Connectable" cname="connectable" type="gboolean" readable="true" writeable="true" />
-      <property name="Movable" cname="movable" type="gboolean" readable="true" writeable="true" />
+      <field cname="movable" bits="1" type="gint"/>
+      <field cname="connectable" bits="1" type="gint"/>
+      <field cname="need_update_w2i" bits="1" type="gint"/>
+      <field cname="owner" type="DiaCanvasItem*"/>
+      <field cname="pos_i" type="DiaSPoint"/>
+      <field cname="pos_w" type="DiaSPoint"/>
+      <field cname="connected_to" type="DiaCanvasItem*"/>
+      <field cname="constraints" type="GSList*"/>
+      <property name="Owner" cname="owner" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Index" cname="index" type="gint" readable="true" writeable="true"/>
+      <property name="PosI" cname="pos_i" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="PosW" cname="pos_w" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="Strength" cname="strength" type="DiaStrength" readable="true" writeable="true"/>
+      <property name="Connect" cname="connect" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="ConnectedTo" cname="connected_to" type="DiaCanvasItem" readable="true"/>
+      <property name="Connectable" cname="connectable" type="gboolean" readable="true" writeable="true"/>
+      <property name="Movable" cname="movable" type="gboolean" readable="true" writeable="true"/>
       <method name="AddConstraint" cname="dia_handle_add_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*" name="c" />
+          <parameter type="DiaConstraint*" name="c"/>
         </parameters>
       </method>
       <method name="AddLineConstraint" cname="dia_handle_add_line_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaHandle*" name="end" />
-          <parameter type="DiaHandle*" name="middle" />
+          <parameter type="DiaHandle*" name="end"/>
+          <parameter type="DiaHandle*" name="middle"/>
         </parameters>
       </method>
       <method name="AddPointConstraint" cname="dia_handle_add_point_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaHandle*" name="host" />
+          <parameter type="DiaHandle*" name="host"/>
         </parameters>
       </method>
       <method name="DistanceI" cname="dia_handle_distance_i">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="DistanceW" cname="dia_handle_distance_w">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="GetPosI" cname="dia_handle_get_pos_i">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x" />
-          <parameter type="gdouble*" name="y" />
+          <parameter type="gdouble*" name="x"/>
+          <parameter type="gdouble*" name="y"/>
         </parameters>
       </method>
       <method name="GetPosW" cname="dia_handle_get_pos_w">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x" />
-          <parameter type="gdouble*" name="y" />
+          <parameter type="gdouble*" name="x"/>
+          <parameter type="gdouble*" name="y"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_handle_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <constructor cname="dia_handle_new">
         <parameters>
-          <parameter type="DiaCanvasItem*" name="owner" />
+          <parameter type="DiaCanvasItem*" name="owner"/>
         </parameters>
       </constructor>
       <constructor cname="dia_handle_new_with_pos">
         <parameters>
-          <parameter type="DiaCanvasItem*" name="owner" />
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="DiaCanvasItem*" name="owner"/>
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </constructor>
       <method name="RemoveAllConstraints" cname="dia_handle_remove_all_constraints">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="RemoveConstraint" cname="dia_handle_remove_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*" name="c" />
+          <parameter type="DiaConstraint*" name="c"/>
         </parameters>
       </method>
       <method name="RequestUpdateW2i" cname="dia_handle_request_update_w2i">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="SetPosI" cname="dia_handle_set_pos_i">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="SetPosIAffine" cname="dia_handle_set_pos_i_affine">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
-          <parameter type="const-gdouble" array="true" name="affine" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
+          <parameter type="const-gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="SetPosW" cname="dia_handle_set_pos_w">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="x" />
-          <parameter type="gdouble" name="y" />
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="SetStrength" cname="dia_handle_set_strength">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaStrength" name="strength" />
+          <parameter type="DiaStrength" name="strength"/>
         </parameters>
       </method>
       <method name="Size" cname="dia_handle_size" shared="true">
-        <return-type type="gint" />
+        <return-type type="gint"/>
       </method>
       <method name="UpdateI2wAffine" cname="dia_handle_update_i2w_affine">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-gdouble" array="true" name="affine" />
+          <parameter type="const-gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="UpdateW2i" cname="dia_handle_update_w2i">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="UpdateW2iAffine" cname="dia_handle_update_w2i_affine">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="const-gdouble" array="true" name="affine" />
+          <parameter type="const-gdouble" array="true" name="affine"/>
         </parameters>
       </method>
     </object>
     <object name="HandleLayer" cname="DiaHandleLayer" parent="GnomeCanvasItem">
-      <field cname="grabbed_handle" type="DiaHandle*" />
-      <field cname="glue_distance" type="gint" />
-      <field cname="closest_handle" type="DiaHandle*" />
-      <field cname="closest_item" type="DiaCanvasViewItem*" />
-      <field cname="cp_item" type="DiaCanvasItem*" />
-      <field cname="event_mask" type="DiaEventMask" />
+      <field cname="grabbed_handle" type="DiaHandle*"/>
+      <field cname="glue_distance" type="gint"/>
+      <field cname="closest_handle" type="DiaHandle*"/>
+      <field cname="closest_item" type="DiaCanvasViewItem*"/>
+      <field cname="cp_item" type="DiaCanvasItem*"/>
+      <field cname="event_mask" type="DiaEventMask"/>
       <method name="GetPosC" cname="dia_handle_layer_get_pos_c">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaHandle*" name="handle" />
-          <parameter type="gint*" name="x" />
-          <parameter type="gint*" name="y" />
+          <parameter type="DiaHandle*" name="handle"/>
+          <parameter type="gint*" name="x"/>
+          <parameter type="gint*" name="y"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_handle_layer_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
       <method name="GrabHandle" cname="dia_handle_layer_grab_handle">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </method>
       <method name="RequestRedraw" cname="dia_handle_layer_request_redraw">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gint" name="x" />
-          <parameter type="gint" name="y" />
+          <parameter type="gint" name="x"/>
+          <parameter type="gint" name="y"/>
         </parameters>
       </method>
       <method name="RequestRedrawHandle" cname="dia_handle_layer_request_redraw_handle">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </method>
       <method name="UpdateHandles" cname="dia_handle_layer_update_handles">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
         </parameters>
       </method>
     </object>
-    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool" hidden="1">
-      <field cname="object_type" type="GType" />
-      <field cname="n_params" type="guint" />
-      <field cname="params" type="GParameter*" />
-      <field cname="new_object" type="DiaCanvasItem*" />
+    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool">
+      <field cname="object_type" type="GType"/>
+      <field cname="n_params" type="guint"/>
+      <field cname="params" type="GParameter*"/>
+      <field cname="new_object" type="DiaCanvasItem*"/>
       <method name="GetType" cname="dia_placement_tool_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
       <constructor cname="dia_placement_tool_new">
         <parameters>
-          <parameter type="GType" name="object_type" />
-          <parameter type="const-gchar*" name="first_property_name" />
-          <parameter ellipsis="true" />
+          <parameter type="GType" name="object_type"/>
+          <parameter type="const-gchar*" name="first_property_name"/>
+          <parameter ellipsis="true"/>
         </parameters>
       </constructor>
     </object>
     <object name="Selector" cname="DiaSelector" parent="GnomeCanvasItem">
-      <field cname="x1" type="gdouble" />
-      <field cname="y1" type="gdouble" />
-      <field cname="x2" type="gdouble" />
-      <field cname="y2" type="gdouble" />
-      <property name="X1" cname="x1" type="gint" readable="true" writeable="true" />
-      <property name="Y1" cname="y1" type="gint" readable="true" writeable="true" />
-      <property name="X2" cname="x2" type="gint" readable="true" writeable="true" />
-      <property name="Y2" cname="y2" type="gint" readable="true" writeable="true" />
+      <field cname="x1" type="gdouble"/>
+      <field cname="y1" type="gdouble"/>
+      <field cname="x2" type="gdouble"/>
+      <field cname="y2" type="gdouble"/>
+      <property name="X1" cname="x1" type="gint" readable="true" writeable="true"/>
+      <property name="Y1" cname="y1" type="gint" readable="true" writeable="true"/>
+      <property name="X2" cname="x2" type="gint" readable="true" writeable="true"/>
+      <property name="Y2" cname="y2" type="gint" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_selector_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
     </object>
     <object name="Solver" cname="DiaSolver" parent="GObject">
-      <field cname="constraints" type="GList*" />
-      <field cname="marked_cons" type="GSList*" />
-      <field cname="marked_vars" type="GSList*" />
-      <field cname="current_con" type="DiaConstraint*" />
+      <field cname="constraints" type="GList*"/>
+      <field cname="marked_cons" type="GSList*"/>
+      <field cname="marked_vars" type="GSList*"/>
+      <field cname="current_con" type="DiaConstraint*"/>
       <method name="AddConstraint" cname="dia_solver_add_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
+          <parameter type="DiaConstraint*raint" name="arg1"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_solver_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
-      <constructor cname="dia_solver_new" />
+      <constructor cname="dia_solver_new"/>
       <method name="RemoveConstraint" cname="dia_solver_remove_constraint">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
+          <parameter type="DiaConstraint*raint" name="arg1"/>
         </parameters>
       </method>
       <method name="Resolve" cname="dia_solver_resolve">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
     </object>
     <object name="StackTool" cname="DiaStackTool" parent="DiaTool">
-      <field cname="stack" type="GList*" />
+      <field cname="stack" type="GList*"/>
       <method name="GetType" cname="dia_stack_tool_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
-      <constructor cname="dia_stack_tool_new" />
+      <constructor cname="dia_stack_tool_new"/>
       <method name="Pop" cname="dia_stack_tool_pop">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Push" cname="dia_stack_tool_push">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
+          <parameter type="DiaTool*" name="tool"/>
         </parameters>
       </method>
     </object>
     <object name="Tool" cname="DiaTool" parent="GObject">
       <signal name="ButtonPressEvent" cname="button_press_event" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventButton*" name="button" />
+          <parameter type="DiaTool*" name="tool"/>
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventButton*" name="button"/>
         </parameters>
       </signal>
       <signal name="ButtonReleaseEvent" cname="button_release_event" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventButton*" name="button" />
+          <parameter type="DiaTool*" name="tool"/>
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventButton*" name="button"/>
         </parameters>
       </signal>
       <signal name="MotionNotifyEvent" cname="motion_notify_event" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventMotion*" name="button" />
+          <parameter type="DiaTool*" name="tool"/>
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventMotion*" name="button"/>
         </parameters>
       </signal>
       <signal name="KeyPressEvent" cname="key_press_event" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventKey*" name="button" />
+          <parameter type="DiaTool*" name="tool"/>
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventKey*" name="button"/>
         </parameters>
       </signal>
       <signal name="KeyReleaseEvent" cname="key_release_event" when="LAST">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaTool*" name="tool" />
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventKey*" name="button" />
+          <parameter type="DiaTool*" name="tool"/>
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventKey*" name="button"/>
         </parameters>
       </signal>
       <method name="ButtonPress" cname="dia_tool_button_press">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventButton*" name="event" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventButton*" name="event"/>
         </parameters>
       </method>
       <method name="ButtonRelease" cname="dia_tool_button_release">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventButton*" name="event" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventButton*" name="event"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_tool_get_type" shared="true">
-        <return-type type="GtkType" />
+        <return-type type="GtkType"/>
       </method>
       <method name="KeyPress" cname="dia_tool_key_press">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventKey*" name="event" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventKey*" name="event"/>
         </parameters>
       </method>
       <method name="KeyRelease" cname="dia_tool_key_release">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventKey*" name="event" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventKey*" name="event"/>
         </parameters>
       </method>
       <method name="MotionNotify" cname="dia_tool_motion_notify">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaCanvasView*" name="view" />
-          <parameter type="GdkEventMotion*" name="event" />
+          <parameter type="DiaCanvasView*" name="view"/>
+          <parameter type="GdkEventMotion*" name="event"/>
         </parameters>
       </method>
     </object>
     <boxed name="CanvasIter" cname="DiaCanvasIter">
-      <field cname="data" array_len="3" type="gpointer" />
-      <field cname="destroy_func" type="GDestroyNotify" hidden="1" />
-      <field cname="stamp" type="gint" />
+      <field cname="data" array_len="3" type="gpointer"/>
+      <field cname="destroy_func" type="GDestroyNotify"/>
+      <field cname="stamp" type="gint"/>
       <method name="Destroy" cname="dia_canvas_iter_destroy">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetType" cname="dia_canvas_iter_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="Init" cname="dia_canvas_iter_init">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
     </boxed>
-    <alias name="Color" cname="DiaColor" type="guint32" />
-    <boxed name="DashStyle" cname="DiaDashStyle" hidden="1">
-      <field cname="n_dash" type="guint" />
-      <field cname="dash" array_len="1" type="gdouble" />
+    <alias name="Color" cname="DiaColor" type="guint32"/>
+    <boxed name="DashStyle" cname="DiaDashStyle">
+      <field cname="n_dash" type="guint"/>
+      <field cname="dash" array_len="1" type="gdouble"/>
       <method name="Free" cname="dia_dash_style_free">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetType" cname="dia_dash_style_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <constructor cname="dia_dash_style_new">
         <parameters>
-          <parameter type="gint" name="n_dash" />
-          <parameter type="gdouble" name="dash1" />
-          <parameter ellipsis="true" />
+          <parameter type="gint" name="n_dash"/>
+          <parameter type="gdouble" name="dash1"/>
+          <parameter ellipsis="true"/>
         </parameters>
       </constructor>
     </boxed>
     <struct name="EventButton" cname="DiaEventButton">
-      <field cname="type" type="DiaEventType" />
-      <field cname="x" type="gdouble" />
-      <field cname="y" type="gdouble" />
-      <field cname="modifier" type="DiaEventMask" />
-      <field cname="button" type="guint" />
+      <field cname="type" type="DiaEventType"/>
+      <field cname="x" type="gdouble"/>
+      <field cname="y" type="gdouble"/>
+      <field cname="modifier" type="DiaEventMask"/>
+      <field cname="button" type="guint"/>
     </struct>
     <struct name="EventFocus" cname="DiaEventFocus">
-      <field cname="type" type="DiaEventType" />
+      <field cname="type" type="DiaEventType"/>
     </struct>
     <struct name="EventKey" cname="DiaEventKey">
-      <field cname="type" type="DiaEventType" />
-      <field cname="keyval" type="guint" />
-      <field cname="length" type="gint" />
-      <field cname="string" type="gchar*" />
-      <field cname="modifier" type="DiaEventMask" />
+      <field cname="type" type="DiaEventType"/>
+      <field cname="keyval" type="guint"/>
+      <field cname="length" type="gint"/>
+      <field cname="string" type="gchar*"/>
+      <field cname="modifier" type="DiaEventMask"/>
     </struct>
     <struct name="EventMotion" cname="DiaEventMotion">
-      <field cname="type" type="DiaEventType" />
-      <field cname="x" type="gdouble" />
-      <field cname="y" type="gdouble" />
-      <field cname="modifier" type="DiaEventMask" />
-      <field cname="dx" type="gdouble" />
-      <field cname="dy" type="gdouble" />
+      <field cname="type" type="DiaEventType"/>
+      <field cname="x" type="gdouble"/>
+      <field cname="y" type="gdouble"/>
+      <field cname="modifier" type="DiaEventMask"/>
+      <field cname="dx" type="gdouble"/>
+      <field cname="dy" type="gdouble"/>
     </struct>
-    <struct name="Expression" cname="DiaExpression" hidden="1">
-      <field cname="len" type="guint" />
-      <field cname="variable" type="struct-_DiaExpressionElem{DiaVariable*" />
-      <field cname="constant" type="gdouble" />
-      <field cname="elem" array_len="1" type="}" />
+    <struct name="Expression" cname="DiaExpression">
+      <field cname="len" type="guint"/>
+      <field cname="variable" type="struct-_DiaExpressionElem{DiaVariable*"/>
+      <field cname="constant" type="gdouble"/>
+      <field cname="elem" array_len="1" type="}"/>
       <method name="Add" cname="dia_expression_add">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaVariable*" name="var" />
-          <parameter type="gdouble" name="c" />
+          <parameter type="DiaVariable*" name="var"/>
+          <parameter type="gdouble" name="c"/>
         </parameters>
       </method>
       <method name="AddExpression" cname="dia_expression_add_expression">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaExpression*" name="expr2" />
+          <parameter type="DiaExpression*" name="expr2"/>
         </parameters>
       </method>
       <method name="Free" cname="dia_expression_free">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Times" cname="dia_expression_times">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="c" />
+          <parameter type="gdouble" name="c"/>
         </parameters>
       </method>
     </struct>
     <boxed name="Point" cname="DiaPoint">
-      <field cname="x" type="gdouble" />
-      <field cname="y" type="gdouble" />
+      <field cname="x" type="gdouble"/>
+      <field cname="y" type="gdouble"/>
       <method name="GetType" cname="dia_point_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </boxed>
     <boxed name="Rectangle" cname="DiaRectangle">
-      <field cname="left" type="gdouble" />
-      <field cname="top" type="gdouble" />
-      <field cname="right" type="gdouble" />
-      <field cname="bottom" type="gdouble" />
+      <field cname="left" type="gdouble"/>
+      <field cname="top" type="gdouble"/>
+      <field cname="right" type="gdouble"/>
+      <field cname="bottom" type="gdouble"/>
       <method name="AddPoint" cname="dia_rectangle_add_point">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaPoint*" name="p" />
+          <parameter type="DiaPoint*" name="p"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_rectangle_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
     </boxed>
     <struct name="SPoint" cname="DiaSPoint">
-      <field cname="x" type="DiaVariable*" />
-      <field cname="y" type="DiaVariable*" />
+      <field cname="x" type="DiaVariable*"/>
+      <field cname="y" type="DiaVariable*"/>
     </struct>
     <struct name="Shape" cname="DiaShape">
-      <field cname="type" type="DiaShapeType" />
-      <field cname="visibility" bits="4" type="guint" />
-      <field cname="update_cnt" bits="28" type="guint" />
-      <field cname="color" type="DiaColor" />
-      <field cname="view_info" type="GList*" />
+      <field cname="type" type="DiaShapeType"/>
+      <field cname="visibility" bits="4" type="guint"/>
+      <field cname="update_cnt" bits="28" type="guint"/>
+      <field cname="color" type="DiaColor"/>
+      <field cname="view_info" type="GList*"/>
       <method name="ArtGetPangoLayout" cname="dia_shape_art_get_pango_layout" shared="true">
-        <return-type type="PangoLayout*" />
+        <return-type type="PangoLayout*"/>
       </method>
       <method name="ArtRender" cname="dia_shape_art_render">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="GnomeCanvasBuf*" name="buf" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="GnomeCanvasBuf*" name="buf"/>
         </parameters>
       </method>
       <method name="ArtUpdate" cname="dia_shape_art_update">
-        <return-type type="ArtSVP*" />
+        <return-type type="ArtSVP*"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="double*" name="affine" />
-          <parameter type="ArtSVP*" name="clip" />
-          <parameter type="int" name="flags" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="double*" name="affine"/>
+          <parameter type="ArtSVP*" name="clip"/>
+          <parameter type="int" name="flags"/>
         </parameters>
       </method>
       <method name="Bezier" cname="dia_shape_bezier">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaPoint*" name="start" />
-          <parameter type="guint" name="n_points" />
-          <parameter type="DiaPoint*" name="points" />
+          <parameter type="DiaPoint*" name="start"/>
+          <parameter type="guint" name="n_points"/>
+          <parameter type="DiaPoint*" name="points"/>
         </parameters>
       </method>
       <method name="Clip" cname="dia_shape_clip">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="left" />
-          <parameter type="gdouble" name="top" />
-          <parameter type="gdouble" name="right" />
-          <parameter type="gdouble" name="bottom" />
+          <parameter type="gdouble" name="left"/>
+          <parameter type="gdouble" name="top"/>
+          <parameter type="gdouble" name="right"/>
+          <parameter type="gdouble" name="bottom"/>
         </parameters>
       </method>
       <method name="Ellipse" cname="dia_shape_ellipse">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaPoint*" name="center" />
-          <parameter type="gdouble" name="width" />
-          <parameter type="gdouble" name="height" />
+          <parameter type="DiaPoint*" name="center"/>
+          <parameter type="gdouble" name="width"/>
+          <parameter type="gdouble" name="height"/>
         </parameters>
       </method>
       <method name="Free" cname="dia_shape_free">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="GetBounds" cname="dia_shape_get_bounds">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaRectangle*" name="bb" />
+          <parameter type="DiaRectangle*" name="bb"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_shape_get_type">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
-      <method name="GetViewInfo" cname="dia_shape_get_view_info" hidden="1">
-        <return-type type="DiaShapeViewInfo*" />
+      <method name="GetViewInfo" cname="dia_shape_get_view_info">
+        <return-type type="DiaShapeViewInfo*"/>
         <parameters>
-          <parameter type="gpointer" name="key" />
+          <parameter type="gpointer" name="key"/>
         </parameters>
       </method>
       <method name="Image" cname="dia_shape_image">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="GdkPixbuf*" name="image" />
+          <parameter type="GdkPixbuf*" name="image"/>
         </parameters>
       </method>
       <method name="IsUpdated" cname="dia_shape_is_updated">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Line" cname="dia_shape_line">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaPoint*" name="start" />
-          <parameter type="DiaPoint*" name="end" />
+          <parameter type="DiaPoint*" name="start"/>
+          <parameter type="DiaPoint*" name="end"/>
         </parameters>
       </method>
       <method name="NeedUpdate" cname="dia_shape_need_update">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
       </method>
       <constructor cname="dia_shape_new">
         <parameters>
-          <parameter type="DiaShapeType" name="type" />
+          <parameter type="DiaShapeType" name="type"/>
         </parameters>
       </constructor>
       <method name="Polygon" cname="dia_shape_polygon">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="guint" name="n_points" />
-          <parameter type="DiaPoint*" name="points" />
+          <parameter type="guint" name="n_points"/>
+          <parameter type="DiaPoint*" name="points"/>
         </parameters>
       </method>
       <method name="Polyline" cname="dia_shape_polyline">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="guint" name="n_points" />
-          <parameter type="DiaPoint*" name="points" />
+          <parameter type="guint" name="n_points"/>
+          <parameter type="DiaPoint*" name="points"/>
         </parameters>
       </method>
       <method name="Rectangle" cname="dia_shape_rectangle">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaPoint*" name="upper_left" />
-          <parameter type="DiaPoint*" name="lower_right" />
+          <parameter type="DiaPoint*" name="upper_left"/>
+          <parameter type="DiaPoint*" name="lower_right"/>
         </parameters>
       </method>
       <method name="RequestUpdate" cname="dia_shape_request_update">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="SetColor" cname="dia_shape_set_color">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaColor" name="color" />
+          <parameter type="DiaColor" name="color"/>
         </parameters>
       </method>
       <method name="SetVisibility" cname="dia_shape_set_visibility">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShapeVisibility" name="vis" />
+          <parameter type="DiaShapeVisibility" name="vis"/>
         </parameters>
       </method>
       <method name="Text" cname="dia_shape_text">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="PangoFontDescription*" name="font_desc" />
-          <parameter type="const-gchar*" name="text" />
+          <parameter type="PangoFontDescription*" name="font_desc"/>
+          <parameter type="const-gchar*" name="text"/>
         </parameters>
       </method>
       <method name="XGetPangoLayout" cname="dia_shape_x_get_pango_layout" shared="true">
-        <return-type type="PangoLayout*" />
+        <return-type type="PangoLayout*"/>
       </method>
       <method name="XRender" cname="dia_shape_x_render">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="GdkDrawable*" name="drawable" />
-          <parameter type="int" name="x" />
-          <parameter type="int" name="y" />
-          <parameter type="int" name="width" />
-          <parameter type="int" name="height" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="GdkDrawable*" name="drawable"/>
+          <parameter type="int" name="x"/>
+          <parameter type="int" name="y"/>
+          <parameter type="int" name="width"/>
+          <parameter type="int" name="height"/>
         </parameters>
       </method>
       <method name="XUpdate" cname="dia_shape_x_update">
-        <return-type type="ArtSVP*" />
+        <return-type type="ArtSVP*"/>
         <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item" />
-          <parameter type="double*" name="affine" />
-          <parameter type="ArtSVP*" name="clip_path" />
-          <parameter type="int" name="flags" />
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="double*" name="affine"/>
+          <parameter type="ArtSVP*" name="clip_path"/>
+          <parameter type="int" name="flags"/>
         </parameters>
       </method>
     </struct>
     <boxed name="ShapeBezier" cname="DiaShapeBezier">
-      <field cname="shape" type="DiaShape" />
-      <field cname="bpath" type="ArtBpath*" />
-      <field cname="fill_color" type="DiaColor" />
-      <field cname="fill" bits="8" type="guint" />
-      <field cname="join" bits="8" type="guint" />
-      <field cname="cap" bits="8" type="guint" />
-      <field cname="cyclic" bits="1" type="guint" />
-      <field cname="clipping" bits="1" type="guint" />
-      <field cname="line_width" type="gdouble" />
-      <field cname="dash" type="ArtVpathDash" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="bpath" type="ArtBpath*"/>
+      <field cname="fill_color" type="DiaColor"/>
+      <field cname="fill" bits="8" type="guint"/>
+      <field cname="join" bits="8" type="guint"/>
+      <field cname="cap" bits="8" type="guint"/>
+      <field cname="cyclic" bits="1" type="guint"/>
+      <field cname="clipping" bits="1" type="guint"/>
+      <field cname="line_width" type="gdouble"/>
+      <field cname="dash" type="ArtVpathDash"/>
       <method name="GetType" cname="dia_shape_bezier_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="IsClipPath" cname="dia_shape_bezier_is_clip_path" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
+          <parameter type="DiaShape*" name="shape"/>
         </parameters>
       </method>
       <method name="SetCap" cname="dia_shape_bezier_set_cap" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaCapStyle" name="cap" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaCapStyle" name="cap"/>
         </parameters>
       </method>
       <method name="SetClipping" cname="dia_shape_bezier_set_clipping" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="clipping" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="clipping"/>
         </parameters>
       </method>
       <method name="SetCyclic" cname="dia_shape_bezier_set_cyclic" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="cyclic" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="cyclic"/>
         </parameters>
       </method>
       <method name="SetDash" cname="dia_shape_bezier_set_dash" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="offset" />
-          <parameter type="guint" name="n_dash" />
-          <parameter type="gdouble*" name="dash" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="offset"/>
+          <parameter type="guint" name="n_dash"/>
+          <parameter type="gdouble*" name="dash"/>
         </parameters>
       </method>
       <method name="SetFill" cname="dia_shape_bezier_set_fill" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaFillStyle" name="fill" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaFillStyle" name="fill"/>
         </parameters>
       </method>
       <method name="SetFillColor" cname="dia_shape_bezier_set_fill_color" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaColor" name="fill_color" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaColor" name="fill_color"/>
         </parameters>
       </method>
       <method name="SetJoin" cname="dia_shape_bezier_set_join" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaJoinStyle" name="join" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaJoinStyle" name="join"/>
         </parameters>
       </method>
       <method name="SetLineWidth" cname="dia_shape_bezier_set_line_width" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="line_width" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="line_width"/>
         </parameters>
       </method>
     </boxed>
     <struct name="ShapeClip" cname="DiaShapeClip">
-      <field cname="shape" type="DiaShape" />
-      <field cname="clip" type="ArtDRect" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="clip" type="ArtDRect"/>
     </struct>
     <boxed name="ShapeEllipse" cname="DiaShapeEllipse">
-      <field cname="shape" type="DiaShape" />
-      <field cname="center" type="DiaPoint" />
-      <field cname="width" type="gdouble" />
-      <field cname="height" type="gdouble" />
-      <field cname="fill_color" type="DiaColor" />
-      <field cname="fill" bits="8" type="guint" />
-      <field cname="clipping" bits="1" type="guint" />
-      <field cname="line_width" type="gdouble" />
-      <field cname="dash" type="ArtVpathDash" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="center" type="DiaPoint"/>
+      <field cname="width" type="gdouble"/>
+      <field cname="height" type="gdouble"/>
+      <field cname="fill_color" type="DiaColor"/>
+      <field cname="fill" bits="8" type="guint"/>
+      <field cname="clipping" bits="1" type="guint"/>
+      <field cname="line_width" type="gdouble"/>
+      <field cname="dash" type="ArtVpathDash"/>
       <method name="GetType" cname="dia_shape_ellipse_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="IsClipPath" cname="dia_shape_ellipse_is_clip_path" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
+          <parameter type="DiaShape*" name="shape"/>
         </parameters>
       </method>
       <method name="SetClipping" cname="dia_shape_ellipse_set_clipping" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="clipping" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="clipping"/>
         </parameters>
       </method>
       <method name="SetDash" cname="dia_shape_ellipse_set_dash" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="offset" />
-          <parameter type="guint" name="n_dash" />
-          <parameter type="gdouble*" name="dash" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="offset"/>
+          <parameter type="guint" name="n_dash"/>
+          <parameter type="gdouble*" name="dash"/>
         </parameters>
       </method>
       <method name="SetFill" cname="dia_shape_ellipse_set_fill" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaFillStyle" name="fill" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaFillStyle" name="fill"/>
         </parameters>
       </method>
       <method name="SetFillColor" cname="dia_shape_ellipse_set_fill_color" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaColor" name="fill_color" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaColor" name="fill_color"/>
         </parameters>
       </method>
       <method name="SetLineWidth" cname="dia_shape_ellipse_set_line_width" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="line_width" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="line_width"/>
         </parameters>
       </method>
     </boxed>
     <boxed name="ShapeImage" cname="DiaShapeImage">
-      <field cname="shape" type="DiaShape" />
-      <field cname="pixbuf" type="GdkPixbuf*" />
-      <field cname="affine" array_len="6" type="gdouble" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="pixbuf" type="GdkPixbuf*"/>
+      <field cname="affine" array_len="6" type="gdouble"/>
       <method name="GetType" cname="dia_shape_image_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="SetAffine" cname="dia_shape_image_set_affine" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" array="true" name="affine" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="SetPos" cname="dia_shape_image_set_pos" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaPoint*" name="pos" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaPoint*" name="pos"/>
         </parameters>
       </method>
     </boxed>
     <boxed name="ShapePath" cname="DiaShapePath">
-      <field cname="shape" type="DiaShape" />
-      <field cname="vpath" type="ArtVpath*" />
-      <field cname="fill_color" type="DiaColor" />
-      <field cname="fill" bits="8" type="guint" />
-      <field cname="join" bits="8" type="guint" />
-      <field cname="cap" bits="8" type="guint" />
-      <field cname="cyclic" bits="1" type="guint" />
-      <field cname="clipping" bits="1" type="guint" />
-      <field cname="line_width" type="gdouble" />
-      <field cname="dash" type="ArtVpathDash" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="vpath" type="ArtVpath*"/>
+      <field cname="fill_color" type="DiaColor"/>
+      <field cname="fill" bits="8" type="guint"/>
+      <field cname="join" bits="8" type="guint"/>
+      <field cname="cap" bits="8" type="guint"/>
+      <field cname="cyclic" bits="1" type="guint"/>
+      <field cname="clipping" bits="1" type="guint"/>
+      <field cname="line_width" type="gdouble"/>
+      <field cname="dash" type="ArtVpathDash"/>
       <method name="GetType" cname="dia_shape_path_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="IsClipPath" cname="dia_shape_path_is_clip_path" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
+          <parameter type="DiaShape*" name="shape"/>
         </parameters>
       </method>
       <method name="SetCap" cname="dia_shape_path_set_cap" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaCapStyle" name="cap" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaCapStyle" name="cap"/>
         </parameters>
       </method>
       <method name="SetClipping" cname="dia_shape_path_set_clipping" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="clipping" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="clipping"/>
         </parameters>
       </method>
       <method name="SetCyclic" cname="dia_shape_path_set_cyclic" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="cyclic" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="cyclic"/>
         </parameters>
       </method>
       <method name="SetDash" cname="dia_shape_path_set_dash" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="offset" />
-          <parameter type="guint" name="n_dash" />
-          <parameter type="gdouble*" name="dash" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="offset"/>
+          <parameter type="guint" name="n_dash"/>
+          <parameter type="gdouble*" name="dash"/>
         </parameters>
       </method>
       <method name="SetFill" cname="dia_shape_path_set_fill" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaFillStyle" name="fill" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaFillStyle" name="fill"/>
         </parameters>
       </method>
       <method name="SetFillColor" cname="dia_shape_path_set_fill_color" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaColor" name="fill_color" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaColor" name="fill_color"/>
         </parameters>
       </method>
       <method name="SetJoin" cname="dia_shape_path_set_join" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaJoinStyle" name="join" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaJoinStyle" name="join"/>
         </parameters>
       </method>
       <method name="SetLineWidth" cname="dia_shape_path_set_line_width" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="line_width" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="line_width"/>
         </parameters>
       </method>
     </boxed>
     <boxed name="ShapeText" cname="DiaShapeText">
-      <field cname="shape" type="DiaShape" />
-      <field cname="font_desc" type="PangoFontDescription*" />
-      <field cname="text" type="gchar*" />
-      <field cname="need_free" type="gboolean" />
-      <field cname="justify" type="gboolean" />
-      <field cname="markup" type="gboolean" />
-      <field cname="wrap_mode" type="DiaWrapMode" />
-      <field cname="line_spacing" type="gdouble" />
-      <field cname="alignment" type="PangoAlignment" />
-      <field cname="text_width" type="gdouble" />
-      <field cname="max_width" type="gdouble" />
-      <field cname="max_height" type="gdouble" />
-      <field cname="affine" array_len="6" type="gdouble" />
-      <field cname="cursor" type="gint" />
+      <field cname="shape" type="DiaShape"/>
+      <field cname="font_desc" type="PangoFontDescription*"/>
+      <field cname="text" type="gchar*"/>
+      <field cname="need_free" type="gboolean"/>
+      <field cname="justify" type="gboolean"/>
+      <field cname="markup" type="gboolean"/>
+      <field cname="wrap_mode" type="DiaWrapMode"/>
+      <field cname="line_spacing" type="gdouble"/>
+      <field cname="alignment" type="PangoAlignment"/>
+      <field cname="text_width" type="gdouble"/>
+      <field cname="max_width" type="gdouble"/>
+      <field cname="max_height" type="gdouble"/>
+      <field cname="affine" array_len="6" type="gdouble"/>
+      <field cname="cursor" type="gint"/>
       <method name="CursorFromPos" cname="dia_shape_text_cursor_from_pos" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaPoint*" name="pos" />
-          <parameter type="gint*" name="cursor" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaPoint*" name="pos"/>
+          <parameter type="gint*" name="cursor"/>
         </parameters>
       </method>
       <method name="FillPangoLayout" cname="dia_shape_text_fill_pango_layout" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="PangoLayout*" name="layout" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="PangoLayout*" name="layout"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_shape_text_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="SetAffine" cname="dia_shape_text_set_affine" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" array="true" name="affine" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" array="true" name="affine"/>
         </parameters>
       </method>
       <method name="SetAlignment" cname="dia_shape_text_set_alignment" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="PangoAlignment" name="alignment" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="PangoAlignment" name="alignment"/>
         </parameters>
       </method>
       <method name="SetFontDescription" cname="dia_shape_text_set_font_description" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="PangoFontDescription*" name="font_desc" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="PangoFontDescription*" name="font_desc"/>
         </parameters>
       </method>
       <method name="SetJustify" cname="dia_shape_text_set_justify" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="justify" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="justify"/>
         </parameters>
       </method>
       <method name="SetLineSpacing" cname="dia_shape_text_set_line_spacing" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="line_spacing" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="line_spacing"/>
         </parameters>
       </method>
       <method name="SetMarkup" cname="dia_shape_text_set_markup" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="markup" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="markup"/>
         </parameters>
       </method>
       <method name="SetMaxHeight" cname="dia_shape_text_set_max_height" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="height" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="height"/>
         </parameters>
       </method>
       <method name="SetMaxWidth" cname="dia_shape_text_set_max_width" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="width" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="width"/>
         </parameters>
       </method>
       <method name="SetPos" cname="dia_shape_text_set_pos" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaPoint*" name="pos" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaPoint*" name="pos"/>
         </parameters>
       </method>
       <method name="SetStaticText" cname="dia_shape_text_set_static_text" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="const-gchar*" name="text" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="const-gchar*" name="text"/>
         </parameters>
       </method>
       <method name="SetText" cname="dia_shape_text_set_text" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="const-gchar*" name="text" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="const-gchar*" name="text"/>
         </parameters>
       </method>
       <method name="SetTextWidth" cname="dia_shape_text_set_text_width" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gdouble" name="width" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gdouble" name="width"/>
         </parameters>
       </method>
       <method name="SetWrapMode" cname="dia_shape_text_set_wrap_mode" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaWrapMode" name="wrap_mode" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaWrapMode" name="wrap_mode"/>
         </parameters>
       </method>
       <method name="ToPangoLayout" cname="dia_shape_text_to_pango_layout" shared="true">
-        <return-type type="PangoLayout*" />
+        <return-type type="PangoLayout*"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="gboolean" name="fill" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="gboolean" name="fill"/>
         </parameters>
       </method>
     </boxed>
-    <struct name="ShapeViewInfo" cname="DiaShapeViewInfo" hidden="1">
-      <field cname="key" type="gpointer" />
-      <field cname="free_func" type="DiaShapeViewInfoFree" />
-      <field cname="data" type="gpointer" />
+    <struct name="ShapeViewInfo" cname="DiaShapeViewInfo">
+      <field cname="key" type="gpointer"/>
+      <field cname="free_func" type="DiaShapeViewInfoFree"/>
+      <field cname="data" type="gpointer"/>
       <method name="Clear" cname="dia_shape_view_info_clear">
-        <return-type type="void" />
+        <return-type type="void"/>
       </method>
       <method name="Remove" cname="dia_shape_view_info_remove" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape" />
-          <parameter type="DiaShapeViewInfo*" name="view_info" />
+          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaShapeViewInfo*" name="view_info"/>
         </parameters>
       </method>
     </struct>
     <struct name="Variable" cname="DiaVariable">
-      <field cname="parent" type="GObject" />
-      <field cname="value" type="gdouble" />
-      <field cname="strength" type="DiaStrength" />
+      <field cname="parent" type="GObject"/>
+      <field cname="value" type="gdouble"/>
+      <field cname="strength" type="DiaStrength"/>
       <method name="GetStrength" cname="dia_variable_get_strength">
-        <return-type type="DiaStrength" />
+        <return-type type="DiaStrength"/>
       </method>
       <method name="GetType" cname="dia_variable_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="GetValue" cname="dia_variable_get_value">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
       </method>
-      <constructor cname="dia_variable_new" />
+      <constructor cname="dia_variable_new"/>
       <method name="SetStrength" cname="dia_variable_set_strength">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaStrength" name="strength" />
+          <parameter type="DiaStrength" name="strength"/>
         </parameters>
       </method>
       <method name="SetValue" cname="dia_variable_set_value">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble" name="value" />
+          <parameter type="gdouble" name="value"/>
         </parameters>
       </method>
     </struct>
-    <struct name="VariableClass" cname="DiaVariableClass" hidden="1">
-      <field cname="parent_class" type="GObjectClass" />
+    <struct name="VariableClass" cname="DiaVariableClass">
+      <field cname="parent_class" type="GObjectClass"/>
       <callback cname="changed">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaVariable*" name="var" />
+          <parameter type="DiaVariable*" name="var"/>
         </parameters>
       </callback>
       <callback cname="changed_internal">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter type="DiaVariable*" name="var" />
+          <parameter type="DiaVariable*" name="var"/>
         </parameters>
       </callback>
     </struct>
     <class name="Distance" cname="DiaDistance_">
       <method name="LinePoint" cname="dia_distance_line_point" shared="true">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="DiaPoint*" name="line_start" />
-          <parameter type="DiaPoint*" name="line_end" />
-          <parameter type="DiaPoint*" name="point" />
-          <parameter type="gdouble" name="line_width" />
-          <parameter type="DiaCapStyle" name="style" />
-          <parameter type="DiaPoint*" name="point_on_line" />
+          <parameter type="DiaPoint*" name="line_start"/>
+          <parameter type="DiaPoint*" name="line_end"/>
+          <parameter type="DiaPoint*" name="point"/>
+          <parameter type="gdouble" name="line_width"/>
+          <parameter type="DiaCapStyle" name="style"/>
+          <parameter type="DiaPoint*" name="point_on_line"/>
         </parameters>
       </method>
       <method name="PointPoint" cname="dia_distance_point_point" shared="true">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="DiaPoint*" name="p1" />
-          <parameter type="DiaPoint*" name="p2" />
+          <parameter type="DiaPoint*" name="p1"/>
+          <parameter type="DiaPoint*" name="p2"/>
         </parameters>
       </method>
       <method name="PointPointManhattan" cname="dia_distance_point_point_manhattan" shared="true">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="DiaPoint*" name="p1" />
-          <parameter type="DiaPoint*" name="p2" />
+          <parameter type="DiaPoint*" name="p1"/>
+          <parameter type="DiaPoint*" name="p2"/>
         </parameters>
       </method>
       <method name="RectanglePoint" cname="dia_distance_rectangle_point" shared="true">
-        <return-type type="gdouble" />
+        <return-type type="gdouble"/>
         <parameters>
-          <parameter type="DiaRectangle*" name="rect" />
-          <parameter type="DiaPoint*" name="point" />
+          <parameter type="DiaRectangle*" name="rect"/>
+          <parameter type="DiaPoint*" name="point"/>
         </parameters>
       </method>
     </class>
     <class name="Global" cname="DiaGlobal">
       <method name="EventGetType" cname="dia_event_get_type" shared="true">
-        <return-type type="GType" />
+        <return-type type="GType"/>
       </method>
       <method name="ExportPrint" cname="dia_export_print" shared="true">
-        <return-type type="void" />
+        <return-type type="void"/>
         <parameters>
-          <parameter name="gpm" type="GnomePrintJob*" />
-          <parameter type="DiaCanvas*" name="canvas" />
+          <parameter type="gpointer" name="gpm"/>
+          <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </method>
     </class>
     <class name="Intersection" cname="DiaIntersection_">
       <method name="LineLine" cname="dia_intersection_line_line" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaPoint*" name="start1" />
-          <parameter type="DiaPoint*" name="end1" />
-          <parameter type="DiaPoint*" name="start2" />
-          <parameter type="DiaPoint*" name="end2" />
-          <parameter type="DiaPoint*" name="intersect" />
+          <parameter type="DiaPoint*" name="start1"/>
+          <parameter type="DiaPoint*" name="end1"/>
+          <parameter type="DiaPoint*" name="start2"/>
+          <parameter type="DiaPoint*" name="end2"/>
+          <parameter type="DiaPoint*" name="intersect"/>
         </parameters>
       </method>
       <method name="LineRectangle" cname="dia_intersection_line_rectangle" shared="true">
-        <return-type type="gint" />
+        <return-type type="gint"/>
         <parameters>
-          <parameter type="DiaPoint*" name="start" />
-          <parameter type="DiaPoint*" name="end" />
-          <parameter type="DiaRectangle*" name="rect" />
-          <parameter type="DiaPoint" array="true" name="intersect" />
+          <parameter type="DiaPoint*" name="start"/>
+          <parameter type="DiaPoint*" name="end"/>
+          <parameter type="DiaRectangle*" name="rect"/>
+          <parameter type="DiaPoint" array="true" name="intersect"/>
         </parameters>
       </method>
       <method name="RectangleRectangle" cname="dia_intersection_rectangle_rectangle" shared="true">
-        <return-type type="gboolean" />
+        <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaRectangle*" name="r1" />
-          <parameter type="DiaRectangle*" name="r2" />
+          <parameter type="DiaRectangle*" name="r1"/>
+          <parameter type="DiaRectangle*" name="r2"/>
         </parameters>
       </method>
     </class>

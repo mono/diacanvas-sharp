@@ -1,1 +1,1 @@
-SUBDIRS=glue dia sample doc sources
+SUBDIRS=glue dia sample doc
