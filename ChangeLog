@@ -5,6 +5,8 @@
 	* doc/en/Dia/CanvasGroup.xml:
 	* doc/en/Dia/CanvasViewItem.xml: Partially documented
 	* TODO: Added
+	* dia/makefile: Added compile options to suppres warnings about
+	missing Equals and GetHashcode functions.
 
 2003-08-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

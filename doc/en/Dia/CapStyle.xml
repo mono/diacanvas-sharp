@@ -10,7 +10,7 @@
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
     <summary>Specifies how the end of a <see cref="T:Dia.CanvasLine" /> are drawn.</summary>
-    <remarks>The default <see cref="T:Dia.CapStyle" /> is <see cref="T:Dia.CapStyle.Round" />.</remarks>
+    <remarks>The default <see cref="T:Dia.CapStyle" /> is <see cref="F:Dia.CapStyle.Round" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>

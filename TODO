@@ -19,5 +19,7 @@ Dia.CanvasViewItem.AddItems Method
 = Related matters =
 ===================
 
+*DONE*
 Ship bug report against Gtk# parser/generator 
 about turning Has and Is methods into properties.
+
