@@ -1,3 +1,17 @@
+2005-01-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sources/diacanvas-sharp-sources.xml: Target DiaCanvas2-0.14.2
+	* sources/makefile: Ditto
+	* dia/diacanvas-api.raw: Ditto
+	* configure.in: Ditto + bumped version number
+	* dia/Dia.metadata: Added rename metadata for events in 
+	  DiaUndoManager
+	* NEWS: Updated for new release
+	* sample/sample.cs: Removed Simple Text Item,
+	  commented out broken undo/redo function,
+	  removed e-mail addresses from the about dialog
+	* sample/CanvasTextBox: Removed EditingDoneHandler.
+
 2004-08-18  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* diacanvas-sharp.pc.in: Added require list of 

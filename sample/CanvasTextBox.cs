@@ -29,19 +29,9 @@ public class CanvasTextBox : CanvasGroup {
 	{
 		text = new CanvasText();
 		text.Font = FontDescription.FromString ("sans 20");
-		text.Text = "Hi, im editable";
+		text.Text = "Hi, im editable!";
 		text.Width =  205;
 		text.Height = 100;
 		Add (text);
-		text.EditingDone += new EditingDoneHandler (editing_done);
-	}
-
-	void editing_done (object sender, EditingDoneArgs args)
-	{
-		Console.WriteLine ("Editing Done");
-		// Change view back to text box
-		// get canvas
-		// get canvasview
-		// focus this
 	}
 }

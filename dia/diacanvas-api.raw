@@ -128,7 +128,14 @@
     <callback name="ShapeViewInfoFree" cname="DiaShapeViewInfoFree">
       <return-type type="void"/>
       <parameters>
+        <parameter type="DiaCanvasViewItem*" name="item"/>
         <parameter type="DiaShapeViewInfo*" name="item_info"/>
+      </parameters>
+    </callback>
+    <callback name="UndoFunc" cname="DiaUndoFunc">
+      <return-type type="void"/>
+      <parameters>
+        <parameter type="DiaUndoAction*" name="action"/>
       </parameters>
     </callback>
     <interface name="CanvasEditable" cname="DiaCanvasEditable">
@@ -162,8 +169,18 @@
           <parameter type="const-gchar*" name="new_text"/>
         </parameters>
       </method>
+      <method name="GetEditableShape" cname="dia_canvas_editable_get_editable_shape">
+        <return-type type="DiaShapeText*"/>
+        <parameters>
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
+        </parameters>
+      </method>
       <method name="GetType" cname="dia_canvas_editable_get_type" shared="true">
         <return-type type="GType"/>
+      </method>
+      <method name="IsEditable" cname="dia_canvas_editable_is_editable">
+        <return-type type="gboolean"/>
       </method>
       <method name="StartEditing" cname="dia_canvas_editable_start_editing">
         <return-type type="void"/>
@@ -249,12 +266,84 @@
         </parameters>
       </method>
     </interface>
+    <interface name="UndoManager" cname="DiaUndoManager">
+      <signal name="BeginTransaction" cname="begin_transaction" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+        </parameters>
+      </signal>
+      <signal name="CommitTransaction" cname="commit_transaction" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+        </parameters>
+      </signal>
+      <signal name="DiscardTransaction" cname="discard_transaction" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+        </parameters>
+      </signal>
+      <signal name="AddUndoAction" cname="add_undo_action" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+          <parameter type="DiaUndoAction*" name="action"/>
+        </parameters>
+      </signal>
+      <signal name="UndoTransaction" cname="undo_transaction" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+        </parameters>
+      </signal>
+      <signal name="RedoTransaction" cname="redo_transaction" when="LAST">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
+        </parameters>
+      </signal>
+      <method name="AddUndoAction" cname="dia_undo_manager_add_undo_action">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaUndoAction*" name="action"/>
+        </parameters>
+      </method>
+      <method name="BeginTransaction" cname="dia_undo_manager_begin_transaction">
+        <return-type type="void"/>
+      </method>
+      <method name="CanRedo" cname="dia_undo_manager_can_redo">
+        <return-type type="gboolean"/>
+      </method>
+      <method name="CanUndo" cname="dia_undo_manager_can_undo">
+        <return-type type="gboolean"/>
+      </method>
+      <method name="CommitTransaction" cname="dia_undo_manager_commit_transaction">
+        <return-type type="void"/>
+      </method>
+      <method name="DiscardTransaction" cname="dia_undo_manager_discard_transaction">
+        <return-type type="void"/>
+      </method>
+      <method name="GetType" cname="dia_undo_manager_get_type" shared="true">
+        <return-type type="GType"/>
+      </method>
+      <method name="InTransaction" cname="dia_undo_manager_in_transaction">
+        <return-type type="gboolean"/>
+      </method>
+      <method name="RedoTransaction" cname="dia_undo_manager_redo_transaction">
+        <return-type type="void"/>
+      </method>
+      <method name="UndoTransaction" cname="dia_undo_manager_undo_transaction">
+        <return-type type="void"/>
+      </method>
+    </interface>
     <object name="Canvas" cname="DiaCanvas" parent="GObject">
       <field cname="static_extents" bits="1" type="gboolean"/>
       <field cname="snap_to_grid" bits="1" type="gboolean"/>
       <field cname="allow_undo" bits="1" type="gboolean"/>
       <field cname="allow_state_requests" bits="1" type="gboolean"/>
-      <field cname="in_undo" bits="1" type="gboolean"/>
+      <field cname="in_undo" bits="1" type="//gboolean"/>
       <field cname="extents" type="DiaRectangle"/>
       <field cname="root" type="DiaCanvasItem*"/>
       <field cname="interval_x" type="gdouble"/>
@@ -265,10 +354,7 @@
       <field cname="grid_bg" type="DiaColor"/>
       <field cname="solver" type="DiaSolver*"/>
       <field cname="idle_id" type="guint"/>
-      <field cname="stack_depth" type="guint"/>
-      <field cname="undo" type="GSList*"/>
-      <field cname="redo" type="GSList*"/>
-      <field cname="undo_entry" type="gpointer"/>
+      <field cname="undo_manager" type="DiaUndoManager*"/>
       <signal name="ExtentsChanged" cname="extents_changed" when="FIRST">
         <return-type type="void"/>
         <parameters>
@@ -312,12 +398,6 @@
           <parameter type="DiaConstraint*" name="c"/>
         </parameters>
       </method>
-      <method name="ClearRedo" cname="dia_canvas_clear_redo">
-        <return-type type="void"/>
-      </method>
-      <method name="ClearUndo" cname="dia_canvas_clear_undo">
-        <return-type type="void"/>
-      </method>
       <method name="FindObjectsInRectangle" cname="dia_canvas_find_objects_in_rectangle">
         <return-type type="GList*"/>
         <parameters>
@@ -327,17 +407,11 @@
       <method name="GetPangoLayout" cname="dia_canvas_get_pango_layout" shared="true">
         <return-type type="PangoLayout*"/>
       </method>
-      <method name="GetRedoDepth" cname="dia_canvas_get_redo_depth">
-        <return-type type="guint"/>
-      </method>
       <method name="GetType" cname="dia_canvas_get_type" shared="true">
         <return-type type="GType"/>
       </method>
-      <method name="GetUndoDepth" cname="dia_canvas_get_undo_depth">
-        <return-type type="guint"/>
-      </method>
-      <method name="GetUndoStackDepth" cname="dia_canvas_get_undo_stack_depth">
-        <return-type type="guint"/>
+      <method name="GetUndoManager" cname="dia_canvas_get_undo_manager">
+        <return-type type="DiaUndoManager*"/>
       </method>
       <method name="GlueHandle" cname="dia_canvas_glue_handle">
         <return-type type="gdouble"/>
@@ -351,12 +425,6 @@
         </parameters>
       </method>
       <constructor cname="dia_canvas_new"/>
-      <method name="PopRedo" cname="dia_canvas_pop_redo">
-        <return-type type="void"/>
-      </method>
-      <method name="PopUndo" cname="dia_canvas_pop_undo">
-        <return-type type="void"/>
-      </method>
       <method name="Preserve" cname="dia_canvas_preserve">
         <return-type type="void"/>
         <parameters>
@@ -378,12 +446,6 @@
         <parameters>
           <parameter type="GObject*" name="object"/>
           <parameter type="const-char*" name="property_name"/>
-        </parameters>
-      </method>
-      <method name="PushUndo" cname="dia_canvas_push_undo">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="const-char*" name="optional_comment"/>
         </parameters>
       </method>
       <method name="RedrawViews" cname="dia_canvas_redraw_views">
@@ -419,10 +481,10 @@
           <parameter type="gboolean" name="stat"/>
         </parameters>
       </method>
-      <method name="SetUndoStackDepth" cname="dia_canvas_set_undo_stack_depth">
+      <method name="SetUndoManager" cname="dia_canvas_set_undo_manager">
         <return-type type="void"/>
         <parameters>
-          <parameter type="guint" name="depth"/>
+          <parameter type="DiaUndoManager*" name="undo_manager"/>
         </parameters>
       </method>
       <method name="SnapToGrid" cname="dia_canvas_snap_to_grid">
@@ -514,7 +576,6 @@
     </object>
     <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement">
       <field cname="pixbuf" type="GdkPixbuf*"/>
-      <field cname="clip" type="//DiaShape*"/>
       <field cname="image" type="DiaShape*"/>
       <property name="Image" cname="image" type="GdkPixbuf" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_canvas_image_get_type" shared="true">
@@ -560,7 +621,7 @@
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="item"/>
-          <parameter type="DiaEvent*" name="event"/>
+          <parameter type="gpointer" name="event"/>
         </parameters>
       </signal>
       <signal name="Move" cname="move" when="LAST">
@@ -591,7 +652,7 @@
       <property name="Connect" cname="connect" type="DiaHandle" writeable="true"/>
       <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true"/>
       <property name="Affine" cname="affine" type="DiaAffine" readable="true" writeable="true"/>
-      <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true" writeable="true"/>
+      <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true"/>
       <virtual_method name="Update" cname="update">
         <return-type type="void"/>
         <parameters>
@@ -940,7 +1001,6 @@
       <field cname="handle_layer" type="GnomeCanvasItem*"/>
       <field cname="tool" type="DiaTool*"/>
       <field cname="default_tool" type="DiaTool*"/>
-      <field cname="selector" type="//GnomeCanvasItem*"/>
       <field cname="focus_item" type="DiaCanvasViewItem*"/>
       <field cname="selected_items" type="GList*"/>
       <field cname="text_view" type="GtkTextView*"/>
@@ -994,14 +1054,6 @@
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasViewItem*" name="item"/>
-        </parameters>
-      </method>
-      <method name="GdkEventToDiaEvent" cname="dia_canvas_view_gdk_event_to_dia_event">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item"/>
-          <parameter type="GdkEvent*" name="gdk_event"/>
-          <parameter type="DiaEvent*" name="dia_event"/>
         </parameters>
       </method>
       <method name="GetActiveView" cname="dia_canvas_view_get_active_view" shared="true">
@@ -1082,7 +1134,8 @@
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasViewItem*" name="item"/>
-          <parameter type="DiaShapeText*" name="text_shape"/>
+          <parameter type="gdouble" name="x"/>
+          <parameter type="gdouble" name="y"/>
         </parameters>
       </method>
       <method name="Unselect" cname="dia_canvas_view_unselect">
@@ -1103,6 +1156,7 @@
       <field cname="gc" type="GdkGC*"/>
       <field cname="n_handle_pos" type="guint"/>
       <field cname="handle_pos" type="gint*"/>
+      <field cname="view_info" type="GSList*"/>
       <field cname="redraw_area" type="ArtUta*"/>
       <field cname="event_time" type="guint32"/>
       <property name="Item" cname="item" type="DiaCanvasItem" readable="true" writeable="true"/>
@@ -1117,7 +1171,7 @@
       <method name="EmitEvent" cname="dia_canvas_view_item_emit_event">
         <return-type type="gboolean"/>
         <parameters>
-          <parameter type="DiaEvent*" name="event"/>
+          <parameter type="gpointer" name="event"/>
         </parameters>
       </method>
       <method name="Foreach" cname="dia_canvas_view_item_foreach">
@@ -1276,8 +1330,6 @@
       <property name="PosI" cname="pos_i" type="DiaPoint" readable="true" writeable="true"/>
       <property name="PosW" cname="pos_w" type="DiaPoint" readable="true" writeable="true"/>
       <property name="Strength" cname="strength" type="DiaStrength" readable="true" writeable="true"/>
-      <property name="Connect" cname="connect" type="DiaCanvasItem" readable="true" writeable="true"/>
-      <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" readable="true" writeable="true"/>
       <property name="ConnectedTo" cname="connected_to" type="DiaCanvasItem" readable="true"/>
       <property name="Connectable" cname="connectable" type="gboolean" readable="true" writeable="true"/>
       <property name="Movable" cname="movable" type="gboolean" readable="true" writeable="true"/>
@@ -1343,6 +1395,9 @@
           <parameter type="gdouble" name="y"/>
         </parameters>
       </constructor>
+      <method name="PreserveState" cname="dia_handle_preserve_state">
+        <return-type type="void"/>
+      </method>
       <method name="RemoveAllConstraints" cname="dia_handle_remove_all_constraints">
         <return-type type="void"/>
       </method>
@@ -1468,7 +1523,7 @@
     </object>
     <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool">
       <field cname="object_type" type="GType"/>
-      <field cname="handle_tool" type="DiaHandleTool*"/>
+      <field cname="handle_tool" type="DiaTool*"/>
       <field cname="n_params" type="guint"/>
       <field cname="params" type="GParameter*"/>
       <field cname="new_object" type="DiaCanvasItem*"/>
@@ -1480,6 +1535,13 @@
           <parameter type="GType" name="object_type"/>
           <parameter type="const-gchar*" name="first_property_name"/>
           <parameter ellipsis="true"/>
+        </parameters>
+      </constructor>
+      <constructor cname="dia_placement_tool_newv">
+        <parameters>
+          <parameter type="GType" name="object_type"/>
+          <parameter type="guint" name="n_params"/>
+          <parameter type="GParameter*" name="params"/>
         </parameters>
       </constructor>
     </object>
@@ -1624,6 +1686,36 @@
         </parameters>
       </method>
     </object>
+    <object name="Undo" cname="DiaUndo" parent="GObject">
+      <field cname="_priv" type="gpointer"/>
+      <implements>
+        <interface cname="DiaUndoManager"/>
+      </implements>
+      <method name="ClearRedoStack" cname="dia_undo_clear_redo_stack">
+        <return-type type="void"/>
+      </method>
+      <method name="ClearUndoStack" cname="dia_undo_clear_undo_stack">
+        <return-type type="void"/>
+      </method>
+      <method name="GetDepth" cname="dia_undo_get_depth">
+        <return-type type="guint"/>
+      </method>
+      <method name="GetMaxDepth" cname="dia_undo_get_max_depth">
+        <return-type type="guint"/>
+      </method>
+      <method name="GetRedoDepth" cname="dia_undo_get_redo_depth">
+        <return-type type="guint"/>
+      </method>
+      <method name="GetType" cname="dia_undo_get_type" shared="true">
+        <return-type type="GType"/>
+      </method>
+      <method name="SetMaxDepth" cname="dia_undo_set_max_depth">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="guint" name="depth"/>
+        </parameters>
+      </method>
+    </object>
     <boxed name="CanvasIter" cname="DiaCanvasIter">
       <field cname="data" array_len="3" type="gpointer"/>
       <field cname="destroy_func" type="GDestroyNotify"/>
@@ -1653,6 +1745,12 @@
           <parameter type="gint" name="n_dash"/>
           <parameter type="gdouble" name="dash1"/>
           <parameter ellipsis="true"/>
+        </parameters>
+      </constructor>
+      <constructor cname="dia_dash_style_newv">
+        <parameters>
+          <parameter type="gint" name="n_dash"/>
+          <parameter type="gdouble" name="dashes"/>
         </parameters>
       </constructor>
     </boxed>
@@ -1738,9 +1836,10 @@
     <struct name="Shape" cname="DiaShape">
       <field cname="type" type="DiaShapeType"/>
       <field cname="visibility" bits="4" type="guint"/>
-      <field cname="update_cnt" bits="28" type="guint"/>
+      <field cname="update_cnt" bits="14" type="guint"/>
+      <field cname="ref_cnt" bits="14" type="guint"/>
       <field cname="color" type="DiaColor"/>
-      <field cname="view_info" type="GList*"/>
+      <field cname="extra_1" type="gpointer"/>
       <method name="ArtGetPangoLayout" cname="dia_shape_art_get_pango_layout" shared="true">
         <return-type type="PangoLayout*"/>
       </method>
@@ -1797,12 +1896,6 @@
       <method name="GetType" cname="dia_shape_get_type">
         <return-type type="GType"/>
       </method>
-      <method name="GetViewInfo" cname="dia_shape_get_view_info">
-        <return-type type="DiaShapeViewInfo*"/>
-        <parameters>
-          <parameter type="gpointer" name="key"/>
-        </parameters>
-      </method>
       <method name="Image" cname="dia_shape_image">
         <return-type type="void"/>
         <parameters>
@@ -1848,6 +1941,9 @@
           <parameter type="DiaPoint*" name="lower_right"/>
         </parameters>
       </method>
+      <method name="Ref" cname="dia_shape_ref">
+        <return-type type="DiaShape*"/>
+      </method>
       <method name="RequestUpdate" cname="dia_shape_request_update">
         <return-type type="void"/>
       </method>
@@ -1870,28 +1966,8 @@
           <parameter type="const-gchar*" name="text"/>
         </parameters>
       </method>
-      <method name="XGetPangoLayout" cname="dia_shape_x_get_pango_layout" shared="true">
-        <return-type type="PangoLayout*"/>
-      </method>
-      <method name="XRender" cname="dia_shape_x_render">
+      <method name="Unref" cname="dia_shape_unref">
         <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item"/>
-          <parameter type="GdkDrawable*" name="drawable"/>
-          <parameter type="int" name="x"/>
-          <parameter type="int" name="y"/>
-          <parameter type="int" name="width"/>
-          <parameter type="int" name="height"/>
-        </parameters>
-      </method>
-      <method name="XUpdate" cname="dia_shape_x_update">
-        <return-type type="ArtSVP*"/>
-        <parameters>
-          <parameter type="DiaCanvasViewItem*" name="item"/>
-          <parameter type="double*" name="affine"/>
-          <parameter type="ArtSVP*" name="clip_path"/>
-          <parameter type="int" name="flags"/>
-        </parameters>
       </method>
     </struct>
     <boxed name="ShapeBezier" cname="DiaShapeBezier">
@@ -2268,20 +2344,54 @@
       </method>
     </boxed>
     <struct name="ShapeViewInfo" cname="DiaShapeViewInfo">
-      <field cname="key" type="gpointer"/>
+      <field cname="shape" type="DiaShape*"/>
       <field cname="free_func" type="DiaShapeViewInfoFree"/>
       <field cname="data" type="gpointer"/>
-      <method name="Clear" cname="dia_shape_view_info_clear">
-        <return-type type="void"/>
-      </method>
-      <method name="Remove" cname="dia_shape_view_info_remove" shared="true">
+      <method name="Free" cname="dia_shape_view_info_free" shared="true">
         <return-type type="void"/>
         <parameters>
-          <parameter type="DiaShape*" name="shape"/>
+          <parameter type="DiaCanvasViewItem*" name="item"/>
           <parameter type="DiaShapeViewInfo*" name="view_info"/>
         </parameters>
       </method>
+      <method name="Get" cname="dia_shape_view_info_get" shared="true">
+        <return-type type="DiaShapeViewInfo*"/>
+        <parameters>
+          <parameter type="DiaCanvasViewItem*" name="item"/>
+          <parameter type="DiaShape*" name="shape"/>
+        </parameters>
+      </method>
+      <constructor cname="dia_shape_view_info_new">
+        <parameters>
+          <parameter type="DiaShape*" name="shape"/>
+        </parameters>
+      </constructor>
     </struct>
+    <boxed name="UndoAction" cname="DiaUndoAction">
+      <field cname="undo" type="DiaUndoFunc"/>
+      <field cname="redo" type="DiaUndoFunc"/>
+      <field cname="destroy" type="GDestroyNotify"/>
+      <method name="Destroy" cname="dia_undo_action_destroy">
+        <return-type type="void"/>
+      </method>
+      <method name="GetType" cname="dia_undo_action_get_type" shared="true">
+        <return-type type="GType"/>
+      </method>
+      <constructor cname="dia_undo_action_new">
+        <parameters>
+          <parameter type="gsize" name="sizeof_undo_action"/>
+          <parameter type="DiaUndoFunc" name="undo"/>
+          <parameter type="DiaUndoFunc" name="redo"/>
+          <parameter type="GDestroyNotify" name="destroy"/>
+        </parameters>
+      </constructor>
+      <method name="Redo" cname="dia_undo_action_redo">
+        <return-type type="void"/>
+      </method>
+      <method name="Undo" cname="dia_undo_action_undo">
+        <return-type type="void"/>
+      </method>
+    </boxed>
     <struct name="Variable" cname="DiaVariable">
       <field cname="parent" type="GObject"/>
       <field cname="value" type="gdouble"/>

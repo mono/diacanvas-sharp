@@ -1,7 +1,10 @@
 0.5.1
 =====
 
-* CanvasLine.Dash can be exercised 100%
+* Target DiaCanvas2-0.14.2
+* Text is now editable
+* Undo/Redo-regression
+* Line dashes-regression
 
 0.5.0
 =====

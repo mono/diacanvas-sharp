@@ -2,7 +2,7 @@
   <api filename="../dia/diacanvas-api.raw">
     <library name="diacanvas2">
       <namespace name="Dia">
-        <dir>diacanvas2-0.13.0/diacanvas</dir>
+        <dir>diacanvas2-0.14.2/diacanvas</dir>
       </namespace>
     </library>
   </api>

@@ -1,4 +1,4 @@
-PACKAGE=diacanvas2-0.13.0
+PACKAGE=diacanvas2-0.14.2
 
 all:
 	gapi-parser diacanvas-sharp-sources.xml

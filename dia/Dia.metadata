@@ -36,6 +36,12 @@
   <attr path="/api/namespace/struct[@cname='DiaShape']/method[@name='GetViewInfo']" name="hidden">1</attr>
   <attr path="/api/namespace/struct[@cname='DiaShape']" name="opaque">1</attr>
   <attr path="/api/namespace/struct[@cname='DiaShapeViewInfo']" name="hidden">1</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='AddUndoAction']" name="name">AddedUndoAction</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='DiscardTransaction']" name="name">DiscardedTransaction</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='BeginTransaction']" name="name">BeganTransaction</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='UndoTransaction']" name="name">UndidTransaction</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='CommitTransaction']" name="name">CommitedTransaction</attr>
+  <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='RedoTransaction']" name="name">RedidTransaction</attr>
   <attr path="/api/namespace/struct[@cname='DiaVariableClass']" name="hidden">1</attr>
   <attr path="/api/namespace/struct[@cname='DiaVariable']" name="opaque">1</attr>
 </metadata>

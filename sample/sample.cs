@@ -71,20 +71,14 @@ public class Sample {
 		textbox.Move (50, 150);
 		canvas.Root.Add (textbox);
 
-		// Adding text
-		Dia.CanvasText text = new Dia.CanvasText();
-		text.Text = "Hello, World!";
-		text.Font = FontDescription.FromString ("sans 20");
-		text.Height = 50;
-		text.Width = 190;
-		text.Move (300, 150);
-		canvas.Root.Add (text);
-
 		// Adding line
 		Dia.CanvasLine line = new Dia.CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
-		line.Dash = new double [] { 2, 4, 8, 16, 32 };
+
+		// Broke between 0.13 and 0.14
+		// line.Dash = new double [] { 2, 4, 8, 16, 32 };
+
 		line.HeadPos = new Dia.Point (50, 70);;
 		line.TailPos = new Dia.Point (200, 250);
 		line.Cap = Dia.CapStyle.Butt;
@@ -236,8 +230,9 @@ public class Sample {
 		dialog.Destroy();
 	}
 
-	void Undo (object sender, EventArgs args) { canvas.PopUndo(); }
-	void Redo (object sender, EventArgs args) { canvas.PopRedo(); }
+	// Undo / Redo broke between 0.13 and 0.14
+	void Undo (object sender, EventArgs args) { /* canvas.PopUndo(); */ }
+	void Redo (object sender, EventArgs args) { /* canvas.PopRedo(); */ }
 	
 	void ZoomIn (object sender, EventArgs args) { view.Zoom += 0.1;	}
 
@@ -255,8 +250,8 @@ public class Sample {
 		Assembly assembly = Assembly.GetExecutingAssembly();
 
 		string [] authors = new String [] {
-			"Martin Willemoes Hansen <mwh@sysrq.dk> (Maintainer and founder)",
-			"Mario Fuentes <mario@gnome.cl>",
+			"Martin Willemoes Hansen (Maintainer and founder)",
+			"Mario Fuentes",
 		};
 
 		string [] documenters = new String [] {};
