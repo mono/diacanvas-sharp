@@ -6,13 +6,6 @@ mono-0.28
 gtk-sharp-0.12
 diacanvas2-0.10.0
 
-====
-Make
-====
-
-If you use another prefix than /usr then you can specify it to make like
-this: make -e PREFIX=/myprefix
-
 ======
 Sample
 ======

@@ -1,4 +1,0 @@
-39c39
-<   AC_PATH_PROGS(PYTHON, python2.2 python2 python)
----
->   AC_PATH_PROGS(PYTHON, python2.3 python2.2 python2 python)

@@ -28,4 +28,3 @@ distclean: clean
 	$(MAKE) -C doc distclean;
 
 	rm -r CVS
-	rm -r patches

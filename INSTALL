@@ -1,0 +1,10 @@
+Installing DiaCanvas#
+=====================
+
+CVS edition:
+
+	./autogen.sh --prefix=YOUR_PREFIX
+
+Source tarball edition:
+
+	./configure --prefix=YOUR_PREFIX

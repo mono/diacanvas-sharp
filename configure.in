@@ -1,0 +1,17 @@
+AC_INIT(README)
+AC_CANONICAL_SYSTEM
+AM_INIT_AUTOMAKE(diacanvas-sharp, 0.3.0)
+AM_MAINTAINER_MODE
+
+dnl Defines CC to avoid warnings
+AC_PROG_CC
+AC_PROG_INSTALL
+
+AC_OUTPUT([
+makefile
+dia/makefile
+doc/makefile
+glue/makefile
+sample/makefile
+sources/makefile
+])

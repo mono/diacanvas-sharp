@@ -15,5 +15,11 @@ Document API
 Dia.Variable
 Dia.Constraint
 Dia.Solver
-Dia.Strength
 Dia.CanvasViewItem.EmitEvent
+
+
+Free form drawing
+-----------------
+Investigate, if it is posible to use
+DiaCanvas# as a free form drawing canvas.
+Requested by Miguel De Icaza.

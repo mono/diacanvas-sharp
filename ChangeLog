@@ -1,3 +1,24 @@
+2003-11-10  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* WISHLIST: Removed, content added to TODO
+	* TODO: Updated, with content from TODO and
+	  various things which has been done has been removed.
+	* autogen.sh: Added, autoconf enabled.
+	* configure.in: Added, autoconf enabled.
+	* patches: Removed, not needed anymore
+	* makefile: All of them removed, autoconf enabled
+	* makefile.am: All of them added, autoconf enabled
+	* .cvsignore: Added
+	* README: Does not mention make prefix option anymore
+	* COPYRIGHT: Removed
+	* COPYING: Added
+	* INSTALL: Added
+	* dia/cvsignore: Added makefile and makefile.in
+	* doc/cvsignore: Ditto
+	* glue/cvsignore: Ditto
+	* sample/cvsignore: Ditto
+	* sources/cvsignore: Ditto
+
 2003-11-05  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/Dia/WrapMode.xml: Added

@@ -3,7 +3,6 @@ Array fields are not generated properly
 
 warning: array field Dia.ShapeText.affine probably incorrectly generated
 warning: array field Dia.CanvasIter.data probably incorrectly generated
-warning: array field Dia.DashStyle.dash probably incorrectly generated
 warning: array field Dia.ShapeImage.affine probably incorrectly generated
 
 This seems to be a problem with the generator.
