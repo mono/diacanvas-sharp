@@ -4,6 +4,9 @@
 	* dia/CanvasImage.custom: Ditto
 	* dia/CanvasLine.custom: Ditto
 	* dia/CanvasText.custom: Ditto
+	* dia/DiaCanvas.cs: Added copyright
+	* dia/CanvasItem.custom: Implements the GLib.List abstraction pattern used in Gtk#
+	* dia/CanvasView.custom: Ditto
 
 2004-02-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

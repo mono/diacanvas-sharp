@@ -9,12 +9,18 @@
 [DllImport("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_item_get_handles (IntPtr item);
 
-public IList Handles {
+public Dia.Handle [] Handles {
 	get { 
-		GLib.List glist = new GLib.List (diasharp_canvas_item_get_handles (Handle));
-		ArrayList list = new ArrayList (glist.Count);
-		foreach (object o in glist) list.Add (o);
-		return list;
+		IntPtr list_ptr = diasharp_canvas_item_get_handles (Handle);
+		if (list_ptr == IntPtr.Zero)
+			return new Dia.Handle [0];
+
+		GLib.List list = new GLib.List (list_ptr, typeof (Dia.Handle));
+		Dia.Handle [] result = new Dia.Handle [list.Count];
+		int i = 0;
+		foreach (Dia.Handle val in list)
+			result [i ++] = val;
+		return result;
 	}
 }
 
