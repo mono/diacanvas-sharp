@@ -1,8 +1,10 @@
 // CanvasItem.Custom - customizations
 //
-// Author: Martin Willemoes Hansen <mwh@sysrq.dk>
+// Authors: Martin Willemoes Hansen <mwh@sysrq.dk>
+//          Mario Fuentes <mario@gnome.cl>
 //
 // Copyright (C) 2003 2004 Martin Willemoes Hansen
+// Copyright (C) 2004 Mario Fuentes <mario@gnome.cl>
 //
 // This code is inserted after the automatically generated code.
 
@@ -31,3 +33,149 @@ public Dia.Canvas Canvas
 {
 	set { diasharp_canvas_item_set_canvas (Handle, value.Handle); }
 }
+
+delegate void UpdateDelegate (IntPtr item, IntPtr affine_ptr);
+
+static UpdateDelegate UpdateCallback;
+
+static void Update_Callback (IntPtr item, IntPtr affine_ptr)
+{
+	CanvasItem obj = GLib.Object.GetObject (item, false) as CanvasItem;
+	double []affine = new double[6];
+
+	Marshal.Copy (affine_ptr, affine, 0, 6);
+
+	obj.Update (affine);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern void diasharp_canvas_item_override_update (GLib.GType gtype, UpdateDelegate callback);
+
+static void OverrideUpdate (GLib.GType gtype)
+{
+	if (UpdateCallback == null)
+		UpdateCallback += new UpdateDelegate (Update_Callback);
+
+	diasharp_canvas_item_override_update (gtype, UpdateCallback);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern void diasharp_canvas_item_base_update (IntPtr handle, double [] affine);
+
+protected void BaseUpdate (double [] affine)
+{
+	diasharp_canvas_item_base_update (Handle, affine);
+}
+
+[GLib.DefaultSignalHandler (Type=typeof(Dia.CanvasItem), ConnectionMethod="OverrideUpdate")]
+protected virtual void Update (double [] affine)
+{
+	BaseUpdate (affine);
+}
+
+delegate bool GetShapeIterDelegate (IntPtr item, ref CanvasIter iter);
+
+static GetShapeIterDelegate GetShapeIterCallback;
+
+static bool GetShapeIter_Callback (IntPtr item, ref CanvasIter iter)
+{
+	CanvasItem obj = GLib.Object.GetObject (item, false) as CanvasItem;
+
+	return obj.GetShapeIterFunc (ref iter);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern void diasharp_canvas_item_override_get_shape_iter (GLib.GType gtype, GetShapeIterDelegate callback);
+
+static void OverrideGetShapeIter (GLib.GType gtype)
+{
+	if (GetShapeIterCallback == null)
+		GetShapeIterCallback += new GetShapeIterDelegate (GetShapeIter_Callback);
+
+	diasharp_canvas_item_override_get_shape_iter (gtype, GetShapeIterCallback);
+}
+
+[DllImport("diacanvasharpglue")]
+static extern bool dia_canvas_item_base_get_shape_iter(IntPtr raw, ref Dia.CanvasIter iter);				
+
+[GLib.DefaultSignalHandler (Type=typeof(Dia.CanvasItem), ConnectionMethod="OverrideGetShapeIter")]
+protected virtual bool GetShapeIterFunc (ref CanvasIter iter)
+{
+	bool ret_val = dia_canvas_item_base_get_shape_iter (Handle, ref iter);
+	
+	return ret_val;
+}
+
+delegate bool ShapeNextDelegate (IntPtr item, ref CanvasIter iter);
+
+static ShapeNextDelegate ShapeNextCallback;
+
+static bool ShapeNext_Callback (IntPtr item, ref CanvasIter iter)
+{
+	CanvasItem obj = GLib.Object.GetObject (item, false) as CanvasItem;
+
+	return obj.ShapeNextFunc (ref iter);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern void diasharp_canvas_item_override_shape_next (GLib.GType gtype, ShapeNextDelegate callback);
+
+static void OverrideShapeNext (GLib.GType gtype)
+{
+	if (ShapeNextCallback == null)
+		ShapeNextCallback += new ShapeNextDelegate (ShapeNext_Callback);
+
+	diasharp_canvas_item_override_shape_next (gtype, ShapeNextCallback);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern bool dia_canvas_item_base_shape_next(IntPtr raw, ref Dia.CanvasIter iter);
+
+[GLib.DefaultSignalHandler (Type=typeof(Dia.CanvasItem), ConnectionMethod="OverrideShapeNext")]
+protected virtual bool ShapeNextFunc (ref CanvasIter iter)
+{
+	bool ret_val = dia_canvas_item_base_shape_next (Handle, ref iter);
+
+	return ret_val;
+}
+
+delegate Shape ShapeValueDelegate (IntPtr item, ref CanvasIter iter);
+
+static ShapeValueDelegate ShapeValueCallback;
+
+static Shape ShapeValue_Callback (IntPtr item, ref CanvasIter iter)
+{
+	CanvasItem obj = GLib.Object.GetObject (item, false) as CanvasItem;
+
+	return obj.ShapeValueFunc (ref iter);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern void diasharp_canvas_item_override_shape_value (GLib.GType gtype, ShapeValueDelegate callback);
+
+static void OverrideShapeValue (GLib.GType gtype)
+{
+	if (ShapeValueCallback == null)
+		ShapeValueCallback += new ShapeValueDelegate (ShapeValue_Callback);
+
+	diasharp_canvas_item_override_shape_value (gtype, ShapeValueCallback);
+}
+
+[DllImport("diacanvassharpglue")]
+static extern IntPtr dia_canvas_item_base_shape_value (IntPtr raw, ref Dia.CanvasIter iter);
+
+[GLib.DefaultSignalHandler (Type=typeof(Dia.CanvasItem), ConnectionMethod="OverrideShapeValue")]
+protected virtual Shape ShapeValueFunc (ref CanvasIter iter)
+{
+	Console.WriteLine ("protected virtual Shape ShapeValueFunc (ref CanvasIter iter)");
+	IntPtr raw_ret = dia_canvas_item_base_shape_value (Handle, ref iter);
+	Shape ret;
+	
+	if (raw_ret == IntPtr.Zero)
+		ret = null;
+	else
+		ret = new Dia.Shape(raw_ret);
+
+	return ret;
+}
+

@@ -8,6 +8,9 @@
 	  dashstyle is far out in the future.
 	* sample/CanvasTextBox.cs: Make text fit
 	* sample/sample.cs: Ditto
+	* dia/CanvasItem.custom: Added Mario Fuentes work on extending
+	  CanvasItem's
+	* dia/glue/dia-canvas-item.c: Ditto
 
 2004-07-28  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
