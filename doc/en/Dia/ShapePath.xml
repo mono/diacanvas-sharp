@@ -1,7 +1,7 @@
 <Type Name="ShapePath" FullName="Dia.ShapePath">
   <TypeSignature Language="C#" Value="public sealed struct ShapePath;" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -23,6 +23,7 @@ docs:
 
 install:
 	$(MAKE) -C $(CODE_DIR) install
+	$(MAKE) -C $(DOC_DIR) install
 
 clean:
 	$(MAKE) -C $(API_DIR) clean

@@ -1,7 +1,7 @@
 <Type Name="DisconnectedArgs" FullName="DiaSharp.DisconnectedArgs">
   <TypeSignature Language="C#" Value="public class DisconnectedArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -14,7 +14,7 @@ public class Sample {
 		CanvasView view = new CanvasView (canvas, true);
 
 		Tool tool = new PlacementTool (CanvasLine.GType);
-		tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
+		tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 		view.Tool = tool;
 
 		ScrolledWindow scrwin = new ScrolledWindow();
@@ -30,10 +30,11 @@ public class Sample {
 		Application.Run();
 	}
 
-	static void UnsetTool (object sender, DiaSharp.ButtonPressEventArgs args)
+	static void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
 	{
 		Console.WriteLine ("Event worked!");
-		args.View.Tool = null;
+		Console.WriteLine (args);
+		//args.View.Tool = null;
 	}
 
 	static void Quit (object sender, DeleteEventArgs args) 

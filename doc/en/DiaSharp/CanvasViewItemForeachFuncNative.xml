@@ -1,7 +1,7 @@
 <Type Name="CanvasViewItemForeachFuncNative" FullName="DiaSharp.CanvasViewItemForeachFuncNative">
   <TypeSignature Language="C#" Value="public sealed delegate int CanvasViewItemForeachFuncNative (IntPtr item, IntPtr data);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="boolObjectObjectDelegate" FullName="DiaSharp.boolObjectObjectDelegate">
   <TypeSignature Language="C#" Value="public sealed delegate bool boolObjectObjectDelegate (IntPtr arg0, IntPtr arg1, int key);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

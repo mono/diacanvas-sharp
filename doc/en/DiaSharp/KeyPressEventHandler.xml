@@ -1,7 +1,7 @@
 <Type Name="KeyPressEventHandler" FullName="DiaSharp.KeyPressEventHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void KeyPressEventHandler (object o, DiaSharp.KeyPressEventArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="ButtonPressEventHandler" FullName="DiaSharp.ButtonPressEventHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void ButtonPressEventHandler (object o, DiaSharp.ButtonPressEventArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

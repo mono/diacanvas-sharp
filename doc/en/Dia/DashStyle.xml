@@ -1,7 +1,7 @@
 <Type Name="DashStyle" FullName="Dia.DashStyle">
   <TypeSignature Language="C#" Value="public sealed struct DashStyle;" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

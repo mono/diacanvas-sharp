@@ -1,7 +1,7 @@
 <Type Name="AddHandler" FullName="DiaSharp.AddHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void AddHandler (object o, DiaSharp.AddArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="boolObjectObjectEventMotionDelegate" FullName="DiaSharp.boolObjectObjectEventMotionDelegate">
   <TypeSignature Language="C#" Value="public sealed delegate bool boolObjectObjectEventMotionDelegate (IntPtr arg0, IntPtr arg1, ref Gdk.EventMotion arg2, int key);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

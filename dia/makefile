@@ -5,13 +5,13 @@ ASSEMBLIES=	-r gtk-sharp.dll \
 		-r pango-sharp.dll \
 		-r art-sharp.dll
 
-LIBRARY=	diacanvas2-sharp.dll
+LIBRARY=	dia-sharp.dll
 
-all:	generated/*.cs
+all:	*.cs generated/*.cs
 	mcs --unsafe --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
-	install -o root -g root -m 644 diacanvas2-sharp.dll /usr/lib
+	install -o root -g root -m 644 $(LIBRARY) /usr/lib
 
 clean:
 	rm -f $(LIBRARY)

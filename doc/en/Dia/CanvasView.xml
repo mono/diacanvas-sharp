@@ -1,7 +1,7 @@
 <Type Name="CanvasView" FullName="Dia.CanvasView">
   <TypeSignature Language="C#" Value="public class CanvasView : Gnome.Canvas, Implementor, IWrapper, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
