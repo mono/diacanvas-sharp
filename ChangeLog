@@ -1,3 +1,8 @@
+2004-02-05  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/makefile.am: Removed -nowarn:0660,0661, cause they are not
+	  generated anymore
+
 2004-01-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* PROBLEMS: Removed problem with array fields not generated
