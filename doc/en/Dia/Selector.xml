@@ -88,24 +88,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="X2">
-      <MemberSignature Language="C#" Value="public int X2 { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="X1">
-      <MemberSignature Language="C#" Value="public int X1 { set; get; };" />
+    <Member MemberName="Y1">
+      <MemberSignature Language="C#" Value="public int Y1 { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -136,8 +120,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Y1">
-      <MemberSignature Language="C#" Value="public int Y1 { set; get; };" />
+    <Member MemberName="X1">
+      <MemberSignature Language="C#" Value="public int X1 { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X2">
+      <MemberSignature Language="C#" Value="public int X2 { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

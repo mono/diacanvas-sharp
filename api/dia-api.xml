@@ -221,12 +221,6 @@
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="AddConstruction" cname="dia_canvas_groupable_add_construction">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaCanvasItem*" name="item"/>
-        </parameters>
-      </method>
       <method name="GetIter" cname="dia_canvas_groupable_get_iter">
         <return-type type="gboolean"/>
         <parameters>
@@ -253,12 +247,6 @@
       </method>
       <method name="Remove" cname="dia_canvas_groupable_remove">
         <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaCanvasItem*" name="item"/>
-        </parameters>
-      </method>
-      <method name="RemoveDestruction" cname="dia_canvas_groupable_remove_destruction">
-        <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
@@ -625,6 +613,12 @@
       <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true"/>
       <property name="Affine" cname="affine" type="DiaAffine" readable="true" writeable="true"/>
       <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true" writeable="true"/>
+      <method name="AddConstruction" cname="dia_canvas_item_add_construction">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item"/>
+        </parameters>
+      </method>
       <method name="AffineGetType" cname="dia_canvas_item_affine_get_type" shared="true">
         <return-type type="GType"/>
       </method>
@@ -754,6 +748,12 @@
         <return-type type="void"/>
         <parameters>
           <parameter type="const-gchar*" name="property_name"/>
+        </parameters>
+      </method>
+      <method name="RemoveDestruction" cname="dia_canvas_item_remove_destruction">
+        <return-type type="void"/>
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
       <method name="RequestUpdate" cname="dia_canvas_item_request_update">

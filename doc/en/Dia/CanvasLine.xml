@@ -25,6 +25,18 @@
   </Interfaces>
   <Attributes />
   <Members>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetClosestSegment">
       <MemberSignature Language="C#" Value="public int GetClosestSegment (double x, double y);" />
       <MemberType>Method</MemberType>
@@ -40,18 +52,6 @@
         <param name="x">a <see cref="T:System.Double" /></param>
         <param name="y">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -106,56 +106,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Horizontal">
-      <MemberSignature Language="C#" Value="public bool Horizontal { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Join">
-      <MemberSignature Language="C#" Value="public Dia.JoinStyle Join { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.JoinStyle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.JoinStyle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.JoinStyle" /></param>
-        <returns>a <see cref="T:Dia.JoinStyle" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HasHead">
-      <MemberSignature Language="C#" Value="public bool HasHead { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TailPos">
-      <MemberSignature Language="C#" Value="public Dia.Point TailPos { set; get; };" />
+    <Member MemberName="AddPoint">
+      <MemberSignature Language="C#" Value="public Dia.Point AddPoint { set; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Point</ReturnType>
@@ -170,296 +122,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddSegment">
-      <MemberSignature Language="C#" Value="public uint AddSegment { set; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt32" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadFillColor">
-      <MemberSignature Language="C#" Value="public ulong HeadFillColor { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt64</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TailA">
-      <MemberSignature Language="C#" Value="public double TailA { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TailD">
-      <MemberSignature Language="C#" Value="public double TailD { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HasTail">
-      <MemberSignature Language="C#" Value="public bool HasTail { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadD">
-      <MemberSignature Language="C#" Value="public double HeadD { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Orthogonal">
-      <MemberSignature Language="C#" Value="public bool Orthogonal { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Dash">
-      <MemberSignature Language="C#" Value="public Dia.DashStyle Dash { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.DashStyle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.DashStyle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.DashStyle" /></param>
-        <returns>a <see cref="T:Dia.DashStyle" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadA">
-      <MemberSignature Language="C#" Value="public double HeadA { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TailFillColor">
-      <MemberSignature Language="C#" Value="public ulong TailFillColor { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt64</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Cap">
-      <MemberSignature Language="C#" Value="public Dia.CapStyle Cap { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CapStyle</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.CapStyle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.CapStyle" /></param>
-        <returns>a <see cref="T:Dia.CapStyle" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LineWidth">
-      <MemberSignature Language="C#" Value="public double LineWidth { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="TailB">
-      <MemberSignature Language="C#" Value="public double TailB { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Color">
-      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt64</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="DelSegment">
-      <MemberSignature Language="C#" Value="public uint DelSegment { set; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt32" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadPos">
-      <MemberSignature Language="C#" Value="public Dia.Point HeadPos { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Point</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.Point" /></param>
-        <returns>a <see cref="T:Dia.Point" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadC">
-      <MemberSignature Language="C#" Value="public double HeadC { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadB">
-      <MemberSignature Language="C#" Value="public double HeadB { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeadColor">
-      <MemberSignature Language="C#" Value="public ulong HeadColor { set; get; };" />
+    <Member MemberName="TailColor">
+      <MemberSignature Language="C#" Value="public ulong TailColor { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -490,8 +154,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TailColor">
-      <MemberSignature Language="C#" Value="public ulong TailColor { set; get; };" />
+    <Member MemberName="HeadColor">
+      <MemberSignature Language="C#" Value="public ulong HeadColor { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -506,19 +170,211 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddPoint">
-      <MemberSignature Language="C#" Value="public Dia.Point AddPoint { set; };" />
+    <Member MemberName="HeadB">
+      <MemberSignature Language="C#" Value="public double HeadB { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.Point</ReturnType>
+        <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="Dia.Point" />
+        <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.Point" /></param>
-        <returns>a <see cref="T:Dia.Point" /></returns>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadC">
+      <MemberSignature Language="C#" Value="public double HeadC { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadD">
+      <MemberSignature Language="C#" Value="public double HeadD { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelSegment">
+      <MemberSignature Language="C#" Value="public uint DelSegment { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt32" /></param>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailB">
+      <MemberSignature Language="C#" Value="public double TailB { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public double LineWidth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cap">
+      <MemberSignature Language="C#" Value="public Dia.CapStyle Cap { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CapStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.CapStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.CapStyle" /></param>
+        <returns>a <see cref="T:Dia.CapStyle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailFillColor">
+      <MemberSignature Language="C#" Value="public ulong TailFillColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadA">
+      <MemberSignature Language="C#" Value="public double HeadA { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dash">
+      <MemberSignature Language="C#" Value="public Dia.DashStyle Dash { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.DashStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.DashStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.DashStyle" /></param>
+        <returns>a <see cref="T:Dia.DashStyle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orthogonal">
+      <MemberSignature Language="C#" Value="public bool Orthogonal { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailA">
+      <MemberSignature Language="C#" Value="public double TailA { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -535,6 +391,150 @@
         <summary>To be added</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailD">
+      <MemberSignature Language="C#" Value="public double TailD { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadFillColor">
+      <MemberSignature Language="C#" Value="public ulong HeadFillColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSegment">
+      <MemberSignature Language="C#" Value="public uint AddSegment { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt32" /></param>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTail">
+      <MemberSignature Language="C#" Value="public bool HasTail { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasHead">
+      <MemberSignature Language="C#" Value="public bool HasHead { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Dia.JoinStyle Join { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.JoinStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.JoinStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.JoinStyle" /></param>
+        <returns>a <see cref="T:Dia.JoinStyle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="public bool Horizontal { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadPos">
+      <MemberSignature Language="C#" Value="public Dia.Point HeadPos { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailPos">
+      <MemberSignature Language="C#" Value="public Dia.Point TailPos { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

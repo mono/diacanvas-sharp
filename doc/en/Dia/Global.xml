@@ -18,6 +18,19 @@
   <Interfaces />
   <Attributes />
   <Members>
+    <Member MemberName="EventGetType">
+      <MemberSignature Language="C#" Value="public static uint EventGetType ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExportPrint">
       <MemberSignature Language="C#" Value="public static void ExportPrint (IntPtr gpm, Dia.Canvas canvas);" />
       <MemberType>Method</MemberType>
@@ -32,19 +45,6 @@
         <summary>To be added</summary>
         <param name="gpm">a <see cref="T:System.IntPtr" /></param>
         <param name="canvas">a <see cref="T:Dia.Canvas" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="EventGetType">
-      <MemberSignature Language="C#" Value="public static uint EventGetType ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

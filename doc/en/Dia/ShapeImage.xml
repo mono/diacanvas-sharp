@@ -66,20 +66,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetPos">
-      <MemberSignature Language="C#" Value="public static void SetPos (Dia.Shape shape, Dia.Point pos);" />
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeImage New (IntPtr raw);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Dia.ShapeImage</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="pos" Type="Dia.Point" />
+        <Parameter Name="raw" Type="System.IntPtr" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="pos">a <see cref="T:Dia.Point" /></param>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeImage" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -100,19 +99,20 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeImage New (IntPtr raw);" />
+    <Member MemberName="SetPos">
+      <MemberSignature Language="C#" Value="public static void SetPos (Dia.Shape shape, Dia.Point pos);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.ShapeImage</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="pos" Type="Dia.Point" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeImage" /></returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="pos">a <see cref="T:Dia.Point" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

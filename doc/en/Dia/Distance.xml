@@ -18,8 +18,8 @@
   <Interfaces />
   <Attributes />
   <Members>
-    <Member MemberName="PointPointManhattan">
-      <MemberSignature Language="C#" Value="public static double PointPointManhattan (Dia.Point p1, Dia.Point p2);" />
+    <Member MemberName="PointPoint">
+      <MemberSignature Language="C#" Value="public static double PointPoint (Dia.Point p1, Dia.Point p2);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -32,24 +32,6 @@
         <summary>To be added</summary>
         <param name="p1">a <see cref="T:Dia.Point" /></param>
         <param name="p2">a <see cref="T:Dia.Point" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RectanglePoint">
-      <MemberSignature Language="C#" Value="public static double RectanglePoint (Dia.Rectangle rect, Dia.Point point);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="rect" Type="Dia.Rectangle" />
-        <Parameter Name="point" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
-        <param name="point">a <see cref="T:Dia.Point" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -80,8 +62,26 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PointPoint">
-      <MemberSignature Language="C#" Value="public static double PointPoint (Dia.Point p1, Dia.Point p2);" />
+    <Member MemberName="RectanglePoint">
+      <MemberSignature Language="C#" Value="public static double RectanglePoint (Dia.Rectangle rect, Dia.Point point);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Dia.Rectangle" />
+        <Parameter Name="point" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
+        <param name="point">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointPointManhattan">
+      <MemberSignature Language="C#" Value="public static double PointPointManhattan (Dia.Point p1, Dia.Point p2);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>

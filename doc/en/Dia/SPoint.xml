@@ -70,8 +70,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="y">
-      <MemberSignature Language="C#" Value="public Dia.Variable y { get; };" />
+    <Member MemberName="x">
+      <MemberSignature Language="C#" Value="public Dia.Variable x { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Variable</ReturnType>
@@ -82,8 +82,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="x">
-      <MemberSignature Language="C#" Value="public Dia.Variable x { get; };" />
+    <Member MemberName="y">
+      <MemberSignature Language="C#" Value="public Dia.Variable y { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Variable</ReturnType>

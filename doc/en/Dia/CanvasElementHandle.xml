@@ -9,8 +9,13 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>
+    An identifier for each <see cref="T:Dia.Handle" /> on a <see cref="T:Dia.CanvasElement" />.
+    </summary>
+    <remarks>
+    A <see cref="T:Dia.CanvasElement" /> has 8 <see cref="T:Dia.Handle" />'s around itself, 
+    this enum represents each <see cref="T:Dia.Handle" />.
+    </remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +41,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The North <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nw">
@@ -48,8 +53,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The North West <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ne">
@@ -60,8 +65,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The North Eeast <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -72,8 +77,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The South <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="W">
@@ -84,8 +89,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The West <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -96,8 +101,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The East <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Sw">
@@ -108,8 +113,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The South West <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Se">
@@ -120,8 +125,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The South East <see cref="T:Dia.Handle" />.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

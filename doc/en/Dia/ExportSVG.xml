@@ -25,18 +25,15 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Save">
-      <MemberSignature Language="C#" Value="public void Save (string filename);" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="filename">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -55,15 +52,18 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (string filename);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="filename">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -9,8 +9,11 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Change the visibility of a <see cref="T:Dia.Shape" />.</summary>
+    <remarks>
+    Since <see cref="Dia.CanvasItem" />'s are stateless, we can not create helper-lines and such. 
+    By changing the visibility, you can make shapes visible if a view item is in a specific state.
+    </remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +39,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Hidden state.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -48,8 +51,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Visible state.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfSelected">
@@ -60,8 +63,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Visible if selected state.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfFocused">
@@ -72,8 +75,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Visible if focused state.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfGrabbed">
@@ -84,8 +87,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Visible if grabbed state.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

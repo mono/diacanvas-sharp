@@ -45,19 +45,29 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SignalDisconnectByFunc">
-      <MemberSignature Language="C#" Value="public void SignalDisconnectByFunc (Gtk.SignalFunc func, Dia.Persistent slot_object);" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignalDisconnectByObject">
+      <MemberSignature Language="C#" Value="public void SignalDisconnectByObject (Dia.Persistent slot_object);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="func" Type="Gtk.SignalFunc" />
         <Parameter Name="slot_object" Type="Dia.Persistent" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="func">a <see cref="T:Gtk.SignalFunc" /></param>
         <param name="slot_object">a <see cref="T:Dia.Persistent" /></param>
         <remarks>To be added</remarks>
       </Docs>
@@ -83,30 +93,20 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SignalDisconnectByObject">
-      <MemberSignature Language="C#" Value="public void SignalDisconnectByObject (Dia.Persistent slot_object);" />
+    <Member MemberName="SignalDisconnectByFunc">
+      <MemberSignature Language="C#" Value="public void SignalDisconnectByFunc (Gtk.SignalFunc func, Dia.Persistent slot_object);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="func" Type="Gtk.SignalFunc" />
         <Parameter Name="slot_object" Type="Dia.Persistent" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="func">a <see cref="T:Gtk.SignalFunc" /></param>
         <param name="slot_object">a <see cref="T:Dia.Persistent" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

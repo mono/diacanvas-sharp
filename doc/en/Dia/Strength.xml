@@ -9,8 +9,11 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>A scale of strengths.</summary>
+    <remarks>Every <see cref="T:Dia.Variable" /> and <see cref="T: Dia.Handle" /> is assigned a 
+    <see cref="T:Dia.Strength" />. The <see cref="T:Dia.Solver" /> will change the value of the weakest 
+    <see cref="T:Dia.Variable" /> in an attempt to make the <see cref="Dia.Constraint" />'s true.
+    </remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +39,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Very weak</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Weak">
@@ -48,8 +51,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Weak</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Medium">
@@ -60,8 +63,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Medium</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Strong">
@@ -72,8 +75,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Strong</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="VeryStrong">
@@ -84,8 +87,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Very strong</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Required">
@@ -96,8 +99,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Required</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

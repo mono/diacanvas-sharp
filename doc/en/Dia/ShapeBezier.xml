@@ -138,104 +138,53 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetCap">
-      <MemberSignature Language="C#" Value="public static void SetCap (Dia.Shape shape, Dia.CapStyle cap);" />
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeBezier New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeBezier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeBezier" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFillColor">
+      <MemberSignature Language="C#" Value="public static void SetFillColor (Dia.Shape shape, uint fill_color);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="cap" Type="Dia.CapStyle" />
+        <Parameter Name="fill_color" Type="System.UInt32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="cap">a <see cref="T:Dia.CapStyle" /></param>
+        <param name="fill_color">a <see cref="T:System.UInt32" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsClipPath">
-      <MemberSignature Language="C#" Value="public static bool IsClipPath (Dia.Shape shape);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetClipping">
-      <MemberSignature Language="C#" Value="public static void SetClipping (Dia.Shape shape, bool clipping);" />
+    <Member MemberName="SetLineWidth">
+      <MemberSignature Language="C#" Value="public static void SetLineWidth (Dia.Shape shape, double line_width);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="clipping" Type="System.Boolean" />
+        <Parameter Name="line_width" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="clipping">a <see cref="T:System.Boolean" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetJoin">
-      <MemberSignature Language="C#" Value="public static void SetJoin (Dia.Shape shape, Dia.JoinStyle join);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="join" Type="Dia.JoinStyle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="join">a <see cref="T:Dia.JoinStyle" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetFill">
-      <MemberSignature Language="C#" Value="public static void SetFill (Dia.Shape shape, Dia.FillStyle fill);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="fill" Type="Dia.FillStyle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="fill">a <see cref="T:Dia.FillStyle" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetCyclic">
-      <MemberSignature Language="C#" Value="public static void SetCyclic (Dia.Shape shape, bool cyclic);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="cyclic" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="cyclic">a <see cref="T:System.Boolean" /></param>
+        <param name="line_width">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -260,53 +209,104 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetLineWidth">
-      <MemberSignature Language="C#" Value="public static void SetLineWidth (Dia.Shape shape, double line_width);" />
+    <Member MemberName="SetCyclic">
+      <MemberSignature Language="C#" Value="public static void SetCyclic (Dia.Shape shape, bool cyclic);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="line_width" Type="System.Double" />
+        <Parameter Name="cyclic" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="line_width">a <see cref="T:System.Double" /></param>
+        <param name="cyclic">a <see cref="T:System.Boolean" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetFillColor">
-      <MemberSignature Language="C#" Value="public static void SetFillColor (Dia.Shape shape, uint fill_color);" />
+    <Member MemberName="SetFill">
+      <MemberSignature Language="C#" Value="public static void SetFill (Dia.Shape shape, Dia.FillStyle fill);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="fill_color" Type="System.UInt32" />
+        <Parameter Name="fill" Type="Dia.FillStyle" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="fill_color">a <see cref="T:System.UInt32" /></param>
+        <param name="fill">a <see cref="T:Dia.FillStyle" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeBezier New (IntPtr raw);" />
+    <Member MemberName="SetJoin">
+      <MemberSignature Language="C#" Value="public static void SetJoin (Dia.Shape shape, Dia.JoinStyle join);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.ShapeBezier</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="join" Type="Dia.JoinStyle" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeBezier" /></returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="join">a <see cref="T:Dia.JoinStyle" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetClipping">
+      <MemberSignature Language="C#" Value="public static void SetClipping (Dia.Shape shape, bool clipping);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="clipping" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="clipping">a <see cref="T:System.Boolean" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClipPath">
+      <MemberSignature Language="C#" Value="public static bool IsClipPath (Dia.Shape shape);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCap">
+      <MemberSignature Language="C#" Value="public static void SetCap (Dia.Shape shape, Dia.CapStyle cap);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="cap" Type="Dia.CapStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="cap">a <see cref="T:Dia.CapStyle" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -88,51 +88,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Cap">
-      <MemberSignature Language="C#" Value="public Dia.CapStyle Cap { set; get; };" />
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.CapStyle</ReturnType>
+        <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="Dia.CapStyle" />
+        <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.CapStyle" /></param>
-        <returns>a <see cref="T:Dia.CapStyle" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="BezierWidth">
-      <MemberSignature Language="C#" Value="public double BezierWidth { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddPoint">
-      <MemberSignature Language="C#" Value="public Dia.Point AddPoint { set; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Point</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.Point" /></param>
-        <returns>a <see cref="T:Dia.Point" /></returns>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -152,19 +120,51 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Color">
-      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
+    <Member MemberName="AddPoint">
+      <MemberSignature Language="C#" Value="public Dia.Point AddPoint { set; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt64</ReturnType>
+        <ReturnType>Dia.Point</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="value" Type="Dia.Point" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
+        <param name="value">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BezierWidth">
+      <MemberSignature Language="C#" Value="public double BezierWidth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cap">
+      <MemberSignature Language="C#" Value="public Dia.CapStyle Cap { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CapStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.CapStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.CapStyle" /></param>
+        <returns>a <see cref="T:Dia.CapStyle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

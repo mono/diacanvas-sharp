@@ -66,6 +66,22 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeViewInfo New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeViewInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeViewInfo" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public static void Remove (Dia.Shape shape, Dia.ShapeViewInfo view_info);" />
       <MemberType>Method</MemberType>
@@ -80,22 +96,6 @@
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
         <param name="view_info">a <see cref="T:Dia.ShapeViewInfo" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeViewInfo New (IntPtr raw);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.ShapeViewInfo</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeViewInfo" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

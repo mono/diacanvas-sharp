@@ -70,8 +70,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Destroy">
-      <MemberSignature Language="C#" Value="public void Destroy ();" />
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public void Init ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -82,8 +82,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Init">
-      <MemberSignature Language="C#" Value="public void Init ();" />
+    <Member MemberName="Destroy">
+      <MemberSignature Language="C#" Value="public void Destroy ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -44,8 +44,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UnsetCanvas">
-      <MemberSignature Language="C#" Value="public void UnsetCanvas ();" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -56,8 +56,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EditingDone">
-      <MemberSignature Language="C#" Value="public void EditingDone ();" />
+    <Member MemberName="RequestUpdate">
+      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -68,36 +68,93 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectAll">
-      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public void Move (double dx, double dy, Dia.CanvasViewItem originator);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FindViewItem">
-      <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FindViewItem (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
+        <Parameter Name="originator" Type="Dia.CanvasViewItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
+        <param name="dx">a <see cref="T:System.Double" /></param>
+        <param name="dy">a <see cref="T:System.Double" /></param>
+        <param name="originator">a <see cref="T:Dia.CanvasViewItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Focus">
-      <MemberSignature Language="C#" Value="public void Focus (Dia.CanvasViewItem item);" />
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select (Dia.CanvasViewItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartEditing">
+      <MemberSignature Language="C#" Value="public void StartEditing (Dia.CanvasViewItem item, Dia.ShapeText text_shape);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="text_shape" Type="Dia.ShapeText" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GdkEventToDiaEvent">
+      <MemberSignature Language="C#" Value="public void GdkEventToDiaEvent (Dia.CanvasViewItem item, Gdk.Event gdk_event, Dia.Event dia_event);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="gdk_event" Type="Gdk.Event" />
+        <Parameter Name="dia_event" Type="Dia.Event" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="gdk_event">a <see cref="T:Gdk.Event" /></param>
+        <param name="dia_event">a <see cref="T:Dia.Event" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectRectangle">
+      <MemberSignature Language="C#" Value="public void SelectRectangle (Dia.Rectangle rect);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Dia.Rectangle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unselect">
+      <MemberSignature Language="C#" Value="public void Unselect (Dia.CanvasViewItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -123,8 +180,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Unselect">
-      <MemberSignature Language="C#" Value="public void Unselect (Dia.CanvasViewItem item);" />
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public void Focus (Dia.CanvasViewItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -138,93 +195,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectRectangle">
-      <MemberSignature Language="C#" Value="public void SelectRectangle (Dia.Rectangle rect);" />
+    <Member MemberName="FindViewItem">
+      <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FindViewItem (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Dia.CanvasViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rect" Type="Dia.Rectangle" />
+        <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GdkEventToDiaEvent">
-      <MemberSignature Language="C#" Value="public void GdkEventToDiaEvent (Dia.CanvasViewItem item, Gdk.Event gdk_event, Dia.Event dia_event);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="gdk_event" Type="Gdk.Event" />
-        <Parameter Name="dia_event" Type="Dia.Event" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="gdk_event">a <see cref="T:Gdk.Event" /></param>
-        <param name="dia_event">a <see cref="T:Dia.Event" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StartEditing">
-      <MemberSignature Language="C#" Value="public void StartEditing (Dia.CanvasViewItem item, Dia.ShapeText text_shape);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="text_shape" Type="Dia.ShapeText" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Select">
-      <MemberSignature Language="C#" Value="public void Select (Dia.CanvasViewItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasViewItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Move">
-      <MemberSignature Language="C#" Value="public void Move (double dx, double dy, Dia.CanvasViewItem originator);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dx" Type="System.Double" />
-        <Parameter Name="dy" Type="System.Double" />
-        <Parameter Name="originator" Type="Dia.CanvasViewItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="dx">a <see cref="T:System.Double" /></param>
-        <param name="dy">a <see cref="T:System.Double" /></param>
-        <param name="originator">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RequestUpdate">
-      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -235,8 +223,20 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+    <Member MemberName="EditingDone">
+      <MemberSignature Language="C#" Value="public void EditingDone ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsetCanvas">
+      <MemberSignature Language="C#" Value="public void UnsetCanvas ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -314,71 +314,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FocusItem">
-      <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FocusItem { get; };" />
+    <Member MemberName="Aa">
+      <MemberSignature Language="C#" Value="public bool Aa { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.CanvasViewItem</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SelectedItems">
-      <MemberSignature Language="C#" Value="public Collections.IList SelectedItems { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Collections.IList</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Collections.IList" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Canvas">
-      <MemberSignature Language="C#" Value="public Dia.Canvas Canvas { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Canvas</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="Dia.Canvas" />
+        <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.Canvas" /></param>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Zoom">
-      <MemberSignature Language="C#" Value="public double Zoom { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ActiveView">
-      <MemberSignature Language="C#" Value="public Dia.CanvasView ActiveView { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasView</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.CanvasView" /></returns>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -398,24 +346,76 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Aa">
-      <MemberSignature Language="C#" Value="public bool Aa { set; get; };" />
+    <Member MemberName="ActiveView">
+      <MemberSignature Language="C#" Value="public Dia.CanvasView ActiveView { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>Dia.CanvasView</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Boolean" />
-      </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
+        <returns>a <see cref="T:Dia.CanvasView" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UnselectedItem">
-      <MemberSignature Language="C#" Value="public event DiaSharp.UnselectedItemHandler UnselectedItem;" />
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="public double Zoom { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Canvas">
+      <MemberSignature Language="C#" Value="public Dia.Canvas Canvas { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Canvas</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Canvas" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.Canvas" /></param>
+        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItems">
+      <MemberSignature Language="C#" Value="public Collections.IList SelectedItems { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Collections.IList" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusItem">
+      <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FocusItem { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasViewItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public event DiaSharp.SelectedItemHandler SelectedItem;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -434,8 +434,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectedItem">
-      <MemberSignature Language="C#" Value="public event DiaSharp.SelectedItemHandler SelectedItem;" />
+    <Member MemberName="UnselectedItem">
+      <MemberSignature Language="C#" Value="public event DiaSharp.UnselectedItemHandler UnselectedItem;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

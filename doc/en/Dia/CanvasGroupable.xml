@@ -20,11 +20,11 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Pos">
-      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem item);" />
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual bool Remove (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="item" Type="Dia.CanvasItem" />
@@ -32,7 +32,7 @@
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -52,6 +52,22 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Pos">
+      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Length">
       <MemberSignature Language="C#" Value="public virtual int Length ();" />
       <MemberType>Method</MemberType>
@@ -62,21 +78,6 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RemoveDestruction">
-      <MemberSignature Language="C#" Value="public virtual void RemoveDestruction (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -92,22 +93,6 @@
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Next">
-      <MemberSignature Language="C#" Value="public virtual bool Next (Dia.CanvasIter iter);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="iter" Type="Dia.CanvasIter" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -128,39 +113,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddConstruction">
-      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Remove">
-      <MemberSignature Language="C#" Value="public virtual bool Remove (Dia.CanvasItem item);" />
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="public virtual bool Next (Dia.CanvasIter iter);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
+        <Parameter Name="iter" Type="Dia.CanvasIter" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Added">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -169,8 +139,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Removed">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

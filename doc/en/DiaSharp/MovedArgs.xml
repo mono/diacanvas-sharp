@@ -29,15 +29,15 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Interactive">
-      <MemberSignature Language="C#" Value="public bool Interactive { get; };" />
+    <Member MemberName="Dx">
+      <MemberSignature Language="C#" Value="public double Dx { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -53,15 +53,15 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Dx">
-      <MemberSignature Language="C#" Value="public double Dx { get; };" />
+    <Member MemberName="Interactive">
+      <MemberSignature Language="C#" Value="public bool Interactive { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -198,297 +198,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetTextWidth">
-      <MemberSignature Language="C#" Value="public static void SetTextWidth (Dia.Shape shape, double width);" />
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeText New (IntPtr raw);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Dia.ShapeText</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="raw" Type="System.IntPtr" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="width">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetStaticText">
-      <MemberSignature Language="C#" Value="public static void SetStaticText (Dia.Shape shape, string text);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="text" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="text">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ToPangoLayout">
-      <MemberSignature Language="C#" Value="public static Pango.Layout ToPangoLayout (Dia.Shape shape, bool fill);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Pango.Layout</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="fill" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="fill">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="FillPangoLayout">
-      <MemberSignature Language="C#" Value="public static void FillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="layout" Type="Pango.Layout" />
-        <Parameter Name="scale" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="layout">a <see cref="T:Pango.Layout" /></param>
-        <param name="scale">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetMaxWidth">
-      <MemberSignature Language="C#" Value="public static void SetMaxWidth (Dia.Shape shape, double width);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="width" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="width">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetAlignment">
-      <MemberSignature Language="C#" Value="public static void SetAlignment (Dia.Shape shape, Pango.Alignment alignment);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="alignment" Type="Pango.Alignment" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="alignment">a <see cref="T:Pango.Alignment" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetMarkup">
-      <MemberSignature Language="C#" Value="public static void SetMarkup (Dia.Shape shape, bool markup);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="markup" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="markup">a <see cref="T:System.Boolean" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetPos">
-      <MemberSignature Language="C#" Value="public static void SetPos (Dia.Shape shape, Dia.Point pos);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="pos" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="pos">a <see cref="T:Dia.Point" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PrettyFillPangoLayout">
-      <MemberSignature Language="C#" Value="public static void PrettyFillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="layout" Type="Pango.Layout" />
-        <Parameter Name="scale" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="layout">a <see cref="T:Pango.Layout" /></param>
-        <param name="scale">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetLineSpacing">
-      <MemberSignature Language="C#" Value="public static void SetLineSpacing (Dia.Shape shape, double line_spacing);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="line_spacing" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="line_spacing">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetText">
-      <MemberSignature Language="C#" Value="public static void SetText (Dia.Shape shape, string text);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="text" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="text">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetJustify">
-      <MemberSignature Language="C#" Value="public static void SetJustify (Dia.Shape shape, bool justify);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="justify" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="justify">a <see cref="T:System.Boolean" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetFontDescription">
-      <MemberSignature Language="C#" Value="public static void SetFontDescription (Dia.Shape shape, Pango.FontDescription font_desc);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="font_desc" Type="Pango.FontDescription" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="font_desc">a <see cref="T:Pango.FontDescription" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetMaxHeight">
-      <MemberSignature Language="C#" Value="public static void SetMaxHeight (Dia.Shape shape, double height);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="height" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="height">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetAffine">
-      <MemberSignature Language="C#" Value="public static void SetAffine (Dia.Shape shape, double [] affine);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="affine" Type="System.Double[]" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="affine">a <see cref="T:System.Double[]" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetWrapMode">
-      <MemberSignature Language="C#" Value="public static void SetWrapMode (Dia.Shape shape, Pango.WrapMode wrap_mode);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="wrap_mode" Type="Pango.WrapMode" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="wrap_mode">a <see cref="T:Pango.WrapMode" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SetCursor">
-      <MemberSignature Language="C#" Value="public static void SetCursor (Dia.Shape shape, int cursor);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="cursor" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="cursor">a <see cref="T:System.Int32" /></param>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeText" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -512,19 +234,297 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeText New (IntPtr raw);" />
+    <Member MemberName="SetCursor">
+      <MemberSignature Language="C#" Value="public static void SetCursor (Dia.Shape shape, int cursor);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.ShapeText</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="cursor" Type="System.Int32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeText" /></returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="cursor">a <see cref="T:System.Int32" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public static void SetWrapMode (Dia.Shape shape, Pango.WrapMode wrap_mode);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="wrap_mode" Type="Pango.WrapMode" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="wrap_mode">a <see cref="T:Pango.WrapMode" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAffine">
+      <MemberSignature Language="C#" Value="public static void SetAffine (Dia.Shape shape, double [] affine);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="affine" Type="System.Double[]" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxHeight">
+      <MemberSignature Language="C#" Value="public static void SetMaxHeight (Dia.Shape shape, double height);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="height">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFontDescription">
+      <MemberSignature Language="C#" Value="public static void SetFontDescription (Dia.Shape shape, Pango.FontDescription font_desc);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="font_desc" Type="Pango.FontDescription" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="font_desc">a <see cref="T:Pango.FontDescription" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJustify">
+      <MemberSignature Language="C#" Value="public static void SetJustify (Dia.Shape shape, bool justify);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="justify" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="justify">a <see cref="T:System.Boolean" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public static void SetText (Dia.Shape shape, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="text">a <see cref="T:System.String" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLineSpacing">
+      <MemberSignature Language="C#" Value="public static void SetLineSpacing (Dia.Shape shape, double line_spacing);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="line_spacing" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="line_spacing">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrettyFillPangoLayout">
+      <MemberSignature Language="C#" Value="public static void PrettyFillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="layout" Type="Pango.Layout" />
+        <Parameter Name="scale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="layout">a <see cref="T:Pango.Layout" /></param>
+        <param name="scale">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPos">
+      <MemberSignature Language="C#" Value="public static void SetPos (Dia.Shape shape, Dia.Point pos);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="pos" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="pos">a <see cref="T:Dia.Point" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMarkup">
+      <MemberSignature Language="C#" Value="public static void SetMarkup (Dia.Shape shape, bool markup);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="markup" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="markup">a <see cref="T:System.Boolean" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAlignment">
+      <MemberSignature Language="C#" Value="public static void SetAlignment (Dia.Shape shape, Pango.Alignment alignment);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="alignment" Type="Pango.Alignment" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="alignment">a <see cref="T:Pango.Alignment" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxWidth">
+      <MemberSignature Language="C#" Value="public static void SetMaxWidth (Dia.Shape shape, double width);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="width" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="width">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillPangoLayout">
+      <MemberSignature Language="C#" Value="public static void FillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="layout" Type="Pango.Layout" />
+        <Parameter Name="scale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="layout">a <see cref="T:Pango.Layout" /></param>
+        <param name="scale">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout ToPangoLayout (Dia.Shape shape, bool fill);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="fill" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="fill">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStaticText">
+      <MemberSignature Language="C#" Value="public static void SetStaticText (Dia.Shape shape, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="text">a <see cref="T:System.String" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextWidth">
+      <MemberSignature Language="C#" Value="public static void SetTextWidth (Dia.Shape shape, double width);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="width" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="width">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

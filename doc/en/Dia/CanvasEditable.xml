@@ -20,20 +20,18 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="DoneEditing">
-      <MemberSignature Language="C#" Value="public virtual void DoneEditing (Dia.ShapeText text_shape, string new_text);" />
+    <Member MemberName="EditingStart">
+      <MemberSignature Language="C#" Value="public virtual void EditingStart (Dia.ShapeText text_shape);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="text_shape" Type="Dia.ShapeText" />
-        <Parameter Name="new_text" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <param name="new_text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -56,23 +54,25 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EditingStart">
-      <MemberSignature Language="C#" Value="public virtual void EditingStart (Dia.ShapeText text_shape);" />
+    <Member MemberName="DoneEditing">
+      <MemberSignature Language="C#" Value="public virtual void DoneEditing (Dia.ShapeText text_shape, string new_text);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="text_shape" Type="Dia.ShapeText" />
+        <Parameter Name="new_text" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
+        <param name="new_text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TextChanged">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.TextChangedHandler TextChanged;" />
+    <Member MemberName="EditingDone">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.EditingDoneHandler EditingDone;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -91,8 +91,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="EditingDone">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.EditingDoneHandler EditingDone;" />
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.TextChangedHandler TextChanged;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

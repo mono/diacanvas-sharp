@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <metadata>
 
-<!-- Type hides -->
+<!-- type hides -->
 <rule>
   <class name="DiaExpression"/>
   <class name="DiaVariableClass"/>
@@ -13,7 +13,7 @@
   </data>
 </rule>
 
-<!-- Method hides -->
+<!-- method hides -->
 <rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>

@@ -43,8 +43,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AlignHandles">
-      <MemberSignature Language="C#" Value="public void AlignHandles ();" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -55,8 +55,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+    <Member MemberName="AlignHandles">
+      <MemberSignature Language="C#" Value="public void AlignHandles ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -118,24 +118,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Width">
-      <MemberSignature Language="C#" Value="public double Width { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MinWidth">
-      <MemberSignature Language="C#" Value="public double MinWidth { set; get; };" />
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -166,8 +150,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Height">
-      <MemberSignature Language="C#" Value="public double Height { set; get; };" />
+    <Member MemberName="MinWidth">
+      <MemberSignature Language="C#" Value="public double MinWidth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>

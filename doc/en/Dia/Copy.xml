@@ -55,19 +55,6 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Copy New ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Copy</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.Copy" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
       <MemberSignature Language="C#" Value="public static Dia.Copy New (IntPtr raw);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -83,19 +70,28 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Paste">
-      <MemberSignature Language="C#" Value="public Dia.Copy Paste (Dia.PersistentFactory factory);" />
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Copy New ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Copy</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="factory" Type="Dia.PersistentFactory" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="factory">a <see cref="T:Dia.PersistentFactory" /></param>
         <returns>a <see cref="T:Dia.Copy" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -116,15 +112,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Clear">
-      <MemberSignature Language="C#" Value="public void Clear ();" />
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public Dia.Copy Paste (Dia.PersistentFactory factory);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Dia.Copy</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="factory" Type="Dia.PersistentFactory" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="factory">a <see cref="T:Dia.PersistentFactory" /></param>
+        <returns>a <see cref="T:Dia.Copy" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

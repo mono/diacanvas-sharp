@@ -25,18 +25,15 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Push">
-      <MemberSignature Language="C#" Value="public void Push (Dia.Tool tool);" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="tool" Type="Dia.Tool" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="tool">a <see cref="T:Dia.Tool" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -52,15 +49,18 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+    <Member MemberName="Push">
+      <MemberSignature Language="C#" Value="public void Push (Dia.Tool tool);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="tool" Type="Dia.Tool" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="tool">a <see cref="T:Dia.Tool" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

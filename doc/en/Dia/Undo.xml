@@ -25,23 +25,78 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Push">
-      <MemberSignature Language="C#" Value="public void Push (string optional_comment);" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopRedo">
+      <MemberSignature Language="C#" Value="public void PopRedo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreservePropertyLast">
+      <MemberSignature Language="C#" Value="public void PreservePropertyLast (GLib.Object objekt, string property_name);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="optional_comment" Type="System.String" />
+        <Parameter Name="objekt" Type="GLib.Object" />
+        <Parameter Name="property_name" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="optional_comment">a <see cref="T:System.String" /></param>
+        <param name="objekt">a <see cref="T:GLib.Object" /></param>
+        <param name="property_name">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Pop">
-      <MemberSignature Language="C#" Value="public void Pop ();" />
+    <Member MemberName="PreserveProperty">
+      <MemberSignature Language="C#" Value="public void PreserveProperty (GLib.Object objekt, string property_name);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objekt" Type="GLib.Object" />
+        <Parameter Name="property_name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="objekt">a <see cref="T:GLib.Object" /></param>
+        <param name="property_name">a <see cref="T:System.String" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRedo">
+      <MemberSignature Language="C#" Value="public void ClearRedo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearUndo">
+      <MemberSignature Language="C#" Value="public void ClearUndo ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -73,8 +128,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ClearUndo">
-      <MemberSignature Language="C#" Value="public void ClearUndo ();" />
+    <Member MemberName="Pop">
+      <MemberSignature Language="C#" Value="public void Pop ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -85,73 +140,18 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ClearRedo">
-      <MemberSignature Language="C#" Value="public void ClearRedo ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PreserveProperty">
-      <MemberSignature Language="C#" Value="public void PreserveProperty (GLib.Object objekt, string property_name);" />
+    <Member MemberName="Push">
+      <MemberSignature Language="C#" Value="public void Push (string optional_comment);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="objekt" Type="GLib.Object" />
-        <Parameter Name="property_name" Type="System.String" />
+        <Parameter Name="optional_comment" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PreservePropertyLast">
-      <MemberSignature Language="C#" Value="public void PreservePropertyLast (GLib.Object objekt, string property_name);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="objekt" Type="GLib.Object" />
-        <Parameter Name="property_name" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PopRedo">
-      <MemberSignature Language="C#" Value="public void PopRedo ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
+        <param name="optional_comment">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -206,8 +206,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RedoDepth">
-      <MemberSignature Language="C#" Value="public uint RedoDepth { get; };" />
+    <Member MemberName="Depth">
+      <MemberSignature Language="C#" Value="public uint Depth { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -234,8 +234,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Depth">
-      <MemberSignature Language="C#" Value="public uint Depth { get; };" />
+    <Member MemberName="RedoDepth">
+      <MemberSignature Language="C#" Value="public uint RedoDepth { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>

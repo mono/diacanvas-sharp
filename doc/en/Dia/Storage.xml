@@ -66,104 +66,81 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public static Dia.Storage Load (string filename);" />
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Storage New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Storage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Storage" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Storage New (string filename, bool compressed);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Storage</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="filename" Type="System.String" />
+        <Parameter Name="compressed" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="filename">a <see cref="T:System.String" /></param>
+        <param name="compressed">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:Dia.Storage" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RegisterType">
-      <MemberSignature Language="C#" Value="public static void RegisterType (uint type, Dia.StorageLoadFunc load, Dia.StorageSaveFunc save, Dia.StorageFreeFunc free);" />
+    <Member MemberName="NewAttribute">
+      <MemberSignature Language="C#" Value="public static Dia.Storage NewAttribute (Dia.Storage storage, int parent, Dia.Persistent objekt, Gtk.Arg value);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Dia.Storage</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="storage" Type="Dia.Storage" />
+        <Parameter Name="parent" Type="System.Int32" />
+        <Parameter Name="objekt" Type="Dia.Persistent" />
+        <Parameter Name="value" Type="Gtk.Arg" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="storage">a <see cref="T:Dia.Storage" /></param>
+        <param name="parent">a <see cref="T:System.Int32" /></param>
+        <param name="objekt">a <see cref="T:Dia.Persistent" /></param>
+        <param name="value">a <see cref="T:Gtk.Arg" /></param>
+        <returns>a <see cref="T:Dia.Storage" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewObject">
+      <MemberSignature Language="C#" Value="public static Dia.Storage NewObject (Dia.Storage storage, uint type, uint id, ushort rev);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Storage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="storage" Type="Dia.Storage" />
         <Parameter Name="type" Type="System.UInt32" />
-        <Parameter Name="load" Type="Dia.StorageLoadFunc" />
-        <Parameter Name="save" Type="Dia.StorageSaveFunc" />
-        <Parameter Name="free" Type="Dia.StorageFreeFunc" />
+        <Parameter Name="id" Type="System.UInt32" />
+        <Parameter Name="rev" Type="System.UInt16" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="storage">a <see cref="T:Dia.Storage" /></param>
         <param name="type">a <see cref="T:System.UInt32" /></param>
-        <param name="load">a <see cref="T:Dia.StorageLoadFunc" /></param>
-        <param name="save">a <see cref="T:Dia.StorageSaveFunc" /></param>
-        <param name="free">a <see cref="T:Dia.StorageFreeFunc" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Init">
-      <MemberSignature Language="C#" Value="public static void Init ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RegisterNewType">
-      <MemberSignature Language="C#" Value="public static uint RegisterNewType (string name, Dia.StorageLoadFunc load, Dia.StorageSaveFunc save, Dia.StorageFreeFunc free);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="load" Type="Dia.StorageLoadFunc" />
-        <Parameter Name="save" Type="Dia.StorageSaveFunc" />
-        <Parameter Name="free" Type="Dia.StorageFreeFunc" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="name">a <see cref="T:System.String" /></param>
-        <param name="load">a <see cref="T:Dia.StorageLoadFunc" /></param>
-        <param name="save">a <see cref="T:Dia.StorageSaveFunc" /></param>
-        <param name="free">a <see cref="T:Dia.StorageFreeFunc" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ArgFree">
-      <MemberSignature Language="C#" Value="public static void ArgFree (Gtk.Arg arg);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="arg" Type="Gtk.Arg" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="arg">a <see cref="T:Gtk.Arg" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ArgReset">
-      <MemberSignature Language="C#" Value="public static void ArgReset (Gtk.Arg arg);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="arg" Type="Gtk.Arg" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="arg">a <see cref="T:Gtk.Arg" /></param>
+        <param name="id">a <see cref="T:System.UInt32" /></param>
+        <param name="rev">a <see cref="T:System.UInt16" /></param>
+        <returns>a <see cref="T:Dia.Storage" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -191,139 +168,125 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NewObject">
-      <MemberSignature Language="C#" Value="public static Dia.Storage NewObject (Dia.Storage storage, uint type, uint id, ushort rev);" />
+    <Member MemberName="ArgReset">
+      <MemberSignature Language="C#" Value="public static void ArgReset (Gtk.Arg arg);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.Storage</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="storage" Type="Dia.Storage" />
+        <Parameter Name="arg" Type="Gtk.Arg" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="arg">a <see cref="T:Gtk.Arg" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgFree">
+      <MemberSignature Language="C#" Value="public static void ArgFree (Gtk.Arg arg);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arg" Type="Gtk.Arg" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="arg">a <see cref="T:Gtk.Arg" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterNewType">
+      <MemberSignature Language="C#" Value="public static uint RegisterNewType (string name, Dia.StorageLoadFunc load, Dia.StorageSaveFunc save, Dia.StorageFreeFunc free);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="load" Type="Dia.StorageLoadFunc" />
+        <Parameter Name="save" Type="Dia.StorageSaveFunc" />
+        <Parameter Name="free" Type="Dia.StorageFreeFunc" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="name">a <see cref="T:System.String" /></param>
+        <param name="load">a <see cref="T:Dia.StorageLoadFunc" /></param>
+        <param name="save">a <see cref="T:Dia.StorageSaveFunc" /></param>
+        <param name="free">a <see cref="T:Dia.StorageFreeFunc" /></param>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public static void Init ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterType">
+      <MemberSignature Language="C#" Value="public static void RegisterType (uint type, Dia.StorageLoadFunc load, Dia.StorageSaveFunc save, Dia.StorageFreeFunc free);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
         <Parameter Name="type" Type="System.UInt32" />
-        <Parameter Name="id" Type="System.UInt32" />
-        <Parameter Name="rev" Type="System.UInt16" />
+        <Parameter Name="load" Type="Dia.StorageLoadFunc" />
+        <Parameter Name="save" Type="Dia.StorageSaveFunc" />
+        <Parameter Name="free" Type="Dia.StorageFreeFunc" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="storage">a <see cref="T:Dia.Storage" /></param>
         <param name="type">a <see cref="T:System.UInt32" /></param>
-        <param name="id">a <see cref="T:System.UInt32" /></param>
-        <param name="rev">a <see cref="T:System.UInt16" /></param>
-        <returns>a <see cref="T:Dia.Storage" /></returns>
+        <param name="load">a <see cref="T:Dia.StorageLoadFunc" /></param>
+        <param name="save">a <see cref="T:Dia.StorageSaveFunc" /></param>
+        <param name="free">a <see cref="T:Dia.StorageFreeFunc" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NewAttribute">
-      <MemberSignature Language="C#" Value="public static Dia.Storage NewAttribute (Dia.Storage storage, int parent, Dia.Persistent objekt, Gtk.Arg value);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Storage</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="storage" Type="Dia.Storage" />
-        <Parameter Name="parent" Type="System.Int32" />
-        <Parameter Name="objekt" Type="Dia.Persistent" />
-        <Parameter Name="value" Type="Gtk.Arg" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="storage">a <see cref="T:Dia.Storage" /></param>
-        <param name="parent">a <see cref="T:System.Int32" /></param>
-        <param name="objekt">a <see cref="T:Dia.Persistent" /></param>
-        <param name="value">a <see cref="T:Gtk.Arg" /></param>
-        <returns>a <see cref="T:Dia.Storage" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Storage New (string filename, bool compressed);" />
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public static Dia.Storage Load (string filename);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Storage</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="compressed" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="filename">a <see cref="T:System.String" /></param>
-        <param name="compressed">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:Dia.Storage" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Storage New (IntPtr raw);" />
+    <Member MemberName="SignalNext">
+      <MemberSignature Language="C#" Value="public int SignalNext (int sig);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.Storage</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Storage" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SignalSetDataId">
-      <MemberSignature Language="C#" Value="public void SignalSetDataId (int sig, uint id);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="sig" Type="System.Int32" />
-        <Parameter Name="id" Type="System.UInt32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="sig">a <see cref="T:System.Int32" /></param>
-        <param name="id">a <see cref="T:System.UInt32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ObjectGetRev">
-      <MemberSignature Language="C#" Value="public ushort ObjectGetRev (int node);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt16</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="node" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="node">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.UInt16" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AttributeGetValue">
-      <MemberSignature Language="C#" Value="public bool AttributeGetValue (int attr, Dia.Persistent objekt, Gtk.Arg value);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-        <Parameter Name="objekt" Type="Dia.Persistent" />
-        <Parameter Name="value" Type="Gtk.Arg" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <param name="objekt">a <see cref="T:Dia.Persistent" /></param>
-        <param name="value">a <see cref="T:Gtk.Arg" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SignalGetCallback">
-      <MemberSignature Language="C#" Value="public string SignalGetCallback (int sig);" />
+    <Member MemberName="SignalGetName">
+      <MemberSignature Language="C#" Value="public string SignalGetName (int sig);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -338,128 +301,25 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AttributeSetNil">
-      <MemberSignature Language="C#" Value="public void AttributeSetNil (int attr);" />
+    <Member MemberName="AttributeSetValue">
+      <MemberSignature Language="C#" Value="public void AttributeSetValue (int attr, string value);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="attr" Type="System.Int32" />
+        <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="attr">a <see cref="T:System.Int32" /></param>
+        <param name="value">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetAttribute">
-      <MemberSignature Language="C#" Value="public int GetAttribute (int node);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="node" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="node">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AttributeGetType">
-      <MemberSignature Language="C#" Value="public uint AttributeGetType (int attr);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AttributeIsNil">
-      <MemberSignature Language="C#" Value="public bool AttributeIsNil (int attr);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetSignal">
-      <MemberSignature Language="C#" Value="public int GetSignal (int node);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="node" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="node">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Save">
-      <MemberSignature Language="C#" Value="public bool Save ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Free">
-      <MemberSignature Language="C#" Value="public void Free ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ObjectNext">
-      <MemberSignature Language="C#" Value="public int ObjectNext (int objekt);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="objekt" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ObjectGetClass">
-      <MemberSignature Language="C#" Value="public uint ObjectGetClass (int node);" />
+    <Member MemberName="ObjectGetId">
+      <MemberSignature Language="C#" Value="public uint ObjectGetId (int node);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -474,8 +334,70 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AttributeGetValueRaw">
-      <MemberSignature Language="C#" Value="public string AttributeGetValueRaw (int attr);" />
+    <Member MemberName="AttributeNext">
+      <MemberSignature Language="C#" Value="public int AttributeNext (int attr);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignalGetDataId">
+      <MemberSignature Language="C#" Value="public uint SignalGetDataId (int sig);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sig" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="sig">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeInvalid">
+      <MemberSignature Language="C#" Value="public void AttributeInvalid (int attr);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeDelete">
+      <MemberSignature Language="C#" Value="public void NodeDelete (int attr);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeGetName">
+      <MemberSignature Language="C#" Value="public string AttributeGetName (int attr);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -506,8 +428,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AttributeGetName">
-      <MemberSignature Language="C#" Value="public string AttributeGetName (int attr);" />
+    <Member MemberName="AttributeGetValueRaw">
+      <MemberSignature Language="C#" Value="public string AttributeGetValueRaw (int attr);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -522,70 +444,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NodeDelete">
-      <MemberSignature Language="C#" Value="public void NodeDelete (int attr);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AttributeInvalid">
-      <MemberSignature Language="C#" Value="public void AttributeInvalid (int attr);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SignalGetDataId">
-      <MemberSignature Language="C#" Value="public uint SignalGetDataId (int sig);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sig" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="sig">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AttributeNext">
-      <MemberSignature Language="C#" Value="public int AttributeNext (int attr);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="attr" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="attr">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ObjectGetId">
-      <MemberSignature Language="C#" Value="public uint ObjectGetId (int node);" />
+    <Member MemberName="ObjectGetClass">
+      <MemberSignature Language="C#" Value="public uint ObjectGetClass (int node);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -600,25 +460,128 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AttributeSetValue">
-      <MemberSignature Language="C#" Value="public void AttributeSetValue (int attr, string value);" />
+    <Member MemberName="ObjectNext">
+      <MemberSignature Language="C#" Value="public int ObjectNext (int objekt);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objekt" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="objekt">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Free">
+      <MemberSignature Language="C#" Value="public void Free ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public bool Save ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSignal">
+      <MemberSignature Language="C#" Value="public int GetSignal (int node);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="node">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeIsNil">
+      <MemberSignature Language="C#" Value="public bool AttributeIsNil (int attr);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeGetType">
+      <MemberSignature Language="C#" Value="public uint AttributeGetType (int attr);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttribute">
+      <MemberSignature Language="C#" Value="public int GetAttribute (int node);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="node">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeSetNil">
+      <MemberSignature Language="C#" Value="public void AttributeSetNil (int attr);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="attr" Type="System.Int32" />
-        <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="attr">a <see cref="T:System.Int32" /></param>
-        <param name="value">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SignalGetName">
-      <MemberSignature Language="C#" Value="public string SignalGetName (int sig);" />
+    <Member MemberName="SignalGetCallback">
+      <MemberSignature Language="C#" Value="public string SignalGetCallback (int sig);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -633,31 +596,56 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SignalNext">
-      <MemberSignature Language="C#" Value="public int SignalNext (int sig);" />
+    <Member MemberName="AttributeGetValue">
+      <MemberSignature Language="C#" Value="public bool AttributeGetValue (int attr, Dia.Persistent objekt, Gtk.Arg value);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attr" Type="System.Int32" />
+        <Parameter Name="objekt" Type="Dia.Persistent" />
+        <Parameter Name="value" Type="Gtk.Arg" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="attr">a <see cref="T:System.Int32" /></param>
+        <param name="objekt">a <see cref="T:Dia.Persistent" /></param>
+        <param name="value">a <see cref="T:Gtk.Arg" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectGetRev">
+      <MemberSignature Language="C#" Value="public ushort ObjectGetRev (int node);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="node">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.UInt16" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignalSetDataId">
+      <MemberSignature Language="C#" Value="public void SignalSetDataId (int sig, uint id);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="sig" Type="System.Int32" />
+        <Parameter Name="id" Type="System.UInt32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="sig">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Object">
-      <MemberSignature Language="C#" Value="public int Object { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Int32" /></returns>
+        <param name="id">a <see cref="T:System.UInt32" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -674,6 +662,18 @@
         <summary>To be added</summary>
         <param name="value">a <see cref="T:Dia.PersistentFactory" /></param>
         <returns>a <see cref="T:Dia.PersistentFactory" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public int Object { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,23 @@
+<Namespace Name="Gdk" FullName="Gdk" FullNameSP="Gdk" Maintainer="Mono">
+  <Docs>
+    <summary>DiaCanvas# a full featured diagramming canvas</summary>
+    <remarks>
+      <para>
+      The design is based on MVC Model/View/Controller.
+      The <see cref="T:Dia.Canvas" /> only holds abstract data (using <see cref="T:Dia.Shape" /> objects), 
+      the data is rendered by one or more <see cref="T:Dia.CanvasView" />'s.
+      </para>
+      <para>
+      Excelent export facilities exists, both printing via <see cref="T:Gnome.Print" /> and SVG exporting via
+      <see cref="T:Dia.ExportSVG" />.
+      </para>
+      <para>
+      Objects can be rotated/sheared/resized/ etc. without the need to recalculate shapes and
+      they can connect to each other with <see cref="T:Dia.Handle" />'s.
+      The <see cref="T:Dia.Handle" />'s do not need predefined connection points, 
+      but can connect to each other in a more generic way.
+      Undo/redo functionality is also present.
+      </para>
+    </remarks>
+  </Docs>
+</Namespace>

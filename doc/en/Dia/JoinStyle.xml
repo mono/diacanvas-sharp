@@ -9,8 +9,8 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Specifies how the edges between <see cref="T:Dia.CanvasLine" /> segments should be drawn.</summary>
+    <remarks>The default <see cref="T:Dia.JoinStyle" /> is <see cref="T:Dia.JoinStyle.Round" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +36,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The segment sides are extended to meet at an angle.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -48,8 +48,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The segment sides are joined by a circular arc.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bevel">
@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The segment sides are joined by a straight line which makes an equal angle with each segment.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

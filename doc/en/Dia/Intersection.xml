@@ -18,46 +18,6 @@
   <Interfaces />
   <Attributes />
   <Members>
-    <Member MemberName="LineRectangle">
-      <MemberSignature Language="C#" Value="public static int LineRectangle (Dia.Point start, Dia.Point end, Dia.Rectangle rect, Dia.Point[] intersect);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="start" Type="Dia.Point" />
-        <Parameter Name="end" Type="Dia.Point" />
-        <Parameter Name="rect" Type="Dia.Rectangle" />
-        <Parameter Name="intersect" Type="Dia.Point[]" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="start">a <see cref="T:Dia.Point" /></param>
-        <param name="end">a <see cref="T:Dia.Point" /></param>
-        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
-        <param name="intersect">a <see cref="T:Dia.Point[]" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RectangleRectangle">
-      <MemberSignature Language="C#" Value="public static bool RectangleRectangle (Dia.Rectangle r1, Dia.Rectangle r2);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="r1" Type="Dia.Rectangle" />
-        <Parameter Name="r2" Type="Dia.Rectangle" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="r1">a <see cref="T:Dia.Rectangle" /></param>
-        <param name="r2">a <see cref="T:Dia.Rectangle" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="LineLine">
       <MemberSignature Language="C#" Value="public static bool LineLine (Dia.Point start1, Dia.Point end1, Dia.Point start2, Dia.Point end2, Dia.Point intersect);" />
       <MemberType>Method</MemberType>
@@ -79,6 +39,46 @@
         <param name="end2">a <see cref="T:Dia.Point" /></param>
         <param name="intersect">a <see cref="T:Dia.Point" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleRectangle">
+      <MemberSignature Language="C#" Value="public static bool RectangleRectangle (Dia.Rectangle r1, Dia.Rectangle r2);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="r1" Type="Dia.Rectangle" />
+        <Parameter Name="r2" Type="Dia.Rectangle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="r1">a <see cref="T:Dia.Rectangle" /></param>
+        <param name="r2">a <see cref="T:Dia.Rectangle" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineRectangle">
+      <MemberSignature Language="C#" Value="public static int LineRectangle (Dia.Point start, Dia.Point end, Dia.Rectangle rect, Dia.Point[] intersect);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="Dia.Point" />
+        <Parameter Name="end" Type="Dia.Point" />
+        <Parameter Name="rect" Type="Dia.Rectangle" />
+        <Parameter Name="intersect" Type="Dia.Point[]" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="start">a <see cref="T:Dia.Point" /></param>
+        <param name="end">a <see cref="T:Dia.Point" /></param>
+        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
+        <param name="intersect">a <see cref="T:Dia.Point[]" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

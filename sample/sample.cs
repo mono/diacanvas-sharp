@@ -46,7 +46,7 @@ public class Sample {
 
 	void CreateItemsProgramatically() {
 		CanvasLine line = new CanvasLine();
-		line.LineWidth = 5.2;
+		line.LineWidth = 10;
 		line.Color = 8327327;
 
 		Dia.Point p1 = new Dia.Point (50, 50);
@@ -54,6 +54,7 @@ public class Sample {
 
 		line.HeadPos = p1;
 		line.TailPos = p2;
+		line.Cap = Dia.CapStyle.Butt;
 		line.Move (100, 150);
 		canvas.Root.Add (line);
 
@@ -71,9 +72,9 @@ public class Sample {
 		text.Width = 100;
 		canvas.Root.Add (text);
 
-		//CanvasTextBox textbox = new CanvasTextBox();
-		//textbox.Move (50, 225);
-		//canvas.Root.Add (textbox);
+		CanvasTextBox textbox = new CanvasTextBox();
+		textbox.Move (50, 225);
+		canvas.Root.Add (textbox);
 
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);

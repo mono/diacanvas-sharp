@@ -32,18 +32,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsValid">
-      <MemberSignature Language="C#" Value="public bool IsValid { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="public Dia.EventType Type { get; };" />
       <MemberType>Property</MemberType>
@@ -53,6 +41,18 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:Dia.EventType" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

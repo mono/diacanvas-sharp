@@ -1,3 +1,16 @@
+2003-08-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* CREDITS: Added Arjan Molenaar
+	* doc/en/Dia.xml: Added
+	* sources/makefile: Application of new patches added
+	* doc/en/Dia/CanvasElementHandle.xml:
+	* doc/en/Dia/CapStyle.xml:
+	* doc/en/Dia/FillStyle.xml:
+	* doc/en/Dia/JoinStyle.xml:
+	* doc/en/Dia/ShapeType.xml:
+	* doc/en/Dia/ShapeVisibility.xml
+	* doc/en/Dia/Strength.xml: Documented.
+	
 2003-08-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* WISHLIST: Autoconf wish added.

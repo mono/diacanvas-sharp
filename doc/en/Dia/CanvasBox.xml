@@ -88,24 +88,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LineWidth">
-      <MemberSignature Language="C#" Value="public double LineWidth { set; get; };" />
+    <Member MemberName="FillColor">
+      <MemberSignature Language="C#" Value="public ulong FillColor { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
+        <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BgColor">
-      <MemberSignature Language="C#" Value="public ulong BgColor { set; get; };" />
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -136,8 +136,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Color">
-      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
+    <Member MemberName="BgColor">
+      <MemberSignature Language="C#" Value="public ulong BgColor { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -152,19 +152,19 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FillColor">
-      <MemberSignature Language="C#" Value="public ulong FillColor { set; get; };" />
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public double LineWidth { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt64</ReturnType>
+        <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

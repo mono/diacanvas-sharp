@@ -25,18 +25,15 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Image">
-      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Image (Gdk.Pixbuf pixbuf);" />
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Line ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.PlacementTool</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
         <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -54,15 +51,18 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Line">
-      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Line ();" />
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Image (Gdk.Pixbuf pixbuf);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.PlacementTool</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
         <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>

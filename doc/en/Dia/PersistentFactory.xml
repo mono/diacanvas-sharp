@@ -25,8 +25,32 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Save">
-      <MemberSignature Language="C#" Value="public string Save (string filename);" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dump">
+      <MemberSignature Language="C#" Value="public void Dump ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public string Load (string filename);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -57,8 +81,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Load">
-      <MemberSignature Language="C#" Value="public string Load (string filename);" />
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public string Save (string filename);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -70,30 +94,6 @@
         <summary>To be added</summary>
         <param name="filename">a <see cref="T:System.String" /></param>
         <returns>a <see cref="T:System.String" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Dump">
-      <MemberSignature Language="C#" Value="public void Dump ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -164,38 +164,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SaveEnd">
-      <MemberSignature Language="C#" Value="public event EventHandler SaveEnd;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SaveStart">
-      <MemberSignature Language="C#" Value="public event DiaSharp.SaveStartHandler SaveStart;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="LoadEnd">
-      <MemberSignature Language="C#" Value="public event EventHandler LoadEnd;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="SaveObject">
-      <MemberSignature Language="C#" Value="public event DiaSharp.SaveObjectHandler SaveObject;" />
+    <Member MemberName="LoadStart">
+      <MemberSignature Language="C#" Value="public event DiaSharp.LoadStartHandler LoadStart;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -214,8 +184,38 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="LoadStart">
-      <MemberSignature Language="C#" Value="public event DiaSharp.LoadStartHandler LoadStart;" />
+    <Member MemberName="SaveObject">
+      <MemberSignature Language="C#" Value="public event DiaSharp.SaveObjectHandler SaveObject;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadEnd">
+      <MemberSignature Language="C#" Value="public event EventHandler LoadEnd;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveStart">
+      <MemberSignature Language="C#" Value="public event DiaSharp.SaveStartHandler SaveStart;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveEnd">
+      <MemberSignature Language="C#" Value="public event EventHandler SaveEnd;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

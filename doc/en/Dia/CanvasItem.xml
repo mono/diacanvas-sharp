@@ -25,19 +25,16 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="ItemCreate">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItem ItemCreate (uint object_type);" />
+    <Member MemberName="HandlesGetType">
+      <MemberSignature Language="C#" Value="public static uint HandlesGetType ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.CanvasItem</ReturnType>
+        <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="object_type" Type="System.UInt32" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="object_type">a <see cref="T:System.UInt32" /></param>
-        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -54,21 +51,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HandlesGetType">
-      <MemberSignature Language="C#" Value="public static uint HandlesGetType ();" />
+    <Member MemberName="ItemCreate">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItem ItemCreate (uint object_type);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>Dia.CanvasItem</ReturnType>
       </ReturnValue>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="object_type" Type="System.UInt32" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <param name="object_type">a <see cref="T:System.UInt32" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Invisible">
-      <MemberSignature Language="C#" Value="public void Invisible ();" />
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -79,31 +79,155 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BbAffine">
-      <MemberSignature Language="C#" Value="public void BbAffine (double [] affine, double x1, double y1, double x2, double y2);" />
+    <Member MemberName="AffineI2w">
+      <MemberSignature Language="C#" Value="public void AffineI2w (double [] affine);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="affine" Type="System.Double[]" />
-        <Parameter Name="x1" Type="System.Double" />
-        <Parameter Name="y1" Type="System.Double" />
-        <Parameter Name="x2" Type="System.Double" />
-        <Parameter Name="y2" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="affine">a <see cref="T:System.Double[]" /></param>
-        <param name="x1">a <see cref="T:System.Double" /></param>
-        <param name="y1">a <see cref="T:System.Double" /></param>
-        <param name="x2">a <see cref="T:System.Double" /></param>
-        <param name="y2">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AffinePointI2w">
-      <MemberSignature Language="C#" Value="public void AffinePointI2w (double x, double y);" />
+    <Member MemberName="IsFocused">
+      <MemberSignature Language="C#" Value="public bool IsFocused ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unfocus">
+      <MemberSignature Language="C#" Value="public void Unfocus ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShapeNext">
+      <MemberSignature Language="C#" Value="public bool ShapeNext (Dia.CanvasIter iter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iter" Type="Dia.CanvasIter" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Move">
+      <MemberSignature Language="C#" Value="public void Move (double dx, double dy);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="dx">a <see cref="T:System.Double" /></param>
+        <param name="dy">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public void Scale (double sx, double sy);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sx" Type="System.Double" />
+        <Parameter Name="sy" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="sx">a <see cref="T:System.Double" /></param>
+        <param name="sy">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public void Rotate (double degrees);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="degrees" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="degrees">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeVisible">
+      <MemberSignature Language="C#" Value="public void MakeVisible ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveInteractive">
+      <MemberSignature Language="C#" Value="public void MoveInteractive (double dx, double dy);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="dx">a <see cref="T:System.Double" /></param>
+        <param name="dy">a <see cref="T:System.Double" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisible">
+      <MemberSignature Language="C#" Value="public bool IsVisible ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffinePointW2i">
+      <MemberSignature Language="C#" Value="public void AffinePointW2i (double x, double y);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -119,42 +243,69 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Flip">
-      <MemberSignature Language="C#" Value="public void Flip (bool horz, bool vert);" />
+    <Member MemberName="AddConstruction">
+      <MemberSignature Language="C#" Value="public void AddConstruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="horz" Type="System.Boolean" />
-        <Parameter Name="vert" Type="System.Boolean" />
+        <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="horz">a <see cref="T:System.Boolean" /></param>
-        <param name="vert">a <see cref="T:System.Boolean" /></param>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShearX">
-      <MemberSignature Language="C#" Value="public void ShearX (double dx, double dy);" />
+    <Member MemberName="ShapeValue">
+      <MemberSignature Language="C#" Value="public Dia.Shape ShapeValue (Dia.CanvasIter iter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iter" Type="Dia.CanvasIter" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:Dia.Shape" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffineW2i">
+      <MemberSignature Language="C#" Value="public void AffineW2i (double [] affine);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dx" Type="System.Double" />
-        <Parameter Name="dy" Type="System.Double" />
+        <Parameter Name="affine" Type="System.Double[]" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="dx">a <see cref="T:System.Double" /></param>
-        <param name="dy">a <see cref="T:System.Double" /></param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Unselect">
-      <MemberSignature Language="C#" Value="public void Unselect ();" />
+    <Member MemberName="PreserveProperty">
+      <MemberSignature Language="C#" Value="public void PreserveProperty (string property_name);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property_name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="property_name">a <see cref="T:System.String" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateHandlesI2w">
+      <MemberSignature Language="C#" Value="public void UpdateHandlesI2w ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -165,8 +316,61 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MakeConnect">
-      <MemberSignature Language="C#" Value="public bool MakeConnect (Dia.Handle handle);" />
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public void Select ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShapeIter">
+      <MemberSignature Language="C#" Value="public bool GetShapeIter (Dia.CanvasIter iter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iter" Type="Dia.CanvasIter" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateNow">
+      <MemberSignature Language="C#" Value="public void UpdateNow ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeDisconnect">
+      <MemberSignature Language="C#" Value="public bool MakeDisconnect (Dia.Handle handle);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -181,51 +385,86 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsGrabbed">
-      <MemberSignature Language="C#" Value="public bool IsGrabbed ();" />
+    <Member MemberName="RequestUpdate">
+      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DisconnectHandles">
-      <MemberSignature Language="C#" Value="public bool DisconnectHandles ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShearY">
-      <MemberSignature Language="C#" Value="public void ShearY (double dx, double dy);" />
+    <Member MemberName="ExpandBounds">
+      <MemberSignature Language="C#" Value="public void ExpandBounds (double d);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dx" Type="System.Double" />
-        <Parameter Name="dy" Type="System.Double" />
+        <Parameter Name="d" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="dx">a <see cref="T:System.Double" /></param>
-        <param name="dy">a <see cref="T:System.Double" /></param>
+        <param name="d">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Identity">
-      <MemberSignature Language="C#" Value="public void Identity ();" />
+    <Member MemberName="UpdateHandlesW2i">
+      <MemberSignature Language="C#" Value="public void UpdateHandlesW2i ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public void Focus ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDestruction">
+      <MemberSignature Language="C#" Value="public void RemoveDestruction (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grab">
+      <MemberSignature Language="C#" Value="public void Grab ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ungrab">
+      <MemberSignature Language="C#" Value="public void Ungrab ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -253,8 +492,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Ungrab">
-      <MemberSignature Language="C#" Value="public void Ungrab ();" />
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public void Identity ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -265,71 +504,51 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Grab">
-      <MemberSignature Language="C#" Value="public void Grab ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Focus">
-      <MemberSignature Language="C#" Value="public void Focus ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UpdateHandlesW2i">
-      <MemberSignature Language="C#" Value="public void UpdateHandlesW2i ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExpandBounds">
-      <MemberSignature Language="C#" Value="public void ExpandBounds (double d);" />
+    <Member MemberName="ShearY">
+      <MemberSignature Language="C#" Value="public void ShearY (double dx, double dy);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="d" Type="System.Double" />
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="d">a <see cref="T:System.Double" /></param>
+        <param name="dx">a <see cref="T:System.Double" /></param>
+        <param name="dy">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RequestUpdate">
-      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
+    <Member MemberName="DisconnectHandles">
+      <MemberSignature Language="C#" Value="public bool DisconnectHandles ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="MakeDisconnect">
-      <MemberSignature Language="C#" Value="public bool MakeDisconnect (Dia.Handle handle);" />
+    <Member MemberName="IsGrabbed">
+      <MemberSignature Language="C#" Value="public bool IsGrabbed ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeConnect">
+      <MemberSignature Language="C#" Value="public bool MakeConnect (Dia.Handle handle);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -344,8 +563,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UpdateNow">
-      <MemberSignature Language="C#" Value="public void UpdateNow ();" />
+    <Member MemberName="Unselect">
+      <MemberSignature Language="C#" Value="public void Unselect ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -356,107 +575,42 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetShapeIter">
-      <MemberSignature Language="C#" Value="public bool GetShapeIter (Dia.CanvasIter iter);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="iter" Type="Dia.CanvasIter" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsSelected">
-      <MemberSignature Language="C#" Value="public bool IsSelected ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Select">
-      <MemberSignature Language="C#" Value="public void Select ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UpdateHandlesI2w">
-      <MemberSignature Language="C#" Value="public void UpdateHandlesI2w ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PreserveProperty">
-      <MemberSignature Language="C#" Value="public void PreserveProperty (string property_name);" />
+    <Member MemberName="ShearX">
+      <MemberSignature Language="C#" Value="public void ShearX (double dx, double dy);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="property_name" Type="System.String" />
+        <Parameter Name="dx" Type="System.Double" />
+        <Parameter Name="dy" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="property_name">a <see cref="T:System.String" /></param>
+        <param name="dx">a <see cref="T:System.Double" /></param>
+        <param name="dy">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AffineW2i">
-      <MemberSignature Language="C#" Value="public void AffineW2i (double [] affine);" />
+    <Member MemberName="Flip">
+      <MemberSignature Language="C#" Value="public void Flip (bool horz, bool vert);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="affine" Type="System.Double[]" />
+        <Parameter Name="horz" Type="System.Boolean" />
+        <Parameter Name="vert" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="affine">a <see cref="T:System.Double[]" /></param>
+        <param name="horz">a <see cref="T:System.Boolean" /></param>
+        <param name="vert">a <see cref="T:System.Boolean" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ShapeValue">
-      <MemberSignature Language="C#" Value="public Dia.Shape ShapeValue (Dia.CanvasIter iter);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Shape</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="iter" Type="Dia.CanvasIter" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
-        <returns>a <see cref="T:Dia.Shape" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AffinePointW2i">
-      <MemberSignature Language="C#" Value="public void AffinePointW2i (double x, double y);" />
+    <Member MemberName="AffinePointI2w">
+      <MemberSignature Language="C#" Value="public void AffinePointI2w (double x, double y);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -472,155 +626,31 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsVisible">
-      <MemberSignature Language="C#" Value="public bool IsVisible ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MoveInteractive">
-      <MemberSignature Language="C#" Value="public void MoveInteractive (double dx, double dy);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dx" Type="System.Double" />
-        <Parameter Name="dy" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="dx">a <see cref="T:System.Double" /></param>
-        <param name="dy">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="MakeVisible">
-      <MemberSignature Language="C#" Value="public void MakeVisible ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Rotate">
-      <MemberSignature Language="C#" Value="public void Rotate (double degrees);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="degrees" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="degrees">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Scale">
-      <MemberSignature Language="C#" Value="public void Scale (double sx, double sy);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="sx" Type="System.Double" />
-        <Parameter Name="sy" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="sx">a <see cref="T:System.Double" /></param>
-        <param name="sy">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Move">
-      <MemberSignature Language="C#" Value="public void Move (double dx, double dy);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="dx" Type="System.Double" />
-        <Parameter Name="dy" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="dx">a <see cref="T:System.Double" /></param>
-        <param name="dy">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ShapeNext">
-      <MemberSignature Language="C#" Value="public bool ShapeNext (Dia.CanvasIter iter);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="iter" Type="Dia.CanvasIter" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Unfocus">
-      <MemberSignature Language="C#" Value="public void Unfocus ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsFocused">
-      <MemberSignature Language="C#" Value="public bool IsFocused ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AffineI2w">
-      <MemberSignature Language="C#" Value="public void AffineI2w (double [] affine);" />
+    <Member MemberName="BbAffine">
+      <MemberSignature Language="C#" Value="public void BbAffine (double [] affine, double x1, double y1, double x2, double y2);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="affine" Type="System.Double[]" />
+        <Parameter Name="x1" Type="System.Double" />
+        <Parameter Name="y1" Type="System.Double" />
+        <Parameter Name="x2" Type="System.Double" />
+        <Parameter Name="y2" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="affine">a <see cref="T:System.Double[]" /></param>
+        <param name="x1">a <see cref="T:System.Double" /></param>
+        <param name="y1">a <see cref="T:System.Double" /></param>
+        <param name="x2">a <see cref="T:System.Double" /></param>
+        <param name="y2">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+    <Member MemberName="Invisible">
+      <MemberSignature Language="C#" Value="public void Invisible ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -682,8 +712,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Connect">
-      <MemberSignature Language="C#" Value="public Dia.Handle Connect { set; };" />
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public Dia.Handle Disconnect { set; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Handle</ReturnType>
@@ -695,22 +725,6 @@
         <summary>To be added</summary>
         <param name="value">a <see cref="T:Dia.Handle" /></param>
         <returns>a <see cref="T:Dia.Handle" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="public Dia.CanvasGroup Parent { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasGroup</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.CanvasGroup" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.CanvasGroup" /></param>
-        <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -730,8 +744,24 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Disconnect">
-      <MemberSignature Language="C#" Value="public Dia.Handle Disconnect { set; };" />
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Dia.CanvasGroup Parent { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.CanvasGroup" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:Dia.CanvasGroup" /></param>
+        <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public Dia.Handle Connect { set; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>Dia.Handle</ReturnType>
@@ -746,58 +776,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Moved">
-      <MemberSignature Language="C#" Value="public event DiaSharp.MovedHandler Moved;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Event">
-      <MemberSignature Language="C#" Value="public event EventHandler Event;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="StateChanged">
-      <MemberSignature Language="C#" Value="public event DiaSharp.StateChangedHandler StateChanged;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ZOrder">
-      <MemberSignature Language="C#" Value="public event DiaSharp.ZOrderHandler ZOrder;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HasState">
-      <MemberSignature Language="C#" Value="public event DiaSharp.HasStateHandler HasState;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="NeedUpdate">
-      <MemberSignature Language="C#" Value="public event EventHandler NeedUpdate;" />
+    <Member MemberName="Disconnected">
+      <MemberSignature Language="C#" Value="public event DiaSharp.DisconnectedHandler Disconnected;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -816,8 +796,58 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Disconnected">
-      <MemberSignature Language="C#" Value="public event DiaSharp.DisconnectedHandler Disconnected;" />
+    <Member MemberName="NeedUpdate">
+      <MemberSignature Language="C#" Value="public event EventHandler NeedUpdate;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasState">
+      <MemberSignature Language="C#" Value="public event DiaSharp.HasStateHandler HasState;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZOrder">
+      <MemberSignature Language="C#" Value="public event DiaSharp.ZOrderHandler ZOrder;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateChanged">
+      <MemberSignature Language="C#" Value="public event DiaSharp.StateChangedHandler StateChanged;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public event EventHandler Event;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Moved">
+      <MemberSignature Language="C#" Value="public event DiaSharp.MovedHandler Moved;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

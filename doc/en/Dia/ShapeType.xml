@@ -9,8 +9,7 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Different kinds of <see cref="T:Dia.Shape" />'s.</summary>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +35,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A null shape type, should never be used.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -48,8 +47,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A Path shape, like: Line, polygon, rectangle.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bezier">
@@ -60,8 +59,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A Bezier shape.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ellipse">
@@ -72,8 +71,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>An Ellipse shape, like: ellipse and circle.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -84,8 +83,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A Text shape.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -96,8 +95,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>An Image shape.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Widget">
@@ -108,8 +107,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A Widget shape. Only widgets with a model/view architecture.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Clip">
@@ -120,8 +119,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A Clip shape. Set a clip path.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

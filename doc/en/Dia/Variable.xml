@@ -67,19 +67,6 @@
       </Docs>
     </Member>
     <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.Variable New ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.Variable</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.Variable" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
       <MemberSignature Language="C#" Value="public static Dia.Variable New (IntPtr raw);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -91,6 +78,19 @@
       <Docs>
         <summary>To be added</summary>
         <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Variable" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Variable New ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
         <returns>a <see cref="T:Dia.Variable" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -107,22 +107,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public double Value { set; get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Strength">
       <MemberSignature Language="C#" Value="public Dia.Strength Strength { set; get; };" />
       <MemberType>Property</MemberType>
@@ -136,6 +120,22 @@
         <summary>To be added</summary>
         <param name="value">a <see cref="T:Dia.Strength" /></param>
         <returns>a <see cref="T:Dia.Strength" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

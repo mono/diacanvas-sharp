@@ -9,8 +9,8 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Specifies how the end of a <see cref="T:Dia.CanvasLine" /> are drawn.</summary>
+    <remarks>The default <see cref="T:Dia.CapStyle" /> is <see cref="T:Dia.CapStyle.Round" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +36,11 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	The ends are drawn squared off, extending to the <see cref="P:Dia.CanvasLine.HeadPos" /> 
+	and <see cref="P:Dia.CanvasLine.TailPos" /> points.
+	</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -48,8 +51,11 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	The ends are drawn as half circles, with the diameter equal to the line width and centered at the
+	<see cref="P:Dia.CanvasLine.HeadPos" /> and <see cref="P:Dia.CanvasLine.TailPos" /> points.
+	</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -60,8 +66,12 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	The ends are drawn squared off, extending beyond the two end points,
+	<see cref="P:Dia.CanvasLine.HeadPos" /> and <see cref="P:Dia.CanvasLine.TailPos" /> points,
+	with the width of the <see cref="T:Dia.CanvasLine" />.
+	</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
