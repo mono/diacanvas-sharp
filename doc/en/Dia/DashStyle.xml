@@ -42,18 +42,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="dash">
-      <MemberSignature Language="C#" Value="public IntPtr dash;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="New">
       <MemberSignature Language="C#" Value="public static Dia.DashStyle New (IntPtr raw);" />
       <MemberType>Method</MemberType>

@@ -42,30 +42,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="_pixbuf">
-      <MemberSignature Language="C#" Value="public IntPtr _pixbuf;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="affine">
-      <MemberSignature Language="C#" Value="public IntPtr affine;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="New">
       <MemberSignature Language="C#" Value="public static Dia.ShapeImage New (IntPtr raw);" />
       <MemberType>Method</MemberType>

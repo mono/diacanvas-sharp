@@ -1,3 +1,26 @@
+2003-09-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* README: Updated for 0.1 release
+	* NEWS: Ditto
+	* doc/makefile: Added -f cmdline option
+	* doc/en/Dia/Copy.xml: Removed
+	* doc/en/Dia/Persistent.xml: Removed
+	* doc/en/Dia/PersistentFactory.xml: Removed
+	* doc/en/Dia/ShapeViewInfoFree.xml: Removed
+	* doc/en/Dia/ShapeViewInfo.xml: Removed
+	* doc/en/Dia/StorageFreeFunc.xml: Removed
+	* doc/en/Dia/StorageLoadFunc.xml: Removed
+	* doc/en/Dia/StorageSaveFunc.xml: Removed
+	* doc/en/Dia/Storage.xml: Removed
+	* doc/en/DiaSharp/LoadObjectArgs.xml: Removed
+	* doc/en/DiaSharp/LoadObjectHandler.xml: Removed
+	* doc/en/DiaSharp/LoadStartArgs.xml: Removed
+	* doc/en/DiaSharp/LoadStartHandler.xml: Removed
+	* doc/en/DiaSharp/SaveObjectArgs.xml: Removed
+	* doc/en/DiaSharp/SaveObjectHandler.xml: Removed
+	* doc/en/DiaSharp/SaveStartArgs.xml: Removed
+	* doc/en/DiaSharp/SaveStartHandler.xml: Removed
+
 2003-09-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* makefile: shortend a bit, and disabled auto generation of 

@@ -3,6 +3,7 @@
 
 * Undo / Redo
 * SVG export
+* C# specific PlacementTool
 * CanvasLine, CanvasBox, CanvasText, CanvasImage can
   be created programatically and placed with the
   PlacementTool.
@@ -11,3 +12,4 @@
 * DeleteSelected
 * Snap to grid
 * API (Not fully documented yet, though its still usefull)
+* A sample exercising the canvas

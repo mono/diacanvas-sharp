@@ -538,18 +538,5 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PlacementTool">
-      <MemberSignature Language="C#" Value="public static Dia.PlacementTool PlacementTool ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.PlacementTool</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
   </Members>
 </Type>

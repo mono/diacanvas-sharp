@@ -444,5 +444,17 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HandleLayer">
+      <MemberSignature Language="C#" Value="public Dia.HandleLayer HandleLayer { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.HandleLayer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.HandleLayer" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

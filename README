@@ -2,9 +2,10 @@
 Requirenments
 =============
 
-mono-0.25
-Latest gtk-sharp from CVS
-Latest diacanvas2 from CVS
+mono-0.26
+gtk-sharp-0.11
+diacanvas2-0.93 when it arrives, 
+for now use the cvs version.
 
 ====
 Make

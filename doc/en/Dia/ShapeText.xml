@@ -42,18 +42,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="_font_desc">
-      <MemberSignature Language="C#" Value="public IntPtr _font_desc;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="text">
       <MemberSignature Language="C#" Value="public string text;" />
       <MemberType>Field</MemberType>
@@ -167,18 +155,6 @@
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="affine">
-      <MemberSignature Language="C#" Value="public IntPtr affine;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>

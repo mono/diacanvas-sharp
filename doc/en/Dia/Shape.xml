@@ -78,18 +78,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="_view_info">
-      <MemberSignature Language="C#" Value="public IntPtr _view_info;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="New">
       <MemberSignature Language="C#" Value="public static Dia.Shape New (IntPtr raw);" />
       <MemberType>Method</MemberType>
@@ -279,22 +267,6 @@
         <summary>To be added</summary>
         <param name="start">a <see cref="T:Dia.Point" /></param>
         <param name="end">a <see cref="T:Dia.Point" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="GetViewInfo" Deprecated="true">
-      <MemberSignature Language="C#" Value="public Dia.ShapeViewInfo GetViewInfo (IntPtr key);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.ShapeViewInfo</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="key" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="key">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeViewInfo" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -226,38 +226,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AffinePointW2i">
-      <MemberSignature Language="C#" Value="public void AffinePointW2i (double x, double y);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Double" />
-        <Parameter Name="y" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Double" /></param>
-        <param name="y">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddConstruction" Deprecated="true">
-      <MemberSignature Language="C#" Value="public void AddConstruction (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ShapeValue">
       <MemberSignature Language="C#" Value="public Dia.Shape ShapeValue (Dia.CanvasIter iter);" />
       <MemberType>Method</MemberType>
@@ -436,21 +404,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RemoveDestruction" Deprecated="true">
-      <MemberSignature Language="C#" Value="public void RemoveDestruction (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Grab">
       <MemberSignature Language="C#" Value="public void Grab ();" />
       <MemberType>Method</MemberType>
@@ -606,23 +559,6 @@
         <summary>To be added</summary>
         <param name="horz">a <see cref="T:System.Boolean" /></param>
         <param name="vert">a <see cref="T:System.Boolean" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AffinePointI2w">
-      <MemberSignature Language="C#" Value="public void AffinePointI2w (double x, double y);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="x" Type="System.Double" />
-        <Parameter Name="y" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Double" /></param>
-        <param name="y">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -853,6 +789,52 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handles">
+      <MemberSignature Language="C#" Value="public Collections.IList Handles { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Collections.IList" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffinePointW2i">
+      <MemberSignature Language="C#" Value="public void AffinePointW2i (out double x, out double y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double&amp;" />
+        <Parameter Name="y" Type="System.Double&amp;" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="x">a <see cref="T:System.Double&amp;" /></param>
+        <param name="y">a <see cref="T:System.Double&amp;" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffinePointI2w">
+      <MemberSignature Language="C#" Value="public void AffinePointI2w (out double x, out double y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double&amp;" />
+        <Parameter Name="y" Type="System.Double&amp;" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="x">a <see cref="T:System.Double&amp;" /></param>
+        <param name="y">a <see cref="T:System.Double&amp;" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
