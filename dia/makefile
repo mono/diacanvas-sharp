@@ -20,3 +20,7 @@ install:
 clean:
 	rm -f $(LIBRARY)
 	rm -rf generated
+
+distclean:
+	rm -r CVS
+	rm .cvsignore

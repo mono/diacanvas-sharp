@@ -30,3 +30,9 @@ install:
 
 clean:
 	rm -f $(SAMPLE)
+
+distclean:
+	rm -r CVS
+	rm -r glade/CVS
+	rm -r pixmaps/CVS
+	rm .cvsignore

@@ -22,3 +22,7 @@ install:
 
 clean:
 	rm -f generated-stamp
+
+distclean:
+	rm -r CVS
+	rm .cvsignore

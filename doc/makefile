@@ -18,3 +18,10 @@ clean:
 	rm -f *.zip
 	rm -f tmp
 	rm -f ..zip
+
+distclean:
+	rm -r CVS
+	rm -r en/CVS
+	rm -r en/Dia/CVS
+	rm -r en/DiaSharp/CVS
+	rm .cvsignore

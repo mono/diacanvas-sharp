@@ -11,3 +11,6 @@ install:
 
 clean:
 	rm -f $(GLUE_LIB)
+
+distclean:
+	rm -r CVS

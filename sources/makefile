@@ -12,3 +12,5 @@ get-source-code:
 
 distclean:
 	rm -rf $(PACKAGE)
+	rm -r CVS
+	rm -r .cvsignore
