@@ -29,5 +29,4 @@ clean:
 	$(MAKE) -C $(CODE_DIR) clean
 	$(MAKE) -C $(SAMPLE_DIR) clean
 	$(MAKE) -C $(DOC_DIR) clean
-	rm -rf gnomedb  
-	rm -rf gnomeprint
+
