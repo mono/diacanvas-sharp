@@ -1,8 +1,6 @@
 PACKAGE=diacanvas2-0.10.0
 
 all:
-
-xml:
 	gapi-parser diacanvas-sharp-sources.xml
 
 get-source-code:
