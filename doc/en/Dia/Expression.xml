@@ -77,8 +77,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.Expression'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Expression" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -93,7 +93,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">To be added: an object of type 'double'</param>
+        <param name="c">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -109,8 +109,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="var">To be added: an object of type 'Dia.Variable'</param>
-        <param name="c">To be added: an object of type 'double'</param>
+        <param name="var">a <see cref="T:Dia.Variable" /></param>
+        <param name="c">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -137,7 +137,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="expr2">To be added: an object of type 'Dia.Expression'</param>
+        <param name="expr2">a <see cref="T:Dia.Expression" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

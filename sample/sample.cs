@@ -29,6 +29,14 @@ public class Sample {
 		scrolledwindow.Add (view);
 		SetupTools();
 
+		Dia.CanvasItem item = Dia.CanvasItem.ItemCreate (CanvasBox.GType);
+		item.Move (200, 200);
+		canvas.Root.Add (item, item);
+
+		view.UnselectAll();
+		CanvasViewItem vitem = view.FindViewItem (item);
+		view.Focus (vitem);
+
 		main.ShowAll();
 	}
 
@@ -70,18 +78,20 @@ public class Sample {
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
+	Gdk.Pixbuf pixbuf;
 	void ImageTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = PlacementTool.Image ("pixmaps/logo.png");
+		pixbuf = new Gdk.Pixbuf ("pixmaps/logo.png");
+		view.Tool = PlacementTool.Image (pixbuf);
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void TextTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
-		view.Tool = PlacementTool.Text();
-		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+		//ToolCleanUp();
+		//view.Tool = PlacementTool.Text();
+		//view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void ToolCleanUp()

@@ -75,7 +75,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.Variable'</returns>
+        <returns>a <see cref="T:Dia.Variable" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -90,8 +90,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.Variable'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Variable" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -118,8 +118,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'double'</param>
-        <returns>To be added: an object of type 'double'</returns>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -134,8 +134,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.Strength'</param>
-        <returns>To be added: an object of type 'Dia.Strength'</returns>
+        <param name="value">a <see cref="T:Dia.Strength" /></param>
+        <returns>a <see cref="T:Dia.Strength" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

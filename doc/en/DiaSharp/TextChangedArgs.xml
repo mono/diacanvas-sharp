@@ -25,7 +25,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'DiaSharp.TextChangedArgs'</returns>
+        <returns>a <see cref="T:DiaSharp.TextChangedArgs" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -37,7 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'string'</returns>
+        <returns>a <see cref="T:System.String" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

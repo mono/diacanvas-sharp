@@ -121,35 +121,35 @@
       </parameters>
     </callback>
     <interface name="CanvasGroupable" cname="DiaCanvasGroupable">
-      <signal name="Add" cname="add" when="LAST">
+      <signal name="Added" cname="add" when="LAST">
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </signal>
-      <signal name="Remove" cname="remove" when="LAST">
+      <signal name="Removed" cname="remove" when="LAST">
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </signal>
-      <method name="Add" cname="dia_canvas_groupable_add" shared="true">
+      <method name="Add" cname="dia_canvas_groupable_add" >
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="AddConstruction" cname="dia_canvas_groupable_add_construction" shared="true">
+      <method name="AddConstruction" cname="dia_canvas_groupable_add_construction" >
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="GetIter" cname="dia_canvas_groupable_get_iter" shared="true">
+      <method name="GetIter" cname="dia_canvas_groupable_get_iter" >
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
@@ -159,41 +159,41 @@
       <method name="GetType" cname="dia_canvas_groupable_get_type" shared="true">
         <return-type type="GType"/>
       </method>
-      <method name="Length" cname="dia_canvas_groupable_length" shared="true">
+      <method name="Length" cname="dia_canvas_groupable_length" >
         <return-type type="gint"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
         </parameters>
       </method>
-      <method name="Next" cname="dia_canvas_groupable_next" shared="true">
+      <method name="Next" cname="dia_canvas_groupable_next" >
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasIter*" name="iter"/>
         </parameters>
       </method>
-      <method name="Pos" cname="dia_canvas_groupable_pos" shared="true">
+      <method name="Pos" cname="dia_canvas_groupable_pos" >
         <return-type type="gint"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="Remove" cname="dia_canvas_groupable_remove" shared="true">
+      <method name="Remove" cname="dia_canvas_groupable_remove" >
         <return-type type="gboolean"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="RemoveDestruction" cname="dia_canvas_groupable_remove_destruction" shared="true">
+      <method name="RemoveDestruction" cname="dia_canvas_groupable_remove_destruction" >
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
           <parameter type="DiaCanvasItem*" name="item"/>
         </parameters>
       </method>
-      <method name="Value" cname="dia_canvas_groupable_value" shared="true">
+      <method name="Value" cname="dia_canvas_groupable_value" >
         <return-type type="DiaCanvasItem*"/>
         <parameters>
           <parameter type="DiaCanvasItem*" name="group"/>
@@ -1247,7 +1247,7 @@
         <return-type type="GtkType"/>
       </method>
       <constructor cname="dia_placement_tool_new">
-        <parameters va_type="length_param">
+        <parameters>
           <parameter type="GType" name="object_type"/>
           <parameter type="const-gchar*" name="first_property_name"/>
           <parameter ellipsis="true"/>

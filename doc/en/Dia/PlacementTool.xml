@@ -25,6 +25,48 @@
   </Interfaces>
   <Attributes />
   <Members>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Image (Gdk.Pixbuf pixbuf);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.PlacementTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Box">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Box ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.PlacementTool</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool Line ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.PlacementTool</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>
@@ -46,8 +88,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <param name="gtype">a <see cref="T:GLib.Type" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -60,8 +102,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -72,21 +114,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PlacementTool (uint object_type);" />
-      <MemberType>Constructor</MemberType>
-      <ReturnValue />
-      <Parameters>
-        <Parameter Name="object_type" Type="System.UInt32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="object_type">To be added: an object of type 'uint'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -98,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

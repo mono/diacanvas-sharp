@@ -1,0 +1,16 @@
+// Dia.CanvasItem.Custom - Dia CanvasItem class customizations
+//
+// Author: Martin Willemoes Hansen <mwh@sysrq.dk>
+//
+// Copyright (C) 2003 Martin Willemoes Hansen
+//
+// This code is inserted after the automatically generated code.
+
+[DllImport ("diasharpglue")]
+extern static IntPtr diasharp_canvas_get_root (IntPtr canvas);
+
+public CanvasGroup Root {
+	get { 
+		return new CanvasGroup (diasharp_canvas_get_root (Handle));
+	}
+}

@@ -46,7 +46,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'bool'</returns>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="func">To be added: an object of type 'Dia.ConstraintFunc'</param>
+        <param name="func">a <see cref="T:Dia.ConstraintFunc" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -77,8 +77,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="var">To be added: an object of type 'Dia.Variable'</param>
-        <param name="c">To be added: an object of type 'double'</param>
+        <param name="var">a <see cref="T:Dia.Variable" /></param>
+        <param name="c">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -93,7 +93,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="expr">To be added: an object of type 'Dia.Expression'</param>
+        <param name="expr">a <see cref="T:Dia.Expression" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -132,8 +132,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="var">To be added: an object of type 'Dia.Variable'</param>
-        <returns>To be added: an object of type 'double'</returns>
+        <param name="var">a <see cref="T:Dia.Variable" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -148,7 +148,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">To be added: an object of type 'double'</param>
+        <param name="c">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -173,8 +173,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
-        <returns>To be added: an object of type 'Dia.Constraint'</returns>
+        <param name="gtype">a <see cref="T:GLib.Type" /></param>
+        <returns>a <see cref="T:Dia.Constraint" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -187,8 +187,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.Constraint'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Constraint" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.Constraint'</returns>
+        <returns>a <see cref="T:Dia.Constraint" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -211,7 +211,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

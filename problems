@@ -1,5 +1,8 @@
 Problem with generating C# code for interface CanvasGroupable
 
+Found the source of the problem .. shared="true" should be removed .. somehow in a metatag I guess.
+Also check if renaming of Add and Remove signals is nessesary
+
 Here is the XML generated:
 
     <interface name="CanvasGroupable" cname="DiaCanvasGroupable">
@@ -94,3 +97,14 @@ This is the C# code generated
 #endregion
 
 Umh all the methods are missing :(
+
+===================================
+Field has unknown Type GObjectClass
+
+Seems to be a problem with DiaVariable
+
+    <struct name="VariableClass" cname="DiaVariableClass">
+      <field cname="parent_class" type="GObjectClass"/>
+
+This problem is also showing in GtkSharp .. so maybe it should not
+be that much of a problem.

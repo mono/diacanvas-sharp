@@ -1,20 +1,29 @@
 <?xml version="1.0"?>
 <metadata>
 
-<!-- hide -->
+<!-- renames -->
 <rule>
-  <class name="DiaPlacementTool">
-    <constructor>dia_placement_tool_new</constructor>
+  <class name="DiaCanvasGroupable">
+    <signal>Add</signal>
   </class>
   <data>
-    <attribute target="parameters">
-      <name>va_type</name>
-      <value>length_param</value>
+    <attribute target="signal">
+      <name>name</name>
+      <value>Added</value>
     </attribute>
   </data>
 </rule>
-
-<!-- renames -->
+<rule>
+  <class name="DiaCanvasGroupable">
+    <signal>Remove</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>Removed</value>
+    </attribute>
+  </data>
+</rule>
 <rule>
   <class name="DiaCanvas">
     <method>SnapToGrid</method>

@@ -210,8 +210,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="width">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="width">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -227,8 +227,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="text">To be added: an object of type 'string'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -244,9 +244,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="fill">To be added: an object of type 'bool'</param>
-        <returns>To be added: an object of type 'Pango.Layout'</returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="fill">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -263,9 +263,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="layout">To be added: an object of type 'Pango.Layout'</param>
-        <param name="scale">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="layout">a <see cref="T:Pango.Layout" /></param>
+        <param name="scale">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -281,8 +281,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="width">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="width">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -298,8 +298,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="alignment">To be added: an object of type 'Pango.Alignment'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="alignment">a <see cref="T:Pango.Alignment" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -315,8 +315,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="markup">To be added: an object of type 'bool'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="markup">a <see cref="T:System.Boolean" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -332,8 +332,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="pos">To be added: an object of type 'Dia.Point'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="pos">a <see cref="T:Dia.Point" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -350,9 +350,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="layout">To be added: an object of type 'Pango.Layout'</param>
-        <param name="scale">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="layout">a <see cref="T:Pango.Layout" /></param>
+        <param name="scale">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -368,8 +368,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="line_spacing">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="line_spacing">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -385,8 +385,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="text">To be added: an object of type 'string'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -402,8 +402,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="justify">To be added: an object of type 'bool'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="justify">a <see cref="T:System.Boolean" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -419,8 +419,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="font_desc">To be added: an object of type 'Pango.FontDescription'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="font_desc">a <see cref="T:Pango.FontDescription" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -436,8 +436,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="height">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="height">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -453,8 +453,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="affine">To be added: an object of type 'double []'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -470,8 +470,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="wrap_mode">To be added: an object of type 'Pango.WrapMode'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="wrap_mode">a <see cref="T:Pango.WrapMode" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -487,8 +487,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="cursor">To be added: an object of type 'int'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="cursor">a <see cref="T:System.Int32" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -505,10 +505,10 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="pos">To be added: an object of type 'Dia.Point'</param>
-        <param name="cursor">To be added: an object of type 'int'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="pos">a <see cref="T:Dia.Point" /></param>
+        <param name="cursor">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -523,8 +523,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.ShapeText'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeText" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -536,7 +536,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -551,8 +551,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Pango.FontDescription'</param>
-        <returns>To be added: an object of type 'Pango.FontDescription'</returns>
+        <param name="value">a <see cref="T:Pango.FontDescription" /></param>
+        <returns>a <see cref="T:Pango.FontDescription" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

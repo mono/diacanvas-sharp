@@ -1,5 +1,5 @@
-<Type Name="EventEnter" FullName="Dia.EventEnter">
-  <TypeSignature Language="C#" Value="public class EventEnter : GLib.Opaque, IWrapper" Maintainer="auto" />
+<Type Name="RemovedArgs" FullName="DiaSharp.RemovedArgs">
+  <TypeSignature Language="C#" Value="public class RemovedArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
@@ -13,37 +13,31 @@
     <remarks>To be added</remarks>
   </Docs>
   <Base>
-    <BaseTypeName>GLib.Opaque</BaseTypeName>
+    <BaseTypeName>GtkSharp.SignalArgs</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>GLib.IWrapper</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces />
   <Attributes />
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EventEnter (IntPtr raw);" />
-      <MemberType>Constructor</MemberType>
-      <ReturnValue />
-      <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.EventEnter" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected EventEnter ();" />
+      <MemberSignature Language="C#" Value="public RemovedArgs ();" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.EventEnter" /></returns>
+        <returns>a <see cref="T:DiaSharp.RemovedArgs" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Dia.CanvasItem Item { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

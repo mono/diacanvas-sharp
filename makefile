@@ -3,8 +3,9 @@ CODE_DIR=dia
 SAMPLE_DIR=sample
 SOURCES_DIR=sources
 DOC_DIR=doc
+GLUE_DIR=glue
 
-all: code library samples docs
+all: code library samples docs diaglue
 
 xml:	
 	$(MAKE) -C $(SOURCES_DIR)
@@ -21,8 +22,12 @@ samples:
 docs:
 	$(MAKE) -C $(DOC_DIR)
 
+diaglue:
+	$(MAKE) -C $(GLUE_DIR)
+
 install:
 	$(MAKE) -C $(CODE_DIR) install
+	$(MAKE) -C $(GLUE_DIR) install
 	$(MAKE) -C $(DOC_DIR) install
 
 clean:
@@ -30,3 +35,4 @@ clean:
 	$(MAKE) -C $(CODE_DIR) clean
 	$(MAKE) -C $(SAMPLE_DIR) clean
 	$(MAKE) -C $(DOC_DIR) clean
+	$(MAKE) -C $(GLUE_DIR) clean
