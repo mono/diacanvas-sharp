@@ -94,19 +94,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsFocused">
-      <MemberSignature Language="C#" Value="public bool IsFocused ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Unfocus">
       <MemberSignature Language="C#" Value="public void Unfocus ();" />
       <MemberType>Method</MemberType>
@@ -213,19 +200,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsVisible">
-      <MemberSignature Language="C#" Value="public bool IsVisible ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="AffinePointW2i">
       <MemberSignature Language="C#" Value="public void AffinePointW2i (out double x, out double y);" />
       <MemberType>Method</MemberType>
@@ -310,19 +284,6 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsSelected">
-      <MemberSignature Language="C#" Value="public bool IsSelected ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -504,19 +465,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsGrabbed">
-      <MemberSignature Language="C#" Value="public bool IsGrabbed ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="MakeConnect">
       <MemberSignature Language="C#" Value="public bool MakeConnect (Dia.Handle handle);" />
       <MemberType>Method</MemberType>
@@ -678,9 +626,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <summary>The Type for the <see cref="T:Dia.CanvasItem" /></summary>
+        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Disconnect">
@@ -839,6 +787,58 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFocused">
+      <MemberSignature Language="C#" Value="public bool IsFocused { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisible">
+      <MemberSignature Language="C#" Value="public bool IsVisible { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGrabbed">
+      <MemberSignature Language="C#" Value="public bool IsGrabbed { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

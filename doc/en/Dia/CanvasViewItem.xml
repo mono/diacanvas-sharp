@@ -77,32 +77,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsSelected">
-      <MemberSignature Language="C#" Value="public bool IsSelected ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> selected.</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsFocused">
-      <MemberSignature Language="C#" Value="public bool IsFocused ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> focused.</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RequestRedrawUta">
       <MemberSignature Language="C#" Value="public void RequestRedrawUta (Art.Uta uta);" />
       <MemberType>Method</MemberType>
@@ -126,7 +100,7 @@
       </ReturnValue>
       <Docs>
         <summary>The Type for the <see cref="Dia.CanvasViewItem" /></summary>
-        <returns>a <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -142,6 +116,32 @@
       <Docs>
         <summary>Gets or sets the ability of the <see cref="T:Dia.CanvasViewItem" /> to interact.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> selected.</summary>
+        <returns>a <see cref="T:System.Boolean" /></returns>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFocused">
+      <MemberSignature Language="C#" Value="public bool IsFocused { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> focused.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks></remarks>
       </Docs>

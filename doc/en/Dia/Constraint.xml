@@ -92,19 +92,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HasVariables">
-      <MemberSignature Language="C#" Value="public bool HasVariables ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (Dia.Variable var, double c);" />
       <MemberType>Method</MemberType>
@@ -196,8 +183,21 @@
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>The Type for the <see cref="T:Dia.Constraint" /></summary>
+        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasVariables">
+      <MemberSignature Language="C#" Value="public bool HasVariables { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

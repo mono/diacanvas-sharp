@@ -434,9 +434,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <summary>The Type for the <see cref="T:Dia.Shape" /></summary>
+        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ArtUpdate">

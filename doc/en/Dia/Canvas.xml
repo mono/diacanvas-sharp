@@ -375,8 +375,8 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The Type for the <see cref="Dia.Canvas" /></summary>
-        <returns>a <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <summary>The Type for the <see cref="T:Dia.Canvas" /></summary>
+        <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
         <remarks></remarks>
       </Docs>
     </Member>

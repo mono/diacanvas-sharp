@@ -9,8 +9,11 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>
+    Describes how to wrap the lines of a 
+    <see cref="T:Dia.ShapeText" /> to the desired width.
+    </summary>
+    <remarks>Replaces <see cref="T:Pango.WrapMode" /></remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +39,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A null wrap mode, should normally not be used.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Char">
@@ -48,8 +51,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Wrap line at character boundaries.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Word">
@@ -60,8 +63,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Wrap lines at word boundaries.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

@@ -1,22 +1,54 @@
+2003-11-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/dia/WrapMode.xml: Documented
+	* doc/en/dia/ConstraintFunc.xml: Documented
+	* doc/en/dia/CanvasItem.xml: Reflects that Is and Has methods are now properties
+	* doc/en/dia/CanvasViewItem.xml: Ditto
+	* doc/en/dia/Constraint.xml: Ditto
+	* doc/en/dia/Canvas.xml: Documented GType property
+	* doc/en/dia/Variable.xml: Ditto
+	* doc/en/dia/Tool.xml: Ditto
+	* doc/en/dia/StackTool.xml: Ditto
+	* doc/en/dia/Solver.xml: Ditto
+	* doc/en/dia/Shape.xml: Ditto
+	* doc/en/dia/ShapeText.xml: Ditto
+	* doc/en/dia/ShapePath.xml: Ditto
+	* doc/en/dia/ShapeImage.xml: Ditto
+	* doc/en/dia/ShapeEllipse.xml: Ditto
+	* doc/en/dia/ShapeBezier.xml: Ditto
+	* doc/en/dia/Selector.xml: Ditto
+	* doc/en/dia/Rectangle.xml: Ditto
+	* doc/en/dia/Point.xml: Ditto
+	* doc/en/dia/Handle.xml: Ditto
+	* doc/en/dia/HandleLayer.xml: Ditto
+	* doc/en/dia/ExportSVG.xml: Ditto
+	* doc/en/dia/CanvasView.xml: Ditto
+	* doc/en/dia/CanvasViewItem.xml: Ditto
+	* doc/en/dia/CanvasText.xml: Ditto
+	* doc/en/dia/CanvasLine.xml: Ditto
+	* doc/en/dia/CanvasIter.xml: Ditto
+	* doc/en/dia/CanvasItem.xml: Ditto
+	* doc/en/dia/CanvasImage.xml: Ditto
+	* doc/en/dia/CanvasGroup.xml: Ditto
+	* doc/en/dia/CanvasElement.xml: Ditto
+	* doc/en/dia/CanvasBox.xml: Ditto
+	* doc/diacanvas-docs.zip: Regenerated
+	* doc/diacanvas-docs.tree: Ditto
+
 2003-11-15  Gonzalo Paniagua Javier <gonzalo@ximian.com>
 
 	* configure.in: use pkg-config to get diacanvas2 flags, check if needed
 	mono applications can be run as 'xx' or 'xx.exe' and prepend 'mono' in
 	the latter case, added 2 new output files.
-
 	* makefile.am: automake-ized.
 	* dia/makefile.am:
 	* doc/makefile.am:
 	* sample/makefile.am:
 	* sources/makefile.am: use the variables defined in configure.in
-
 	* glue/makefile.am: use libtool.
-
 	* sample/glade/makefile.am:
 	* sample/pixmaps/makefile.am: needed for make dist to produce a valid
 	tarball.
-
-	Now I can compile this from CVS. And you too :).
 
 2003-11-11  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
