@@ -10,11 +10,19 @@
  
 /* Forward declarations */
 GList * diasharp_canvas_item_get_handles (DiaCanvasItem * item);
+void diasharp_canvas_item_set_canvas (DiaCanvasItem * item, DiaCanvas * canvas);
 /* */
  
 GList * 
 diasharp_canvas_item_get_handles (DiaCanvasItem * item)
 {
         return item->handles;
+}
+
+void
+diasharp_canvas_item_set_canvas (DiaCanvasItem * item, DiaCanvas * canvas)
+{
+	if (item->canvas == NULL)
+		item->canvas = canvas;
 }
 

@@ -1,3 +1,12 @@
+2003-11-17  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/dia/CanvasEditable.xml: Documented
+	* doc/en/dia/CanvasGroupable.xml: Documented
+	* doc/diacanvas-docs.zip: Removed
+	* doc/diacanvas-docs.tree: Ditto
+	* glue/dia-canvas-item.c: Added set accessor for canvas field
+	* dia/CanvasItem.custom: Ditto
+
 2003-11-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/dia/WrapMode.xml: Documented

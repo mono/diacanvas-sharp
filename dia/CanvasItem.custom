@@ -24,3 +24,11 @@ public IList Handles {
 		return list;
 	}
 }
+
+[DllImport("diacanvassharpglue")]
+extern static void diasharp_canvas_item_set_canvas (IntPtr item, IntPtr canvas);
+
+public Dia.Canvas Canvas 
+{
+	set { diasharp_canvas_item_set_canvas (Handle, value.Handle); }
+}

@@ -842,5 +842,17 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Canvas">
+      <MemberSignature Language="C#" Value="public Dia.Canvas Canvas { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Canvas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

@@ -9,8 +9,11 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>
+      <see cref="T:Dia.CanvasItem" />'s which support 
+    editable text implements this interface.
+    </summary>
+    <remarks></remarks>
   </Docs>
   <Base />
   <Interfaces>
@@ -30,9 +33,12 @@
         <Parameter Name="text_shape" Type="Dia.ShapeText" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <remarks>To be added</remarks>
+        <summary>Start a text-edit session.</summary>
+        <param name="text_shape">
+	a <see cref="T:Dia.ShapeText" /> object that contains 
+	all information about the text to be edited.
+	</param>
+        <remarks>Note that text_shape is not altered during editing.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeText">
@@ -46,10 +52,13 @@
         <Parameter Name="new_text" Type="System.String" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <param name="new_text">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
+        <summary>Change the text.</summary>
+        <param name="text_shape">
+	a <see cref="T:Dia.ShapeText" /> object that contains 
+	all information about the text to be edited.
+	</param>
+        <param name="new_text">a <see cref="T:System.String" /> representing the new text.</param>
+        <remarks>Note that text_shape is not altered during editing.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DoneEditing">
@@ -63,10 +72,13 @@
         <Parameter Name="new_text" Type="System.String" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <param name="new_text">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
+        <summary>End a text-edit session.</summary>
+        <param name="text_shape">
+	a <see cref="T:Dia.ShapeText" /> object that contains 
+	all information about the text to be edited.
+	</param>
+        <param name="new_text">a <see cref="T:System.String" /> representing the new text.</param>
+        <remarks>Note that text_shape is not altered during editing.</remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingDone">
@@ -77,8 +89,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Editing is done, the new text is returned.</summary>
+        <remarks>The <see cref="T:Dia.CanvasItem" /> should update the text.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartEditing">
@@ -89,8 +101,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Editing has started.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -101,8 +113,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The text has been changed.</summary>
+        <remarks>
+	The view should update the text editor 
+	to reflect the change.
+        In case of <see cref="T:Dia.CanvasView" /> 
+	the text area is updated based on the
+        (new) state of @new_text.
+	</remarks>
       </Docs>
     </Member>
   </Members>
