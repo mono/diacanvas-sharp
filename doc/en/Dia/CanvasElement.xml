@@ -1,7 +1,7 @@
 <Type Name="CanvasElement" FullName="Dia.CanvasElement">
   <TypeSignature Language="C#" Value="public class CanvasElement : Dia.CanvasItem, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

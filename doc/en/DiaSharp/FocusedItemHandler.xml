@@ -1,7 +1,7 @@
 <Type Name="FocusedItemHandler" FullName="DiaSharp.FocusedItemHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void FocusedItemHandler (object o, DiaSharp.FocusedItemArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="SelectedItemHandler" FullName="DiaSharp.SelectedItemHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void SelectedItemHandler (object o, DiaSharp.SelectedItemArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="HandleLayer" FullName="Dia.HandleLayer">
   <TypeSignature Language="C#" Value="public class HandleLayer : Gnome.CanvasItem, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -14,6 +14,7 @@
 	* makefile: deleted api as a target
 	* PROBLEMS: Added yet another problem
 	* sample/sample.cs: Uncommented FindViewItem, since it triggers some bug
+	* doc/en/*/*.xml: Updated to use assembly diacanvas-sharp instead of dia-sharp
 
 2003-10-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

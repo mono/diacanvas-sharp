@@ -1,7 +1,7 @@
 <Type Name="UnselectedItemArgs" FullName="DiaSharp.UnselectedItemArgs">
   <TypeSignature Language="C#" Value="public class UnselectedItemArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

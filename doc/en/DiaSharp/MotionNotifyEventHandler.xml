@@ -1,7 +1,7 @@
 <Type Name="MotionNotifyEventHandler" FullName="DiaSharp.MotionNotifyEventHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void MotionNotifyEventHandler (object o, DiaSharp.MotionNotifyEventArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

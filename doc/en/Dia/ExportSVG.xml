@@ -1,7 +1,7 @@
 <Type Name="ExportSVG" FullName="Dia.ExportSVG">
   <TypeSignature Language="C#" Value="public class ExportSVG : GLib.Object, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

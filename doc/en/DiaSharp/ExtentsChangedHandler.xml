@@ -1,7 +1,7 @@
 <Type Name="ExtentsChangedHandler" FullName="DiaSharp.ExtentsChangedHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void ExtentsChangedHandler (object o, DiaSharp.ExtentsChangedArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

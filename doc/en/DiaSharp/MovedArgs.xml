@@ -1,7 +1,7 @@
 <Type Name="MovedArgs" FullName="DiaSharp.MovedArgs">
   <TypeSignature Language="C#" Value="public class MovedArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

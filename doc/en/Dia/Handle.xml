@@ -1,7 +1,7 @@
 <Type Name="Handle" FullName="Dia.Handle">
   <TypeSignature Language="C#" Value="public class Handle : GLib.Object, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

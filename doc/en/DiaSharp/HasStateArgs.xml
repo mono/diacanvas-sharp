@@ -1,7 +1,7 @@
 <Type Name="HasStateArgs" FullName="DiaSharp.HasStateArgs">
   <TypeSignature Language="C#" Value="public class HasStateArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

@@ -1,7 +1,7 @@
 <Type Name="CanvasEllipse" FullName="Dia.CanvasEllipse">
   <TypeSignature Language="C#" Value="public class CanvasEllipse : Dia.CanvasItem, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

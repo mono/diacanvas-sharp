@@ -1,7 +1,7 @@
 <Type Name="CanvasItemFlags" FullName="Dia.CanvasItemFlags">
   <TypeSignature Language="C#" Value="public sealed struct CanvasItemFlags;" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

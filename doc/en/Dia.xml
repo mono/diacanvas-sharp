@@ -1,4 +1,4 @@
-<Namespace Name="Gdk" FullName="Gdk" FullNameSP="Gdk" Maintainer="Mono">
+<Namespace Name="Dia" FullName="Dia" FullNameSP="Dia" Maintainer="Auto">
   <Docs>
     <summary>DiaCanvas# a full featured diagramming canvas</summary>
     <remarks>

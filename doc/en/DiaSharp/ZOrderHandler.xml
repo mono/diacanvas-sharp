@@ -1,7 +1,7 @@
 <Type Name="ZOrderHandler" FullName="DiaSharp.ZOrderHandler">
   <TypeSignature Language="C#" Value="public sealed delegate void ZOrderHandler (object o, DiaSharp.ZOrderArgs args);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>

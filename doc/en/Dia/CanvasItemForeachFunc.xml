@@ -1,7 +1,7 @@
 <Type Name="CanvasItemForeachFunc" FullName="Dia.CanvasItemForeachFunc">
   <TypeSignature Language="C#" Value="public sealed delegate int CanvasItemForeachFunc (Dia.CanvasItem item);" Maintainer="auto" />
   <AssemblyInfo>
-    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyName>diacanvas-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
