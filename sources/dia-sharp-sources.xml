@@ -1,0 +1,9 @@
+<gapi-parser-input>
+  <api filename="../api/dia-api.xml">
+    <library name="diacanvas2">
+      <namespace name="Dia">
+        <dir>diacanvas2/src</dir>
+      </namespace>
+    </library>
+  </api>
+</gapi-parser-input>

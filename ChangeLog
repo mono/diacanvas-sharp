@@ -1,3 +1,10 @@
+2003-10-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sample/sample.cs: Updated to match gtk# cvs
+	* sources/dia-sharp.sources: Removed
+	* sources/dia-sharp-sources.xml: Added
+	* sources/Makefile: Use new gapi-parser
+
 2003-09-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sources/Dia.metadata: Fixed parameter type for DiaGlobal.ExportPrint, 

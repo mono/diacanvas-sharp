@@ -190,11 +190,12 @@ public class Sample {
 
 	void Print (object sender, EventArgs args)
 	{
-		PrintJob pj = new PrintJob (PrintConfig.Default());
-		PrintDialog dialog = new PrintDialog (pj, "Print diagram", PrintDialogFlags.None);
+		PrintJob pj = new PrintJob();
+		PrintDialog dialog = new PrintDialog (pj, "Print diagram");
 		int response = dialog.Run();
 		
-		if (response == (int) ResponseType.Cancel) {
+		if (response == (int) ResponseType.Cancel ||
+		    response == (int) ResponseType.DeleteEvent) {
 			dialog.Destroy();
 			return;
 		}
@@ -206,12 +207,12 @@ public class Sample {
 		pj.Close();
 		
 		switch (response) {
-		case (int)PrintDialogResponseType.Print: 
+		case (int)PrintButtons.Print: 
 			if (pj.Config.Get ("Settings.Transport.Backend") == "file")
 				pj.PrintToFile (pj.Config.Get ("Settings.Transport.Backend.FileName"));
 			pj.Print(); 
 			break;
-		case (int) PrintDialogResponseType.Preview:
+		case (int) PrintButtons.Preview:
 			new PrintJobPreview (pj, "Diagram").Show();
 			break;
 		}
