@@ -9,13 +9,6 @@ INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml		\
 		@prefix@/share/gapi/gdk-api.xml		\
 		@prefix@/share/gapi/gdk-symbols.xml
 
-ASSEMBLIES=	-r gtk-sharp.dll	\
-		-r glib-sharp.dll	\
-		-r gnome-sharp.dll	\
-		-r gdk-sharp.dll	\
-		-r pango-sharp.dll	\
-		-r art-sharp.dll
-
 EXTRA_DIST= 	*.cs *.custom *.metadata *.xml
 
 diacanvassharpdir = $(libdir)
@@ -29,7 +22,7 @@ generated-stamp: $(APIS) *.custom *.metadata
 	--outdir=generated --customdir=. --assembly-name=diacanvas-sharp && touch generated-stamp
 
 $(LIBRARY): generated-stamp *.cs
-	$(MCS) --unsafe --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
+	$(MCS) --unsafe --target library -pkg:gnome-sharp --recurse '*.cs' -o $(LIBRARY)
 
 install:
 	for i in $(APIS); do						\

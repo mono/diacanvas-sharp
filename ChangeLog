@@ -1,3 +1,8 @@
+2004-07-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* configure.in: Targets Mono-1.0, Gtk#-1.0 and DiaCanvas2-0.13.0
+	* dia/makefile.am: Reference assemblies properly
+
 2004-04-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sources/makefile: Targets DiaCanvas2-0.12.0
