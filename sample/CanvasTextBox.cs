@@ -4,17 +4,23 @@ using System.Runtime.InteropServices;
 using Dia;
 using Pango;
 
-public class CanvasTextBox : CanvasBox {
+public class CanvasTextBox : CanvasGroup {
 	
+	static GLib.Type gtype;
 	CanvasText text;
 
-	public CanvasTextBox() : base()
+	static CanvasTextBox()
+	{
+		gtype = RegisterGType (typeof (CanvasTextBox));
+	}
+
+	public CanvasTextBox() : base (gtype)
 	{
 		text = new CanvasText();
-		//text.Font = FontDescription.FromString ("sans 20");
-		text.Text = "Hi";
+		text.Font = FontDescription.FromString ("sans 20");
+		text.Text = "Hi, im editable";
 		text.Width =  200;
-		text.Height = 40;
-		text.Move (10, 30);
+		text.Height = 100;
+		Add (text);
 	}
 }

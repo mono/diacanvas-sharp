@@ -30,23 +30,6 @@ Property has unknown Type DiaCanvasItemHandles in Object Dia.CanvasItem
 
 ================================================================================
 
-
-Pango.FontDescription problem
------------------------------
-
-CanvasText text = new CanvasText();
-text.Font = FontDescription.FromString ("sans 20");
-
-Results in this:
-
-(<unknown>:972): GLib-GObject-WARNING **: gvalue.c:93: cannot initialize GValue with type `GBoxed', this type has no GTypeValueTable implementation                                                                                                                            
-(<unknown>:972): GLib-GObject-CRITICAL **: file gboxed.c: line 487 (g_value_set_boxed): assertion `G_VALUE_HOLDS_BOXED (value)' failed
-                                                                                                                           
-(<unknown>:972): GLib-GObject-CRITICAL **: file gobject.c: line 1019 (g_object_set_property): assertion `G_IS_VALUE (value)' failed
-
-================================================================================
-
-
 CanvasView.FindViewItem casting problem
 ---------------------------------------
 

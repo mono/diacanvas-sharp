@@ -6,6 +6,9 @@
 	* doc/diacanvas-docs.tree: Ditto
 	* glue/dia-canvas-item.c: Added set accessor for canvas field
 	* dia/CanvasItem.custom: Ditto
+	* PROBLEMS: Pango.Font problem fixed in Gtk-sharp-0.12
+	* sample/sample.cs: Use pango fonts, now the problem is gone.
+	* sample/CanvasTextBox.cs: One step closer to make custom CanvasItem's.
 
 2003-11-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

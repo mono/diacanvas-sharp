@@ -84,13 +84,13 @@ public class Sample {
 		Dia.CanvasText text = new Dia.CanvasText();
 		text.Move (250, 150);
 		text.Text = "Hello, World!";
-		//text.Font = FontDescription.FromString ("sans 20");
+		text.Font = FontDescription.FromString ("sans 20");
 		text.Height = 50;
-		text.Width = 100;
+		text.Width = 200;
 		canvas.Root.Add (text);
 
 		CanvasTextBox textbox = new CanvasTextBox();
-		textbox.Move (50, 225);
+		textbox.Move (50, 150);
 		canvas.Root.Add (textbox);
 
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
