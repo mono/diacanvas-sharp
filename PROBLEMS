@@ -29,6 +29,9 @@ Property has unknown Type DiaCanvasItemHandles in Object Dia.CanvasItem
 	Defined in diatypes.c and diacanvas.h
 	Maybe make a real type in c or make a manual wrapper class in C#
 
+Field has unknown Type GDestroyNotify
+	Part of GObject, probably not wraped.
+
 ================================================================================
 
 

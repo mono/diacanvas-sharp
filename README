@@ -1,3 +1,11 @@
+=============
+Requirenments
+=============
+
+mono-0.25
+Latest gtk-sharp from CVS
+Latest diacanvas2 from CVS
+
 ====
 Make
 ====

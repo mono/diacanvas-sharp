@@ -1,3 +1,17 @@
+2003-08-06  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* sources/dia-sharp.sources: 
+	* sources/makefile:
+	* PROBLEMS:
+	* README:
+	* api/dia-api.xml: Target latest cvs version of diacanvas2
+	* patches/*.diff: Rearranged patches, a dir
+	  for each software and version of it that
+	  has been modified.
+	* patches/dia-storage.h.diff: Fix for comments next to parameters.
+	* patches/acinclude.m4.diff: Fix for not finding python 2.3
+	* sources/Dia.Metadata: Fixed nameclashes
+
 2003-07-31  Martin Willemoes Hansen <mwh@sysrq.dk>
 
 	* Upgraded to latest gtk# cvs
