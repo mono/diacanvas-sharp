@@ -1,7 +1,7 @@
 using System;
-using System.Runtime.InteropServices;
 
 using Dia;
+using DiaSharp;
 using Pango;
 
 public class CanvasTextBox : CanvasGroup {
@@ -22,5 +22,15 @@ public class CanvasTextBox : CanvasGroup {
 		text.Width =  200;
 		text.Height = 100;
 		Add (text);
+		text.EditingDone += new EditingDoneHandler (editing_done);
+	}
+
+	void editing_done (object sender, EditingDoneArgs args)
+	{
+		Console.WriteLine ("Editing Done");
+		// Change view back to text box
+		// get canvas
+		// get canvasview
+		// focus this
 	}
 }

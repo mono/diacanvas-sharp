@@ -38,6 +38,9 @@ in <0x0044d> .Sample:CreateItemsProgramatically ()
 in <0x001a3> .Sample:.ctor ()
 in <0x00023> .Sample:Main ()
 
+Seems to be the same problem as gtksourceview-sharp, see
+SourceLanguagesManager.custom
+
 ================================================================================
 
 Crashes

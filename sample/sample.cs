@@ -96,9 +96,9 @@ public class Sample {
 		canvas.Root.Add (image);
 
 	        view.UnselectAll();
-		// Trigers a bug
-		//CanvasViewItem vitem = view.FindViewItem (image);
-		//view.Focus (vitem);
+		// Trigers a bug, same as in gtksourceview-sharp
+		// CanvasViewItem vitem = view.FindViewItem (image);
+		// view.Focus (vitem);
 	}
 
 	void SelectionTool (object sender, EventArgs args)

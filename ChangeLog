@@ -1,3 +1,12 @@
+2003-12-22  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sample/CanvasTextBox.cs: Removed not needed using line
+	* PROBLEMS: Added extra info on casting problem
+	* sample/sample.cs: Added extra info on casting problem
+	* configure.in: Updated dependency check
+	* NEWS: Updated news for 0.3.0
+	* Released 0.3.0
+
 2003-12-03  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/Dia/CanvasLine.xml: Documented

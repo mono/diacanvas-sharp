@@ -3,6 +3,9 @@
 
 * Autoconf enabled
 * CanvasLine API Documented
+* CanvasTextBox sampled added, works partially
+* CanvasEditable API Documented
+* CanvasGroupable API Documented
 
 0.2.0
 =====
