@@ -1,3 +1,10 @@
+2003-09-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sources/Dia.metadata: Fixed parameter type for DiaGlobal.ExportPrint, 
+	  from gpointer to GnomePrintJob
+	* api/dia-api.xml: Ditto
+	* sample/sample.cs: Updated to use new API, fixed to use filename entry
+
 2003-09-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* README: Now targeting Gtk# cvs

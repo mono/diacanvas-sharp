@@ -191,32 +191,30 @@ public class Sample {
 	void Print (object sender, EventArgs args)
 	{
 		PrintJob pj = new PrintJob (PrintConfig.Default());
-		PrintDialog dialog = new PrintDialog (pj, "Sample print dialog", 0);
+		PrintDialog dialog = new PrintDialog (pj, "Print diagram", PrintDialogFlags.None);
 		int response = dialog.Run();
 		
-		// PrintButtons.Cancel
-		if (response == -6) {
-			Console.WriteLine ("Canceled");
+		if (response == (int) ResponseType.Cancel) {
 			dialog.Destroy();
 			return;
 		}
 
-		pj.PrintToFile ("diagram.ps");
 		PrintContext ctx = pj.Context;
 		Gnome.Print.Beginpage (ctx, "demo"); 
-		Dia.Global.ExportPrint (pj.Handle, canvas);
+		Dia.Global.ExportPrint (pj, canvas);
 		Gnome.Print.Showpage (ctx);
 		pj.Close();
 		
 		switch (response) {
-		case (int)PrintButtons.Print: 
+		case (int)PrintDialogResponseType.Print: 
+			if (pj.Config.Get ("Settings.Transport.Backend") == "file")
+				pj.PrintToFile (pj.Config.Get ("Settings.Transport.Backend.FileName"));
 			pj.Print(); 
 			break;
-		case (int) PrintButtons.Preview:
+		case (int) PrintDialogResponseType.Preview:
 			new PrintJobPreview (pj, "Diagram").Show();
 			break;
 		}
-
 		dialog.Destroy();
 	}
 

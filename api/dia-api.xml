@@ -2323,7 +2323,7 @@
       <method name="ExportPrint" cname="dia_export_print" shared="true">
         <return-type type="void"/>
         <parameters>
-          <parameter type="gpointer" name="gpm"/>
+          <parameter type="GnomePrintJob*" name="gpm"/>
           <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </method>

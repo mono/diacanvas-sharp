@@ -243,6 +243,18 @@
     </attribute>
   </data>
 </rule>
+<rule>
+  <class name="DiaGlobal">
+    <method>ExportPrint</method>
+  </class>
+  <data>
+    <attribute target="param">
+      <filter level="name">gpm</filter>
+      <name>type</name>
+      <value>GnomePrintJob*</value>
+    </attribute>
+  </data>
+</rule>
 
 <!-- disable default constructor -->
 <rule>
