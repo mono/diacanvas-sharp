@@ -2,7 +2,7 @@ SUBDIRS=en
 diacanvasdocdir=$(MONODOC_SOURCESDIR)
 diacanvasdoc_DATA = diacanvas-docs.zip diacanvas-docs.tree diacanvas-docs.source
 CLEANFILES= *.tree *.zip tmp ..zip
-EXTRA_DIST= diacanvas-docs.source diacanvas-docs.tree diacanvas-docs.zip
+EXTRA_DIST= diacanvas-docs.source
 
 ASSEMBLER=../../monodoc/browser/assembler.exe
 UPDATER=../../monodoc/generator/updater.exe
