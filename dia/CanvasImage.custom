@@ -12,3 +12,19 @@ public CanvasImage (Gdk.Pixbuf pixbuf) {
 	Width = pixbuf.Width;
 	Height = pixbuf.Height;
 }
+
+[DllImport("diacanvas2")]
+extern static IntPtr dia_placement_tool_new (uint object_type, 
+					     IntPtr image, IntPtr pixbuf,
+					     IntPtr width, double wid,
+					     IntPtr height, double hei,
+					     IntPtr dummy);
+
+public static PlacementTool PlacementTool (Gdk.Pixbuf pixbuf)
+{
+	return new PlacementTool (dia_placement_tool_new (CanvasImage.GType,
+			  Marshal.StringToHGlobalAnsi ("image"), pixbuf.Handle,
+			  Marshal.StringToHGlobalAnsi ("width"), pixbuf.Width,
+			  Marshal.StringToHGlobalAnsi ("height"), pixbuf.Height,
+			  IntPtr.Zero));
+}

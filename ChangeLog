@@ -1,3 +1,15 @@
+2003-09-03  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* api/dia-api.xml:
+	* sources/Dia.metadata: Hidden the default ctor of 
+	the PlacementTool.
+	* dia/CanvasBox.custom:
+	* dia/CanvasImage.custom:
+	* dia/CanvasLine.custom: Added creation of PlacementTool for the item.
+	* dia/PlacementTool.custom: Removed creation of Box, Image and Line.
+	* PROBLEMS: Some problems magically goes away.
+	* sample/sample.cs: Updated to accomodate api changes.
+
 2003-08-31  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* api/dia-api.xml:

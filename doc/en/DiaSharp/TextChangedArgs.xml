@@ -53,7 +53,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NewBounds">
+    <Member MemberName="NewBounds" Deprecated="true">
       <MemberSignature Language="C#" Value="public Dia.Rectangle NewBounds { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>

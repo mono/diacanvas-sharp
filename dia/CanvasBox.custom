@@ -10,3 +10,13 @@ public CanvasBox() {
         Raw = ItemCreate (CanvasBox.GType).Handle;
 }
 
+[DllImport("diacanvas2")]
+extern static IntPtr dia_placement_tool_new (uint object_type, 
+					     IntPtr dummy);
+
+public static PlacementTool PlacementTool()
+{
+	return new PlacementTool (dia_placement_tool_new (CanvasBox.GType, 
+							  IntPtr.Zero));
+}
+

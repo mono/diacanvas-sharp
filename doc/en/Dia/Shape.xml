@@ -282,7 +282,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetViewInfo">
+    <Member MemberName="GetViewInfo" Deprecated="true">
       <MemberSignature Language="C#" Value="public Dia.ShapeViewInfo GetViewInfo (IntPtr key);" />
       <MemberType>Method</MemberType>
       <ReturnValue>

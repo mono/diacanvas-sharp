@@ -149,5 +149,35 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="AddConstruction">
+      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDestruction">
+      <MemberSignature Language="C#" Value="public virtual void RemoveDestruction (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

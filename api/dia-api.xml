@@ -1387,7 +1387,7 @@
         </parameters>
       </method>
     </object>
-    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool">
+    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool" disabledefaultconstructor="1">
       <field cname="object_type" type="GType"/>
       <field cname="n_params" type="guint"/>
       <field cname="params" type="GParameter*"/>

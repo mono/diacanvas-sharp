@@ -48,12 +48,8 @@ public class Sample {
 		CanvasLine line = new CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
-
-		Dia.Point p1 = new Dia.Point (50, 50);
-		Dia.Point p2 = new Dia.Point (100, 150);
-
-		line.HeadPos = p1;
-		line.TailPos = p2;
+		line.HeadPos = new Dia.Point (50, 50);;
+		line.TailPos = new Dia.Point (100, 150);
 		line.Cap = Dia.CapStyle.Butt;
 		line.Move (100, 150);
 		canvas.Root.Add (line);
@@ -101,21 +97,21 @@ public class Sample {
 	void LineTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = PlacementTool.Line();
+		view.Tool = CanvasLine.PlacementTool (4, 480975);
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void BoxTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = PlacementTool.Box();
+		view.Tool = CanvasBox.PlacementTool ();
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void ImageTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = PlacementTool.Image (new Pixbuf (null, "pixmaps/logo.png"));
+		view.Tool = CanvasImage.PlacementTool (new Pixbuf (null, "pixmaps/logo.png"));
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 

@@ -25,7 +25,7 @@
   </Interfaces>
   <Attributes />
   <Members>
-    <Member MemberName="Line">
+    <Member MemberName="Line" Deprecated="true">
       <MemberSignature Language="C#" Value="public static Dia.PlacementTool Line ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -38,7 +38,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Box">
+    <Member MemberName="Box" Deprecated="true">
       <MemberSignature Language="C#" Value="public static Dia.PlacementTool Box ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -51,7 +51,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Image">
+    <Member MemberName="Image" Deprecated="true">
       <MemberSignature Language="C#" Value="public static Dia.PlacementTool Image (Gdk.Pixbuf pixbuf);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -127,6 +127,17 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PlacementTool ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

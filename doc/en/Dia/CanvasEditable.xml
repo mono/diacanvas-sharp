@@ -35,7 +35,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ChangeText">
+    <Member MemberName="ChangeText" Deprecated="true">
       <MemberSignature Language="C#" Value="public virtual void ChangeText (Dia.ShapeText text_shape, string new_text, Dia.Rectangle new_bounds);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -98,6 +98,23 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeText">
+      <MemberSignature Language="C#" Value="public virtual void ChangeText (Dia.ShapeText text_shape, string new_text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text_shape" Type="Dia.ShapeText" />
+        <Parameter Name="new_text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
+        <param name="new_text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

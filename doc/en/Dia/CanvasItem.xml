@@ -243,7 +243,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddConstruction">
+    <Member MemberName="AddConstruction" Deprecated="true">
       <MemberSignature Language="C#" Value="public void AddConstruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
@@ -436,7 +436,7 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RemoveDestruction">
+    <Member MemberName="RemoveDestruction" Deprecated="true">
       <MemberSignature Language="C#" Value="public void RemoveDestruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>

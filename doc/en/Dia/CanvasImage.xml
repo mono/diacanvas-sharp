@@ -107,5 +107,21 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PlacementTool">
+      <MemberSignature Language="C#" Value="public static Dia.PlacementTool PlacementTool (Gdk.Pixbuf pixbuf);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.PlacementTool</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

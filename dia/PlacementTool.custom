@@ -9,30 +9,8 @@
 [DllImport("diacanvas2")]
 extern static IntPtr dia_placement_tool_new (uint object_type, IntPtr dummy);
 
-public static PlacementTool Line()
+public PlacementTool()
 {
-	return new PlacementTool (dia_placement_tool_new (CanvasLine.GType, 
-							  IntPtr.Zero));
+	Raw = dia_placement_tool_new (CanvasLine.GType, IntPtr.Zero);
 }
 
-public static PlacementTool Box()
-{
-	return new PlacementTool (dia_placement_tool_new (CanvasBox.GType, 
-							  IntPtr.Zero));
-}
-
-[DllImport("diacanvas2")]
-extern static IntPtr dia_placement_tool_new (uint object_type, 
-					     IntPtr image, IntPtr pixbuf,
-					     IntPtr width, double wid,
-					     IntPtr height, double hei,
-					     IntPtr dummy);
-
-public static PlacementTool Image (Gdk.Pixbuf pixbuf)
-{
-	return new PlacementTool (dia_placement_tool_new (CanvasImage.GType,
-			  Marshal.StringToHGlobalAnsi ("image"), pixbuf.Handle,
-			  Marshal.StringToHGlobalAnsi ("width"), pixbuf.Width,
-			  Marshal.StringToHGlobalAnsi ("height"), pixbuf.Height,
-			  IntPtr.Zero));
-}

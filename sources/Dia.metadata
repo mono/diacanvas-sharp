@@ -244,10 +244,11 @@
 
 <!-- disable default constructor -->
 <rule>
-  <class name="DiaCanvasLine"/>
   <class name="DiaCanvasBox"/>
   <class name="DiaCanvasImage"/>
+  <class name="DiaCanvasLine"/>
   <class name="DiaCanvasText"/>
+  <class name="DiaPlacementTool"/>
   <data>
     <attribute target="class">
       <name>disabledefaultconstructor</name>
