@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <metadata>
+  <attr path="//boxed[@cname='DiaCanvasIter']/field[@cname='destroy_func']" name="hidden">1</attr>
   <attr path="//boxed[@cname='DiaDashStyle']" name="hidden">1</attr>
   <attr path="//callback[@cname='DiaShapeViewInfoFree']" name="hidden">1</attr>
   <attr path="//class[@cname='DiaGlobal']/method[@name='ExportPrint']/*/*[@name='gpm']" name="type">GnomePrintJob*</attr>

@@ -1507,7 +1507,7 @@
     </object>
     <boxed name="CanvasIter" cname="DiaCanvasIter">
       <field cname="data" array_len="3" type="gpointer" />
-      <field cname="destroy_func" type="GDestroyNotify" />
+      <field cname="destroy_func" type="GDestroyNotify" hidden="1" />
       <field cname="stamp" type="gint" />
       <method name="Destroy" cname="dia_canvas_iter_destroy">
         <return-type type="void" />
