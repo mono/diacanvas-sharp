@@ -1,0 +1,165 @@
+? MangleNameModifications.diff
+Index: Parameters.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Parameters.cs,v
+retrieving revision 1.32
+diff -u -r1.32 Parameters.cs
+--- Parameters.cs	15 Jul 2003 05:52:08 -0000	1.32
++++ Parameters.cs	27 Aug 2003 07:17:19 -0000
+@@ -75,7 +75,7 @@
+ 
+ 		public string Name {
+ 			get {
+-				return MangleName (elem.GetAttribute("name"));
++				return SymbolTable.Table.MangleName (elem.GetAttribute("name"));
+ 			}
+ 		}
+ 
+@@ -91,37 +91,6 @@
+ 			}
+ 		}
+ 
+-		private string MangleName(string name)
+-		{
+-			switch (name) {
+-			case "string":
+-				return "str1ng";
+-			case "event":
+-				return "evnt";
+-			case "null":
+-				return "is_null";
+-			case "object":
+-				return "objekt";
+-			case "params":
+-				return "parms";
+-			case "ref":
+-				return "reference";
+-			case "in":
+-				return "in_param";
+-			case "out":
+-				return "out_param";
+-			case "fixed":
+-				return "mfixed";
+-			case "byte":
+-				return "_byte";
+-			case "new":
+-				return "_new";
+-			default:
+-				break;
+-			}
+-
+-			return name;
+-		}
+ 		public string StudlyName {
+ 			get {
+ 				string name = elem.GetAttribute("name");
+Index: StructBase.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/StructBase.cs,v
+retrieving revision 1.37
+diff -u -r1.37 StructBase.cs
+--- StructBase.cs	23 Jul 2003 17:19:19 -0000	1.37
++++ StructBase.cs	27 Aug 2003 07:17:19 -0000
+@@ -141,7 +141,7 @@
+ 			if (IsBit (field))
+ 				name = String.Format ("_bitfield{0}", bitfields++);
+ 			else
+-				name += MangleName (field.GetAttribute ("cname"));
++				name += SymbolTable.Table.MangleName (field.GetAttribute ("cname"));
+ 
+ 			return true;
+ 		}
+@@ -151,14 +151,14 @@
+ 			string c_type, type, name;
+ 			if (!GetFieldInfo (field, out c_type, out type, out name))
+ 				return false;
+-			sw.WriteLine ("\t\tpublic {0} {1};", type, name);
++			sw.WriteLine ("\t\tpublic {0} {1};", type, SymbolTable.Table.MangleName (name));
+ 
+ 			if (field.HasAttribute("array_len"))
+ 				Console.WriteLine ("warning: array field {0}.{1} probably incorrectly generated", QualifiedName, name);
+ 			SymbolTable table = SymbolTable.Table;
+ 
+ 			string wrapped = table.GetCSType (c_type);
+-			string wrapped_name = MangleName (field.GetAttribute ("cname"));
++			string wrapped_name = SymbolTable.Table.MangleName (field.GetAttribute ("cname"));
+ 			if (table.IsObject (c_type)) {
+ 				sw.WriteLine ();
+ 				sw.WriteLine ("\t\tpublic " + wrapped + " " + wrapped_name + " {");
+@@ -188,29 +188,6 @@
+ 			}
+ 			
+ 			return true;
+-		}
+-
+-		private String MangleName(String name)
+-		{
+-			if (name == "string") {
+-				return "str1ng";
+-			} else if (name == "event") {
+-				return "evnt";
+-			} else if (name == "null") {
+-				return "is_null";
+-			} else if (name == "object") {
+-				return "objekt";
+-			} else if (name == "ref") {
+-				return "reference";
+-			} else if (name == "params") {
+-				return "parms";
+-			} else if (name == "fixed") {
+-				return "mfixed";
+-			} else if (name == "in") {
+-				return "inn";
+-			} else {
+-				return name;
+-			}
+ 		}
+ 
+ 		public virtual void Generate ()
+Index: SymbolTable.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/SymbolTable.cs,v
+retrieving revision 1.46
+diff -u -r1.46 SymbolTable.cs
+--- SymbolTable.cs	11 Jul 2003 02:00:11 -0000	1.46
++++ SymbolTable.cs	27 Aug 2003 07:17:19 -0000
+@@ -292,6 +292,38 @@
+ 			return false;
+ 		}
+ 
++		public string MangleName(string name)
++		{
++			switch (name) {
++			case "string":
++				return "str1ng";
++			case "event":
++				return "evnt";
++			case "null":
++				return "is_null";
++			case "object":
++				return "objekt";
++			case "params":
++				return "parms";
++			case "ref":
++				return "reference";
++			case "in":
++				return "in_param";
++			case "out":
++				return "out_param";
++			case "fixed":
++				return "mfixed";
++			case "byte":
++				return "_byte";
++			case "new":
++				return "_new";
++			case "base":
++				return "_base";
++			default:
++				break;
++			}
++
++			return name;
++		}
+ 	}
+ }
+-
