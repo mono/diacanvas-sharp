@@ -26,7 +26,6 @@ CLEANFILES = 	$(ASSEMBLY) generated-stamp generated/*.cs $(API)
 DISTCLEANFILES= AssemblyInfo.cs
 
 sources=	DiaCanvas.cs	\
-		Event.cs	\
 		PlacementTool.cs
 
 build_sources=	$(addprefix $(srcdir)/, $(sources)) AssemblyInfo.cs

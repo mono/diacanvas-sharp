@@ -11,6 +11,10 @@
 	  commented out broken undo/redo function,
 	  removed e-mail addresses from the about dialog
 	* sample/CanvasTextBox: Removed EditingDoneHandler.
+	* dia/Event.cs: Removed
+	* dia/makefile.am: Removed Event.cs
+	* dia/glue/dia-event.c: Removed
+	* dia/glue/makefile.am: Removed dia-event.c
 
 2004-08-18  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

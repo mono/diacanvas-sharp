@@ -4,7 +4,6 @@ lib_LTLIBRARIES = libdiacanvassharpglue.la
 libdiacanvassharpglue_la_SOURCES = \
 	dia-canvas.c		\
 	dia-canvas-line.c	\
-	dia-event.c		\
 	dia-canvas-item.c	\
 	dia-canvas-view.c
 
