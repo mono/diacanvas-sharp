@@ -2,14 +2,6 @@
 = DiaCanvas# =
 ==============
 
-Turn into properties:
---------------------
-
-Dia.CanvasViewItem.IsSelected
-Dia.CanvasViewItem.IsFocused 
-
-
-
 Private API which should be hidden:
 ----------------------------------
 
@@ -25,12 +17,3 @@ Dia.Constraint
 Dia.Solver
 Dia.Strength
 Dia.CanvasViewItem.EmitEvent
-
-===================
-= Related matters =
-===================
-
-*DONE*
-Ship bug report against Gtk# parser/generator 
-about turning Has and Is methods into properties.
-

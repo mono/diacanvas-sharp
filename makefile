@@ -25,6 +25,7 @@ distclean: clean
 	done
 
 	$(MAKE) -C sources distclean;
+	$(MAKE) -C doc distclean;
 
 	rm -r CVS
 	rm -r patches
