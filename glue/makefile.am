@@ -1,15 +1,13 @@
-GLUE_LIB=	libdiacanvassharpglue.so
+CLEANFILES = .libs/libdiacanvassharpglue.so *~
 
-all: $(GLUE_LIB)
+lib_LTLIBRARIES = libdiacanvassharpglue.la
+libdiacanvassharpglue_la_SOURCES = \
+	dia-canvas.c		\
+	dia-canvas-line.c	\
+	dia-event.c		\
+	dia-canvas-item.c	\
+	dia-canvas-view.c
 
-$(GLUE_LIB): *.c
-	gcc *.c -shared -fPIC -o $(GLUE_LIB) `pkg-config --cflags --libs gtk+-2.0 libart-2.0 libgnomeui-2.0`
-
-install: $(GLUE_LIB)
-	install -o root -g root -m 644 $(GLUE_LIB) @prefix@/lib
-
-clean:
-	rm -f $(GLUE_LIB)
-
-distclean:
-	rm -r CVS
+libdiacanvassharpglue_la_LIBADD = $(DIACANVAS2_LIBS)
+INCLUDES = $(DIACANVAS2_CFLAGS)
+ 

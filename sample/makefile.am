@@ -1,3 +1,6 @@
+SUBDIRS=pixmaps glade
+EXTRA_DIST= sample.cs CanvasTextBox.cs
+
 ASSEMBLIES=	-r glib-sharp 			\
 		-r gtk-sharp			\
 		-r glade-sharp			\

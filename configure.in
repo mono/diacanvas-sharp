@@ -2,10 +2,66 @@ AC_INIT(README)
 AC_CANONICAL_SYSTEM
 AM_INIT_AUTOMAKE(diacanvas-sharp, 0.3.0)
 AM_MAINTAINER_MODE
+AM_PROG_LIBTOOL
 
 dnl Defines CC to avoid warnings
 AC_PROG_CC
 AC_PROG_INSTALL
+
+AC_PATH_PROG(PKG_CONFIG, pkg-config, no)
+if test "x$PKG_CONFIG" = "xno"; then
+	AC_MSG_ERROR(['pkg-config' is not in your PATH.])
+fi
+
+AC_PATH_PROG(MONO, mono, no)
+if test "x$PKG_CONFIG" = "xno"; then
+	AC_MSG_ERROR(['mono' is not in your PATH.])
+fi
+AC_SUBST(MONO)
+
+PKG_CHECK_MODULES(DIACANVAS2, diacanvas2 >= 0.9.0)
+AC_SUBST(DIACANVAS2_CFLAGS)
+AC_SUBST(DIACANVAS2_LIBS)
+
+AC_PATH_PROG(MCS, mcs, no)
+if test "x$MCS" = "xno"; then
+	AC_PATH_PROG(MCS, mcs.exe, no)
+	if test "x$MCS" = "xno" ; then
+		AC_MSG_ERROR(['mcs'/'mcs.exe' not found.])
+	fi
+	MCS="$(MONO) $(MCS)"
+fi
+AC_SUBST(MCS)
+
+AC_PATH_PROG(GAPI_FIXUP, gapi-fixup, no)
+if test "x$GAPI_FIXUP" = "xno"; then
+	AC_PATH_PROG(GAPI_FIXUP, gapi-fixup.exe, no)
+	if test "x$GAPI_FIXUP" = "xno" ; then
+		AC_MSG_ERROR(['gapi_fixup'/'gapi-fixup.exe' not found.])
+	fi
+	GAPI_FIXUP="$(MONO) $(GAPI_FIXUP)"
+fi
+AC_SUBST(GAPI_FIXUP)
+
+AC_PATH_PROG(GAPI_CODEGEN, gapi_codegen, no)
+if test "x$GAPI_CODEGEN" = "xno"; then
+	AC_PATH_PROG(GAPI_CODEGEN, gapi_codegen.exe, no)
+	if test "x$GAPI_CODEGEN" = "xno" ; then
+		AC_MSG_ERROR(['gapi_codegen'/'gapi_codegen.exe' not found.])
+	fi
+	GAPI_CODEGEN="$(MONO) $(GAPI_CODEGEN)"
+fi
+AC_SUBST(GAPI_CODEGEN)
+
+AC_PATH_PROG(MONODOC, monodoc, no)
+if test "x$MONODOC" = "xno"; then
+	if test "x$MONODOC" = "xno" ; then
+		AC_MSG_ERROR(['monodoc' not found.])
+	fi
+fi
+AC_SUBST(MONODOC)
+MONODOC_SOURCESDIR=`$MONODOC --get-sourcesdir`
+AC_SUBST(MONODOC_SOURCESDIR)
 
 AC_OUTPUT([
 makefile
@@ -13,5 +69,7 @@ dia/makefile
 doc/makefile
 glue/makefile
 sample/makefile
+sample/pixmaps/makefile
+sample/glade/makefile
 sources/makefile
 ])

@@ -1,3 +1,23 @@
+2003-11-15  Gonzalo Paniagua Javier <gonzalo@ximian.com>
+
+	* configure.in: use pkg-config to get diacanvas2 flags, check if needed
+	mono applications can be run as 'xx' or 'xx.exe' and prepend 'mono' in
+	the latter case, added 2 new output files.
+
+	* makefile.am: automake-ized.
+	* dia/makefile.am:
+	* doc/makefile.am:
+	* sample/makefile.am:
+	* sources/makefile.am: use the variables defined in configure.in
+
+	* glue/makefile.am: use libtool.
+
+	* sample/glade/makefile.am:
+	* sample/pixmaps/makefile.am: needed for make dist to produce a valid
+	tarball.
+
+	Now I can compile this from CVS. And you too :).
+
 2003-11-11  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sample/.cvsignore Added test.svg

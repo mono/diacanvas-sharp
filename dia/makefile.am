@@ -1,3 +1,8 @@
+diacanvassharpdir = $(libdir)
+diacanvassharp_DATA = diacanvas-sharp.dll
+CLEANFILES = diacanavas-sharp.dll
+EXTRA_DIST = *.cs *.custom *.metadata diacanvas-api.xml diacanvas-symbols.xml
+
 APIS=		diacanvas-api.xml diacanvas-symbols.xml
 
 INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml                \
@@ -20,17 +25,17 @@ LIBRARY=	diacanvas-sharp.dll
 all: $(LIBRARY)
 
 generated-stamp: $(APIS) *.custom Dia.metadata
-	gapi-fixup.exe --api=diacanvas-api.xml --metadata=Dia.metadata && \
-	gapi_codegen.exe --include $(INCLUDE_APIS) --generate $(APIS) \
+	$(GAPI_FIXUP) --api=diacanvas-api.xml --metadata=Dia.metadata && \
+	$(GAPI_CODEGEN) --include $(INCLUDE_APIS) --generate $(APIS) \
 	--outdir=generated --customdir=. --assembly-name=diacanvas-sharp && touch generated-stamp
 
 $(LIBRARY): generated-stamp *.cs
-	mcs --unsafe -nowarn:0660,0661 --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
+	$(MCS) --unsafe -nowarn:0660,0661 --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
-	install -o root -g root -m 644 diacanvas-api.xml @prefix@/share/gapi
-	install -o root -g root -m 644 diacanvas-symbols.xml @prefix@/share/gapi
-	install -o root -g root -m 644 $(LIBRARY) @prefix@/lib
+	$(INSTALL) -o root -g root -m 644 diacanvas-api.xml @prefix@/share/gapi
+	$(INSTALL) -o root -g root -m 644 diacanvas-symbols.xml @prefix@/share/gapi
+	$(INSTALL) -o root -g root -m 644 $(LIBRARY) $(libdir)
 
 clean:
 	rm -f $(LIBRARY)

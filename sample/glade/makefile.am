@@ -1,0 +1,2 @@
+EXTRA_DIST=gui.glade gui.gladep
+

@@ -1,0 +1,13 @@
+EXTRA_DIST= \
+	box.png			\
+	box.xcf			\
+	gimp-zoom.png		\
+	glade-image.png		\
+	line.png		\
+	line.xcf		\
+	logo.png		\
+	selection.png		\
+	selection.xcf		\
+	template.xcf		\
+	text.png		\
+	text.xcf		
