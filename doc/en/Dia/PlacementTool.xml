@@ -36,8 +36,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="pixbuf">To be added: an object of type 'Gdk.Pixbuf'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -50,7 +50,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -63,7 +63,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -88,8 +88,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <param name="gtype">a <see cref="T:GLib.Type" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -102,8 +102,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.PlacementTool'</returns>
+        <returns>a <see cref="T:Dia.PlacementTool" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -126,7 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

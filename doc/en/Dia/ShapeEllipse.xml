@@ -150,8 +150,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="fill">To be added: an object of type 'Dia.FillStyle'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="fill">a <see cref="T:Dia.FillStyle" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -169,10 +169,10 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="offset">To be added: an object of type 'double'</param>
-        <param name="n_dash">To be added: an object of type 'uint'</param>
-        <param name="dash">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="offset">a <see cref="T:System.Double" /></param>
+        <param name="n_dash">a <see cref="T:System.UInt32" /></param>
+        <param name="dash">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -188,8 +188,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="fill_color">To be added: an object of type 'uint'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="fill_color">a <see cref="T:System.UInt32" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -205,8 +205,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="line_width">To be added: an object of type 'double'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="line_width">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -222,8 +222,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <param name="clipping">To be added: an object of type 'bool'</param>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="clipping">a <see cref="T:System.Boolean" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -238,8 +238,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -254,8 +254,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.ShapeEllipse'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.ShapeEllipse" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -267,7 +267,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

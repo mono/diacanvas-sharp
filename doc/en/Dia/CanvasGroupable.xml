@@ -31,8 +31,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'int'</returns>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -47,8 +47,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="iter">To be added: an object of type 'Dia.CanvasIter'</param>
-        <returns>To be added: an object of type 'Dia.CanvasItem'</returns>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -61,7 +61,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'int'</returns>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -91,8 +91,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -107,8 +107,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="iter">To be added: an object of type 'Dia.CanvasIter'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -123,8 +123,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="iter">To be added: an object of type 'Dia.CanvasIter'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -139,7 +139,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -154,8 +154,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

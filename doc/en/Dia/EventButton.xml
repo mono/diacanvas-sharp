@@ -101,8 +101,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.EventButton'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.EventButton" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

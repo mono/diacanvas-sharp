@@ -25,19 +25,43 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'DiaSharp.TextChangedArgs'</returns>
+        <returns>a <see cref="T:DiaSharp.TextChangedArgs" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public string Text { get; };" />
+    <Member MemberName="NewBounds">
+      <MemberSignature Language="C#" Value="public Dia.Rectangle NewBounds { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.Rectangle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewText">
+      <MemberSignature Language="C#" Value="public string NewText { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'string'</returns>
+        <returns>a <see cref="T:System.String" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextShape">
+      <MemberSignature Language="C#" Value="public Dia.ShapeText TextShape { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeText</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.ShapeText" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

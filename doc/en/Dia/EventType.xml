@@ -112,6 +112,30 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FocusIn">
+      <MemberSignature Language="C#" Value="public static Dia.EventType FocusIn;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.EventType</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusOut">
+      <MemberSignature Language="C#" Value="public static Dia.EventType FocusOut;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.EventType</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="value__">
       <MemberSignature Language="C#" Value="public int value__;" />
       <MemberType>Field</MemberType>

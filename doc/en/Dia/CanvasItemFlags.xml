@@ -92,42 +92,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Select">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Select;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasItemFlags</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Focus">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Focus;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasItemFlags</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Grab">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Grab;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasItemFlags</ReturnType>
-      </ReturnValue>
-      <Parameters></Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="value__">
       <MemberSignature Language="C#" Value="public int value__;" />
       <MemberType>Field</MemberType>

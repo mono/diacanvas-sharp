@@ -34,7 +34,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'int'</returns>
+        <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -51,9 +51,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">To be added: an object of type 'double'</param>
-        <param name="y">To be added: an object of type 'double'</param>
-        <param name="affine">To be added: an object of type 'double []'</param>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -80,7 +80,22 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="affine">To be added: an object of type 'double []'</param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPointConstraint">
+      <MemberSignature Language="C#" Value="public void AddPointConstraint (Dia.Handle host);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="Dia.Handle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="host">a <see cref="T:Dia.Handle" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -96,9 +111,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">To be added: an object of type 'double'</param>
-        <param name="y">To be added: an object of type 'double'</param>
-        <returns>To be added: an object of type 'double'</returns>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -113,7 +128,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
+        <param name="c">a <see cref="T:Dia.Constraint" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -128,7 +143,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
+        <param name="c">a <see cref="T:Dia.Constraint" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -144,8 +159,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="end">To be added: an object of type 'Dia.Handle'</param>
-        <param name="middle">To be added: an object of type 'Dia.Handle'</param>
+        <param name="end">a <see cref="T:Dia.Handle" /></param>
+        <param name="middle">a <see cref="T:Dia.Handle" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -161,9 +176,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">To be added: an object of type 'double'</param>
-        <param name="y">To be added: an object of type 'double'</param>
-        <returns>To be added: an object of type 'double'</returns>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -202,7 +217,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="affine">To be added: an object of type 'double []'</param>
+        <param name="affine">a <see cref="T:System.Double[]" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -227,8 +242,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
-        <returns>To be added: an object of type 'Dia.Handle'</returns>
+        <param name="gtype">a <see cref="T:GLib.Type" /></param>
+        <returns>a <see cref="T:Dia.Handle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -241,8 +256,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.Handle'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Handle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -255,8 +270,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="owner">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'Dia.Handle'</returns>
+        <param name="owner">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:Dia.Handle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -271,10 +286,10 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="owner">To be added: an object of type 'Dia.CanvasItem'</param>
-        <param name="x">To be added: an object of type 'double'</param>
-        <param name="y">To be added: an object of type 'double'</param>
-        <returns>To be added: an object of type 'Dia.Handle'</returns>
+        <param name="owner">a <see cref="T:Dia.CanvasItem" /></param>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:Dia.Handle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -285,7 +300,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.Handle'</returns>
+        <returns>a <see cref="T:Dia.Handle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -297,7 +312,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -312,8 +327,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'bool'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -328,8 +343,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'Dia.CanvasItem'</returns>
+        <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -341,7 +356,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.CanvasItem'</returns>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -356,8 +371,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.Point'</param>
-        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <param name="value">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -372,8 +387,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'bool'</param>
-        <returns>To be added: an object of type 'bool'</returns>
+        <param name="value">a <see cref="T:System.Boolean" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -388,8 +403,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.Strength'</param>
-        <returns>To be added: an object of type 'Dia.Strength'</returns>
+        <param name="value">a <see cref="T:Dia.Strength" /></param>
+        <returns>a <see cref="T:Dia.Strength" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -404,8 +419,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.Point'</param>
-        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <param name="value">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -420,8 +435,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'Dia.CanvasItem'</returns>
+        <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -436,8 +451,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'Dia.CanvasItem'</param>
-        <returns>To be added: an object of type 'Dia.CanvasItem'</returns>
+        <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

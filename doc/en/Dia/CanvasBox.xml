@@ -46,8 +46,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
-        <returns>To be added: an object of type 'Dia.CanvasBox'</returns>
+        <param name="gtype">a <see cref="T:GLib.Type" /></param>
+        <returns>a <see cref="T:Dia.CanvasBox" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.CanvasBox'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.CanvasBox" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -72,7 +72,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.CanvasBox'</returns>
+        <returns>a <see cref="T:Dia.CanvasBox" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -84,7 +84,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'uint'</returns>
+        <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -99,8 +99,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'double'</param>
-        <returns>To be added: an object of type 'double'</returns>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -115,8 +115,24 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'ulong'</param>
-        <returns>To be added: an object of type 'ulong'</returns>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="public double BorderWidth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -131,8 +147,24 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">To be added: an object of type 'ulong'</param>
-        <returns>To be added: an object of type 'ulong'</returns>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillColor">
+      <MemberSignature Language="C#" Value="public ulong FillColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">a <see cref="T:System.UInt64" /></param>
+        <returns>a <see cref="T:System.UInt64" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

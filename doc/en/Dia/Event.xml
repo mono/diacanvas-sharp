@@ -27,8 +27,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">To be added: an object of type 'IntPtr'</param>
-        <returns>To be added: an object of type 'Dia.Event'</returns>
+        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <returns>a <see cref="T:Dia.Event" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -40,7 +40,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'bool'</returns>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>To be added: an object of type 'Dia.EventType'</returns>
+        <returns>a <see cref="T:Dia.EventType" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
