@@ -6,8 +6,10 @@ ASSEMBLIES=	-r glib-sharp 		\
 
 RESOURCES=	-resource:glade/gui.glade	\
 		-resource:pixmaps/selection.png	\
+		-resource:pixmaps/gimp-zoom.png	\
 		-resource:pixmaps/line.png	\
-		-resource:pixmaps/box.png
+		-resource:pixmaps/box.png	\
+		-resource:pixmaps/text.png	\
 
 SAMPLE=		sample.exe
 

@@ -173,7 +173,7 @@
 	  <property name="spacing">0</property>
 
 	  <child>
-	    <widget class="GtkToolbar" id="toolbar1">
+	    <widget class="GtkToolbar" id="toolbar">
 	      <property name="visible">True</property>
 	      <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
 	      <property name="toolbar_style">GTK_TOOLBAR_ICONS</property>
@@ -210,7 +210,7 @@
 		  <property name="inconsistent">False</property>
 		  <property name="draw_indicator">False</property>
 		  <property name="group">tool1</property>
-		  <signal name="clicked" handler="LineTool" last_modification_time="Wed, 09 Jul 2003 10:07:49 GMT"/>
+		  <signal name="clicked" handler="ZoomTool" last_modification_time="Fri, 11 Jul 2003 08:01:57 GMT"/>
 
 		  <child>
 		    <widget class="GtkImage" id="image2">
@@ -233,7 +233,7 @@
 		  <property name="inconsistent">False</property>
 		  <property name="draw_indicator">False</property>
 		  <property name="group">tool1</property>
-		  <signal name="clicked" handler="BoxTool" last_modification_time="Wed, 09 Jul 2003 10:07:59 GMT"/>
+		  <signal name="clicked" handler="LineTool" last_modification_time="Wed, 09 Jul 2003 10:07:49 GMT"/>
 
 		  <child>
 		    <widget class="GtkImage" id="image3">
@@ -249,16 +249,40 @@
 
 	      <child>
 		<widget class="GtkRadioButton" id="tool4">
+		  <property name="visible">True</property>
 		  <property name="can_focus">True</property>
 		  <property name="relief">GTK_RELIEF_NORMAL</property>
 		  <property name="active">False</property>
 		  <property name="inconsistent">False</property>
 		  <property name="draw_indicator">False</property>
 		  <property name="group">tool1</property>
-		  <signal name="clicked" handler="TextTool" last_modification_time="Wed, 09 Jul 2003 10:28:21 GMT"/>
+		  <signal name="clicked" handler="BoxTool" last_modification_time="Wed, 09 Jul 2003 10:07:59 GMT"/>
 
 		  <child>
 		    <widget class="GtkImage" id="image4">
+		      <property name="visible">True</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
+
+	      <child>
+		<widget class="GtkRadioButton" id="tool5">
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="active">False</property>
+		  <property name="inconsistent">False</property>
+		  <property name="draw_indicator">False</property>
+		  <property name="group">tool1</property>
+		  <signal name="clicked" handler="TextTool" last_modification_time="Fri, 11 Jul 2003 06:50:53 GMT"/>
+
+		  <child>
+		    <widget class="GtkImage" id="image5">
 		      <property name="visible">True</property>
 		      <property name="xalign">0.5</property>
 		      <property name="yalign">0.5</property>
