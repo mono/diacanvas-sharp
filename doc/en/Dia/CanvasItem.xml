@@ -722,6 +722,16 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="public event EventHandler Event;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="StateChanged">
       <MemberSignature Language="C#" Value="public event DiaSharp.StateChangedHandler StateChanged;" />
       <MemberType>Event</MemberType>

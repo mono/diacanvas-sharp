@@ -1,13 +1,15 @@
 PREFIX=		/usr
 
-API=		dia-api.xml
+API=		dia-api.xml	\
+		dia-symbols.xml
 
 INCLUDE_API=	$(PREFIX)/share/gapi/art-api.xml		\
 		$(PREFIX)/share/gapi/pango-api.xml		\
 		$(PREFIX)/share/gapi/atk-api.xml  		\
 		$(PREFIX)/share/gapi/gnome-api.xml    		\
 		$(PREFIX)/share/gapi/gtk-api.xml		\
-		$(PREFIX)/share/gapi/gdk-api.xml  		\
+		$(PREFIX)/share/gapi/gdk-api.xml		\
+		$(PREFIX)/share/gapi/gdk-symbols.xml
 
 all: generated-stamp
 

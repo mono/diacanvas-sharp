@@ -105,9 +105,9 @@ public class Sample {
 	void Zoom (object sender, ButtonPressEventArgs args)
 	{
 		if (ctrl)
-			ZoomIn (this, null);
-		else
 			ZoomOut (this, null);
+		else
+			ZoomIn (this, null);
 	}
 
 	void ExportSVG (object sender, EventArgs args)

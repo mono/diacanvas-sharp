@@ -1,9 +1,0 @@
-Field has unknown Type GObjectClass
-
-Seems to be a problem with DiaVariable
-
-    <struct name="VariableClass" cname="DiaVariableClass">
-      <field cname="parent_class" type="GObjectClass"/>
-
-This problem is also showing in GtkSharp .. so maybe it should not
-be that much of a problem.

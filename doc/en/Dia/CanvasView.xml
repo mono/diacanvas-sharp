@@ -141,6 +141,25 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GdkEventToDiaEvent">
+      <MemberSignature Language="C#" Value="public void GdkEventToDiaEvent (Dia.CanvasViewItem item, Gdk.Event gdk_event, Dia.Event dia_event);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="gdk_event" Type="Gdk.Event" />
+        <Parameter Name="dia_event" Type="Dia.Event" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="gdk_event">a <see cref="T:Gdk.Event" /></param>
+        <param name="dia_event">a <see cref="T:Dia.Event" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Select">
       <MemberSignature Language="C#" Value="public void Select (Dia.CanvasViewItem item);" />
       <MemberType>Method</MemberType>

@@ -1,0 +1,6 @@
+2003-07-21  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* ChangeLog: Added
+	* dia/Event.cs: Added 
+	* glue/dia-event.cs Added
+	
