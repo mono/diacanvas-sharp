@@ -73,6 +73,21 @@
 		  </child>
 
 		  <child>
+		    <widget class="GtkMenuItem" id="export_svg1">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">E_xport SVG</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="ExportSVG" last_modification_time="Sat, 12 Jul 2003 08:23:03 GMT"/>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkMenuItem" id="separator2">
+		      <property name="visible">True</property>
+		    </widget>
+		  </child>
+
+		  <child>
 		    <widget class="GtkImageMenuItem" id="quit1">
 		      <property name="visible">True</property>
 		      <property name="label">gtk-quit</property>
@@ -135,6 +150,54 @@
 	      <property name="visible">True</property>
 	      <property name="label" translatable="yes">_View</property>
 	      <property name="use_underline">True</property>
+
+	      <child>
+		<widget class="GtkMenu" id="menuitem6_menu">
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="zoom_in1">
+		      <property name="visible">True</property>
+		      <property name="label">gtk-zoom-in</property>
+		      <property name="use_stock">True</property>
+		      <signal name="activate" handler="ZoomIn" last_modification_time="Sat, 12 Jul 2003 07:06:15 GMT"/>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="ZoomOut">
+		      <property name="visible">True</property>
+		      <property name="label">gtk-zoom-out</property>
+		      <property name="use_stock">True</property>
+		      <signal name="activate" handler="ZoomOut" last_modification_time="Sat, 12 Jul 2003 07:07:07 GMT"/>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="zoom_100%1">
+		      <property name="visible">True</property>
+		      <property name="label">gtk-zoom-100</property>
+		      <property name="use_stock">True</property>
+		      <signal name="activate" handler="Zoom100" last_modification_time="Sat, 12 Jul 2003 06:44:27 GMT"/>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkMenuItem" id="separator1">
+		      <property name="visible">True</property>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkCheckMenuItem" id="snap_to_grid1">
+		      <property name="visible">True</property>
+		      <property name="label" translatable="yes">_Snap to grid</property>
+		      <property name="use_underline">True</property>
+		      <property name="active">False</property>
+		      <signal name="activate" handler="SnapToGrid" last_modification_time="Sat, 12 Jul 2003 07:06:15 GMT"/>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
 	    </widget>
 	  </child>
 
@@ -152,6 +215,7 @@
 		      <property name="visible">True</property>
 		      <property name="label" translatable="yes">_About</property>
 		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="About" last_modification_time="Sat, 12 Jul 2003 07:31:47 GMT"/>
 		    </widget>
 		  </child>
 		</widget>
