@@ -26,7 +26,7 @@
   <Attributes />
   <Members>
     <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberSignature Language="C#" Value="protected override void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -34,7 +34,7 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks />
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Render">

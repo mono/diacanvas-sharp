@@ -68,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberSignature Language="C#" Value="protected override void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,7 +76,7 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks />
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AffineI2w">
@@ -597,25 +597,25 @@
       </Docs>
     </Member>
     <Member MemberName="BbAffine">
-      <MemberSignature Language="C#" Value="public void BbAffine (double [] affine, double x1, double y1, double x2, double y2);" />
+      <MemberSignature Language="C#" Value="public void BbAffine (double [] affine, out double x1, out double y1, out double x2, out double y2);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="affine" Type="System.Double[]" />
-        <Parameter Name="x1" Type="System.Double" />
-        <Parameter Name="y1" Type="System.Double" />
-        <Parameter Name="x2" Type="System.Double" />
-        <Parameter Name="y2" Type="System.Double" />
+        <Parameter Name="x1" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="y1" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x2" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="y2" Type="System.Double&amp;" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="affine">a <see cref="T:System.Double[]" /></param>
-        <param name="x1">a <see cref="T:System.Double" /></param>
-        <param name="y1">a <see cref="T:System.Double" /></param>
-        <param name="x2">a <see cref="T:System.Double" /></param>
-        <param name="y2">a <see cref="T:System.Double" /></param>
+        <param name="x1">a <see cref="T:System.Double&amp;" /></param>
+        <param name="y1">a <see cref="T:System.Double&amp;" /></param>
+        <param name="x2">a <see cref="T:System.Double&amp;" /></param>
+        <param name="y2">a <see cref="T:System.Double&amp;" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

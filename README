@@ -4,8 +4,7 @@ Requirements
 
 mono-0.28
 gtk-sharp-0.12
-diacanvas2-0.93 when it arrives, 
-for now use the cvs version.
+diacanvas2-0.10.0
 
 ====
 Make

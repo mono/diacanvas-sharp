@@ -1,8 +1,8 @@
 <Type Name="DashStyle" FullName="Dia.DashStyle">
-  <TypeSignature Language="C#" Value="public sealed struct DashStyle" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public class DashStyle" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey />
+    <AssemblyPublicKey></AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -13,61 +13,64 @@
     <remarks>To be added</remarks>
   </Docs>
   <Base>
-    <BaseTypeName>System.ValueType</BaseTypeName>
+    <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes />
   <Members>
-    <Member MemberName="Zero">
-      <MemberSignature Language="C#" Value="public static Dia.DashStyle Zero;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.DashStyle</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="n_dash">
-      <MemberSignature Language="C#" Value="public uint n_dash;" />
-      <MemberType>Field</MemberType>
-      <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="New">
-      <MemberSignature Language="C#" Value="public static Dia.DashStyle New (IntPtr raw);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.DashStyle</ReturnType>
-      </ReturnValue>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DashStyle (double dash_on, double dash_off);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
       <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
+        <Parameter Name="dash_on" Type="System.Double" />
+        <Parameter Name="dash_off" Type="System.Double" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
+        <param name="dash_on">a <see cref="T:System.Double" /></param>
+        <param name="dash_off">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:Dia.DashStyle" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GType">
-      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DashStyle (double dash_on);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="dash_on" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="dash_on">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:Dia.DashStyle" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DashOn">
+      <MemberSignature Language="C#" Value="public double DashOn { get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>System.UInt32</ReturnType>
+        <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DashOff">
+      <MemberSignature Language="C#" Value="public double DashOff { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Double" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

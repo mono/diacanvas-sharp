@@ -429,16 +429,6 @@
         <return-type type="void" />
       </method>
     </object>
-    <object name="CanvasBezier" cname="DiaCanvasBezier" parent="DiaCanvasItem">
-      <property name="BezierWidth" cname="bezier_width" type="gdouble" readable="true" writeable="true" />
-      <property name="Color" cname="color" type="ulong" readable="true" writeable="true" />
-      <property name="Cap" cname="cap" type="DiaCapStyle" readable="true" writeable="true" />
-      <property name="Join" cname="join" type="DiaJoinStyle" readable="true" writeable="true" />
-      <property name="AddPoint" cname="add_point" type="DiaPoint" writeable="true" />
-      <method name="GetType" cname="dia_canvas_bezier_get_type" shared="true">
-        <return-type type="GType" />
-      </method>
-    </object>
     <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement" disabledefaultconstructor="1">
       <field cname="color" type="DiaColor" />
       <field cname="fill_color" type="DiaColor" />
@@ -474,17 +464,6 @@
       </method>
       <method name="GetType" cname="dia_canvas_element_get_type" shared="true">
         <return-type type="GType" />
-      </method>
-    </object>
-    <object name="CanvasEllipse" cname="DiaCanvasEllipse" parent="DiaCanvasItem">
-      <field cname="width" type="gdouble" />
-      <field cname="height" type="gdouble" />
-      <field cname="line_width" type="gdouble" />
-      <field cname="color" type="DiaColor" />
-      <field cname="old_x" type="gdouble" />
-      <field cname="old_y" type="gdouble" />
-      <method name="GetType" cname="dia_canvas_ellipse_get_type" shared="true">
-        <return-type type="GtkType" />
       </method>
     </object>
     <object name="CanvasGroup" cname="DiaCanvasGroup" parent="DiaCanvasItem">
@@ -1523,68 +1502,6 @@
         <parameters>
           <parameter type="DiaCanvasView*" name="view" />
           <parameter type="GdkEventMotion*" name="event" />
-        </parameters>
-      </method>
-    </object>
-    <object name="Undo" cname="DiaUndo" parent="GObject">
-      <field cname="_priv" type="gpointer" />
-      <method name="ClearRedo" cname="dia_undo_clear_redo">
-        <return-type type="void" />
-      </method>
-      <method name="ClearUndo" cname="dia_undo_clear_undo">
-        <return-type type="void" />
-      </method>
-      <method name="GetDepth" cname="dia_undo_get_depth">
-        <return-type type="guint" />
-      </method>
-      <method name="GetMaxDepth" cname="dia_undo_get_max_depth">
-        <return-type type="guint" />
-      </method>
-      <method name="GetRedoDepth" cname="dia_undo_get_redo_depth">
-        <return-type type="guint" />
-      </method>
-      <method name="GetType" cname="dia_undo_get_type" shared="true">
-        <return-type type="GtkType" />
-      </method>
-      <method name="Pop" cname="dia_undo_pop">
-        <return-type type="void" />
-      </method>
-      <method name="PopRedo" cname="dia_undo_pop_redo">
-        <return-type type="void" />
-      </method>
-      <method name="Preserve" cname="dia_undo_preserve">
-        <return-type type="void" />
-        <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
-          <parameter type="const-GValue*" name="value" />
-          <parameter type="gboolean" name="last" />
-        </parameters>
-      </method>
-      <method name="PreserveProperty" cname="dia_undo_preserve_property">
-        <return-type type="void" />
-        <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
-        </parameters>
-      </method>
-      <method name="PreservePropertyLast" cname="dia_undo_preserve_property_last">
-        <return-type type="void" />
-        <parameters>
-          <parameter type="GObject*" name="object" />
-          <parameter type="const-char*" name="property_name" />
-        </parameters>
-      </method>
-      <method name="Push" cname="dia_undo_push">
-        <return-type type="void" />
-        <parameters>
-          <parameter type="const-char*" name="optional_comment" />
-        </parameters>
-      </method>
-      <method name="SetMaxDepth" cname="dia_undo_set_max_depth">
-        <return-type type="void" />
-        <parameters>
-          <parameter type="guint" name="depth" />
         </parameters>
       </method>
     </object>

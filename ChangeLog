@@ -1,3 +1,20 @@
+2003-11-05  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/WrapMode.xml: Added
+	* doc/en/Dia/CanvasBezier.xml: Removed
+	* doc/en/Dia/CanvasEllipse.xml: Removed
+	* doc/en/Dia/Undo.xml: Removed
+	* doc/en/Dia/*.xml: Updated
+	* doc/diacanvas-docs.zip: Regenerated
+	* doc/diacanvas-docs.tree: Regenerated
+	* dia/diacanvas-api.xml: Regenerated
+	* glue/makefile: Install target, checks if srcs needs to be rebuilt
+	* sources/.cvsignore: Targets diacanvas-0.10.0
+	* sources/diacanvas-sharp-sources.xml: Ditto
+	* sources/makefile: Ditto
+	* README: Ditto
+	* NEWS: Ditto
+	
 2003-10-30  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* makefile: Added another distclean target

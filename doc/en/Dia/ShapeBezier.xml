@@ -152,27 +152,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetDash">
-      <MemberSignature Language="C#" Value="public static void SetDash (Dia.Shape shape, double offset, uint n_dash, double dash);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="shape" Type="Dia.Shape" />
-        <Parameter Name="offset" Type="System.Double" />
-        <Parameter Name="n_dash" Type="System.UInt32" />
-        <Parameter Name="dash" Type="System.Double" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="offset">a <see cref="T:System.Double" /></param>
-        <param name="n_dash">a <see cref="T:System.UInt32" /></param>
-        <param name="dash">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="SetCyclic">
       <MemberSignature Language="C#" Value="public static void SetCyclic (Dia.Shape shape, bool cyclic);" />
       <MemberType>Method</MemberType>
@@ -310,6 +289,27 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:Art.VpathDash" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDash">
+      <MemberSignature Language="C#" Value="public static void SetDash (Dia.Shape shape, double offset, uint n_dash, out double dash);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="offset" Type="System.Double" />
+        <Parameter Name="n_dash" Type="System.UInt32" />
+        <Parameter Name="dash" Type="System.Double&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">a <see cref="T:Dia.Shape" /></param>
+        <param name="offset">a <see cref="T:System.Double" /></param>
+        <param name="n_dash">a <see cref="T:System.UInt32" /></param>
+        <param name="dash">a <see cref="T:System.Double&amp;" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -26,7 +26,7 @@
   <Attributes />
   <Members>
     <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberSignature Language="C#" Value="protected override void Finalize ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -34,7 +34,7 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks />
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateHandles">
@@ -99,25 +99,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetPosC">
-      <MemberSignature Language="C#" Value="public void GetPosC (Dia.Handle handle, int x, int y);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="handle" Type="Dia.Handle" />
-        <Parameter Name="x" Type="System.Int32" />
-        <Parameter Name="y" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
-        <param name="x">a <see cref="T:System.Int32" /></param>
-        <param name="y">a <see cref="T:System.Int32" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected HandleLayer (GLib.Type gtype);" />
       <MemberType>Constructor</MemberType>
@@ -167,6 +148,25 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosC">
+      <MemberSignature Language="C#" Value="public void GetPosC (Dia.Handle handle, out int x, out int y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="Dia.Handle" />
+        <Parameter Name="x" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="y" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="handle">a <see cref="T:Dia.Handle" /></param>
+        <param name="x">a <see cref="T:System.Int32&amp;" /></param>
+        <param name="y">a <see cref="T:System.Int32&amp;" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

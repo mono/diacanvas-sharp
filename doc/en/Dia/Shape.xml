@@ -151,50 +151,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="XUpdate">
-      <MemberSignature Language="C#" Value="public Art.SVP XUpdate (Dia.CanvasViewItem item, double affine, Art.SVP clip_path, int flags);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Art.SVP</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="affine" Type="System.Double" />
-        <Parameter Name="clip_path" Type="Art.SVP" />
-        <Parameter Name="flags" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="affine">a <see cref="T:System.Double" /></param>
-        <param name="clip_path">a <see cref="T:Art.SVP" /></param>
-        <param name="flags">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:Art.SVP" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ArtUpdate">
-      <MemberSignature Language="C#" Value="public Art.SVP ArtUpdate (Dia.CanvasViewItem item, double affine, Art.SVP clip, int flags);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Art.SVP</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="affine" Type="System.Double" />
-        <Parameter Name="clip" Type="Art.SVP" />
-        <Parameter Name="flags" Type="System.Int32" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="affine">a <see cref="T:System.Double" /></param>
-        <param name="clip">a <see cref="T:Art.SVP" /></param>
-        <param name="flags">a <see cref="T:System.Int32" /></param>
-        <returns>a <see cref="T:Art.SVP" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="XRender">
       <MemberSignature Language="C#" Value="public void XRender (Dia.CanvasViewItem item, Gdk.Drawable drawable, int x, int y, int width, int height);" />
       <MemberType>Method</MemberType>
@@ -284,25 +240,6 @@
         <summary>To be added</summary>
         <param name="upper_left">a <see cref="T:Dia.Point" /></param>
         <param name="lower_right">a <see cref="T:Dia.Point" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Arc">
-      <MemberSignature Language="C#" Value="public void Arc (Dia.Point begin, Dia.Point middle, Dia.Point end);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="begin" Type="Dia.Point" />
-        <Parameter Name="middle" Type="Dia.Point" />
-        <Parameter Name="end" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="begin">a <see cref="T:Dia.Point" /></param>
-        <param name="middle">a <see cref="T:Dia.Point" /></param>
-        <param name="end">a <see cref="T:Dia.Point" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -499,6 +436,50 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtUpdate">
+      <MemberSignature Language="C#" Value="public Art.SVP ArtUpdate (Dia.CanvasViewItem item, out double affine, Art.SVP clip, int flags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Art.SVP</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="affine" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="clip" Type="Art.SVP" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="affine">a <see cref="T:System.Double&amp;" /></param>
+        <param name="clip">a <see cref="T:Art.SVP" /></param>
+        <param name="flags">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:Art.SVP" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XUpdate">
+      <MemberSignature Language="C#" Value="public Art.SVP XUpdate (Dia.CanvasViewItem item, out double affine, Art.SVP clip_path, int flags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Art.SVP</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="affine" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="clip_path" Type="Art.SVP" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="affine">a <see cref="T:System.Double&amp;" /></param>
+        <param name="clip_path">a <see cref="T:Art.SVP" /></param>
+        <param name="flags">a <see cref="T:System.Int32" /></param>
+        <returns>a <see cref="T:Art.SVP" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
