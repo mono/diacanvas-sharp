@@ -1,3 +1,13 @@
+2004-02-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/CanvasBox.custom: Obj is now created using the GObject hirarchy,
+	  Fixes the default ctor.
+	* dia/CanvasImage.custom: Ditto
+	* dia/CanvasLine.custom: Ditto
+	* dia/CanvasText.custom: Ditto
+	* dia/CanvasItem.custom: No need for item create method
+	* PROBLEMS: Clarify one of the problems
+
 2004-02-05  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/makefile.am: Removed -nowarn:0660,0661, cause they are not

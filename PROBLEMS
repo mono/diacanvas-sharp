@@ -19,16 +19,9 @@ in <0x0044d> .Sample:CreateItemsProgramatically ()
 in <0x001a3> .Sample:.ctor ()
 in <0x00023> .Sample:Main ()
 
-Seems to be the same problem as gtksourceview-sharp, see
-SourceLanguagesManager.custom
-
-This problem seems to steem from badly coded gobject code. 
-The destination type is not registred as a new gtype.
-Subclassing objects without registering a new GType for the object, is buggy. 
-There is no way a language binding can properly introspect aGObject type 
-that's coded in this manner.
-
-File a bugreport when such code is found.
+Seems to be the same problem as gtksourceview-sharp.
+The type DiaCanvasViewItem has not been registred properly by GLib.ObjectManager.
+There is a patch underway to fix this in Gtk#
 
 ================================================================================
 
