@@ -1,0 +1,223 @@
+--- dia-canvas-item.c	2003-03-13 20:17:00.000000000 +0100
++++ ../../diacanvas2-0.9.2.old/src/dia-canvas-item.c	2003-07-19 11:13:28.000000000 +0200
+@@ -286,11 +286,11 @@
+ 			break;
+ 		g_object_ref (item);
+ 		if (item->parent != NULL)
+-			dia_canvas_groupable_remove (item->parent, item);
++			dia_canvas_groupable_remove (DIA_CANVAS_GROUPABLE (item->parent), item);
+ 		if (parent && item->parent == NULL) {
+ 			g_assert (DIA_IS_CANVAS_GROUPABLE (parent));
+ 			//g_message (__FUNCTION__": setting new parent.");
+-			dia_canvas_groupable_add (parent, item);
++			dia_canvas_groupable_add (DIA_CANVAS_GROUPABLE (parent), item);
+ 		}
+ 		g_object_unref (item);
+ 		break;
+@@ -384,7 +384,7 @@
+ #endif
+ 
+ 	if (item->parent)
+-		dia_canvas_groupable_remove_destruction (item->parent, item);
++		dia_canvas_groupable_remove_destruction (DIA_CANVAS_GROUPABLE (item->parent), item);
+ 
+ #ifdef ENABLE_DEBUG
+ 	g_assert (item->parent == NULL);
+@@ -596,11 +596,11 @@
+ 		DiaCanvasIter iter;
+ 		DiaCanvasItem *child;
+ 
+-		if (dia_canvas_groupable_get_iter (item, &iter)) do {
+-			child = dia_canvas_groupable_value (item, &iter);
++		if (dia_canvas_groupable_get_iter (DIA_CANVAS_GROUPABLE (item), &iter)) do {
++			child = dia_canvas_groupable_value (DIA_CANVAS_GROUPABLE (item), &iter);
+ 			if (child)
+ 				dia_canvas_item_set_parent (child, item);
+-		} while (dia_canvas_groupable_next (item, &iter));
++		} while (dia_canvas_groupable_next (DIA_CANVAS_GROUPABLE (item), &iter));
+ 	}
+ 	g_object_thaw_notify (G_OBJECT (item));
+ }
+@@ -651,9 +651,9 @@
+ 
+ 	if (DIA_IS_CANVAS_GROUPABLE (item)) {
+ 		DiaCanvasIter iter;
+-		if (dia_canvas_groupable_get_iter (item, &iter)) do {
+-			request_update_for_children (dia_canvas_groupable_value (item, &iter));
+-		} while (dia_canvas_groupable_next (item, &iter));
++		if (dia_canvas_groupable_get_iter (DIA_CANVAS_GROUPABLE (item), &iter)) do {
++			request_update_for_children (dia_canvas_groupable_value (DIA_CANVAS_GROUPABLE (item), &iter));
++		} while (dia_canvas_groupable_next (DIA_CANVAS_GROUPABLE (item), &iter));
+ 	}
+ }
+ 
+@@ -1586,8 +1586,8 @@
+ 		DiaCanvasIter iter;
+ 		DiaCanvasItem *child;
+ 
+-		if (dia_canvas_groupable_get_iter (item, &iter)) do {
+-			child = dia_canvas_groupable_value (item, &iter);
++		if (dia_canvas_groupable_get_iter (DIA_CANVAS_GROUPABLE (item), &iter)) do {
++			child = dia_canvas_groupable_value (DIA_CANVAS_GROUPABLE (item), &iter);
+ 			if (child) {
+ 				if (child->canvas)
+ 					g_object_remove_weak_pointer
+@@ -1601,7 +1601,7 @@
+ 				//dia_canvas_item_request_update (child);
+ 				set_canvas_for_children (child);
+ 			}
+-		} while (dia_canvas_groupable_next (item, &iter));
++		} while (dia_canvas_groupable_next (DIA_CANVAS_GROUPABLE (item), &iter));
+ 	}
+ }
+ 
+@@ -1615,17 +1615,17 @@
+  *
+  **/
+ void
+-dia_canvas_groupable_add_construction (DiaCanvasItem *group,
++dia_canvas_groupable_add_construction (DiaCanvasGroupable *group,
+ 				       DiaCanvasItem *item)
+ {
+ 	g_return_if_fail (DIA_IS_CANVAS_GROUPABLE (group));
+ 	g_return_if_fail (DIA_IS_CANVAS_ITEM (item));
+ 	g_return_if_fail (item->parent == NULL);
+-	g_return_if_fail (item->parent != group);
++	g_return_if_fail (item->parent != DIA_CANVAS_ITEM (group));
+ 	if (DIA_CANVAS_ITEM_COMPOSITE (group))
+ 		g_return_if_fail (DIA_CANVAS_ITEM_COMPOSITE (item));
+ 
+-	dia_canvas_item_set_parent (item, group);
++	dia_canvas_item_set_parent (item, DIA_CANVAS_ITEM (group));
+ 
+ 	/* First set the canvas, so undo info can be saved... */
+ 	//item->canvas = group->canvas;
+@@ -1671,13 +1671,13 @@
+  * Return value: %TRUE if the addition was successful, %FALSE otherwise.
+  **/
+ gboolean
+-dia_canvas_groupable_add (DiaCanvasItem *group, DiaCanvasItem *item)
++dia_canvas_groupable_add (DiaCanvasGroupable *group, DiaCanvasItem *item)
+ {
+ 	gboolean retval = FALSE;
+ 	g_return_val_if_fail (DIA_IS_CANVAS_GROUPABLE (group), FALSE);
+ 	g_return_val_if_fail (DIA_IS_CANVAS_ITEM (item), FALSE);
+ 	g_return_val_if_fail (item->parent == NULL, FALSE);
+-	g_return_val_if_fail (item->parent != group, FALSE);
++	g_return_val_if_fail (item->parent != DIA_CANVAS_ITEM (group), FALSE);
+ 	
+ 	g_signal_emit_by_name (group, "add", item, &retval);
+ 	
+@@ -1700,12 +1700,12 @@
+  * This function should only be used in #DiaCanvasItem deriviates.
+  **/
+ void
+-dia_canvas_groupable_remove_destruction (DiaCanvasItem *group,
++dia_canvas_groupable_remove_destruction (DiaCanvasGroupable *group,
+ 					 DiaCanvasItem *item)
+ {
+ 	g_return_if_fail (DIA_IS_CANVAS_GROUPABLE (group));
+ 	g_return_if_fail (DIA_IS_CANVAS_ITEM (item));
+-	g_return_if_fail (item->parent == group);
++	g_return_if_fail (item->parent == DIA_CANVAS_ITEM (group));
+ 
+ 	dia_canvas_item_set_parent (item, NULL);
+ 
+@@ -1726,12 +1726,12 @@
+  * Return value: %TRUE if the removal was successful, %FALSE otherwise.
+  **/
+ gboolean
+-dia_canvas_groupable_remove (DiaCanvasItem *group, DiaCanvasItem *item)
++dia_canvas_groupable_remove (DiaCanvasGroupable *group, DiaCanvasItem *item)
+ {
+ 	gboolean retval = FALSE;
+ 	g_return_val_if_fail (DIA_IS_CANVAS_ITEM (group), FALSE);
+ 	g_return_val_if_fail (DIA_IS_CANVAS_ITEM (item), FALSE);
+-	g_return_val_if_fail (item->parent == group, FALSE);
++	g_return_val_if_fail (item->parent == DIA_CANVAS_ITEM (group), FALSE);
+ 
+ 	g_object_ref (item);
+ 	g_signal_emit_by_name (group, "remove", item, &retval);
+@@ -1757,7 +1757,7 @@
+  * Return value: FALSE if no iterator is set, TRUE otherwise.
+  **/
+ gboolean
+-dia_canvas_groupable_get_iter (DiaCanvasItem *group, DiaCanvasIter *iter)
++dia_canvas_groupable_get_iter (DiaCanvasGroupable *group, DiaCanvasIter *iter)
+ {
+ 	g_return_val_if_fail (DIA_IS_CANVAS_GROUPABLE (group), FALSE);
+ 	g_return_val_if_fail (iter != NULL, FALSE);
+@@ -1768,7 +1768,7 @@
+ 	iter->data[2] = NULL;
+ 	iter->stamp = 0;
+ 
+-	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->get_iter) (group, iter);
++	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->get_iter) (DIA_CANVAS_ITEM (group), iter);
+ }
+ 
+ /**
+@@ -1781,13 +1781,13 @@
+  * Return value: TRUE if the iterator points to a valif object, FALSE otherwise.
+  **/
+ gboolean
+-dia_canvas_groupable_next (DiaCanvasItem *group, DiaCanvasIter *iter)
++dia_canvas_groupable_next (DiaCanvasGroupable *group, DiaCanvasIter *iter)
+ {
+ 	g_return_val_if_fail (DIA_IS_CANVAS_GROUPABLE (group), FALSE);
+ 	g_return_val_if_fail (iter != NULL, FALSE);
+ 	g_return_val_if_fail (DIA_CANVAS_GROUPABLE_GET_IFACE (group)->next != NULL, FALSE);
+ 
+-	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->next) (group, iter);
++	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->next) (DIA_CANVAS_ITEM (group), iter);
+ }
+ 
+ /**
+@@ -1800,7 +1800,7 @@
+  * Return value: The #DiaCanvasItem pointed to by the iterator.
+  **/
+ DiaCanvasItem*
+-dia_canvas_groupable_value (DiaCanvasItem *group, DiaCanvasIter *iter)
++dia_canvas_groupable_value (DiaCanvasGroupable *group, DiaCanvasIter *iter)
+ {
+ 	DiaCanvasItem *value = NULL;
+ 
+@@ -1808,7 +1808,7 @@
+ 	g_return_val_if_fail (iter != NULL, NULL);
+ 	g_return_val_if_fail (DIA_CANVAS_GROUPABLE_GET_IFACE (group)->value != NULL, NULL);
+ 
+-	value = (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->value) (group, iter);
++	value = (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->value) (DIA_CANVAS_ITEM (group), iter);
+ 
+ 	g_assert (value == NULL || DIA_IS_CANVAS_ITEM (value));
+ 
+@@ -1825,12 +1825,12 @@
+  * Return value: -1 on error.
+  **/
+ gint
+-dia_canvas_groupable_length (DiaCanvasItem *group)
++dia_canvas_groupable_length (DiaCanvasGroupable *group)
+ {
+ 	g_return_val_if_fail (DIA_IS_CANVAS_GROUPABLE (group), -1);
+ 	g_return_val_if_fail (DIA_CANVAS_GROUPABLE_GET_IFACE (group)->length != NULL, -1);
+ 
+-	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->length) (group);
++	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->length) (DIA_CANVAS_ITEM (group));
+ }
+ 
+ /**
+@@ -1843,13 +1843,13 @@
+  * Return value: Position of @item, -1 on error.
+  **/
+ gint
+-dia_canvas_groupable_pos (DiaCanvasItem *group, DiaCanvasItem *item)
++dia_canvas_groupable_pos (DiaCanvasGroupable *group, DiaCanvasItem *item)
+ {
+ 	g_return_val_if_fail (DIA_IS_CANVAS_GROUPABLE (group), -1);
+ 	g_return_val_if_fail (DIA_IS_CANVAS_ITEM (item), -1);
+ 	g_return_val_if_fail (DIA_CANVAS_GROUPABLE_GET_IFACE (group)->pos != NULL, -1);
+ 
+-	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->pos) (group, item);
++	return (* DIA_CANVAS_GROUPABLE_GET_IFACE (group)->pos) (DIA_CANVAS_ITEM (group), item);
+ }
+ 
+ 

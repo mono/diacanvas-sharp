@@ -1,0 +1,11 @@
+--- test-shape-art.c	2002-12-29 09:34:15.000000000 +0100
++++ ../../diacanvas2-0.9.2.old/unit_tests/test-shape-art.c	2003-07-19 11:30:17.000000000 +0200
+@@ -55,7 +55,7 @@
+ 				NULL);
+ 	int i;
+ 
+-	dia_canvas_groupable_add (canvas->root, box);
++	dia_canvas_groupable_add (DIA_CANVAS_GROUPABLE (canvas->root), box);
+ 	for (i = 0; i < 10; i++) {
+ 		dia_canvas_item_request_update (box);
+ 

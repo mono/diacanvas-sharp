@@ -1,5 +1,5 @@
---- dia-canvas.h~	2003-01-18 16:27:00.000000000 +0100
-+++ dia-canvas.h	2003-06-23 10:51:17.000000000 +0200
+--- dia-canvas.h	2003-01-18 16:27:00.000000000 +0100
++++ ../../diacanvas2-0.9.2.old/src/dia-canvas.h	2003-07-19 10:40:09.000000000 +0200
 @@ -50,7 +50,7 @@
  #define DIA_CANVAS_ITEM_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), DIA_TYPE_CANVAS_ITEM, DiaCanvasItemClass))
  
@@ -9,3 +9,41 @@
  #define DIA_IS_CANVAS_GROUPABLE(obj)	(G_TYPE_CHECK_INSTANCE_TYPE ((obj), DIA_TYPE_CANVAS_GROUPABLE))
  #define DIA_CANVAS_GROUPABLE_GET_IFACE(obj)  (G_TYPE_INSTANCE_GET_INTERFACE ((obj), DIA_TYPE_CANVAS_GROUPABLE, DiaCanvasGroupable))
  
+@@ -583,28 +583,28 @@
+ 
+ GType	dia_canvas_groupable_get_type	(void);
+ 
+-gboolean dia_canvas_groupable_add	(DiaCanvasItem *group,
++gboolean dia_canvas_groupable_add	(DiaCanvasGroupable *group,
+ 					 DiaCanvasItem *item);
+-gboolean dia_canvas_groupable_remove	(DiaCanvasItem *group,
++gboolean dia_canvas_groupable_remove	(DiaCanvasGroupable *group,
+ 					 DiaCanvasItem *item);
+ 
+ /* Those methods can be used for compound objects. */
+-void	dia_canvas_groupable_add_construction	(DiaCanvasItem *group,
++void	dia_canvas_groupable_add_construction	(DiaCanvasGroupable *group,
+ 						 DiaCanvasItem *item);
+-void	dia_canvas_groupable_remove_destruction	(DiaCanvasItem *group,
++void	dia_canvas_groupable_remove_destruction	(DiaCanvasGroupable *group,
+ 						 DiaCanvasItem *item);
+ 
+ /* Z-order is adjusted by dia_canvas_item_raise/lower(). */
+ 
+-gboolean dia_canvas_groupable_get_iter	(DiaCanvasItem *group,
++gboolean dia_canvas_groupable_get_iter	(DiaCanvasGroupable *group,
+ 					 DiaCanvasIter *iter);
+-gboolean dia_canvas_groupable_next	(DiaCanvasItem *group,
++gboolean dia_canvas_groupable_next	(DiaCanvasGroupable *group,
+ 					 DiaCanvasIter *iter);
+-DiaCanvasItem*	dia_canvas_groupable_value	(DiaCanvasItem *group,
++DiaCanvasItem*	dia_canvas_groupable_value	(DiaCanvasGroupable *group,
+ 						 DiaCanvasIter *iter);
+ 
+-gint	dia_canvas_groupable_length	(DiaCanvasItem *group);
+-gint	dia_canvas_groupable_pos	(DiaCanvasItem *group,
++gint	dia_canvas_groupable_length	(DiaCanvasGroupable *group);
++gint	dia_canvas_groupable_pos	(DiaCanvasGroupable *group,
+ 					 DiaCanvasItem *item);
+ 
+ /**

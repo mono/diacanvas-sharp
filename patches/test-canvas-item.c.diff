@@ -1,0 +1,30 @@
+--- test-canvas-item.c	2003-01-05 14:07:03.000000000 +0100
++++ ../../diacanvas2-0.9.2.old/unit_tests/test-canvas-item.c	2003-07-19 11:28:59.000000000 +0200
+@@ -156,21 +156,21 @@
+ 	TEST (G_OBJECT (ti2)->ref_count == 2);
+ 	TEST (G_OBJECT (ti3)->ref_count == 2);
+ 
+-	dia_canvas_groupable_remove (canvas->root, ti1);
++	dia_canvas_groupable_remove (DIA_CANVAS_GROUPABLE (canvas->root), ti1);
+ 	/* One for ti1, one for the undo stack */
+ 	TEST (G_OBJECT (ti1)->ref_count == 2); 
+ 
+-	dia_canvas_groupable_remove (canvas->root, ti2);
++	dia_canvas_groupable_remove (DIA_CANVAS_GROUPABLE (canvas->root), ti2);
+ 	TEST (G_OBJECT (ti2)->ref_count == 2); 
+-	dia_canvas_groupable_remove (canvas->root, ti3);
++	dia_canvas_groupable_remove (DIA_CANVAS_GROUPABLE (canvas->root), ti3);
+ 	TEST (G_OBJECT (ti3)->ref_count == 2); 
+ 
+ 	TEST (g_list_length (DIA_CANVAS_GROUP(canvas->root)->children) == 0);
+ 
+ 	/* Now add them in reverse order: */
+-	dia_canvas_groupable_add (canvas->root, ti3);
+-	dia_canvas_groupable_add (canvas->root, ti2);
+-	dia_canvas_groupable_add (canvas->root, ti1);
++	dia_canvas_groupable_add (DIA_CANVAS_GROUPABLE (canvas->root), ti3);
++	dia_canvas_groupable_add (DIA_CANVAS_GROUPABLE (canvas->root), ti2);
++	dia_canvas_groupable_add (DIA_CANVAS_GROUPABLE (canvas->root), ti1);
+ 
+ 	TEST (DIA_CANVAS_GROUP(canvas->root)->children->data == ti3);
+ 	TEST (DIA_CANVAS_GROUP(canvas->root)->children->next->data == ti2);

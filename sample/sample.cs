@@ -32,7 +32,7 @@ public class Sample {
 		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
 		Dia.CanvasItem item = Dia.CanvasItem.ItemCreate (CanvasImage.GType, pixbuf);
 		item.Move (200, 200);
-		canvas.Root.Add (item, item);
+		canvas.Root.Add (item);
 
 		view.UnselectAll();
 		CanvasViewItem vitem = view.FindViewItem (item);

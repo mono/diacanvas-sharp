@@ -1,5 +1,5 @@
---- dia-canvas-view.c~	2003-03-18 19:21:22.000000000 +0100
-+++ dia-canvas-view.c	2003-06-23 12:44:34.000000000 +0200
+--- dia-canvas-view.c	2003-03-18 19:21:22.000000000 +0100
++++ ../../diacanvas2-0.9.2.old/src/dia-canvas-view.c	2003-07-18 13:35:40.000000000 +0200
 @@ -217,10 +217,12 @@
  						G_PARAM_READABLE));
  	g_object_class_install_property (gobject_class,
