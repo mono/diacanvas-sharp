@@ -2,18 +2,17 @@
   <TypeSignature Language="C#" Value="public sealed delegate int CanvasItemForeachFunc (Dia.CanvasItem item);" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>
     Represents the method that will handle the <see cref="T:Dia.CanvasItem" />'s 
     in a <see cref="T:Dia.CanvasGroup" />. 
     </summary>
-    <param name="item">Each <see cref="T:Dia.CanvasItem" /> in <see cref="T:Dia.CanvasGroup" />.</param>
     <remarks>It is used by <see cref="M:Dia.CanvasGroup.Foreach" />.</remarks>
   </Docs>
   <Base>
@@ -29,4 +28,10 @@
   </Interfaces>
   <Attributes />
   <Members />
+  <ReturnValue>
+    <ReturnType>System.Int32</ReturnType>
+  </ReturnValue>
+  <Parameters>
+    <Parameter Name="item" Type="Dia.CanvasItem" />
+  </Parameters>
 </Type>

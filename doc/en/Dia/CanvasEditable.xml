@@ -1,13 +1,13 @@
 <Type Name="CanvasEditable" FullName="Dia.CanvasEditable">
-  <TypeSignature Language="C#" Value="public abstract interface CanvasEditable;" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public abstract interface CanvasEditable" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -35,6 +35,23 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ChangeText">
+      <MemberSignature Language="C#" Value="public virtual void ChangeText (Dia.ShapeText text_shape, string new_text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text_shape" Type="Dia.ShapeText" />
+        <Parameter Name="new_text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
+        <param name="new_text">a <see cref="T:System.String" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DoneEditing">
       <MemberSignature Language="C#" Value="public virtual void DoneEditing (Dia.ShapeText text_shape, string new_text);" />
       <MemberType>Method</MemberType>
@@ -55,7 +72,9 @@
     <Member MemberName="EditingDone">
       <MemberSignature Language="C#" Value="public virtual event DiaSharp.EditingDoneHandler EditingDone;" />
       <MemberType>Event</MemberType>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>DiaSharp.EditingDoneHandler</ReturnType>
+      </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
@@ -65,7 +84,9 @@
     <Member MemberName="StartEditing">
       <MemberSignature Language="C#" Value="public virtual event DiaSharp.StartEditingHandler StartEditing;" />
       <MemberType>Event</MemberType>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>DiaSharp.StartEditingHandler</ReturnType>
+      </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
@@ -75,27 +96,12 @@
     <Member MemberName="TextChanged">
       <MemberSignature Language="C#" Value="public virtual event DiaSharp.TextChangedHandler TextChanged;" />
       <MemberType>Event</MemberType>
-      <ReturnValue />
+      <ReturnValue>
+        <ReturnType>DiaSharp.TextChangedHandler</ReturnType>
+      </ReturnValue>
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ChangeText">
-      <MemberSignature Language="C#" Value="public virtual void ChangeText (Dia.ShapeText text_shape, string new_text);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="text_shape" Type="Dia.ShapeText" />
-        <Parameter Name="new_text" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="text_shape">a <see cref="T:Dia.ShapeText" /></param>
-        <param name="new_text">a <see cref="T:System.String" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -2,12 +2,12 @@
   <TypeSignature Language="C#" Value="public class Solver : GLib.Object, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -33,8 +33,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Disposes the resources associated with the object.</summary>
+        <remarks />
       </Docs>
     </Member>
     <Member MemberName="Resolve">
@@ -57,10 +57,10 @@
         <Parameter Name="gtype" Type="GLib.Type" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /></param>
-        <returns>a <see cref="T:Dia.Solver" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.Type" /> for the this type.</param>
+        <returns>a <see cref="T:Dia.Solver" /> created using the provided <see cref="T:GLib.Type" />.</returns>
+        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -71,10 +71,10 @@
         <Parameter Name="raw" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Solver" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
+        <returns>a <see cref="T:Dia.Solver" /> wrapping the C object.</returns>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -94,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>

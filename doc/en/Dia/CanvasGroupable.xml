@@ -1,13 +1,13 @@
 <Type Name="CanvasGroupable" FullName="Dia.CanvasGroupable">
-  <TypeSignature Language="C#" Value="public abstract interface CanvasGroupable;" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public abstract interface CanvasGroupable" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -36,27 +36,11 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public virtual Dia.CanvasItem Value (Dia.CanvasIter iter);" />
+    <Member MemberName="AddConstruction">
+      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.CanvasItem</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="iter" Type="Dia.CanvasIter" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
-        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Pos">
-      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="item" Type="Dia.CanvasItem" />
@@ -64,36 +48,6 @@
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public virtual int Length ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public virtual bool Add (Dia.CanvasItem item);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="item" Type="Dia.CanvasItem" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -129,31 +83,11 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Removed">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Added">
-      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddConstruction">
-      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem item);" />
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual bool Add (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="item" Type="Dia.CanvasItem" />
@@ -161,6 +95,7 @@
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -176,6 +111,75 @@
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public virtual int Length ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public virtual Dia.CanvasItem Value (Dia.CanvasIter iter);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iter" Type="Dia.CanvasIter" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pos">
+      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
+        <returns>a <see cref="T:System.Int32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemovedHandler Removed;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>DiaSharp.RemovedHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddedHandler Added;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>DiaSharp.AddedHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,13 @@
 <Type Name="ShapeText" FullName="Dia.ShapeText">
-  <TypeSignature Language="C#" Value="public sealed struct ShapeText;" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public sealed struct ShapeText" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -24,7 +24,7 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeText</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -36,7 +36,7 @@
       <ReturnValue>
         <ReturnType>Dia.Shape</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -48,7 +48,7 @@
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -60,7 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -72,7 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -84,7 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -96,7 +96,7 @@
       <ReturnValue>
         <ReturnType>Pango.WrapMode</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -108,7 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -120,7 +120,7 @@
       <ReturnValue>
         <ReturnType>Pango.Alignment</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -132,7 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -144,7 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -156,7 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -168,7 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -510,6 +510,7 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
@@ -522,12 +523,9 @@
       <ReturnValue>
         <ReturnType>Pango.FontDescription</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Pango.FontDescription" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Pango.FontDescription" /></param>
         <returns>a <see cref="T:Pango.FontDescription" /></returns>
         <remarks>To be added</remarks>
       </Docs>

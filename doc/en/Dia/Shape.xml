@@ -1,13 +1,13 @@
 <Type Name="Shape" FullName="Dia.Shape">
-  <TypeSignature Language="C#" Value="public sealed struct Shape;" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public sealed struct Shape" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -24,7 +24,7 @@
       <ReturnValue>
         <ReturnType>Dia.Shape</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -36,7 +36,7 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -48,7 +48,7 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -60,7 +60,7 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -72,7 +72,7 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
@@ -107,6 +107,32 @@
         <summary>To be added</summary>
         <param name="type">a <see cref="T:Dia.ShapeType" /></param>
         <returns>a <see cref="T:Dia.Shape" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XGetPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout XGetPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtGetPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout ArtGetPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -210,20 +236,20 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Rectangle">
-      <MemberSignature Language="C#" Value="public void Rectangle (Dia.Point upper_left, Dia.Point lower_right);" />
+    <Member MemberName="Polygon">
+      <MemberSignature Language="C#" Value="public void Polygon (uint n_points, Dia.Point points);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="upper_left" Type="Dia.Point" />
-        <Parameter Name="lower_right" Type="Dia.Point" />
+        <Parameter Name="n_points" Type="System.UInt32" />
+        <Parameter Name="points" Type="Dia.Point" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="upper_left">a <see cref="T:Dia.Point" /></param>
-        <param name="lower_right">a <see cref="T:Dia.Point" /></param>
+        <param name="n_points">a <see cref="T:System.UInt32" /></param>
+        <param name="points">a <see cref="T:Dia.Point" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -241,6 +267,23 @@
         <summary>To be added</summary>
         <param name="start">a <see cref="T:Dia.Point" /></param>
         <param name="end">a <see cref="T:Dia.Point" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rectangle">
+      <MemberSignature Language="C#" Value="public void Rectangle (Dia.Point upper_left, Dia.Point lower_right);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="upper_left" Type="Dia.Point" />
+        <Parameter Name="lower_right" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="upper_left">a <see cref="T:Dia.Point" /></param>
+        <param name="lower_right">a <see cref="T:Dia.Point" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -372,23 +415,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Polygon">
-      <MemberSignature Language="C#" Value="public void Polygon (uint n_points, Dia.Point points);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="n_points" Type="System.UInt32" />
-        <Parameter Name="points" Type="Dia.Point" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="n_points">a <see cref="T:System.UInt32" /></param>
-        <param name="points">a <see cref="T:Dia.Point" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="RequestUpdate">
       <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
       <MemberType>Method</MemberType>
@@ -445,12 +471,8 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="System.UInt32" />
-      </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt32" /></param>
         <returns>a <see cref="T:System.UInt32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -461,12 +483,8 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="value" Type="Dia.ShapeVisibility" />
-      </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.ShapeVisibility" /></param>
         <returns>a <see cref="T:Dia.ShapeVisibility" /></returns>
         <remarks>To be added</remarks>
       </Docs>
@@ -477,35 +495,10 @@
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="XGetPangoLayout">
-      <MemberSignature Language="C#" Value="public static Pango.Layout XGetPangoLayout ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Pango.Layout</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ArtGetPangoLayout">
-      <MemberSignature Language="C#" Value="public static Pango.Layout ArtGetPangoLayout ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Pango.Layout</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Pango.Layout" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -45,18 +45,6 @@
         <remarks></remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Disposes the resources associated with the object.</summary>
-        <remarks></remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Foreach">
       <MemberSignature Language="C#" Value="public int Foreach (Dia.CanvasViewItemForeachFunc func);" />
       <MemberType>Method</MemberType>
@@ -130,48 +118,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasViewItem (GLib.Type gtype);" />
-      <MemberType>Constructor</MemberType>
-      <ReturnValue />
-      <Parameters>
-        <Parameter Name="gtype" Type="GLib.Type" />
-      </Parameters>
-      <Docs>
-        <summary>Internal constructor.</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /> for the <see cref="T:Dia.CanvasViewItem" />.</param>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /> created using the provided <see cref="T:GLib.Type" />.</returns>
-        <remarks>
-	This is a constructor used by derivative types that would have their own 
-	<see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.
-	</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CanvasViewItem (IntPtr raw);" />
-      <MemberType>Constructor</MemberType>
-      <ReturnValue />
-      <Parameters>
-        <Parameter Name="raw" Type="System.IntPtr" />
-      </Parameters>
-      <Docs>
-        <summary>Internal constructor.</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /> wrapping the C object.</returns>
-        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasViewItem ();" />
-      <MemberType>Constructor</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>Internal constructor.</summary>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
-        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GType">
       <MemberSignature Language="C#" Value="public static uint GType { get; };" />
       <MemberType>Property</MemberType>
@@ -230,6 +176,57 @@
         <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes the resources associated with the object.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CanvasViewItem (GLib.Type gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.Type" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.Type" /> for the this type.</param>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /> created using the provided <see cref="T:GLib.Type" />.</returns>
+        <remarks>This is a constructor used by derivative types that would have their own <see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CanvasViewItem (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>Internal constructor.</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /> wrapping the C object.</returns>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CanvasViewItem ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>Internal constructor.</summary>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
       </Docs>
     </Member>
   </Members>

@@ -2,12 +2,12 @@
   <TypeSignature Language="C#" Value="public class ButtonReleaseEventArgs : GtkSharp.SignalArgs" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey />
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>To be added</summary>
     <remarks>To be added</remarks>
@@ -35,6 +35,7 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasView</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:Dia.CanvasView" /></returns>
@@ -47,6 +48,7 @@
       <ReturnValue>
         <ReturnType>Gdk.EventButton</ReturnType>
       </ReturnValue>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:Gdk.EventButton" /></returns>
