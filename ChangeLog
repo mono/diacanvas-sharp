@@ -1,13 +1,58 @@
 2004-03-02  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/Dia.metadata: Marked Shape and Variable opaque.
+	* dia/diacanvas-api.xml: Regenerated
 	* dia/PlacementTool.cs: Target Mono-0.30.2 and Gtk#-0.17
 	* dia/Point.custom: Ditto
 	* sample/sample.cs: Ditto
 	* sample/CanvasFigure.cs: Ditto
-	* doc/en/DiaSharp.xml: Removed
-	* doc/en/makefile.am: Removed reference to dir DiaSharp
 	* configure.in: Ditto
+	* doc/en/DiaSharp.xml: Removed
+	* doc/en/DiaSharp: Removed
+	* doc/en/makefile.am: Removed reference to dir DiaSharp
+	* doc/en/Dia/AddedArgs.xml: Moved from DiaSharp namespace
+	* doc/en/Dia/AddedHandler.xml: Ditto
+	* doc/en/Dia/ButtonPressEventArgs.xml: Ditto
+	* doc/en/Dia/ButtonPressEventHandler.xml: Ditto
+	* doc/en/Dia/ButtonReleaseEventArgs.xml: Ditto
+	* doc/en/Dia/ButtonReleaseEventHandler.xml: Ditto
+	* doc/en/Dia/ConnectedArgs.xml: Ditto
+	* doc/en/Dia/ConnectedHandler.xml: Ditto
+	* doc/en/Dia/DiaCanvas.xml: Ditto
+	* doc/en/Dia/DisconnectedArgs.xml: Ditto
+	* doc/en/Dia/DisconnectedHandler.xml: Ditto
+	* doc/en/Dia/EditingDoneArgs.xml: Ditto
+	* doc/en/Dia/EditingDoneHandler.xml: Ditto
+	* doc/en/Dia/ExtentsChangedArgs.xml: Ditto
+	* doc/en/Dia/ExtentsChangedHandler.xml: Ditto
+	* doc/en/Dia/FocusedItemArgs.xml: Ditto
+	* doc/en/Dia/FocusedItemHandler.xml: Ditto
+	* doc/en/Dia/HasStateArgs.xml: Ditto
+	* doc/en/Dia/HasStateHandler.xml: Ditto
+	* doc/en/Dia/KeyPressEventArgs.xml: Ditto
+	* doc/en/Dia/KeyPressEventHandler.xml: Ditto
+	* doc/en/Dia/KeyReleaseEventArgs.xml: Ditto
+	* doc/en/Dia/KeyReleaseEventHandler.xml: Ditto
+	* doc/en/Dia/MotionNotifyEventArgs.xml: Ditto
+	* doc/en/Dia/MotionNotifyEventHandler.xml: Ditto
+	* doc/en/Dia/MovedArgs.xml: Ditto
+	* doc/en/Dia/MovedHandler.xml: Ditto
+	* doc/en/Dia/NeedResolveArgs.xml: Ditto
+	* doc/en/Dia/NeedResolveHandler.xml: Ditto
+	* doc/en/Dia/RemovedArgs.xml: Ditto
+	* doc/en/Dia/RemovedHandler.xml: Ditto
+	* doc/en/Dia/SelectedItemArgs.xml: Ditto
+	* doc/en/Dia/SelectedItemHandler.xml: Ditto
+	* doc/en/Dia/StartEditingArgs.xml: Ditto
+	* doc/en/Dia/StartEditingHandler.xml: Ditto
+	* doc/en/Dia/StateChangedArgs.xml: Ditto
+	* doc/en/Dia/StateChangedHandler.xml: Ditto
+	* doc/en/Dia/TextChangedArgs.xml: Ditto
+	* doc/en/Dia/TextChangedHandler.xml: Ditto
+	* doc/en/Dia/UnselectedItemArgs.xml: Ditto
+	* doc/en/Dia/UnselectedItemHandler.xml: Ditto
+	* doc/en/Dia/ZOrderArgs.xml: Ditto
+	* doc/en/Dia/ZOrderHandler.xml: Ditto
 
 2004-02-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
