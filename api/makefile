@@ -1,14 +1,18 @@
 PREFIX=		/usr
 
+API=		dia-api.xml
+
 INCLUDE_API=	$(PREFIX)/share/gapi/art-api.xml		\
 		$(PREFIX)/share/gapi/pango-api.xml		\
 		$(PREFIX)/share/gapi/atk-api.xml  		\
-		$(PREFIX)/share/gapi/gnome-api.xml    	\
+		$(PREFIX)/share/gapi/gnome-api.xml    		\
 		$(PREFIX)/share/gapi/gtk-api.xml		\
 		$(PREFIX)/share/gapi/gdk-api.xml  		\
 
-all:
-	gapi_codegen.exe --include $(INCLUDE_API) --generate dia-api.xml
+all: generated-stamp
+
+generated-stamp: $(API) 
+	gapi_codegen.exe --include $(INCLUDE_API) --generate $(API) && touch generated-stamp
 
 clean:
-	rm -f dia-api.xml
+	rm -f generated-stamp

@@ -15,7 +15,9 @@ RESOURCES=	-resource:glade/gui.glade	\
 
 SAMPLE=		sample.exe
 
-all: sample.cs
+all: $(SAMPLE)
+
+$(SAMPLE): sample.cs
 	mcs $(ASSEMBLIES) $(RESOURCES) sample.cs -o $(SAMPLE)
 
 clean:
