@@ -1,3 +1,22 @@
+2003-10-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/Canvas.xml: Fixed <ThreadSafetyStatement> content, 
+	  &lt; and &gt; where used instead of < and >
+	* doc/en/Dia/CanvasViewItem.xml: Ditto
+	* doc/en/Dia/CanvasElementHandle: Ditto
+	* doc/en/Dia/CanvasItemFlags: Ditto
+	* doc/en/Dia/CanvasItemUIStateFlags: Ditto
+	* doc/en/Dia/CapStyle: Ditto
+	* doc/en/Dia/EventMask: Ditto
+	* doc/en/Dia/EventType: Ditto
+	* doc/en/Dia/FillStyle: Ditto
+	* doc/en/Dia/JoinStyle: Ditto
+	* doc/en/Dia/ShapeType: Ditto
+	* doc/en/Dia/ShapeVisibility: Ditto
+	* doc/en/Dia/Strength: Ditto
+	* doc/en/Dia/Canvas.xml: Documented events and methods, 
+	this type is now fully documented.
+
 2003-10-14  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/DiaSharp.xml: Added

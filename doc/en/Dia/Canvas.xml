@@ -7,10 +7,10 @@
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
   </AssemblyInfo>
-  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the <link location="node:gtk-sharp/programming/threads">Gtk# Thread Programming</link> for details.</ThreadSafetyStatement>
   <Docs>
     <summary>
-    <see cref="T:Dia.Canvas" /> holds the data structure 
+      <see cref="T:Dia.Canvas" /> holds the data structure 
     that represents the content that is displayed in a 
     <see cref="T:Dia.CanvasView" />. One <see cref="T:Dia.Canvas" /> 
     can have zero or more <see cref="T:Dia.CanvasView" />s.
@@ -101,8 +101,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Clear the redo stack.</summary>
+        <remarks>
+	This should be automatically done after an
+	interactive operation on the canvas, for example 
+	a <see cref="T:Dia.CanvasItem" /> is moved.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="PushUndo">
@@ -115,9 +119,14 @@
         <Parameter Name="optional_comment" Type="System.String" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="optional_comment">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
+        <summary>
+	Push a bunch of preserved values on the undo stack.</summary>
+        <param name="optional_comment">a <see cref="T:System.String" /> for an optional comment.</param>
+        <remarks>
+	If no values are stored using <see cref="M:Dia.Canvas.Preserve" /> 
+	or <see cref="M:Dia.Canvas.PreserveProperty" />, nothing is pushed 
+	on the stack.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestUpdate">
@@ -128,8 +137,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Ask the <see cref="T:Dia.Canvas" /> to schedule a update handler.</summary>
+        <remarks>
+	The actual update will happen during idle time 	or if 
+	<see cref="M:Dia.Canvas.UpdateNow" /> is called.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="SnapToGridCoordinates">
@@ -159,9 +171,9 @@
         <Parameter Name="c" Type="Dia.Constraint" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="c">a <see cref="T:Dia.Constraint" /></param>
-        <remarks>To be added</remarks>
+        <summary>Remove a constraint from the <see cref="T:Dia.Canvas" />.</summary>
+        <param name="c">a <see cref="T:Dia.Constraint" /> to be removed.</param>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddConstraint">
@@ -174,9 +186,12 @@
         <Parameter Name="c" Type="Dia.Constraint" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="c">a <see cref="T:Dia.Constraint" /></param>
-        <remarks>To be added</remarks>
+        <summary>
+	Add a <see cref="T:Dia.Constraint" /> to the 
+	<see cref="T:Dia.Canvas" />' constraint <see cref="T:Dia.Solver" />.
+	</summary>
+        <param name="c">a <see cref="T:Dia.Constraint" /> to be added.</param>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -187,8 +202,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Clear the undo stack.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -224,8 +239,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	This method will fire a <see cref="E:Dia.RedrawView" /> 
+	that will cause all views to update and	redraw itself. 
+	</summary>
+        <remarks>
+	There are very few cases in which this method is useful.
+	Calling this method often will dramatically reduce the 
+	speed of the <see cref="T:Dia.Canvas" />.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="GlueHandle">
@@ -243,15 +265,23 @@
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
-        <param name="dest_x">a <see cref="T:System.Double" /></param>
-        <param name="dest_y">a <see cref="T:System.Double" /></param>
-        <param name="glue_x">a <see cref="T:System.Double" /></param>
-        <param name="glue_y">a <see cref="T:System.Double" /></param>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
+        <summary>
+	Find a point to glue a handle to.
+	</summary>
+        <param name="handle">a <see cref="T:Dia.Handle" /> to be glued to an item somewhere on the <see cref="T:Dia.Canvas" />.</param>
+        <param name="dest_x">a <see cref="T:System.Double" /> to be x position of the handle.</param>
+        <param name="dest_y">a <see cref="T:System.Double" /> to be y position of the handle.</param>
+        <param name="glue_x">a <see cref="T:System.Double" /> to be closest x glue point.</param>
+        <param name="glue_y">a <see cref="T:System.Double" /> to be closest y glue point.</param>
+        <param name="item">a <see cref="T:Dia.CanvasItem" /> the handle should connect to.</param>
+        <returns>a <see cref="T:System.Double" /> representing 	the 
+	distance from the handle to the closest connection point.
+	</returns>
+        <remarks>
+	Point (dest_x, dest_y) is the position where the handle should move to if 
+	no glue point is found. This can be useful if the handle is in a motion 
+	and you have to calculate the place where the handle should move to.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateNow">
@@ -262,8 +292,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	Force an update of the internal state of the canvas. 
+	</summary>
+        <remarks>
+	This will set the <see cref="T:Dia.Canvas" /> in a 
+	consistent state by running the 
+	<see cref="M:Dia.CanvasItem.UpdateNow" /> of every 
+	<see cref="T:Dia.CanvasItem" /> that requested an update.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveNow">
@@ -274,8 +311,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>
+	Ask the constraint <see cref="T:Dia.Solver" /> 
+	to resolve it's constraints.
+	</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FindObjectsInRectangle">
@@ -288,10 +328,16 @@
         <Parameter Name="rect" Type="Dia.Rectangle" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
-        <returns>a <see cref="T:GLib.List" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Find all objects that are within rectangle and return them.</summary>
+        <param name="rect">
+	a <see cref="T:Dia.Rectangle" /> that determines the 
+	boundries in which objects should live.
+	</param>
+        <returns>a <see cref="T:GLib.List" /> of objects that are within the rectangle.</returns>
+        <remarks>
+	Note that the root object is not included in the selection, 
+	only non-composite leaf objects are selected.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="PopUndo">
@@ -536,10 +582,10 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <summary>Sets or gets the limit of the length of the undo/redo stack.</summary>
+        <summary>Sets or gets the depth of the undo / redo stack.</summary>
         <param name="value">a <see cref="T:System.UInt32" /></param>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>The default limit is 10.</remarks>
+        <remarks>The default depth is 10.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedoDepth">
@@ -564,36 +610,6 @@
         <summary>Gets the root item in the <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
         <remarks></remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RedrawView">
-      <MemberSignature Language="C#" Value="public event EventHandler RedrawView;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Undo">
-      <MemberSignature Language="C#" Value="public event EventHandler Undo;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ExtentsChanged">
-      <MemberSignature Language="C#" Value="public event DiaSharp.ExtentsChangedHandler ExtentsChanged;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="PangoLayout">
@@ -647,6 +663,54 @@
         <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
         <returns>a <see cref="T:Dia.Canvas" /> wrapping the C object.</returns>
         <remarks>This is an internal constructor, and should not be used by user code.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtentsChanged">
+      <MemberSignature Language="C#" Value="public event DiaSharp.ExtentsChangedHandler ExtentsChanged;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>DiaSharp.ExtentsChangedHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+	This event is fired when the <see cref="P:Dia.Canvas.Extents" /> 
+	of the <see cref="T:Dia.Canvas" /> changes.
+	</summary>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedrawView">
+      <MemberSignature Language="C#" Value="public event EventHandler RedrawView;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+	When this event is fired all <see cref="T:Dia.CanvasView" />s 
+        are forced to redraw.
+	</summary>
+        <remarks></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undo">
+      <MemberSignature Language="C#" Value="public event EventHandler Undo;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+	 This event is fired every time a undo or redo action is done and
+         every time undo information is added to the undo stack. 
+	</summary>
+        <remarks>
+	User interfaces can connect to this event and update UI content, 
+	for example undo and redo buttons.
+	</remarks>
       </Docs>
     </Member>
   </Members>
