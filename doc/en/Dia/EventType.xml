@@ -29,7 +29,7 @@
   <Attributes />
   <Members>
     <Member MemberName="ButtonPress">
-      <MemberSignature Language="C#" Value="public static Dia.EventType ButtonPress;" />
+      <MemberSignature Language="C#" Value="ButtonPress" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="TwoButtonPress">
-      <MemberSignature Language="C#" Value="public static Dia.EventType TwoButtonPress;" />
+      <MemberSignature Language="C#" Value="TwoButtonPress" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -53,7 +53,7 @@
       </Docs>
     </Member>
     <Member MemberName="ThreeButtonPress">
-      <MemberSignature Language="C#" Value="public static Dia.EventType ThreeButtonPress;" />
+      <MemberSignature Language="C#" Value="ThreeButtonPress" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName="ButtonRelease">
-      <MemberSignature Language="C#" Value="public static Dia.EventType ButtonRelease;" />
+      <MemberSignature Language="C#" Value="ButtonRelease" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -77,7 +77,7 @@
       </Docs>
     </Member>
     <Member MemberName="Motion">
-      <MemberSignature Language="C#" Value="public static Dia.EventType Motion;" />
+      <MemberSignature Language="C#" Value="Motion" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -89,7 +89,7 @@
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
-      <MemberSignature Language="C#" Value="public static Dia.EventType KeyPress;" />
+      <MemberSignature Language="C#" Value="KeyPress" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -101,7 +101,7 @@
       </Docs>
     </Member>
     <Member MemberName="KeyRelease">
-      <MemberSignature Language="C#" Value="public static Dia.EventType KeyRelease;" />
+      <MemberSignature Language="C#" Value="KeyRelease" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -113,7 +113,7 @@
       </Docs>
     </Member>
     <Member MemberName="FocusIn">
-      <MemberSignature Language="C#" Value="public static Dia.EventType FocusIn;" />
+      <MemberSignature Language="C#" Value="FocusIn" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -125,7 +125,7 @@
       </Docs>
     </Member>
     <Member MemberName="FocusOut">
-      <MemberSignature Language="C#" Value="public static Dia.EventType FocusOut;" />
+      <MemberSignature Language="C#" Value="FocusOut" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventType</ReturnType>
@@ -137,7 +137,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -32,18 +32,18 @@
       </Docs>
     </Member>
     <Member MemberName="ExportPrint">
-      <MemberSignature Language="C#" Value="public static void ExportPrint (IntPtr gpm, Dia.Canvas canvas);" />
+      <MemberSignature Language="C#" Value="public static void ExportPrint (Gnome.PrintJob gpm, Dia.Canvas canvas);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="gpm" Type="System.IntPtr" />
+        <Parameter Name="gpm" Type="Gnome.PrintJob" />
         <Parameter Name="canvas" Type="Dia.Canvas" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gpm">a <see cref="T:System.IntPtr" /></param>
+        <param name="gpm">a <see cref="T:Gnome.PrintJob" /></param>
         <param name="canvas">a <see cref="T:Dia.Canvas" /></param>
         <remarks>To be added</remarks>
       </Docs>

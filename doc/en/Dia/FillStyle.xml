@@ -29,7 +29,7 @@
   <Attributes />
   <Members>
     <Member MemberName="None">
-      <MemberSignature Language="C#" Value="public static Dia.FillStyle None;" />
+      <MemberSignature Language="C#" Value="None" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.FillStyle</ReturnType>
@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="Solid">
-      <MemberSignature Language="C#" Value="public static Dia.FillStyle Solid;" />
+      <MemberSignature Language="C#" Value="Solid" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.FillStyle</ReturnType>
@@ -53,7 +53,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

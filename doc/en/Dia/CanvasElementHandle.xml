@@ -34,7 +34,7 @@
   <Attributes />
   <Members>
     <Member MemberName="N">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle N;" />
+      <MemberSignature Language="C#" Value="N" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -46,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName="Nw">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle Nw;" />
+      <MemberSignature Language="C#" Value="Nw" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -58,7 +58,7 @@
       </Docs>
     </Member>
     <Member MemberName="Ne">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle Ne;" />
+      <MemberSignature Language="C#" Value="Ne" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -70,7 +70,7 @@
       </Docs>
     </Member>
     <Member MemberName="S">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle S;" />
+      <MemberSignature Language="C#" Value="S" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -82,7 +82,7 @@
       </Docs>
     </Member>
     <Member MemberName="W">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle W;" />
+      <MemberSignature Language="C#" Value="W" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -94,7 +94,7 @@
       </Docs>
     </Member>
     <Member MemberName="E">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle E;" />
+      <MemberSignature Language="C#" Value="E" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -106,7 +106,7 @@
       </Docs>
     </Member>
     <Member MemberName="Sw">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle Sw;" />
+      <MemberSignature Language="C#" Value="Sw" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -118,7 +118,7 @@
       </Docs>
     </Member>
     <Member MemberName="Se">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasElementHandle Se;" />
+      <MemberSignature Language="C#" Value="Se" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
@@ -130,7 +130,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -33,7 +33,7 @@
   </Attributes>
   <Members>
     <Member MemberName="Visible">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Visible;" />
+      <MemberSignature Language="C#" Value="Visible" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
@@ -45,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName="Interactive">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Interactive;" />
+      <MemberSignature Language="C#" Value="Interactive" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName="Composite">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Composite;" />
+      <MemberSignature Language="C#" Value="Composite" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="NeedUpdate">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags NeedUpdate;" />
+      <MemberSignature Language="C#" Value="NeedUpdate" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
@@ -81,7 +81,7 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAll">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags UpdateAll;" />
+      <MemberSignature Language="C#" Value="UpdateAll" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
@@ -93,7 +93,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

@@ -390,18 +390,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectedItems">
-      <MemberSignature Language="C#" Value="public Collections.IList SelectedItems { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Collections.IList</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Collections.IList" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="FocusItem">
       <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FocusItem { get; };" />
       <MemberType>Property</MemberType>
@@ -453,6 +441,19 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:Dia.HandleLayer" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.IList SelectedItems { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Collections.IList" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

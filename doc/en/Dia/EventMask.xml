@@ -33,7 +33,7 @@
   </Attributes>
   <Members>
     <Member MemberName="Shift">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Shift;" />
+      <MemberSignature Language="C#" Value="Shift" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -45,7 +45,7 @@
       </Docs>
     </Member>
     <Member MemberName="Lock">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Lock;" />
+      <MemberSignature Language="C#" Value="Lock" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -57,7 +57,7 @@
       </Docs>
     </Member>
     <Member MemberName="Ctrl">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Ctrl;" />
+      <MemberSignature Language="C#" Value="Ctrl" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -69,7 +69,7 @@
       </Docs>
     </Member>
     <Member MemberName="Mod1">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Mod1;" />
+      <MemberSignature Language="C#" Value="Mod1" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -81,7 +81,7 @@
       </Docs>
     </Member>
     <Member MemberName="Alt">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Alt;" />
+      <MemberSignature Language="C#" Value="Alt" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -93,7 +93,7 @@
       </Docs>
     </Member>
     <Member MemberName="Mod2">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Mod2;" />
+      <MemberSignature Language="C#" Value="Mod2" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -105,7 +105,7 @@
       </Docs>
     </Member>
     <Member MemberName="Mod3">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Mod3;" />
+      <MemberSignature Language="C#" Value="Mod3" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -117,7 +117,7 @@
       </Docs>
     </Member>
     <Member MemberName="Mod4">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Mod4;" />
+      <MemberSignature Language="C#" Value="Mod4" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -129,7 +129,7 @@
       </Docs>
     </Member>
     <Member MemberName="Mod5">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Mod5;" />
+      <MemberSignature Language="C#" Value="Mod5" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -141,7 +141,7 @@
       </Docs>
     </Member>
     <Member MemberName="Button1">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Button1;" />
+      <MemberSignature Language="C#" Value="Button1" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -153,7 +153,7 @@
       </Docs>
     </Member>
     <Member MemberName="Button2">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Button2;" />
+      <MemberSignature Language="C#" Value="Button2" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -165,7 +165,7 @@
       </Docs>
     </Member>
     <Member MemberName="Button3">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Button3;" />
+      <MemberSignature Language="C#" Value="Button3" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -177,7 +177,7 @@
       </Docs>
     </Member>
     <Member MemberName="Button4">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Button4;" />
+      <MemberSignature Language="C#" Value="Button4" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -189,7 +189,7 @@
       </Docs>
     </Member>
     <Member MemberName="Button5">
-      <MemberSignature Language="C#" Value="public static Dia.EventMask Button5;" />
+      <MemberSignature Language="C#" Value="Button5" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
@@ -201,7 +201,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

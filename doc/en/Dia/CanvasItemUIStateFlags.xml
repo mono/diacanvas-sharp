@@ -29,7 +29,7 @@
   <Attributes />
   <Members>
     <Member MemberName="Unselected">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemUIStateFlags Unselected;" />
+      <MemberSignature Language="C#" Value="Unselected" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
@@ -41,7 +41,7 @@
       </Docs>
     </Member>
     <Member MemberName="Selected">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemUIStateFlags Selected;" />
+      <MemberSignature Language="C#" Value="Selected" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
@@ -53,7 +53,7 @@
       </Docs>
     </Member>
     <Member MemberName="Focused">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemUIStateFlags Focused;" />
+      <MemberSignature Language="C#" Value="Focused" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
@@ -65,7 +65,7 @@
       </Docs>
     </Member>
     <Member MemberName="Grabbed">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemUIStateFlags Grabbed;" />
+      <MemberSignature Language="C#" Value="Grabbed" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
@@ -77,7 +77,7 @@
       </Docs>
     </Member>
     <Member MemberName="Unchanged">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItemUIStateFlags Unchanged;" />
+      <MemberSignature Language="C#" Value="Unchanged" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
@@ -89,7 +89,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

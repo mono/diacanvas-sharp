@@ -792,18 +792,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Handles">
-      <MemberSignature Language="C#" Value="public Collections.IList Handles { get; };" />
-      <MemberType>Property</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Collections.IList</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Collections.IList" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="AffinePointW2i">
       <MemberSignature Language="C#" Value="public void AffinePointW2i (out double x, out double y);" />
       <MemberType>Method</MemberType>
@@ -835,6 +823,19 @@
         <summary>To be added</summary>
         <param name="x">a <see cref="T:System.Double&amp;" /></param>
         <param name="y">a <see cref="T:System.Double&amp;" /></param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handles">
+      <MemberSignature Language="C#" Value="public System.Collections.IList Handles { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Collections.IList" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

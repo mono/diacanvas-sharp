@@ -9,8 +9,17 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>
+      <see cref="T:Dia.Canvas" /> holds the data structure that represents 
+    the content that is displayed in a DiaCanvasView. 
+    One DiaCanvas can have zero or more views.
+    </summary>
+    <remarks>
+    The actual objects on the canvas are represented by <see cref="T:Dia.CanvasItem" /> objects. 
+    The <see cref="T:Dia.Canvas" /> itself only holds the upper most <see cref="T:Dia.CanvasItem" /> 
+    and it holds some generic properties, like grid information and undo information. 
+    A constraint solver <see cref="T:Dia.Solver" /> is also placed in <see cref="T:Dia.Canvas" />.
+    </remarks>
   </Docs>
   <Base>
     <BaseTypeName>GLib.Object</BaseTypeName>
@@ -313,10 +322,13 @@
         <Parameter Name="gtype" Type="GLib.Type" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /></param>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.Type" /> for the <see cref="T:Dia.Canvas" />.</param>
+        <returns>a <see cref="T:Dia.Canvas" /> created using the provided <see cref="T:GLib.Type" />.</returns>
+        <remarks>
+	This is a constructor used by derivative types that would have their own 
+	<see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -327,10 +339,10 @@
         <Parameter Name="raw" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
+        <returns>a <see cref="T:Dia.Canvas" /> wrapping the C object.</returns>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -414,10 +426,17 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>
+	Gets or sets the ability of the 
+	<see cref="T:Dia.Canvas" /> to dynamically resize.
+	</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>
+	Normally, when false, the boundries of the canvas will grow or shrink 
+	depending on the position of the objects, in other words the placement of 
+	the objects determine the actual size of the <see cref="T:Dia.Canvas" />.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowUndo">
@@ -478,10 +497,10 @@
         <Parameter Name="value" Type="Dia.Rectangle" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the boundries for the <see cref="T:Dia.Canvas" />.</summary>
         <param name="value">a <see cref="T:Dia.Rectangle" /></param>
         <returns>a <see cref="T:Dia.Rectangle" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>Use this in combination with <see cref="P:Dia.Canvas.StaticExtents" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GridIntX">

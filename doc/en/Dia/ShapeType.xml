@@ -28,7 +28,7 @@
   <Attributes />
   <Members>
     <Member MemberName="None">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType None;" />
+      <MemberSignature Language="C#" Value="None" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -40,7 +40,7 @@
       </Docs>
     </Member>
     <Member MemberName="Path">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Path;" />
+      <MemberSignature Language="C#" Value="Path" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -52,7 +52,7 @@
       </Docs>
     </Member>
     <Member MemberName="Bezier">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Bezier;" />
+      <MemberSignature Language="C#" Value="Bezier" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -64,7 +64,7 @@
       </Docs>
     </Member>
     <Member MemberName="Ellipse">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Ellipse;" />
+      <MemberSignature Language="C#" Value="Ellipse" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -76,7 +76,7 @@
       </Docs>
     </Member>
     <Member MemberName="Text">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Text;" />
+      <MemberSignature Language="C#" Value="Text" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -88,7 +88,7 @@
       </Docs>
     </Member>
     <Member MemberName="Image">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Image;" />
+      <MemberSignature Language="C#" Value="Image" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -100,7 +100,7 @@
       </Docs>
     </Member>
     <Member MemberName="Widget">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Widget;" />
+      <MemberSignature Language="C#" Value="Widget" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -112,7 +112,7 @@
       </Docs>
     </Member>
     <Member MemberName="Clip">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeType Clip;" />
+      <MemberSignature Language="C#" Value="Clip" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
@@ -124,7 +124,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

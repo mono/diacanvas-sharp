@@ -1,3 +1,22 @@
+2003-10-07  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/Canvas.xml: Partial documented
+	* doc/en/Dia/CanvasElementHandle.xml: Updated by updater.exe
+	* doc/en/Dia/CanvasItem.xml: Ditto
+	* doc/en/Dia/CanvasItemFlags.xml: Ditto
+	* doc/en/Dia/CanvasItemUIStateFlags.xml: Ditto
+	* doc/en/Dia/CanvasView.xml: Ditto
+	* doc/en/Dia/CapStyle.xml: Ditto
+	* doc/en/Dia/EventMask.xml: Ditto
+	* doc/en/Dia/EventType.xml: Ditto
+	* doc/en/Dia/FillStyle.xml: Ditto
+	* doc/en/Dia/Global.xml: Ditto
+	* doc/en/Dia/JoinStyle.xml: Ditto
+	* doc/en/Dia/ShapeType.xml: Ditto
+	* doc/en/Dia/ShapeVisibility.xml: Ditto
+	* doc/en/Dia/Strength.xml: Ditto
+	* NEWS: Updated with new features for upcomming release
+	
 2003-10-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sample/sample.cs: Updated to match gtk# cvs

@@ -32,7 +32,7 @@
   <Attributes />
   <Members>
     <Member MemberName="Hidden">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeVisibility Hidden;" />
+      <MemberSignature Language="C#" Value="Hidden" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
@@ -44,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName="Visible">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeVisibility Visible;" />
+      <MemberSignature Language="C#" Value="Visible" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
@@ -56,7 +56,7 @@
       </Docs>
     </Member>
     <Member MemberName="VisibleIfSelected">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeVisibility VisibleIfSelected;" />
+      <MemberSignature Language="C#" Value="VisibleIfSelected" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
@@ -68,7 +68,7 @@
       </Docs>
     </Member>
     <Member MemberName="VisibleIfFocused">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeVisibility VisibleIfFocused;" />
+      <MemberSignature Language="C#" Value="VisibleIfFocused" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
@@ -80,7 +80,7 @@
       </Docs>
     </Member>
     <Member MemberName="VisibleIfGrabbed">
-      <MemberSignature Language="C#" Value="public static Dia.ShapeVisibility VisibleIfGrabbed;" />
+      <MemberSignature Language="C#" Value="VisibleIfGrabbed" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
@@ -92,7 +92,7 @@
       </Docs>
     </Member>
     <Member MemberName="value__">
-      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberSignature Language="C#" Value="value__" />
       <MemberType>Field</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
