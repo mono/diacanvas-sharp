@@ -151,16 +151,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <summary>
 	Converts coordinates on the <see cref="T:Dia.Canvas" /> 
 	to grid coordinates.
 	</summary>
-        <param name="x">a <see cref="T:System.Double&amp;" /></param>
-        <param name="y">a <see cref="T:System.Double&amp;" /></param>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
         <remarks>
 	If <see cref="P:Dia.Canvas.SnapToGrid" /> is set to false, 
 	no translation is done.
@@ -266,8 +266,8 @@
         <Parameter Name="handle" Type="Dia.Handle" />
         <Parameter Name="dest_x" Type="System.Double" />
         <Parameter Name="dest_y" Type="System.Double" />
-        <Parameter Name="glue_x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="glue_y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="glue_x" Type="System.Double" RefType="out" />
+        <Parameter Name="glue_y" Type="System.Double" RefType="out" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
@@ -277,8 +277,8 @@
         <param name="handle">a <see cref="T:Dia.Handle" /> to be glued to an item somewhere on the <see cref="T:Dia.Canvas" />.</param>
         <param name="dest_x">a <see cref="T:System.Double" /> to be x position of the handle.</param>
         <param name="dest_y">a <see cref="T:System.Double" /> to be y position of the handle.</param>
-        <param name="glue_x">a <see cref="T:System.Double&amp;" /> to be closest x glue point.</param>
-        <param name="glue_y">a <see cref="T:System.Double&amp;" /> to be closest y glue point.</param>
+        <param name="glue_x">a <see cref="T:System.Double" /> to be closest x glue point.</param>
+        <param name="glue_y">a <see cref="T:System.Double" /> to be closest y glue point.</param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /> the handle should connect to.</param>
         <returns>a <see cref="T:System.Double" /> representing 	the 
 	distance from the handle to the closest connection point.

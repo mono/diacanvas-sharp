@@ -250,14 +250,14 @@
         <Parameter Name="shape" Type="Dia.Shape" />
         <Parameter Name="offset" Type="System.Double" />
         <Parameter Name="n_dash" Type="System.UInt32" />
-        <Parameter Name="dash" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="dash" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
         <param name="offset">a <see cref="T:System.Double" /></param>
         <param name="n_dash">a <see cref="T:System.UInt32" /></param>
-        <param name="dash">a <see cref="T:System.Double&amp;" /></param>
+        <param name="dash">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

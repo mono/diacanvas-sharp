@@ -447,13 +447,13 @@
       <Parameters>
         <Parameter Name="shape" Type="Dia.Shape" />
         <Parameter Name="pos" Type="Dia.Point" />
-        <Parameter Name="cursor" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="cursor" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="shape">a <see cref="T:Dia.Shape" /></param>
         <param name="pos">a <see cref="T:Dia.Point" /></param>
-        <param name="cursor">a <see cref="T:System.Int32&amp;" /></param>
+        <param name="cursor">a <see cref="T:System.Int32" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>

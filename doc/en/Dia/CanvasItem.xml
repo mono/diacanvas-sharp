@@ -233,13 +233,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Double&amp;" /></param>
-        <param name="y">a <see cref="T:System.Double&amp;" /></param>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -586,13 +586,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="x" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Double" RefType="out" />
+        <Parameter Name="y" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Double&amp;" /></param>
-        <param name="y">a <see cref="T:System.Double&amp;" /></param>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -604,18 +604,18 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="affine" Type="System.Double[]" />
-        <Parameter Name="x1" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y1" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="x2" Type="System.Double&amp;" RefType="out" />
-        <Parameter Name="y2" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="x1" Type="System.Double" RefType="out" />
+        <Parameter Name="y1" Type="System.Double" RefType="out" />
+        <Parameter Name="x2" Type="System.Double" RefType="out" />
+        <Parameter Name="y2" Type="System.Double" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="affine">a <see cref="T:System.Double[]" /></param>
-        <param name="x1">a <see cref="T:System.Double&amp;" /></param>
-        <param name="y1">a <see cref="T:System.Double&amp;" /></param>
-        <param name="x2">a <see cref="T:System.Double&amp;" /></param>
-        <param name="y2">a <see cref="T:System.Double&amp;" /></param>
+        <param name="x1">a <see cref="T:System.Double" /></param>
+        <param name="y1">a <see cref="T:System.Double" /></param>
+        <param name="x2">a <see cref="T:System.Double" /></param>
+        <param name="y2">a <see cref="T:System.Double" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

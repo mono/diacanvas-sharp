@@ -447,14 +447,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="affine" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="affine" Type="System.Double" RefType="out" />
         <Parameter Name="clip" Type="Art.SVP" />
         <Parameter Name="flags" Type="System.Int32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="affine">a <see cref="T:System.Double&amp;" /></param>
+        <param name="affine">a <see cref="T:System.Double" /></param>
         <param name="clip">a <see cref="T:Art.SVP" /></param>
         <param name="flags">a <see cref="T:System.Int32" /></param>
         <returns>a <see cref="T:Art.SVP" /></returns>
@@ -469,14 +469,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="item" Type="Dia.CanvasViewItem" />
-        <Parameter Name="affine" Type="System.Double&amp;" RefType="out" />
+        <Parameter Name="affine" Type="System.Double" RefType="out" />
         <Parameter Name="clip_path" Type="Art.SVP" />
         <Parameter Name="flags" Type="System.Int32" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
-        <param name="affine">a <see cref="T:System.Double&amp;" /></param>
+        <param name="affine">a <see cref="T:System.Double" /></param>
         <param name="clip_path">a <see cref="T:Art.SVP" /></param>
         <param name="flags">a <see cref="T:System.Int32" /></param>
         <returns>a <see cref="T:Art.SVP" /></returns>

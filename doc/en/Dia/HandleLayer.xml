@@ -159,14 +159,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="handle" Type="Dia.Handle" />
-        <Parameter Name="x" Type="System.Int32&amp;" RefType="out" />
-        <Parameter Name="y" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="x" Type="System.Int32" RefType="out" />
+        <Parameter Name="y" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
         <param name="handle">a <see cref="T:Dia.Handle" /></param>
-        <param name="x">a <see cref="T:System.Int32&amp;" /></param>
-        <param name="y">a <see cref="T:System.Int32&amp;" /></param>
+        <param name="x">a <see cref="T:System.Int32" /></param>
+        <param name="y">a <see cref="T:System.Int32" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
