@@ -1,3 +1,7 @@
+2004-08-04  Mario Fuentes  <mario@gnome.cl>
+
+	* sample/CanvasClock.cs: Fixed Clock's hand size.
+
 2004-08-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* configure.in: Bump version

@@ -53,22 +53,22 @@ public class CanvasClock : CanvasElement {
 		//circle.RequestUpdate ();
 		
 		t = sec * Math.PI / 21600.0;
-		p = new Point (Math.Sin (t) * r * 0.7 * center.X,
-				-Math.Cos (t) * r * 0.7 * center.Y);
+		p = new Point (Math.Sin (t) * r * 0.7 + center.X,
+				-Math.Cos (t) * r * 0.7 + center.Y);
 		hours.Line (center, p);
 		ShapePath.SetLineWidth (hours, 5.0);
 		hours.RequestUpdate ();
 
 		t = sec * Math.PI / 1800.0;
-		p = new Point (Math.Sin (t) * r * 0.85 * center.X,
-				-Math.Cos (t) * r * 0.85 * center.Y);
+		p = new Point (Math.Sin (t) * r * 0.85 + center.X,
+				-Math.Cos (t) * r * 0.85 + center.Y);
 		minutes.Line (center, p);
 		ShapePath.SetLineWidth (minutes, 4.0);
 		minutes.RequestUpdate ();
 			
 		t = sec * Math.PI / 30.0;
-		p = new Point (Math.Sin (t) * r * 0.9 * center.X,
-				-Math.Cos (t) * r * 0.9 * center.Y);
+		p = new Point (Math.Sin (t) * r * 0.9 + center.X,
+				-Math.Cos (t) * r * 0.9 + center.Y);
 		seconds.Line (center, p);
 		seconds.Color = 242424;
 		ShapePath.SetLineWidth (seconds, 3.0);
