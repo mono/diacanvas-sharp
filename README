@@ -3,7 +3,8 @@ Requirements
 ============
 
 mono-0.26
-gtk-sharp-0.11
+gtk-sharp-0.12 whent it arrives,
+for now use the cvs version
 diacanvas2-0.93 when it arrives, 
 for now use the cvs version.
 

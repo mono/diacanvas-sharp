@@ -1,3 +1,8 @@
+2003-09-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* README: Now targeting Gtk# cvs
+	* sample/sample.cs: Added Gnome.Print example
+
 2003-09-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* README: Updated for 0.1 release

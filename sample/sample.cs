@@ -1,4 +1,5 @@
 /// DiaCanvas# sample
+///
 /// Copyright (C) 2003  Martin Willemoes Hansen <mwh@sysrq.dk>
 /// 
 /// This program is free software; you can redistribute it and/or modify
@@ -25,6 +26,7 @@ using GtkSharp;
 using Gdk;
 using Pango;
 using Glade;
+using Gnome;
 
 public class Sample {
 
@@ -32,14 +34,14 @@ public class Sample {
 	[Glade.Widget] ScrolledWindow scrolledwindow;
 
 	CanvasView view;
-	Canvas canvas;
+	Dia.Canvas canvas;
 
 	public Sample() 
 	{
 		XML gui = new XML (null, "glade/gui.glade", "main", null);
 		gui.Autoconnect (this);
 
-		canvas = new Canvas();
+		canvas = new Dia.Canvas();
 		canvas.AllowUndo = true;
 		view = new CanvasView (canvas, true);
 		main.KeyPressEvent += new KeyPressEventHandler (CtrlPressed);
@@ -62,7 +64,7 @@ public class Sample {
 	}
 
 	void CreateItemsProgramatically() {
-		CanvasLine line = new CanvasLine();
+		Dia.CanvasLine line = new Dia.CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
 		line.HeadPos = new Dia.Point (50, 50);;
@@ -77,7 +79,7 @@ public class Sample {
 		box.Color = 2134231;
 		canvas.Root.Add (box);
 
-		CanvasText text = new CanvasText();
+		Dia.CanvasText text = new Dia.CanvasText();
 		text.Move (250, 150);
 		text.Text = "Hello, World!";
 		//text.Font = FontDescription.FromString ("sans 20");
@@ -117,7 +119,7 @@ public class Sample {
 
 	void LineTool (object sender, EventArgs args)
 	{
-		view.Tool = new PlacementTool (typeof (CanvasLine), 
+		view.Tool = new PlacementTool (typeof (Dia.CanvasLine), 
 					       "line_width", 4, 
 					       "color", 480975); 
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
@@ -188,36 +190,34 @@ public class Sample {
 
 	void Print (object sender, EventArgs args)
 	{
-		/*
-		GtkWidget *dialog;
-		gint response;
-		GnomePrintJob *pj = gnome_print_job_new(NULL);
-		GnomePrintContext *ctx;
-		//gnome_print_master_print_to_file(pm, "test.ps");
-
-		dialog = gnome_print_dialog_new (pj, "Sample print dialog", 0);
-		// Run the dialog
-		gtk_widget_show (dialog);
-		response = gtk_dialog_run (GTK_DIALOG (dialog));
-		if (response == GNOME_PRINT_DIALOG_RESPONSE_CANCEL) {
-			g_print ("Printing was canceled\n");
-		} else {
-			gnome_print_job_print_to_file(pj, "test.ps");
-			ctx = gnome_print_job_get_context (pj);
-			gnome_print_beginpage(ctx, "demo");
-			dia_export_print (pj, canvas);
-			gnome_print_showpage(ctx);
-			gnome_print_job_close(pj);
-
-			if (response == GNOME_PRINT_DIALOG_RESPONSE_PRINT)
-				gnome_print_job_print(pj);
-			else if (response == GNOME_PRINT_DIALOG_RESPONSE_PREVIEW)
-				gtk_widget_show (GTK_WIDGET (gnome_print_job_preview_new (pj, //gnome_print_job_get_config(pj),
-							"Title goes here")));
+		PrintJob pj = new PrintJob (PrintConfig.Default());
+		PrintDialog dialog = new PrintDialog (pj, "Sample print dialog", 0);
+		int response = dialog.Run();
+		
+		// PrintButtons.Cancel
+		if (response == -6) {
+			Console.WriteLine ("Canceled");
+			dialog.Destroy();
+			return;
 		}
-		gtk_widget_hide(dialog);
-		gtk_widget_destroy (dialog);
-		*/
+
+		pj.PrintToFile ("diagram.ps");
+		PrintContext ctx = pj.Context;
+		Gnome.Print.Beginpage (ctx, "demo"); 
+		Dia.Global.ExportPrint (pj.Handle, canvas);
+		Gnome.Print.Showpage (ctx);
+		pj.Close();
+		
+		switch (response) {
+		case (int)PrintButtons.Print: 
+			pj.Print(); 
+			break;
+		case (int) PrintButtons.Preview:
+			new PrintJobPreview (pj, "Diagram").Show();
+			break;
+		}
+
+		dialog.Destroy();
 	}
 
 	void Undo (object sender, EventArgs args) { canvas.PopUndo(); }
