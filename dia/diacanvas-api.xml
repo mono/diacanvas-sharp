@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<api><!--
+<api
+><!--
 
         This file was automatically generated.
         Please DO NOT MODIFY THIS FILE, modify .metadata files instead.
@@ -435,7 +436,7 @@
         <return-type type="void" />
       </method>
     </object>
-    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement" disabledefaultconstructor="1">
+    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement" disabledefaultconstructor="1" disable_void_ctor="1">
       <field cname="color" type="DiaColor" />
       <field cname="fill_color" type="DiaColor" />
       <field cname="border_width" type="gdouble" />
@@ -511,7 +512,7 @@
         </parameters>
       </method>
     </object>
-    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement" disabledefaultconstructor="1">
+    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement" disabledefaultconstructor="1" disable_void_ctor="1">
       <field cname="pixbuf" type="GdkPixbuf*" />
       <field cname="clip" type="//DiaShape*" />
       <field cname="image" type="DiaShape*" />
@@ -839,7 +840,7 @@
         <return-type type="void" />
       </method>
     </object>
-    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem" disabledefaultconstructor="1">
+    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem" disabledefaultconstructor="1" disable_void_ctor="1">
       <field cname="line_width" type="gdouble" />
       <field cname="color" type="DiaColor" />
       <field cname="cap" type="DiaCapStyle" />
@@ -904,7 +905,7 @@
         <return-type type="GType" />
       </method>
     </object>
-    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem" disabledefaultconstructor="1">
+    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem" disabledefaultconstructor="1" disable_void_ctor="1">
       <field cname="text" type="GString*" />
       <field cname="width" type="gdouble" />
       <field cname="height" type="gdouble" />

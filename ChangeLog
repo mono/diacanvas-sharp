@@ -1,3 +1,8 @@
+2004-07-10  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/Dia.metadata: replaced disabledefaultconstructor 
+	  with disable_void_ctor, thanks tberman
+
 2004-07-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* configure.in: Targets Mono-1.0, Gtk#-1.0 and DiaCanvas2-0.13.0

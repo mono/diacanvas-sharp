@@ -9,8 +9,8 @@
   <attr path="//interface[@cname='DiaCanvasEditable']/method[@name='TextChanged']" name="name">ChangeText</attr>
   <attr path="//interface[@cname='DiaCanvasGroupable']/signal[@name='Add']" name="name">Added</attr>
   <attr path="//interface[@cname='DiaCanvasGroupable']/signal[@name='Remove']" name="name">Removed</attr>
-  <attr path="//object[@cname='DiaCanvasBox']" name="disabledefaultconstructor">1</attr>
-  <attr path="//object[@cname='DiaCanvasImage']" name="disabledefaultconstructor">1</attr>
+  <attr path="//object[@cname='DiaCanvasBox']" name="disable_void_ctor">1</attr>
+  <attr path="//object[@cname='DiaCanvasImage']" name="disable_void_ctor">1</attr>
   <attr path="//object[@cname='DiaCanvasItem']/method[@name='AffinePointI2w']/*/*[@type='gdouble*']" name="pass_as">out</attr>
   <attr path="//object[@cname='DiaCanvasItem']/method[@name='AffinePointW2i']/*/*[@type='gdouble*']" name="pass_as">out</attr>
   <attr path="//object[@cname='DiaCanvasItem']/method[@name='Connect']" name="name">MakeConnect</attr>
@@ -22,10 +22,10 @@
   <attr path="//object[@cname='DiaCanvasItem']/signal[@name='Disconnect']" name="name">Disconnected</attr>
   <attr path="//object[@cname='DiaCanvasItem']/signal[@name='Event']" name="hidden">1</attr>
   <attr path="//object[@cname='DiaCanvasItem']/signal[@name='Move']" name="name">Moved</attr>
-  <attr path="//object[@cname='DiaCanvasLine']" name="disabledefaultconstructor">1</attr>
+  <attr path="//object[@cname='DiaCanvasLine']" name="disable_void_ctor">1</attr>
   <attr path="//object[@cname='DiaCanvasLine']/property[@name='Dash']" name="hidden">1</attr>
   <attr path="//object[@cname='DiaCanvas']/method[@name='SnapToGrid']" name="name">SnapToGridCoordinates</attr>
-  <attr path="//object[@cname='DiaCanvasText']" name="disabledefaultconstructor">1</attr>
+  <attr path="//object[@cname='DiaCanvasText']" name="disable_void_ctor">1</attr>
   <attr path="//object[@cname='DiaCanvasText']/signal[@name='TextChanged']" name="hidden">1</attr>
   <attr path="//object[@cname='DiaCanvasView']/signal[@name='FocusItem']" name="name">FocusedItem</attr>
   <attr path="//object[@cname='DiaCanvasView']/signal[@name='SelectItem']" name="name">SelectedItem</attr>
