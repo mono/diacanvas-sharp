@@ -83,7 +83,6 @@ dia/makefile
 doc/makefile
 doc/en/makefile
 doc/en/Dia/makefile
-doc/en/DiaSharp/makefile
 glue/makefile
 sample/makefile
 sample/pixmaps/makefile
