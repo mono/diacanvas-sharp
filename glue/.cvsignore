@@ -1,2 +1,6 @@
 makefile
 makefile.in
+libdiacanvassharpglue.la
+*.lo
+.libs
+.deps

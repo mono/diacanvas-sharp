@@ -5,6 +5,8 @@ config.log
 config.status
 config.sub
 configure
+libtool
+ltmain.sh
 makefile
 makefile.in
 install-sh
