@@ -1,3 +1,9 @@
+2003-09-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* makefile: shortend a bit, and disabled auto generation of 
+	api xml files
+	* api/makefile: Added installation target
+
 2003-09-13  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sources/Dia.metadata: Hide references to DiaShapeViewInfo, cause

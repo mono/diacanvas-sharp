@@ -16,5 +16,9 @@ all: generated-stamp
 generated-stamp: $(API) 
 	gapi_codegen.exe --include $(INCLUDE_API) --generate $(API) && touch generated-stamp
 
+install:
+	install -o root -g root -m 644 dia-api.xml $(PREFIX)/share/gapi
+	install -o root -g root -m 644 dia-symbols.xml $(PREFIX)/share/gapi
+
 clean:
 	rm -f generated-stamp
