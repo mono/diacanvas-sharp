@@ -1,9 +1,8 @@
 0.3.0
 =====
 
-* Works with DiaCanvas2-0.10.0
-* Works with Gtk-sharp-0.13.0
 * Autoconf enabled
+* CanvasLine API Documented
 
 0.2.0
 =====
