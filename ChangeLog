@@ -1,3 +1,26 @@
+2003-10-29  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* glue/dia-canvas-line.c: Removed point struct marshalling workaround.
+	  Added DiaDashStyle workaround.
+	* sources/Dia.metadata: Moved this metadata to dia/Dia.metadata 
+	  in the new format.	  
+	* dia/Dia.metadata: Removed the hiding of properties
+	  CanvasLine.HeadPos and CanvasLine.TailPos, no need to work
+	  around struct marshalling bug.
+	* dia/diacanvas-api.xml: Regenerated	  
+	* dia/CanvasLine.custom: Removed workaround for struct marshalling bug.
+	* dia/DashStyle.cs: Added
+	* dia/CanvasLine.custom: Added new custom Dash property
+	* dia/makefile: Updated to use new metadata.
+	* dia/PlacementTool: Rewritten to use reflection.
+	* sample/sample.cs: Updated to make use of new DashStyle
+	* doc/en/Dia/Canvas.xml: Documented method SnapToGridCoordinates.
+	* doc/en/diacanvas-docs.zip: Reflects the documentation above
+	* NEWS: Added bugfixes
+	* ChangeLog: Removed fixed stuff, which does not need to be
+	  workedaround anymore.
+	* README: Targets gtk#-0.12
+
 2003-10-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/Dia/Canvas.xml: Fixed <ThreadSafetyStatement> content, 

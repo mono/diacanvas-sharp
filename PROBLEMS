@@ -81,15 +81,6 @@ o dia-canvas-view.h
 ================================================================================
 
 
-Wrong EventHandler
-------------------
-
-event Canvas.Item.Event has the wrong event handler DiaSharp.EventHandler, it
-should just have System.EventHandler
-
-================================================================================
-
-
 Character encoding problem (FIXED)
 ----------------------------------
 
@@ -121,57 +112,5 @@ It probably is a character encoding problem from Uni16 to utf-8/ascii.
 ************
 
 Marshal.StringToHGlobalAnsi ("string")
-
-================================================================================
-
-
-DiaPoint Boxing problem (Fixed)
--------------------------------
-
-The following code (DiaCanvas#):
-	CanvasLine line = new CanvasLine();
-  	line.HeadPos = new Dia.Point (50, 50);
-produces this stacktrace:
-
-Unhandled Exception: System.NullReferenceException: A null value was found where an object instance was required
-in (unmanaged) 06 GLib.Object:g_object_set_property (intptr,string,intptr)
-in <0x00004> 06 GLib.Object:g_object_set_property (intptr,string,intptr)
-in <0x00040> 00 GLib.Object:SetProperty (string,GLib.Value)
-in <0x000bc> 00 Dia.CanvasLine:set_HeadPos (Dia.Point)
-in <0x000e5> 00 .Sample:CreateItemsProgramatically ()
-in <0x001a5> 00 .Sample:.ctor ()
-in <0x00023> 00 .Sample:Main ()
-
-Dia.Point is a struct:
-	[StructLayout(LayoutKind.Sequential)]
-        public struct Point { ... }
-
-It does not have a Handle and thus shall be marshalled to the c world.
-
-
-The code of the set property of HeadPos:
- 	SetProperty("head_pos", new GLib.Value(Handle, "head_pos", new GLib.Boxed (value)));
-
-The boxed type: new GLib.Boxed (value), does not have a valid Handle.
-
-The code for the ctor of the Value type:
-	public Value (IntPtr obj, string prop_name, Boxed val)
-	{
-		_val = gtksharp_value_create_from_property (obj, prop_name);
-		//g_value_set_boxed (_val, val.Handle);
-	}
-
-This ctor looks halfbaked. val.Handle is 0, cause the Point does not have a
-valid handle, it has not been marshalled yet.
-
-So some kind of magic needs to be done, to marshall the Boxed value and keep
-track of resources etc.
-
-************
-* Solution *
-************
-
-Glue code to create a native c DiaPoint, this is a workaround, bug 47168 
-has been posted.
 
 ================================================================================

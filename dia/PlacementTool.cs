@@ -5,6 +5,7 @@
 // Copyright (C) 2003 Martin Willemoes Hansen
 
 using System;
+using System.Reflection;
 
 namespace Dia {
 
@@ -41,13 +42,25 @@ namespace Dia {
 
 		CanvasItem CreateItem()
 		{
-			CanvasItem item = (CanvasItem) Activator.CreateInstance (type);
-			
+			object item =  Activator.CreateInstance (type);
+
+			Binder binder = Type.DefaultBinder;
+			for (int i = 0; i < properties.Length; i += 2) {
+				PropertyInfo prop = type.GetProperty ((string)properties [i]);
+				Type t = prop.PropertyType;
+				object o = binder.ChangeType (properties [i + 1], t, null);
+				prop.SetValue (item, o, null);
+			}
+
+			return (CanvasItem) item;
+
+			/* When array marshalling works this can replace the above
+
 			for (int i = 0; i < properties.Length; i += 2) {
 				item.SetProperty ((string)properties [i], 
 						  new GLib.Value (properties [i + 1]));				
 			}
-			return item;
+			*/
 		}
 
 		void MoveItem (CanvasView view, Gdk.EventButton evnt, CanvasItem item)

@@ -10,35 +10,14 @@ public CanvasLine() {
         Raw = ItemCreate (CanvasLine.GType).Handle;
 }
 
-// Struct marshalling bug workaround
+[DllImport("diacanvassharpglue")]
+extern static void diasharp_canvas_line_set_dash_style_property (IntPtr line, 
+								 double dash_on, 
+								 double dash_off);
 
-[DllImport ("diacanvassharpglue")]
-extern static void diasharp_canvas_line_set_point_property (IntPtr line,
-							    string property,
-							    double x, double y);
-
-public Dia.Point HeadPos {
-	get { return GetPointProperty ("head_pos"); }
-	set { SetPointProperty ("head_pos", value); }
+public DashStyle Dash {
+	set {
+		diasharp_canvas_line_set_dash_style_property (Handle, value.DashOn, 
+							      value.DashOff);
+	}
 }
-
-public Dia.Point TailPos {
-	get { return GetPointProperty ("tail_pos"); }
-	set { SetPointProperty ("tail_pos", value); }
-}
-
-Dia.Point GetPointProperty (string property) {
-	GLib.Value val = new GLib.Value (Handle, property);
-	GetProperty(property, val);
-	System.IntPtr raw_ret = (System.IntPtr) (GLib.Boxed) val;
-	Dia.Point ret = Dia.Point.New (raw_ret);
-	return ret;
-}
-
-void SetPointProperty (string property, Dia.Point point) {
-	diasharp_canvas_line_set_point_property (Handle, property, 
-						 point.x, point.y);
-}
-
-
-

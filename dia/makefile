@@ -1,15 +1,14 @@
 PREFIX=		/usr
 
-API=            diacanvas-api.xml     \
-                diacanvas-symbols.xml
+APIS=		diacanvas-api.xml diacanvas-symbols.xml
 
-INCLUDE_API=    $(PREFIX)/share/gapi/art-api.xml                \
-                $(PREFIX)/share/gapi/pango-api.xml              \
-                $(PREFIX)/share/gapi/atk-api.xml                \
-                $(PREFIX)/share/gapi/gnome-api.xml              \
-                $(PREFIX)/share/gapi/gtk-api.xml                \
-                $(PREFIX)/share/gapi/gdk-api.xml                \
-                $(PREFIX)/share/gapi/gdk-symbols.xml
+INCLUDE_APIS=	$(PREFIX)/share/gapi/art-api.xml                \
+		$(PREFIX)/share/gapi/pango-api.xml              \
+		$(PREFIX)/share/gapi/atk-api.xml                \
+		$(PREFIX)/share/gapi/gnome-api.xml              \
+		$(PREFIX)/share/gapi/gtk-api.xml                \
+		$(PREFIX)/share/gapi/gdk-api.xml                \
+		$(PREFIX)/share/gapi/gdk-symbols.xml
 
 ASSEMBLIES=	-r gtk-sharp.dll \
 		-r glib-sharp.dll \
@@ -22,8 +21,9 @@ LIBRARY=	diacanvas-sharp.dll
 
 all: $(LIBRARY)
 
-generated-stamp: $(API) *.custom
-	gapi_codegen.exe --include $(INCLUDE_API) --generate $(API) \
+generated-stamp: $(APIS) *.custom Dia.metadata
+	gapi-fixup.exe --api=diacanvas-api.xml --metadata=Dia.metadata && \
+	gapi_codegen.exe --include $(INCLUDE_APIS) --generate $(APIS) \
 	--outdir=generated --customdir=. --assembly-name=diacanvas-sharp && touch generated-stamp
 
 $(LIBRARY): generated-stamp *.cs

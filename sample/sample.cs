@@ -67,6 +67,8 @@ public class Sample {
 		Dia.CanvasLine line = new Dia.CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
+		DashStyle style = new DashStyle (10);
+		line.Dash = style;
 		line.HeadPos = new Dia.Point (50, 50);;
 		line.TailPos = new Dia.Point (100, 150);
 		line.Cap = Dia.CapStyle.Butt;
@@ -121,8 +123,8 @@ public class Sample {
 	void LineTool (object sender, EventArgs args)
 	{
 		view.Tool = new PlacementTool (typeof (Dia.CanvasLine), 
-					       "line_width", 4, 
-					       "color", 480975); 
+					       "LineWidth", 8, 
+					       "Color", 480975UL); 
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
@@ -136,9 +138,9 @@ public class Sample {
 	{
 		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
 		view.Tool = new PlacementTool (typeof (CanvasImage), 
-					       "image", pixbuf,
-					       "width", pixbuf.Width,
-					       "height", pixbuf.Height);
+					       "Image", pixbuf,
+					       "Width", pixbuf.Width,
+					       "Height", pixbuf.Height);
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 

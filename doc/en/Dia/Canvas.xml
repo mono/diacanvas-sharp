@@ -155,10 +155,16 @@
         <Parameter Name="y" Type="System.Double" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>
+	Converts coordinates on the <see cref="T:Dia.Canvas" /> 
+	to grid coordinates.
+	</summary>
         <param name="x">a <see cref="T:System.Double" /></param>
         <param name="y">a <see cref="T:System.Double" /></param>
-        <remarks>To be added</remarks>
+        <remarks>
+	If <see cref="P:Dia.Canvas.SnapToGrid" /> is set to false, 
+	no translation is done.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveConstraint">
