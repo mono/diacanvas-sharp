@@ -1,9 +1,11 @@
-INCLUDE_API=	/usr/share/gapi/art-api.xml		\
-		/usr/share/gapi/pango-api.xml		\
-		/usr/share/gapi/atk-api.xml  		\
-		/usr/share/gapi/gnome-api.xml    	\
-		/usr/share/gapi/gtk-api.xml		\
-		/usr/share/gapi/gdk-api.xml  		\
+PREFIX=		/usr
+
+INCLUDE_API=	$(PREFIX)/share/gapi/art-api.xml		\
+		$(PREFIX)/share/gapi/pango-api.xml		\
+		$(PREFIX)/share/gapi/atk-api.xml  		\
+		$(PREFIX)/share/gapi/gnome-api.xml    	\
+		$(PREFIX)/share/gapi/gtk-api.xml		\
+		$(PREFIX)/share/gapi/gdk-api.xml  		\
 
 all:
 	gapi_codegen.exe --include $(INCLUDE_API) --generate dia-api.xml

@@ -1,0 +1,13 @@
+====
+Make
+====
+
+If you use another prefix than /usr then you can specify it to make like
+this: make -e PREFIX=/myprefix
+
+======
+Sample
+======
+
+If you get an error about not being able to find dia-sharp.dll
+then check if your MONO_PATH env. var. contains the path to it.

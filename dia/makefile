@@ -1,3 +1,5 @@
+PREFIX=		/usr
+
 ASSEMBLIES=	-r gtk-sharp.dll \
 		-r glib-sharp.dll \
 		-r gnome-sharp.dll \
@@ -11,7 +13,7 @@ all:	generated/*.cs
 	mcs --unsafe --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
-	install -o root -g root -m 644 $(LIBRARY) /usr/lib
+	install -o root -g root -m 644 $(LIBRARY) $(PREFIX)/lib
 
 clean:
 	rm -f $(LIBRARY)
