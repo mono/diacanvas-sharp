@@ -1,3 +1,9 @@
+0.6.0
+=====
+
+* Fixed passing of an array of points to 
+  Shape.Bezier, Shape.Polygon and Shape.Polyline.
+
 0.5.1
 =====
 

@@ -35,6 +35,9 @@
   <attr path="/api/namespace/struct[@cname='DiaExpression']" name="hidden">1</attr>
   <attr path="/api/namespace/struct[@cname='DiaShape']/method[@name='GetViewInfo']" name="hidden">1</attr>
   <attr path="/api/namespace/struct[@cname='DiaShape']" name="opaque">1</attr>
+  <attr path="/api/namespace/struct[@cname='DiaShape']/method[@name='Bezier']/*/*[@name='points']" name="array">1</attr>
+  <attr path="/api/namespace/struct[@cname='DiaShape']/method[@name='Polygon']/*/*[@name='points']" name="array">1</attr>
+  <attr path="/api/namespace/struct[@cname='DiaShape']/method[@name='Polyline']/*/*[@name='points']" name="array"></attr>
   <attr path="/api/namespace/struct[@cname='DiaShapeViewInfo']" name="hidden">1</attr>
   <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='AddUndoAction']" name="name">AddedUndoAction</attr>
   <attr path="/api/namespace/interface[@cname='DiaUndoManager']/signal[@name='DiscardTransaction']" name="name">DiscardedTransaction</attr>

@@ -1,3 +1,8 @@
+2005-04-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/Dia.metadata: Fixed some array passing bugs
+	* NEWS: Updated for new release
+
 2005-01-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sources/diacanvas-sharp-sources.xml: Target DiaCanvas2-0.14.2
