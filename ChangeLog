@@ -1,3 +1,7 @@
+2004-07-28  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/Dia.metadata: Use /api/namespace like gtk#
+
 2004-07-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* COPYING: Changed from GNU GPL to GNU LGPL
