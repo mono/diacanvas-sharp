@@ -3,43 +3,74 @@ using System;
 using Dia;
 using Gtk;
 using GtkSharp;
+using Glade;
 
 public class Sample {
 
-	static void Main()
+	[Glade.Widget] Window main;
+	[Glade.Widget] ScrolledWindow scrolledwindow;
+
+	CanvasView view;
+
+	public Sample() 
 	{
-       		Application.Init();
+		XML gui = new XML ("glade/gui.glade", "main", null);
+		gui.Autoconnect (this);
 
 		Dia.Canvas canvas = new Dia.Canvas();
-		CanvasView view = new CanvasView (canvas, true);
+		view = new CanvasView (canvas, true);
+		scrolledwindow.Add (view);
+		SetupTools();
 
-		Tool tool = new PlacementTool (CanvasLine.GType);
-		tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
-		view.Tool = tool;
-
-		ScrolledWindow scrwin = new ScrolledWindow();
-		scrwin.SetPolicy (PolicyType.Always, PolicyType.Always);
-		scrwin.Add (view);
-		
-		Window window = new Window ("DiaCanvas C# sample");
-		window.SetDefaultSize (300, 225);
-		window.DeleteEvent += new DeleteEventHandler (Quit);
-
-		window.Add (scrwin);
-		window.ShowAll();
-		Application.Run();
+		main.ShowAll();
 	}
 
-	static void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
+	[Glade.Widget] Image image1, image2, image3, image4;
+	void SetupTools()
 	{
-		Console.WriteLine ("Event worked!");
-		Console.WriteLine (args.View.Tool);
+		image1.Pixbuf = new Gdk.Pixbuf (null, "pixmaps/selection.png");
+		image2.Pixbuf = new Gdk.Pixbuf (null, "pixmaps/line.png");
+		image3.Pixbuf = new Gdk.Pixbuf (null, "pixmaps/box.png");
+		//image4.Pixbuf = new Gdk.Pixbuf (null, "pixmaps/text.png");
+	}
+
+	void SelectionTool (object sender, EventArgs args)
+	{
+		view.Tool = new StackTool();
+	}
+
+	void LineTool (object sender, EventArgs args)
+	{
+		view.Tool = new PlacementTool (Dia.CanvasLine.GType);
+		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+	}
+
+	void BoxTool (object sender, EventArgs args)
+	{
+		view.Tool = new PlacementTool (Dia.CanvasBox.GType);
+		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+	}
+
+	void TextTool (object sender, EventArgs args)
+	{
+		view.Tool = new PlacementTool (Dia.CanvasText.GType);
+		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+	}
+
+	void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
+	{
 		args.View.Tool = new StackTool();
 	}
 
-	static void Quit (object sender, DeleteEventArgs args) 
+	void Quit (object sender, EventArgs args)
 	{
 		Application.Quit();
-		args.RetVal = true;
+	}
+
+	static void Main()
+	{
+		Application.Init();
+		new Sample();
+		Application.Run();
 	}
 }
