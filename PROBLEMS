@@ -1,22 +1,3 @@
-Array fields are not generated properly
----------------------------------------
-
-warning: array field Dia.ShapeText.affine probably incorrectly generated
-warning: array field Dia.CanvasIter.data probably incorrectly generated
-warning: array field Dia.ShapeImage.affine probably incorrectly generated
-
-This seems to be a problem with the generator.
-Array marshalling is not implemented in mono yet.
-
-The xml has a format of:
-      	<field cname="dash" array_len="1" type="gdouble"/>
-
-The generated C# code is like this:
-      	public IntPtr dash;
-
-================================================================================
-
-
 Type missing problems
 ---------------------
 

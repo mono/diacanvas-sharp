@@ -1,3 +1,8 @@
+2004-01-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* PROBLEMS: Removed problem with array fields not generated
+	properly, they are now generated properly in latest gtk# cvs.
+
 2004-01-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/diacanvas-api.xml: Regenerated with gtk#-0.15
