@@ -6,6 +6,7 @@
 	* dia/CanvasLine.custom: Added get/set property for HeadPos and TailPos
 	* sources/Dia.metadata: Hide HeadPos and TailPos in CanvasLine
 	* PROBLEMS: Updated with solutions
+	* CREDITS: Added
 
 2003-08-12  Martin Willemoes Hansen  <mwh@sysrq.dk>
 	
