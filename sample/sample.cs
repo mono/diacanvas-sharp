@@ -65,8 +65,8 @@ public class Sample {
 		line.Color = 8327327;
 		DashStyle style = new DashStyle (10);
 		line.Dash = style;
-		line.HeadPos = new Dia.Point (50, 50);;
-		line.TailPos = new Dia.Point (100, 150);
+		line.HeadPos = new Dia.Point (50, 70);;
+		line.TailPos = new Dia.Point (100, 170);
 		line.Cap = Dia.CapStyle.Butt;
 		line.Move (100, 150);
 		canvas.Root.Add (line);
@@ -82,11 +82,11 @@ public class Sample {
 		text.Text = "Hello, World!";
 		text.Font = FontDescription.FromString ("sans 20");
 		text.Height = 50;
-		text.Width = 200;
+		text.Width = 190;
 		canvas.Root.Add (text);
 
 		CanvasTextBox textbox = new CanvasTextBox();
-		textbox.Move (50, 150);
+		textbox.Move (50, 120);
 		canvas.Root.Add (textbox);
 
 		//Exposes some bug

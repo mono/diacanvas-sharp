@@ -21,18 +21,13 @@
 
 namespace Dia {
 	public class DashStyle {
-		double dash_on;
-		double dash_off;
+		double dash_size;
 
-		public DashStyle (double dash_on, double dash_off)
+		public DashStyle (double dash_size)
 		{
-			this.dash_on = dash_on < 0 ? 0 : dash_on;
-			this.dash_off = dash_off < 0 ? 0 : dash_off;
+			this.dash_size = dash_size < 0 ? 0 : dash_size;
 		}
 
-		public DashStyle (double dash_on) : this (dash_on, 0) {}
-
-		public double DashOn { get { return dash_on; } }
-		public double DashOff { get { return dash_off; } }
+		public double DashSize { get { return dash_size; } }
 	}
 }

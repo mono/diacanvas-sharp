@@ -2,9 +2,14 @@
 = DiaCanvas# =
 ==============
 
+Misc
+----
+Remove DashStyle if more than one dash size 
+is not posible soon.
+
+
 Private API which should be hidden:
 ----------------------------------
-
 Dia.CanvasViewItem.AddItems Method
 Dia.CanvasViewItem.RequestRedrawUta
 Dia.CanvasViewItem.Foreach Method

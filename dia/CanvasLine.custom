@@ -23,12 +23,11 @@ public CanvasLine() : base (GType) {}
 
 [DllImport("diacanvassharpglue")]
 extern static void diasharp_canvas_line_set_dash_style_property (IntPtr line, 
-								 double dash_on, 
-								 double dash_off);
+								 double dash_size);
 
 public DashStyle Dash {
 	set {
-		diasharp_canvas_line_set_dash_style_property (Handle, value.DashOn, 
-							      value.DashOff);
+		diasharp_canvas_line_set_dash_style_property (Handle, 
+							      value.DashSize);
 	}
 }

@@ -1,3 +1,14 @@
+2004-08-01  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/glue/dia-canvas-line.c: Added, more than one dash, test code.
+	  Changed signature to only specify one dash size.
+	* dia/CanvasLine.custom: Ditto
+	* dia/DashStyle.cs: Ditto
+	* TODO: Maybe remove DashStyle if support for more than one
+	  dashstyle is far out in the future.
+	* sample/CanvasTextBox.cs: Make text fit
+	* sample/sample.cs: Ditto
+
 2004-07-28  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/Dia.metadata: Use /api/namespace like gtk#

@@ -2,7 +2,7 @@
  *
  * Author: Martin Willemoes Hansen
  *
- * Copyright (C) 2003 Martin Willemoes Hansen
+ * Copyright (C) 2003, 2004 Martin Willemoes Hansen
  *
  */
  
@@ -10,33 +10,31 @@
  
 /* Forward declarations */
 void diasharp_canvas_line_set_dash_style_property (DiaCanvasLine * line, 
-						   gdouble dash_on, gdouble dash_off);
+						   gdouble dash_size); 
 /* */
 
 void 
 diasharp_canvas_line_set_dash_style_property (DiaCanvasLine * line, 
-					      gdouble dash_on, gdouble dash_off)
+					      gdouble dash_size)
 {
-	g_assert (dash_on >= 0);
-	g_assert (dash_off >= 0);
+	g_assert (dash_size >= 0);
 
+	g_free (line->dash);
 	line->dash = NULL;
 	line->n_dash = 0;
 
-	if (dash_off == 0) {
-		line->n_dash = 1;
-		line->dash = g_new (gdouble, 1);
-		memcpy (line->dash, &dash_on, sizeof (gdouble) * 1);
-	}
+	DiaDashStyle * style = dia_dash_style_new (1, dash_size);
+	g_object_set (line, "dash", style, NULL);
 
-	// Use DiaDashStyle * dia_dash_style_new (gint n_dash, gdouble dash1, ...)
-	// When it has been fixed
-	//
-	//DiaDashStyle * old_style = NULL;
-	//g_object_get (line, "dash", old_style, NULL);
-	//dia_dash_style_free (old_style);
-
+	//Test code to see if DiaCanvasLine supports > 1 dashes.
+	//DiaDashStyle * style = dia_dash_style_new (3, 5, 10, 20);
 	//g_object_set (line, "dash", style, NULL);
+
+	//g_print ("dash_n: %d\n", style->n_dash);
+        //g_print ("dash [0]: %f\n", style->dash [0]);
+        //g_print ("dash [1]: %f\n", style->dash [1]);
+        //g_print ("dash [2]: %f\n", style->dash [2]);
+        //g_print ("size of diadashstyle: %d\n", sizeof (style));
 }
 
 
