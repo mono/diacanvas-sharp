@@ -1,3 +1,8 @@
+2004-02-07  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* autogen.sh: Executes aclocal first, this fixes a lot of warnings and
+	build errors.
+
 2004-02-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasBox.custom: Obj is now created using the GObject hirarchy,
