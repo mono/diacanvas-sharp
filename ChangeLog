@@ -1,3 +1,12 @@
+2004-07-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* COPYING: Changed from GNU GPL to GNU LGPL
+	* configure.in: Bump version to 0.4.1
+	* NEWS: Added license change
+	* dia/*.cs: Ditto
+	* dia/*.custom: Ditto
+	* sample/*.cs: Ditto
+
 2004-07-14  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* configure.in: Moved glue makefile
