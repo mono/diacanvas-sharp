@@ -1,3 +1,7 @@
+2003-08-12  Martin Willemoes Hansen  <mwh@sysrq.dk>
+	
+	* WISHLIST: Added
+
 2003-08-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* NEWS: Added
@@ -14,7 +18,7 @@
 	* dia/PlacementTool.custom: Fixed Uni16 to Ansi conversion bug
 	* sample/sample.cs: Added start of printing sample, gnomeprint wrapper needed
 
-2003-08-06  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-08-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sources/dia-sharp.sources: 
 	* sources/makefile:
@@ -28,11 +32,11 @@
 	* patches/acinclude.m4.diff: Fix for not finding python 2.3
 	* sources/Dia.Metadata: Fixed nameclashes
 
-2003-07-31  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-31  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* Upgraded to latest gtk# cvs
 
-2003-07-28  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-28  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasBox.custom
 	  dia/CanvasImage.custom  
@@ -44,13 +48,13 @@
 	* sample/sample.cs: Includes sample code to display CanvasText
 	* sample/CanvasTextBox.cs: Added a custom CanvasItem
 
-2003-07-26  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasImage.custom: Changed public Ctor to use a pixmap parameter
 	  now height and width are automagically set.
 	* sample/sample.cs: Updated to reflect CanvasImage.custom changes
 
-2003-07-23  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-23  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/Point.custom: Added, convenience ctor
 	  and ToString()
@@ -62,14 +66,14 @@
 	* sample/sample.cs: Added section for programatically 
 	  canvas item creation.
 	
-2003-07-22  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-22  Martin Willemoes Hansen  <mwh@sysrq.dk>
 	
 	* PROBLEMS: Added
 	* sources/Dia.metadata: Hide DiaExpression type, 
 	  and hide the AddExpression method in DiaConstraint
 	* doc/en/Dia/Expression.xml: Removed
 
-2003-07-21  Martin Willemoes Hansen <mwh@sysrq.dk>
+2003-07-21  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* ChangeLog: Added
 	* dia/Event.cs: Added 
