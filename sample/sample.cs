@@ -1,3 +1,20 @@
+/// DiaCanvas# sample
+/// Copyright (C) 2003  Martin Willemoes Hansen <mwh@sysrq.dk>
+/// 
+/// This program is free software; you can redistribute it and/or modify
+/// it under the terms of the GNU General Public License as published by
+/// the Free Software Foundation; either version 2 of the License, or
+/// (at your option) any later version.
+///
+/// This program is distributed in the hope that it will be useful,
+/// but WITHOUT ANY WARRANTY; without even the implied warranty of
+/// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+/// GNU General Public License for more details.
+///
+/// You should have received a copy of the GNU General Public License
+/// along with this program; if not, write to the Free Software
+/// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
 using System;
 using System.Collections;
 
@@ -83,20 +100,23 @@ public class Sample {
 
 	void SelectionTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
 		view.Tool = new StackTool();
 	}
 
+	bool zoom_enabled = false;
 	void ZoomTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
-		view.Tool = new Tool (IntPtr.Zero);
-		view.ButtonPressEvent += new ButtonPressEventHandler (Zoom);
+		zoom_enabled = !zoom_enabled;
+
+		if (zoom_enabled) {
+			view.Tool = new Tool (IntPtr.Zero);
+			view.ButtonPressEvent += new ButtonPressEventHandler (Zoom);
+		} else
+			view.ButtonPressEvent -= new ButtonPressEventHandler (Zoom);		
 	}
 
 	void LineTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
 		view.Tool = new PlacementTool (typeof (CanvasLine), 
 					       "line_width", 4, 
 					       "color", 480975); 
@@ -105,14 +125,12 @@ public class Sample {
 
 	void BoxTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
 		view.Tool = new PlacementTool (typeof (CanvasBox));
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void ImageTool (object sender, EventArgs args)
 	{
-		ToolCleanUp();
 		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
 		view.Tool = new PlacementTool (typeof (CanvasImage), 
 					       "image", pixbuf,
@@ -121,13 +139,7 @@ public class Sample {
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
-	void ToolCleanUp()
-	{
-		view.ButtonPressEvent -= new ButtonPressEventHandler (Zoom);
-	}
-
 	[Glade.Widget] RadioButton tool1;
-
 	void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
 	{
 		if (ctrl)
@@ -138,6 +150,7 @@ public class Sample {
 
 	void Zoom (object sender, ButtonPressEventArgs args)
 	{
+		
 		if (ctrl)
 			ZoomOut (this, null);
 		else

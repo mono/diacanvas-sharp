@@ -11,6 +11,8 @@
 /* Forward declarations */
 GList * diasharp_canvas_view_get_selected_items (DiaCanvasView * view);
 DiaCanvasViewItem * diasharp_canvas_view_get_focus_item (DiaCanvasView * view);
+GnomeCanvasItem * diasharp_canvas_view_get_handle_layer (DiaCanvasView * view);
+
 /* */
  
 GList *
@@ -23,4 +25,10 @@ DiaCanvasViewItem *
 diasharp_canvas_view_get_focus_item (DiaCanvasView * view)
 {
 	return view->focus_item;
+}
+
+GnomeCanvasItem * 
+diasharp_canvas_view_get_handle_layer (DiaCanvasView * view)
+{
+	return view->handle_layer;
 }

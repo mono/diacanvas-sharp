@@ -332,7 +332,7 @@
 		  <property name="inconsistent">False</property>
 		  <property name="draw_indicator">False</property>
 		  <property name="group">tool1</property>
-		  <signal name="clicked" handler="ZoomTool" last_modification_time="Fri, 11 Jul 2003 08:01:57 GMT"/>
+		  <signal name="toggled" handler="ZoomTool" last_modification_time="Fri, 05 Sep 2003 08:50:37 GMT"/>
 
 		  <child>
 		    <widget class="GtkImage" id="image2">

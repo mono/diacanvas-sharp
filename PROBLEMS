@@ -60,6 +60,17 @@ o Select all, then try to move stuff around.
 ================================================================================
 
 
+Fields which are not what they seem to be
+--------------------------------------------
+
+o dia-canvas.h 
+  DiaCanvasItem *root    is realy a DiaCanvasGroup
+o dia-canvas-view.h
+  GnomeCanvasItem *handle_layer		is realy a DiaHandleLayer
+
+================================================================================
+
+
 Character encoding problem (FIXED)
 ----------------------------------
 

@@ -27,4 +27,14 @@ public CanvasViewItem FocusItem {
 	} 
 }
 
+[DllImport ("diasharpglue")]
+extern static IntPtr diasharp_canvas_view_get_handle_layer (IntPtr view);
+
+public HandleLayer HandleLayer {
+	get { 
+		return new HandleLayer (diasharp_canvas_view_get_handle_layer (Handle));
+	} 
+}
+
+
 

@@ -171,6 +171,7 @@
 		      <property name="visible">True</property>
 		      <property name="label">gtk-delete</property>
 		      <property name="use_stock">True</property>
+		      <signal name="activate" handler="DeleteSelectedItems" last_modification_time="Fri, 08 Aug 2003 08:58:21 GMT"/>
 		    </widget>
 		  </child>
 
@@ -331,7 +332,7 @@
 		  <property name="inconsistent">False</property>
 		  <property name="draw_indicator">False</property>
 		  <property name="group">tool1</property>
-		  <signal name="clicked" handler="ZoomTool" last_modification_time="Fri, 11 Jul 2003 08:01:57 GMT"/>
+		  <signal name="toggled" handler="ZoomTool" last_modification_time="Fri, 05 Sep 2003 08:50:37 GMT"/>
 
 		  <child>
 		    <widget class="GtkImage" id="image2">

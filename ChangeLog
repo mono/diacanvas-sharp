@@ -1,3 +1,14 @@
+2003-09-09  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sample/sample.cs: 
+	* sample/glade/gui.glade: Cleaned up.
+	* glue/dia-canvas-item.c: Added
+	* dia/CanvasItem.custom: Added access to connected_handles
+	* glue/dia-canvas-view.c: 
+	* dia/CanvasView.custom: Added access to handle_layer
+	* dia/PlacementTool.cs: Initial grabbing functionallity
+	* PROBLEMS: Added fields which are not what they seem.
+
 2003-09-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasImage.cs:

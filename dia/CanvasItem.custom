@@ -12,3 +12,15 @@ extern static IntPtr dia_canvas_item_create (uint object_type, IntPtr dummy);
 public static CanvasItem ItemCreate (uint object_type) {
 	return new CanvasItem (dia_canvas_item_create (object_type, IntPtr.Zero));
 }
+
+[DllImport("diasharpglue")]
+extern static IntPtr diasharp_canvas_item_get_handles (IntPtr item);
+
+public IList Handles {
+	get { 
+		GLib.List glist = new GLib.List (diasharp_canvas_item_get_handles (Handle));
+		ArrayList list = new ArrayList (glist.Count);
+		foreach (object o in glist) list.Add (o);
+		return list;
+	}
+}
