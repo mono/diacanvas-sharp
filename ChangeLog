@@ -2,6 +2,9 @@
 
 	* autogen.sh: Executes aclocal first, this fixes a lot of warnings and
 	build errors.
+	* sample/CanvasFigure.cs: Added
+	* sample/sample.cs: Exercises CanvasFigure
+	* sample/makefile.am: Reduced code
 
 2004-02-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

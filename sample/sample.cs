@@ -91,6 +91,10 @@ public class Sample {
 		textbox.Move (50, 150);
 		canvas.Root.Add (textbox);
 
+		CanvasFigure figure = new CanvasFigure();
+		figure.Move (50, 250);
+		canvas.Root.Add (figure);
+
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);
 		canvas.Root.Add (image);
