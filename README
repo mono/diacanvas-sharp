@@ -3,7 +3,7 @@ Requirements
 ============
 
 mono-0.28
-gtk-sharp-0.12
+gtk-sharp-0.13
 diacanvas2-0.10.0
 automake-1.7
 

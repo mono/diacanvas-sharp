@@ -2,6 +2,7 @@
 =====
 
 * Works with DiaCanvas2-0.10.0
+* Works with Gtk-sharp-0.13.0
 * Autoconf enabled
 
 0.2.0
