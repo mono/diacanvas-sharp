@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<metadata>
+
+<!-- hide -->
+<rule>
+  <class name="DiaPlacementTool">
+    <constructor>dia_placement_tool_new</constructor>
+  </class>
+  <data>
+    <attribute target="parameters">
+      <name>va_type</name>
+      <value>length_param</value>
+    </attribute>
+  </data>
+</rule>
+
+<!-- renames -->
+<rule>
+  <class name="DiaCanvas">
+    <method>SnapToGrid</method>
+  </class>
+  <data>
+    <attribute target="method">
+      <name>name</name>
+      <value>SnapToGridCoordinates</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <signal>Move</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>Moved</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <signal>Connect</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>Connected</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <signal>Disconnect</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>Disconnected</value>
+    </attribute>
+  </data>
+</rule>
+
+</metadata>

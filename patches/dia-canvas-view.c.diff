@@ -1,0 +1,17 @@
+--- dia-canvas-view.c~	2003-03-18 19:21:22.000000000 +0100
++++ dia-canvas-view.c	2003-06-23 12:44:34.000000000 +0200
+@@ -217,10 +217,12 @@
+ 						G_PARAM_READABLE));
+ 	g_object_class_install_property (gobject_class,
+ 					 PROP_ZOOM,
+-					 g_param_spec_object ("zoom",
++					 g_param_spec_double ("zoom",
+ 						_("Zoom"),
+ 						_("Set the zoom factor"),
+-						DIA_TYPE_TOOL,
++						-G_MAXDOUBLE, 
++						G_MAXDOUBLE, 
++						0.0,
+ 						G_PARAM_READWRITE));
+ 	g_object_class_install_property (gobject_class,
+ 					 PROP_TOOL,
