@@ -409,5 +409,37 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PosW">
+      <MemberSignature Language="C#" Value="public Dia.Point PosW { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Point'</param>
+        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PosI">
+      <MemberSignature Language="C#" Value="public Dia.Point PosI { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Point'</param>
+        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
   </Members>
 </Type>

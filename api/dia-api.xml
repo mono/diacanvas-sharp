@@ -1071,8 +1071,8 @@
       <field cname="connected_to" type="DiaCanvasItem*"/>
       <field cname="constraints" type="GSList*"/>
       <property name="Owner" cname="owner" type="DiaCanvasItem" doc-string=" _(Item owning the handle.)" readable="true" writeable="true"/>
-      <property name="PosI" cname="pos_i" type="_(&quot;itemrelativeposition.&quot;)" doc-string=" item relative)" readable="true" writeable="true"/>
-      <property name="PosW" cname="pos_w" type="_(&quot;itemsworldposition.&quot;)" doc-string=" world relative)" readable="true" writeable="true"/>
+      <property name="PosI" cname="pos_i" type="DiaPoint" doc-string=" _(Item relative position.)" readable="true" writeable="true"/>
+      <property name="PosW" cname="pos_w" type="DiaPoint" doc-string=" _(Items world position.)" readable="true" writeable="true"/>
       <property name="Strength" cname="strength" type="DiaStrength" doc-string=" _(Strength of the handle.)" readable="true" writeable="true"/>
       <property name="Connect" cname="connect" type="DiaCanvasItem" doc-string=" _()" readable="true" writeable="true"/>
       <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" doc-string=" _()" readable="true" writeable="true"/>

@@ -1,0 +1,8 @@
+136c136
+< 						_("Position, item relative"),
+---
+> 						_("Position item relative"),
+143c143
+< 						_("Position, world relative"),
+---
+> 						_("Position world relative"),
