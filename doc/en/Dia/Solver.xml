@@ -37,36 +37,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="RemoveConstraint">
-      <MemberSignature Language="C#" Value="public void RemoveConstraint (Dia.Constraint constraint);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="constraint" Type="Dia.Constraint" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="constraint">a <see cref="T:Dia.Constraint" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="AddConstraint">
-      <MemberSignature Language="C#" Value="public void AddConstraint (Dia.Constraint constraint);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="constraint" Type="Dia.Constraint" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="constraint">a <see cref="T:Dia.Constraint" /></param>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Finalize">
       <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
       <MemberType>Method</MemberType>

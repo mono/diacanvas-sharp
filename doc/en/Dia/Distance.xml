@@ -1,0 +1,113 @@
+<Type Name="Distance" FullName="Dia.Distance">
+  <TypeSignature Language="C#" Value="public class Distance" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>dia-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes />
+  <Members>
+    <Member MemberName="PointPointManhattan">
+      <MemberSignature Language="C#" Value="public static double PointPointManhattan (Dia.Point p1, Dia.Point p2);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p1" Type="Dia.Point" />
+        <Parameter Name="p2" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="p1">a <see cref="T:Dia.Point" /></param>
+        <param name="p2">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RectanglePoint">
+      <MemberSignature Language="C#" Value="public static double RectanglePoint (Dia.Rectangle rect, Dia.Point point);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Dia.Rectangle" />
+        <Parameter Name="point" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
+        <param name="point">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePoint">
+      <MemberSignature Language="C#" Value="public static double LinePoint (Dia.Point line_start, Dia.Point line_end, Dia.Point point, double line_width, Dia.CapStyle style, Dia.Point point_on_line);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="line_start" Type="Dia.Point" />
+        <Parameter Name="line_end" Type="Dia.Point" />
+        <Parameter Name="point" Type="Dia.Point" />
+        <Parameter Name="line_width" Type="System.Double" />
+        <Parameter Name="style" Type="Dia.CapStyle" />
+        <Parameter Name="point_on_line" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="line_start">a <see cref="T:Dia.Point" /></param>
+        <param name="line_end">a <see cref="T:Dia.Point" /></param>
+        <param name="point">a <see cref="T:Dia.Point" /></param>
+        <param name="line_width">a <see cref="T:System.Double" /></param>
+        <param name="style">a <see cref="T:Dia.CapStyle" /></param>
+        <param name="point_on_line">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointPoint">
+      <MemberSignature Language="C#" Value="public static double PointPoint (Dia.Point p1, Dia.Point p2);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p1" Type="Dia.Point" />
+        <Parameter Name="p2" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="p1">a <see cref="T:Dia.Point" /></param>
+        <param name="p2">a <see cref="T:Dia.Point" /></param>
+        <returns>a <see cref="T:System.Double" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Distance ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.Distance" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,5 +1,5 @@
 <Type Name="ConstraintFuncNative" FullName="DiaSharp.ConstraintFuncNative">
-  <TypeSignature Language="C#" Value="public sealed delegate void ConstraintFuncNative (IntPtr constraint, ref Dia.Variable variable, double constant, IntPtr user_data);" Maintainer="auto" />
+  <TypeSignature Language="C#" Value="public sealed delegate void ConstraintFuncNative ();" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>dia-sharp</AssemblyName>
     <AssemblyPublicKey></AssemblyPublicKey>
