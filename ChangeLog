@@ -1,3 +1,11 @@
+2003-08-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/CanvasItemForeachFunc:
+	* doc/en/Dia/CanvasViewItemForeachFunc: Documented
+	* doc/en/Dia/CanvasGroup.xml:
+	* doc/en/Dia/CanvasViewItem.xml: Partially documented
+	* TODO: Added
+
 2003-08-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* CREDITS: Added Arjan Molenaar

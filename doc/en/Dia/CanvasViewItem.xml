@@ -9,8 +9,11 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>The visual representation of a <see cref="T:Dia.CanvasItem" />.</summary>
+    <remarks>
+    A <see cref="T:Dia.CanvasViewItem" /> holds information about a <see cref="T:Dia.CanvasItem" /> 
+    that is specific for one view (e.g. a cursor position for text, an object is selected or rendering information).
+    </remarks>
   </Docs>
   <Base>
     <BaseTypeName>Gnome.CanvasGroup</BaseTypeName>
@@ -36,10 +39,10 @@
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary></summary>
         <param name="vitem">a <see cref="T:Gnome.CanvasGroup" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -50,8 +53,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Disposes the resources associated with the object.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Foreach">
@@ -64,10 +67,10 @@
         <Parameter Name="func" Type="Dia.CanvasViewItemForeachFunc" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>This method iterates through all the children of the <see cref="T:Dia.CanvasViewItem" /></summary>
         <param name="func">a <see cref="T:Dia.CanvasViewItemForeachFunc" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
+        <returns>a <see cref="T:System.Int32" /> if 0 the foreach loop will stop.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="EmitEvent">
@@ -94,9 +97,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
+        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> selected.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFocused">
@@ -107,9 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
+        <summary>Is the <see cref="T:Dia.CanvasViewItem" /> focused.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestRedrawUta">
@@ -135,10 +138,13 @@
         <Parameter Name="gtype" Type="GLib.Type" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /></param>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="gtype">a <see cref="T:GLib.Type" /> for the <see cref="T:Dia.CanvasViewItem" />.</param>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /> created using the provided <see cref="T:GLib.Type" />.</returns>
+        <remarks>
+	This is a constructor used by derivative types that would have their own 
+	<see cref="T:GLib.Type" /> assigned to it. This is not typically used by C# code.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,10 +155,10 @@
         <Parameter Name="raw" Type="System.IntPtr" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
-        <remarks>To be added</remarks>
+        <summary>Internal constructor.</summary>
+        <param name="raw">a <see cref="T:System.IntPtr" /> to the C object.</param>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /> wrapping the C object.</returns>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -161,9 +167,9 @@
       <ReturnValue />
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
+        <summary>Internal constructor.</summary>
         <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>This is an internal constructor, and should not be used by user code.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GType">
@@ -173,9 +179,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <summary>The Type for the <see cref="Dia.CanvasViewItem" /></summary>
+        <returns>a <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -188,10 +194,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the ability of the <see cref="T:Dia.CanvasViewItem" /> to interact.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -204,10 +210,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the visibility of the <see cref="T:Dia.CanvasViewItem" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -220,10 +226,10 @@
         <Parameter Name="value" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the <see cref="T:Dia.CanvasItem" /> of the <see cref="T:Dia.CanvasViewItem" />.</summary>
         <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:Dia.CanvasItem" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

@@ -80,7 +80,7 @@ public class Sample {
 		image.Move (50, 50);
 		canvas.Root.Add (image);
 
-		view.UnselectAll();
+	        view.UnselectAll();
 		CanvasViewItem vitem = view.FindViewItem (image);
 		view.Focus (vitem);
 	}

@@ -9,8 +9,12 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>
+    Represents the method that will handle the <see cref="T:Dia.CanvasItem" />'s 
+    in a <see cref="T:Dia.CanvasGroup" />. 
+    </summary>
+    <param name="item">Each <see cref="T:Dia.CanvasItem" /> in <see cref="T:Dia.CanvasGroup" />.</param>
+    <remarks>It is used by <see cref="M:Dia.CanvasGroup.Foreach(Dia.CanvasItem,Dia.CanvasItemForeachFunc)" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

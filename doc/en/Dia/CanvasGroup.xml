@@ -42,11 +42,11 @@
         <Parameter Name="func" Type="Dia.CanvasItemForeachFunc" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>This method iterates through all the childs of the <see cref="T:Dia.CanvasItem" />.</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="func">a <see cref="T:Dia.CanvasItemForeachFunc" /></param>
-        <returns>a <see cref="T:System.Int32" /></returns>
-        <remarks>To be added</remarks>
+        <returns>a <see cref="T:System.Int32" />, if 0 the foreach loop will stop.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
