@@ -1,15 +1,14 @@
 0.1.0
 =====
 
-* Undo / Redo
-* SVG export
+* Undo and redo
+* SVG exporting
 * C# specific PlacementTool
-* CanvasLine, CanvasBox, CanvasText, CanvasImage can
-  be created programatically and placed with the
-  PlacementTool.
-* Zoom (in/out/100%)
-* SelectAll / UnselectAll
-* DeleteSelected
+* CanvasLine, CanvasBox, CanvasText, CanvasImage can be created
+  programatically or placed with the PlacementTool
+* Zoom in, out and 100%
+* Select all / Unselect all
+* Delete selected
 * Snap to grid
-* API (Not fully documented yet, though its still usefull)
-* A sample exercising the canvas
+* Partial documented API
+* A sample program exercising the canvas
