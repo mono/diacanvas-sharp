@@ -6,5 +6,5 @@
 //
 // This code is inserted after the automatically generated code.
 
-public CanvasText() : base (CanvasText.GType) {}
+public CanvasText() : base (GType) {}
 

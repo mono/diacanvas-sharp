@@ -6,4 +6,4 @@
 //
 // This code is inserted after the automatically generated code.
 
-public CanvasBox() : base (CanvasBox.GType) {}
+public CanvasBox() : base (GType) {}

@@ -6,12 +6,12 @@
 //
 // This code is inserted after the automatically generated code.
 
-public CanvasImage (Gdk.Pixbuf pixbuf) : base (CanvasImage.GType) 
+public CanvasImage (Gdk.Pixbuf pixbuf) : base (GType) 
 {
 	Image = pixbuf;
 	Width = pixbuf.Width;
 	Height = pixbuf.Height;
 }
 
-public CanvasImage() : base (CanvasImage.GType) {}
+public CanvasImage() : base (GType) {}
 

@@ -6,7 +6,7 @@
 //
 // This code is inserted after the automatically generated code.
 
-public CanvasLine() : base (CanvasLine.GType) {}
+public CanvasLine() : base (GType) {}
 
 [DllImport("diacanvassharpglue")]
 extern static void diasharp_canvas_line_set_dash_style_property (IntPtr line, 
