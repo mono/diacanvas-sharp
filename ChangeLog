@@ -1,3 +1,16 @@
+2004-08-11  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/CanvasLine.custom: Updated Dash property to use new
+	  glue code.
+	* dia/DashStyle.cs: Removed
+	* dia/glue/dia-canvas-line.c: New glue code to handle 
+	  dash property properly, fixed testcode
+	* dia/glue/dia-canvas-line.c.new: Removed
+	* sample/sample.cs: Use the new Dash property
+	* NEWS: CanvasLine.Dash is working 100%
+	* PROBLEMS: Added problems with CanvasClock, 
+	  editable text and text problem
+
 2004-08-04  Mario Fuentes  <mario@gnome.cl>
 
 	* sample/CanvasClock.cs: Fixed Clock's hand size.

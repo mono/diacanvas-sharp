@@ -84,10 +84,9 @@ public class Sample {
 		Dia.CanvasLine line = new Dia.CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
-		DashStyle style = new DashStyle (10);
-		line.Dash = style;
+		line.Dash = new double [] { 2, 4, 8, 16, 32 };
 		line.HeadPos = new Dia.Point (50, 70);;
-		line.TailPos = new Dia.Point (100, 170);
+		line.TailPos = new Dia.Point (200, 250);
 		line.Cap = Dia.CapStyle.Butt;
 		line.Move (50, 150);
 		canvas.Root.Add (line);
