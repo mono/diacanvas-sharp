@@ -3,7 +3,7 @@ CODE_DIR=dia
 SAMPLE_DIR=sample
 SOURCES_DIR=sources
 
-all: xml code library samples
+all: code library samples
 
 xml:	
 	$(MAKE) -C $(SOURCES_DIR)
