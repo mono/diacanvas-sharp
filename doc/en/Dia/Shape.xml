@@ -110,32 +110,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="XNewPangoLayout">
-      <MemberSignature Language="C#" Value="public static Pango.Layout XNewPangoLayout ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Pango.Layout</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ArtNewPangoLayout">
-      <MemberSignature Language="C#" Value="public static Pango.Layout ArtNewPangoLayout ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Pango.Layout</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Image">
       <MemberSignature Language="C#" Value="public void Image (Gdk.Pixbuf image);" />
       <MemberType>Method</MemberType>
@@ -506,6 +480,32 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XGetPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout XGetPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtGetPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout ArtGetPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Pango.Layout" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

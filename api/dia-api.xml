@@ -294,6 +294,7 @@
       <property name="GridOfsY" cname="grid_ofs_y" type="gdouble" readable="true" writeable="true"/>
       <property name="GridColor" cname="grid_color" type="ulong" readable="true" writeable="true"/>
       <property name="GridBg" cname="grid_bg" type="ulong" readable="true" writeable="true"/>
+      <property name="PangoLayout" cname="pango_layout" type="PangoLayout" readable="true"/>
       <method name="AddConstraint" cname="dia_canvas_add_constraint">
         <return-type type="void"/>
         <parameters>
@@ -311,6 +312,9 @@
         <parameters>
           <parameter type="DiaRectangle*" name="rect"/>
         </parameters>
+      </method>
+      <method name="GetPangoLayout" cname="dia_canvas_get_pango_layout" shared="true">
+        <return-type type="PangoLayout*"/>
       </method>
       <method name="GetRedoDepth" cname="dia_canvas_get_redo_depth">
         <return-type type="guint"/>
@@ -336,7 +340,6 @@
         </parameters>
       </method>
       <constructor cname="dia_canvas_new"/>
-      <constructor cname="dia_canvas_new_pango_layout"/>
       <method name="PopRedo" cname="dia_canvas_pop_redo">
         <return-type type="void"/>
       </method>
@@ -1183,6 +1186,7 @@
       <field cname="connected_to" type="DiaCanvasItem*"/>
       <field cname="constraints" type="GSList*"/>
       <property name="Owner" cname="owner" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Index" cname="index" type="gint" readable="true" writeable="true"/>
       <property name="PosI" cname="pos_i" type="DiaPoint" readable="true" writeable="true"/>
       <property name="PosW" cname="pos_w" type="DiaPoint" readable="true" writeable="true"/>
       <property name="Strength" cname="strength" type="DiaStrength" readable="true" writeable="true"/>
@@ -1683,7 +1687,7 @@
           <parameter type="DiaPoint*" name="end"/>
         </parameters>
       </method>
-      <method name="ArtNewPangoLayout" cname="dia_shape_art_new_pango_layout" shared="true">
+      <method name="ArtGetPangoLayout" cname="dia_shape_art_get_pango_layout" shared="true">
         <return-type type="PangoLayout*"/>
       </method>
       <method name="ArtRender" cname="dia_shape_art_render">
@@ -1812,7 +1816,7 @@
           <parameter type="const-gchar*" name="text"/>
         </parameters>
       </method>
-      <method name="XNewPangoLayout" cname="dia_shape_x_new_pango_layout" shared="true">
+      <method name="XGetPangoLayout" cname="dia_shape_x_get_pango_layout" shared="true">
         <return-type type="PangoLayout*"/>
       </method>
       <method name="XRender" cname="dia_shape_x_render">

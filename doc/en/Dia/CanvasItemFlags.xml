@@ -9,8 +9,8 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Used within <see cref="T:Dia.CanvasItem" />s.</summary>
+    <remarks>When creating a new kind of <see cref="T:Dia.CanvasItem" /> this enum is used.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -40,8 +40,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is visible.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -52,8 +52,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is Interactive.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Composite">
@@ -64,8 +64,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is a composite.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="NeedUpdate">
@@ -76,8 +76,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Flags that the <see cref="T:Dia.CanvasItem" /> needs an Update</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAll">
@@ -88,8 +88,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Flags that the <see cref="T:Dia.CanvasItem" /> needs an UpdateAll</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">

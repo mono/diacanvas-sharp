@@ -1,3 +1,13 @@
+2003-10-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/Canvas.xml: Updated to match latest DiaCanvas2 CVS
+	* doc/en/Dia/Shape.xml: Ditto
+	* doc/en/Dia/CanvasItemFlags.xml: Documented
+	* doc/en/Dia/CanvasItemUIStateFlags.xml: Documented
+	* doc/en/Dia/EventMask: Documented
+	* doc/en/Dia/EventType: Documented
+	* doc/en/Dia/ShapeType.xml: Removed ' for consistence
+
 2003-10-07  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/Dia/Canvas.xml: Partial documented

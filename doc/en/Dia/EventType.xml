@@ -9,8 +9,8 @@
   </AssemblyInfo>
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
-    <summary>To be added</summary>
-    <remarks>To be added</remarks>
+    <summary>Used within <see cref="T:Dia.CanvasItem" />s.</summary>
+    <remarks>When creating a new kind of <see cref="T:Dia.CanvasItem" /> this enum is used.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
@@ -36,8 +36,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Mouse button press.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoButtonPress">
@@ -48,8 +48,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Mouse button double click.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThreeButtonPress">
@@ -60,8 +60,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Mouse button triple click.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ButtonRelease">
@@ -72,8 +72,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Mouse button release.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Motion">
@@ -84,8 +84,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>The mouse cursor has moved.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -96,8 +96,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A key is pressed.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyRelease">
@@ -108,8 +108,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>A key is released.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusIn">
@@ -120,8 +120,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Focus is moved in.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="FocusOut">
@@ -132,8 +132,8 @@
       </ReturnValue>
       <Parameters></Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Focus is moved out.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
