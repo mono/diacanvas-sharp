@@ -13,7 +13,7 @@
     Represents the method which is called when iterating over the childs of a <see cref="T:Dia.CanvasViewItem" />.
     </summary>
     <param name="item">Each <see cref="T:Dia.CanvasViewItem" /></param>
-    <remarks>It is used in <see cref="M:Dia.CanvasViewItem.Foreach(Dia.CanvasViewItemForeachFunc)" />.</remarks>
+    <remarks>It is used in <see cref="M:Dia.CanvasViewItem.Foreach" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>

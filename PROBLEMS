@@ -90,15 +90,6 @@ should just have System.EventHandler
 ================================================================================
 
 
-Wrongly generated SetMethod, when there is a property
------------------------------------------------------
- 
-DiaCanvasItem.Parent property is generated but
-DiaCanvasItem.SetParent is also generated.
-
-================================================================================
-
-
 Character encoding problem (FIXED)
 ----------------------------------
 

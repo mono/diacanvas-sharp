@@ -18,7 +18,7 @@
     The actual objects on the canvas are represented by <see cref="T:Dia.CanvasItem" /> objects. 
     The <see cref="T:Dia.Canvas" /> itself only holds the upper most <see cref="T:Dia.CanvasItem" /> 
     and it holds some generic properties, like grid information and undo information. 
-    A constraint solver <see cref="T:Dia.Solver" /> is also placed in <see cref="T:Dia.Canvas" />.
+    A constraint <see cref="T:Dia.Solver" /> is also placed in <see cref="T:Dia.Canvas" />.
     </remarks>
   </Docs>
   <Base>
@@ -54,8 +54,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Opposite of <see cref="M:Dia.Canvas.PopUndo" />.</summary>
+        <remarks>Undone actions are undone themselves.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreservePropertyLast">
@@ -69,10 +69,16 @@
         <Parameter Name="property_name" Type="System.String" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
+        <summary>
+	Does the same as <see cref="M:Dia.Canvas.PreserveProperty" />, 
+	but adds it to the end of the list, instead of the beginning.
+	</summary>
+        <param name="objekt">The <see cref="T:GLib.Object" /> that should be undone.</param>
+        <param name="property_name">a <see cref="T:System.String" /> describing a property name.</param>
+        <remarks>
+	This kind of behaviour is needed for some special actions, 
+	but won't be used in normal usage.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveProperty">
@@ -86,10 +92,13 @@
         <Parameter Name="property_name" Type="System.String" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <remarks>To be added</remarks>
+        <summary>This is an easy way to save properties.</summary>
+        <param name="objekt">The <see cref="T:GLib.Object" /> that should be undone.</param>
+        <param name="property_name">a <see cref="T:System.String" /> describing a property name.</param>
+        <remarks>
+	The value of the property is preserved so the change can be undone by 
+	<see cref="M:Dia.Canvas.PopUndo" />.
+	</remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearRedo">
@@ -203,12 +212,16 @@
         <Parameter Name="last" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <param name="value">a <see cref="T:GLib.Value" /></param>
-        <param name="last">a <see cref="T:System.Boolean" /></param>
-        <remarks>To be added</remarks>
+        <summary>Put a variable on the undo stack.</summary>
+        <param name="objekt">The <see cref="T:GLib.Object" /> that should be undone.</param>
+        <param name="property_name">a <see cref="T:System.String" /> describing a property name.</param>
+        <param name="value">a <see cref="T:GLib.Value" /> containing the data to be undone.</param>
+        <param name="last">a <see cref="T:System.Boolean" /> which if true appends rather than prepends the property.</param>
+        <remarks>
+	The variable is described by its property name and the undo data.
+	If an object/property_name combination is preserved multiple times, 
+	only the first occurance is stored.
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RedrawViews">
@@ -297,8 +310,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
+        <summary>Undo a set of actions.</summary>
+        <remarks>Undone actions are stored on the redo-stack, so they can be undone too.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -1,3 +1,9 @@
+2003-10-10  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/Canvas.xml: Documented some more
+	* doc/en/Dia/CanvasItemForeachFunc.xml: Fixed a bad method tag
+	* doc/en/Dia/CanvasItemForeachFunc.xml: Ditto
+
 2003-10-09  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* api/dia-api.xml: Removed

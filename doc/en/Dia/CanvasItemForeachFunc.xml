@@ -14,7 +14,7 @@
     in a <see cref="T:Dia.CanvasGroup" />. 
     </summary>
     <param name="item">Each <see cref="T:Dia.CanvasItem" /> in <see cref="T:Dia.CanvasGroup" />.</param>
-    <remarks>It is used by <see cref="M:Dia.CanvasGroup.Foreach(Dia.CanvasItem,Dia.CanvasItemForeachFunc)" />.</remarks>
+    <remarks>It is used by <see cref="M:Dia.CanvasGroup.Foreach" />.</remarks>
   </Docs>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
