@@ -1,0 +1,37 @@
+--- /mnt/gnu/cvs/mono/gtk-sharp/parser/gapi_pp.pl	2002-08-12 21:14:43.000000000 +0200
++++ gapi_pp.pl	2003-06-21 12:13:49.000000000 +0200
+@@ -130,8 +130,33 @@
+ 			print "private";
+ 		}
+ 
++		$comment = 0;
++		$begin = 0;
++		$end = 0;
+ 		do {
+-			print $line;
++			# Following ifs strips out // and /* */ C comments
++			if ($line =~ /\/\*/) {
++				$comment = 1;
++				$begin = 1;
++			}
++
++			if ($comment != 1) {
++				$line =~ s/\/\/.*//;
++				print $line;
++			}
++
++			if ($line =~ /\*\//) {
++				$comment = 0;
++				$end = 1;
++			}
++
++			if ($begin == 1 && $end == 1) {
++				$line =~ s/\/\*.*\*\///;
++				print $line;
++			}
++
++			$begin = 0;
++			$end = 0;
+ 		} until (($line = <INFILE>) =~ /^}/);
+ 		print $line;
+ 	}
