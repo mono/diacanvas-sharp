@@ -1,3 +1,8 @@
+2004-08-18  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* diacanvas-sharp.pc.in: Added require list of 
+	  gnome-sharp and glade-sharp
+
 2004-08-11  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/CanvasLine.custom: Updated Dash property to use new

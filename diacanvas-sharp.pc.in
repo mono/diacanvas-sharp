@@ -6,4 +6,5 @@ libdir=${exec_prefix}/lib
 Name: DiaCanvas#
 Description: DiaCanvas# - DiaCanvas .NET Binding
 Version: @VERSION@
+Requires: gnome-sharp,glade-sharp
 Libs: -r:${libdir}/mono/@PACKAGE@/diacanvas-sharp.dll
