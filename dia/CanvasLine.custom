@@ -10,31 +10,6 @@ public CanvasLine() {
         Raw = ItemCreate (CanvasLine.GType).Handle;
 }
 
-// Takes care of constructing the Line when its going to be placed with a
-// PlacementTool.
-
-[DllImport("diacanvas2")]
-extern static IntPtr dia_placement_tool_new (uint object_type, 
-					     IntPtr dummy);
-public static PlacementTool PlacementTool()
-{
-	return new PlacementTool (dia_placement_tool_new (CanvasLine.GType, 
-							  IntPtr.Zero));
-}
-
-[DllImport("diacanvas2")]
-extern static IntPtr dia_placement_tool_new (uint object_type,
-					     IntPtr lw, double line_width,
-					     IntPtr col, ulong color,
-					     IntPtr dummy);
-public static PlacementTool PlacementTool (double line_width, ulong color)
-{
-	return new PlacementTool (dia_placement_tool_new (CanvasLine.GType, 
-			 Marshal.StringToHGlobalAnsi ("line_width"), line_width,
-			 Marshal.StringToHGlobalAnsi ("color"), color,
-			 IntPtr.Zero));
-}
-
 // Struct marshalling bug workaround
 
 [DllImport ("diasharpglue")]

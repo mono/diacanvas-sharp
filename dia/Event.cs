@@ -2,8 +2,7 @@
 //
 // Author: Martin Willemoes Hansen <mwh@sysrq.dk> 
 //
-// (C) 2003 Martin Willemoes Hansen
-
+// Copyright (C) 2003 Martin Willemoes Hansen
 
 namespace Dia {
 

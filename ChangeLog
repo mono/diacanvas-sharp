@@ -1,3 +1,14 @@
+2003-09-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/CanvasImage.cs:
+	* dia/CanvasLine.cs:
+	* dia/CanvasBox.cs: Remove creation of PlacementTool
+	* dia/PlacementTool.custom: Removed
+	* dia/PlacementTool.cs: Added
+	* sources/Dia.metadata: Hide PlacementTool and
+	Added out parameters rules for CanvasItem method
+	AffinePointI2w and AffinePointW2i.
+
 2003-09-03  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* api/dia-api.xml:

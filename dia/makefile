@@ -11,7 +11,7 @@ LIBRARY=	dia-sharp.dll
 
 all: $(LIBRARY)
 
-$(LIBRARY): generated/*.cs
+$(LIBRARY): *.cs generated/*.cs
 	mcs --unsafe -nowarn:0660,0661 --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:

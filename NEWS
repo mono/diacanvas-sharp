@@ -1,7 +1,6 @@
 0.1.0
 =====
 
-* SelectionTool
 * Undo / Redo
 * SVG export
 * CanvasLine, CanvasBox, CanvasText, CanvasImage can
@@ -11,4 +10,4 @@
 * SelectAll / UnselectAll
 * DeleteSelected
 * Snap to grid
-* API (Not documented yet, though its still usefull)
+* API (Not fully documented yet, though its still usefull)

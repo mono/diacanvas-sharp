@@ -97,21 +97,27 @@ public class Sample {
 	void LineTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = CanvasLine.PlacementTool (4, 480975);
+		view.Tool = new PlacementTool (typeof (CanvasLine), 
+					       "line_width", 4, 
+					       "color", 480975); 
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void BoxTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = CanvasBox.PlacementTool ();
+		view.Tool = new PlacementTool (typeof (CanvasBox));
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void ImageTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = CanvasImage.PlacementTool (new Pixbuf (null, "pixmaps/logo.png"));
+		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
+		view.Tool = new PlacementTool (typeof (CanvasImage), 
+					       "image", pixbuf,
+					       "width", pixbuf.Width,
+					       "height", pixbuf.Height);
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 

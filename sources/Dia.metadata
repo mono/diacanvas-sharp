@@ -4,6 +4,7 @@
 <!-- type hides -->
 <rule>
   <class name="DiaExpression"/>
+  <class name="DiaPlacementTool"/>
   <class name="DiaShapeItemInfo"/>
   <class name="DiaShapeViewInfo"/>
   <class name="DiaVariableClass"/>
@@ -254,6 +255,21 @@
       <name>disabledefaultconstructor</name>
       <value>1</value>
     </attribute>
+  </data>
+</rule>
+
+<!-- out parameters -->
+<rule>
+  <class name="DiaCanvasItem">
+    <method>AffinePointI2w</method>
+    <method>AffinePointW2i</method>
+  </class>
+  <data>
+    <attribute target="param">
+          <filter level="type">gdouble*</filter>
+          <name>pass_as</name>
+          <value>out</value>
+        </attribute>
   </data>
 </rule>
 

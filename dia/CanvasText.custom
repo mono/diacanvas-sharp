@@ -9,4 +9,3 @@
 public CanvasText() {
         Raw = ItemCreate (CanvasText.GType).Handle;
 }
-

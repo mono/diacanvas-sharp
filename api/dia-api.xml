@@ -635,15 +635,15 @@
       <method name="AffinePointI2w" cname="dia_canvas_item_affine_point_i2w">
         <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x"/>
-          <parameter type="gdouble*" name="y"/>
+          <parameter type="gdouble*" name="x" pass_as="out"/>
+          <parameter type="gdouble*" name="y" pass_as="out"/>
         </parameters>
       </method>
       <method name="AffinePointW2i" cname="dia_canvas_item_affine_point_w2i">
         <return-type type="void"/>
         <parameters>
-          <parameter type="gdouble*" name="x"/>
-          <parameter type="gdouble*" name="y"/>
+          <parameter type="gdouble*" name="x" pass_as="out"/>
+          <parameter type="gdouble*" name="y" pass_as="out"/>
         </parameters>
       </method>
       <method name="AffineW2i" cname="dia_canvas_item_affine_w2i">
@@ -1387,7 +1387,7 @@
         </parameters>
       </method>
     </object>
-    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool" disabledefaultconstructor="1">
+    <object name="PlacementTool" cname="DiaPlacementTool" parent="DiaTool" hidden="1" disabledefaultconstructor="1">
       <field cname="object_type" type="GType"/>
       <field cname="n_params" type="guint"/>
       <field cname="params" type="GParameter*"/>
