@@ -90,6 +90,7 @@
 	* doc/en/DiaSharp/UnselectedItemHandler.xml: Ditto
 	* doc/en/DiaSharp/ZOrderArgs.xml: Ditto
 	* doc/en/DiaSharp/ZOrderHandler.xml: Ditto
+	* doc/en/Dia/Canvas.xml: Documented the properties
 
 2003-10-10  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

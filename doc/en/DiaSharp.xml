@@ -1,6 +1,6 @@
 <Namespace Name="DiaSharp" FullName="DiaSharp" FullNameSP="DiaSharp" Maintainer="Auto">
   <Docs>
-    <summary>Event arguments and delegates for DiaCanvas#</summary>
+    <summary>Event arguments and delegates for the types in Dia.</summary>
     <remarks></remarks>
   </Docs>
 </Namespace>

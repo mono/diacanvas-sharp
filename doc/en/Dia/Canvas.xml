@@ -10,15 +10,19 @@
   <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
   <Docs>
     <summary>
-      <see cref="T:Dia.Canvas" /> holds the data structure that represents 
-    the content that is displayed in a DiaCanvasView. 
-    One DiaCanvas can have zero or more views.
+    <see cref="T:Dia.Canvas" /> holds the data structure 
+    that represents the content that is displayed in a 
+    <see cref="T:Dia.CanvasView" />. One <see cref="T:Dia.Canvas" /> 
+    can have zero or more <see cref="T:Dia.CanvasView" />s.
     </summary>
     <remarks>
-    The actual objects on the canvas are represented by <see cref="T:Dia.CanvasItem" /> objects. 
-    The <see cref="T:Dia.Canvas" /> itself only holds the upper most <see cref="T:Dia.CanvasItem" /> 
-    and it holds some generic properties, like grid information and undo information. 
-    A constraint <see cref="T:Dia.Solver" /> is also placed in <see cref="T:Dia.Canvas" />.
+    The actual objects on the <see cref="T:Dia.Canvas" />
+    are represented by <see cref="T:Dia.CanvasItem" /> objects. 
+    The <see cref="T:Dia.Canvas" /> itself only holds the 
+    upper most <see cref="T:Dia.CanvasItem" />  and it holds 
+    some generic properties, like grid information and undo 
+    information. A constraint <see cref="T:Dia.Solver" /> is 
+    also placed in <see cref="T:Dia.Canvas" />.
     </remarks>
   </Docs>
   <Base>
@@ -308,9 +312,8 @@
       <ReturnValue />
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
+        <summary>Create a new <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Dia.Canvas" /></returns>
-        <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="GType">
@@ -320,9 +323,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <summary>The Type for the <see cref="Dia.Canvas" /></summary>
+        <returns>a <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridColor">
@@ -335,10 +338,10 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the color of the grid points.</summary>
         <param name="value">a <see cref="T:System.UInt64" /></param>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridOfsX">
@@ -351,10 +354,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets an addition offset to the grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>Make sure that the offset is less than <see cref="P:GridIntX" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GridOfsY">
@@ -367,10 +370,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets an addition offset to the grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>Make sure that the offset is less than <see cref="P:GridIntY" />.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StaticExtents">
@@ -406,10 +409,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the allowance of undo on the <see cref="T:Dia.Canvas" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="SnapToGrid">
@@ -422,10 +425,10 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Sets or gets the snap to grid ability of the <see cref="T:Dia.Canvas" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowStateRequests">
@@ -438,10 +441,13 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>
+	Sets or gets the ability of <see cref="T:Dia.CanvasItem" />s to 
+	query their visual state. Ex. selected, focused and grabbed state.
+	</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extents">
@@ -470,10 +476,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the X interval for the grid, in other words the space between grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridIntY">
@@ -486,10 +492,10 @@
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or set the Y interval for the grid, in other words the space between grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridBg">
@@ -502,10 +508,10 @@
         <Parameter Name="value" Type="System.UInt64" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets or sets the grid background color.</summary>
         <param name="value">a <see cref="T:System.UInt64" /></param>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>Note that this is also the <see cref="T:Dia.Canvas" /> background color.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UndoDepth">
@@ -515,9 +521,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets the amount of undo entries on the undo stack.</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="UndoStackDepth">
@@ -530,10 +536,10 @@
         <Parameter Name="value" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Sets or gets the limit of the length of the undo/redo stack.</summary>
         <param name="value">a <see cref="T:System.UInt32" /></param>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <remarks>The default limit is 10.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RedoDepth">
@@ -543,9 +549,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets the amount of undo entries on the redo stack.</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -555,9 +561,9 @@
         <ReturnType>Dia.CanvasGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets the root item in the <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="RedrawView">
@@ -598,9 +604,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added</summary>
+        <summary>Gets the <see cref="T:Pango.Layout" /> of the <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks>To be added</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">

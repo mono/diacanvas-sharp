@@ -1,6 +1,6 @@
 <Namespace Name="Dia" FullName="Dia" FullNameSP="Dia" Maintainer="Auto">
   <Docs>
-    <summary>DiaCanvas# a full featured diagramming canvas</summary>
+    <summary>DiaCanvas# a full featured diagramming canvas.</summary>
     <remarks>
       <para>
       The design is based on MVC Model/View/Controller.
