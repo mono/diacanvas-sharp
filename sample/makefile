@@ -1,5 +1,4 @@
-ASSEMBLIES=	-r System.Drawing	\
-		-r glib-sharp 		\
+ASSEMBLIES=	-r glib-sharp 		\
 		-r gtk-sharp
 
 SAMPLE=		sample.exe

@@ -12,9 +12,9 @@ public class Sample {
 
 		Dia.Canvas canvas = new Dia.Canvas();
 		CanvasView view = new CanvasView (canvas, true);
-		view.Show();
 
-		PlacementTool tool = new PlacementTool (CanvasLine.GType);
+		Tool tool = new PlacementTool (CanvasLine.GType);
+		tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
 		view.Tool = tool;
 
 		ScrolledWindow scrwin = new ScrolledWindow();
@@ -23,11 +23,17 @@ public class Sample {
 		
 		Window window = new Window ("DiaCanvas C# sample");
 		window.SetDefaultSize (300, 225);
-		window.Add (scrwin);
-		window.ShowAll();
 		window.DeleteEvent += new DeleteEventHandler (Quit);
 
+		window.Add (scrwin);
+		window.ShowAll();
 		Application.Run();
+	}
+
+	static void UnsetTool (object sender, DiaSharp.ButtonPressEventArgs args)
+	{
+		Console.WriteLine ("Event worked!");
+		args.View.Tool = null;
 	}
 
 	static void Quit (object sender, DeleteEventArgs args) 

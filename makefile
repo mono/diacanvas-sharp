@@ -22,7 +22,7 @@ docs:
 	$(MAKE) -C $(DOC_DIR)
 
 install:
-	install -o root -g root -m 644 dia/diacanvas2-sharp.dll /usr/lib
+	$(MAKE) -C $(CODE_DIR) install
 
 clean:
 	$(MAKE) -C $(API_DIR) clean
