@@ -7,8 +7,8 @@
 // This code is inserted after the automatically generated code.
 
 [DllImport("diacanvas2")]
-extern static IntPtr dia_placement_tool_new (GLib.Type object_type, IntPtr dummy);
-public PlacementTool (GLib.Type object_type)
+extern static IntPtr dia_placement_tool_new (uint object_type, IntPtr dummy);
+public PlacementTool (uint object_type)
 {	
 	Raw = dia_placement_tool_new (object_type, IntPtr.Zero);
 }
