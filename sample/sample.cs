@@ -44,8 +44,6 @@ public class Sample {
 		canvas = new Dia.Canvas();
 		canvas.AllowUndo = true;
 		view = new CanvasView (canvas, true);
-		main.KeyPressEvent += new KeyPressEventHandler (CtrlPressed);
-		main.KeyReleaseEvent += new KeyReleaseEventHandler (CtrlReleased);
 		scrolledwindow.Add (view);
 
 		SetupTools();
@@ -125,13 +123,13 @@ public class Sample {
 		view.Tool = new PlacementTool (typeof (Dia.CanvasLine), 
 					       "LineWidth", 8, 
 					       "Color", 480975UL); 
-		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
 	}
 
 	void BoxTool (object sender, EventArgs args)
 	{
 		view.Tool = new PlacementTool (typeof (CanvasBox));
-		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
 	}
 
 	void ImageTool (object sender, EventArgs args)
@@ -141,13 +139,14 @@ public class Sample {
 					       "Image", pixbuf,
 					       "Width", pixbuf.Width,
 					       "Height", pixbuf.Height);
-		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+		view.Tool.ButtonPressEvent += new DiaSharp.ButtonPressEventHandler (UnsetTool);
 	}
 
 	[Glade.Widget] RadioButton tool1;
-	void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
+	void UnsetTool (object sender, DiaSharp.ButtonPressEventArgs args)
 	{
-		if (ctrl)
+		if ((args.Button.state & (uint)ModifierType.ControlMask) == 
+		    (uint)ModifierType.ControlMask)
 			return;
 
 		tool1.Active = true;
@@ -156,7 +155,8 @@ public class Sample {
 	void Zoom (object sender, ButtonPressEventArgs args)
 	{
 		
-		if (ctrl)
+		if ((args.Event.state & (uint)ModifierType.ControlMask) == 
+		    (uint)ModifierType.ControlMask)
 			ZoomOut (this, null);
 		else
 			ZoomIn (this, null);
@@ -168,9 +168,9 @@ public class Sample {
 		svg.Render (canvas);
 
 		try {
-			svg.Save ("test.svg");
-		} catch (GException ex) {
-			Console.WriteLine (ex);
+			svg.Save ("./test.svg");
+		} catch (Exception e) {
+			Console.WriteLine (e);
 		}
 	}
 
@@ -234,19 +234,6 @@ public class Sample {
 	void SnapToGrid (object sender, EventArgs args)
 	{
 		canvas.SnapToGrid = !canvas.SnapToGrid;
-	}
-
-	bool ctrl = false;
-	void CtrlPressed (object sender, KeyPressEventArgs args)
-	{
-		if (args.Event.keyval == 65507)
-			ctrl = true;
-	}
-
-	void CtrlReleased (object sender, KeyReleaseEventArgs args)
-	{
-		if (args.Event.keyval == 65507)
-			ctrl = false;
 	}
 
 	void About (object sender, EventArgs args)

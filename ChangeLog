@@ -1,3 +1,8 @@
+2003-11-22  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sample/sample.cs: Check for ctrl modifier the proper way.
+	* README: Removed reqs, they are detected by configure now.
+
 2003-11-17  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/dia/CanvasEditable.xml: Documented
