@@ -1,7 +1,12 @@
 SUBDIRS=pixmaps glade
-EXTRA_DIST= *.cs
 
-RESOURCES=	-resource:glade/gui.glade,gui.glade			\
+assemblydir= 	$(bindir)
+assembly_DATA=	diacanvas-sharp-sample.exe
+bin_SCRIPTS=	diacanvas-sharp-sample
+CLEANFILES= 	$(assembly_DATA)
+DISTCLEANFILES= $(bin_SCRIPTS)
+
+resources=	-resource:glade/gui.glade,gui.glade			\
 		-resource:pixmaps/logo.png,logo.png			\
 		-resource:pixmaps/selection.png,selection.png		\
 		-resource:pixmaps/gimp-zoom.png,gimp-zoom.png		\
@@ -10,17 +15,16 @@ RESOURCES=	-resource:glade/gui.glade,gui.glade			\
 		-resource:pixmaps/glade-image.png,glade-image.png 	\
 		-resource:pixmaps/text.png,text.png
 
-SAMPLE=		diacanvas-sharp-sample.exe
-SCRIPT=		diacanvas-sharp-sample
+references=	-pkg:gnome-sharp,glade-sharp -r:../dia/diacanvas-sharp.dll
 
-all: $(SAMPLE)
+sources=	CanvasFigure.cs		\
+		CanvasTextBox.cs	\
+		sample.cs
 
-$(SAMPLE): *.cs ../dia/diacanvas-sharp.dll
-	mcs -pkg:gnome-sharp,glade-sharp -r ../dia/diacanvas-sharp $(RESOURCES) *.cs -o $(SAMPLE)
+build_sources = $(addprefix $(srcdir)/, $(sources))
+dist_sources = $(sources)
 
-install:
-	$(INSTALL) -m 644 $(SAMPLE) $(bindir)
-	$(INSTALL) -m 755 $(SCRIPT) $(bindir)
+EXTRA_DIST= 	$(dist_sources)
 
-clean:
-	rm -f $(SAMPLE)
+$(assembly_DATA): *.cs ../dia/diacanvas-sharp.dll
+	$(CSC) /out:$(assembly_DATA) $(resources) $(references) $(build_sources)
