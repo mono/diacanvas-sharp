@@ -1782,7 +1782,7 @@
       <field cname="dx" type="gdouble"/>
       <field cname="dy" type="gdouble"/>
     </struct>
-    <struct name="Expression" cname="DiaExpression">
+    <struct name="Expression" cname="DiaExpression" hidden="1">
       <field cname="len" type="guint"/>
       <field cname="variable" type="struct-_DiaExpressionElem{DiaVariable*"/>
       <field cname="constant" type="gdouble"/>
@@ -2444,7 +2444,7 @@
         <parameters>
           <parameter type="DiaAttributeNode*" name="attr"/>
           <parameter type="DiaPersistent*" name="object"/>
-          <parameter type="/*&lt;" name="INOUT"/>
+          <parameter type="GtkArg*" name="value"/>
         </parameters>
       </method>
       <method name="AttributeGetValueRaw" cname="dia_storage_attribute_get_value_raw">
@@ -2627,7 +2627,7 @@
       <method name="ToBuffer" cname="dia_storage_to_buffer">
         <return-type type="gchar*"/>
         <parameters>
-          <parameter type="/*out*/gint*" name="size"/>
+          <parameter type="gint*" name="size"/>
         </parameters>
       </method>
     </struct>
@@ -2659,7 +2659,7 @@
         </parameters>
       </method>
     </struct>
-    <struct name="VariableClass" cname="DiaVariableClass">
+    <struct name="VariableClass" cname="DiaVariableClass" hidden="1">
       <field cname="parent_class" type="GObjectClass"/>
       <callback cname="changed">
         <return-type type="void"/>

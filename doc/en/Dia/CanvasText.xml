@@ -123,7 +123,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasText ();" />
+      <MemberSignature Language="C#" Value="public CanvasText ();" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters />

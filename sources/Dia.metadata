@@ -2,8 +2,6 @@
 <metadata>
 
 <!-- hides -->
-
-<rule>
 <rule>
   <class name="DiaExpression"/>
   <class name="DiaVariableClass"/>
@@ -14,6 +12,7 @@
     </attribute>
   </data>
 </rule>
+<rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>
    </class>
