@@ -1,4 +1,5 @@
 using System;
+
 using Dia;
 using Gtk;
 using GtkSharp;
@@ -15,10 +16,15 @@ public class Sample {
 
 		PlacementTool tool = new PlacementTool (CanvasLine.GType);
 		view.Tool = tool;
+
+		ScrolledWindow scrwin = new ScrolledWindow();
+		scrwin.SetPolicy (PolicyType.Always, PolicyType.Always);
+		scrwin.Add (view);
 		
 		Window window = new Window ("DiaCanvas C# sample");
-		window.Add (view);
-		window.Show();
+		window.SetDefaultSize (300, 225);
+		window.Add (scrwin);
+		window.ShowAll();
 		window.DeleteEvent += new DeleteEventHandler (Quit);
 
 		Application.Run();

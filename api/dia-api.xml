@@ -239,16 +239,16 @@
           <parameter type="DiaCanvas*" name="canvas"/>
         </parameters>
       </signal>
-      <property name="SnapToGrid" cname="snap_to_grid" type="gboolean" doc-string=" _(Turn snap to grid option on and off.)" readable="true" writeable="true"/>
-      <property name="StaticExtents" cname="static_extents" type="gboolean" doc-string=" _(Should the canvas extents be static or change depending on the contents.)" readable="true" writeable="true"/>
-      <property name="Extents" cname="extents" type="DiaRectangle" doc-string=" _(Set extents)" readable="true" writeable="true"/>
-      <property name="AllowUndo" cname="allow_undo" type="gboolean" doc-string=" _(Save item properties in order to allow the user to undo them.)" readable="true" writeable="true"/>
-      <property name="GridIntX" cname="grid_int_x" type="gdouble" doc-string=" _(Grid X interval)" readable="true" writeable="true"/>
-      <property name="GridIntY" cname="grid_int_y" type="gdouble" doc-string=" _(Grid Y interval)" readable="true" writeable="true"/>
-      <property name="GridOfsX" cname="grid_ofs_x" type="gdouble" doc-string=" _(Grid X offset)" readable="true" writeable="true"/>
-      <property name="GridOfsY" cname="grid_ofs_y" type="gdouble" doc-string=" _(Grid Y offset)" readable="true" writeable="true"/>
-      <property name="GridColor" cname="grid_color" type="ulong" doc-string=" _(Grid foreground color)" readable="true" writeable="true"/>
-      <property name="GridBg" cname="grid_bg" type="ulong" doc-string=" _(Grid background color)" readable="true" writeable="true"/>
+      <property name="SnapToGrid" cname="snap_to_grid" type="gboolean" readable="true" writeable="true"/>
+      <property name="StaticExtents" cname="static_extents" type="gboolean" readable="true" writeable="true"/>
+      <property name="Extents" cname="extents" type="DiaRectangle" readable="true" writeable="true"/>
+      <property name="AllowUndo" cname="allow_undo" type="gboolean" readable="true" writeable="true"/>
+      <property name="GridIntX" cname="grid_int_x" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridIntY" cname="grid_int_y" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridOfsX" cname="grid_ofs_x" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridOfsY" cname="grid_ofs_y" type="gdouble" readable="true" writeable="true"/>
+      <property name="GridColor" cname="grid_color" type="ulong" readable="true" writeable="true"/>
+      <property name="GridBg" cname="grid_bg" type="ulong" readable="true" writeable="true"/>
       <method name="AddConstraint" cname="dia_canvas_add_constraint">
         <return-type type="void"/>
         <parameters>
@@ -382,9 +382,9 @@
       <field cname="bg_color" type="DiaColor"/>
       <field cname="line_width" type="gdouble"/>
       <field cname="border" type="DiaShape*"/>
-      <property name="Color" cname="color" type="ulong" doc-string=" _(Color of the line in RGBA)" readable="true" writeable="true"/>
-      <property name="BgColor" cname="bg_color" type="ulong" doc-string=" _(Background color)" readable="true" writeable="true"/>
-      <property name="LineWidth" cname="line_width" type="gdouble" doc-string=" _(width of the border)" readable="true" writeable="true"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="BgColor" cname="bg_color" type="ulong" readable="true" writeable="true"/>
+      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_canvas_box_get_type" shared="true">
         <return-type type="GType"/>
       </method>
@@ -394,10 +394,10 @@
       <field cname="height" type="gdouble"/>
       <field cname="min_width" type="gdouble"/>
       <field cname="min_height" type="gdouble"/>
-      <property name="Width" cname="width" type="gdouble" doc-string=" _(Width of the element)" readable="true" writeable="true"/>
-      <property name="Height" cname="height" type="gdouble" doc-string=" _(Height of the element)" readable="true" writeable="true"/>
-      <property name="MinWidth" cname="min_width" type="gdouble" doc-string=" _(Minimal width of the element)" readable="true" writeable="true"/>
-      <property name="MinHeight" cname="min_height" type="gdouble" doc-string=" _(Minimal height of the element)" readable="true" writeable="true"/>
+      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true"/>
+      <property name="MinWidth" cname="min_width" type="gdouble" readable="true" writeable="true"/>
+      <property name="MinHeight" cname="min_height" type="gdouble" readable="true" writeable="true"/>
       <method name="AlignHandles" cname="dia_canvas_element_align_handles">
         <return-type type="void"/>
       </method>
@@ -455,7 +455,7 @@
       <field cname="pixbuf" type="GdkPixbuf*"/>
       <field cname="clip" type="//DiaShape*"/>
       <field cname="image" type="DiaShape*"/>
-      <property name="Image" cname="image" type="GdkPixbuf" doc-string=" _(Image to be displayed)" readable="true" writeable="true"/>
+      <property name="Image" cname="image" type="GdkPixbuf" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_canvas_image_get_type" shared="true">
         <return-type type="GType"/>
       </method>
@@ -518,12 +518,12 @@
           <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </signal>
-      <property name="PropParent" cname="prop_parent" type="DiaCanvasItem" doc-string=" _(The parent group of this canvas item)" readable="true" writeable="true"/>
-      <property name="PropVisible" cname="prop_visible" type="gboolean" doc-string=" _(Whether the canvas item is visible)" readable="true" writeable="true"/>
-      <property name="PropConnect" cname="prop_connect" type="DiaHandle" doc-string=" _(Connect a handle to this object)" writeable="true"/>
-      <property name="PropDisconnect" cname="prop_disconnect" type="DiaHandle" doc-string=" _(Disconnect a handle from this object)" writeable="true"/>
-      <property name="PropAffine" cname="prop_affine" type="DiaAffine" doc-string=" _(Set a new transformation matrix for the object)" readable="true" writeable="true"/>
-      <property name="PropHandles" cname="prop_handles" type="DiaCanvasItemHandles" doc-string=" _(List of handles, used internaly)" readable="true" writeable="true"/>
+      <property name="PropParent" cname="prop_parent" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="PropVisible" cname="prop_visible" type="gboolean" readable="true" writeable="true"/>
+      <property name="PropConnect" cname="prop_connect" type="DiaHandle" writeable="true"/>
+      <property name="PropDisconnect" cname="prop_disconnect" type="DiaHandle" writeable="true"/>
+      <property name="PropAffine" cname="prop_affine" type="DiaAffine" readable="true" writeable="true"/>
+      <property name="PropHandles" cname="prop_handles" type="DiaCanvasItemHandles" readable="true" writeable="true"/>
       <method name="AffineGetType" cname="dia_canvas_item_affine_get_type" shared="true">
         <return-type type="GType"/>
       </method>
@@ -744,33 +744,33 @@
       <field cname="line" type="DiaShape*"/>
       <field cname="head_arrow" type="DiaShape*"/>
       <field cname="tail_arrow" type="DiaShape*"/>
-      <property name="LineWidth" cname="line_width" type="gdouble" doc-string=" _(Width of the line)" readable="true" writeable="true"/>
-      <property name="Color" cname="color" type="ulong" doc-string=" _(Color of the line in RGBA)" readable="true" writeable="true"/>
-      <property name="Cap" cname="cap" type="DiaCapStyle" doc-string=" _(Style of the line ends)" readable="true" writeable="true"/>
-      <property name="Join" cname="join" type="DiaJoinStyle" doc-string=" _(Style of the line's corners)" readable="true" writeable="true"/>
-      <property name="Cyclic" cname="cyclic" type="gboolean" doc-string=" _(Line is cyclic, a polygon)" readable="true" writeable="true"/>
-      <property name="Orthogonal" cname="orthogonal" type="gboolean" doc-string=" _(Add contains to the line points to make them orthogonal (horizontal and vertical).)" readable="true" writeable="true"/>
-      <property name="Horizontal" cname="horizontal" type="gboolean" doc-string=" _(Make the first segment of the line horizontal. This should be used in conjuncion with the 'orthogonal' option.)" readable="true" writeable="true"/>
-      <property name="AddPoint" cname="add_point" type="DiaPoint" doc-string=" _(Point to add to the line)" writeable="true"/>
-      <property name="AddSegment" cname="add_segment" type="guint" doc-string=" _(Add a segment by splitting the given segment into two.)" writeable="true"/>
-      <property name="DelSegment" cname="del_segment" type="guint" doc-string=" _(Delete a segment, first segment is indexed with 0.)" writeable="true"/>
-      <property name="Dash" cname="dash" type="DiaDashStyle" doc-string=" _(Dash style, of type DiaDashStyle.)" readable="true" writeable="true"/>
-      <property name="HeadPos" cname="head_pos" type="DiaPoint" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="TailPos" cname="tail_pos" type="DiaPoint" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="HasHead" cname="has_head" type="gboolean" doc-string=" _(The line should have an arrow on the beginning of the line. The arrow is descripbed by 'head_[abcd]'.)" readable="true" writeable="true"/>
-      <property name="HasTail" cname="has_tail" type="gboolean" doc-string=" _(The line should have an arrow on the end of the line. The arrow is descripbed by 'tail_[abcd]'.)" readable="true" writeable="true"/>
-      <property name="HeadColor" cname="head_color" type="ulong" doc-string=" _(Color of the head arrow in RGBA)" readable="true" writeable="true"/>
-      <property name="TailColor" cname="tail_color" type="ulong" doc-string=" _(Color of the end arrow in RGBA)" readable="true" writeable="true"/>
-      <property name="HeadFillColor" cname="head_fill_color" type="ulong" doc-string=" _(Color of the line in RGBA)" readable="true" writeable="true"/>
-      <property name="TailFillColor" cname="tail_fill_color" type="ulong" doc-string=" _(Color of the line in RGBA)" readable="true" writeable="true"/>
-      <property name="HeadA" cname="head_a" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="HeadB" cname="head_b" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="HeadC" cname="head_c" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="HeadD" cname="head_d" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="TailA" cname="tail_a" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="TailB" cname="tail_b" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="TailC" cname="tail_c" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="TailD" cname="tail_d" type="gdouble" doc-string=" _()" readable="true" writeable="true"/>
+      <property name="LineWidth" cname="line_width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="Cap" cname="cap" type="DiaCapStyle" readable="true" writeable="true"/>
+      <property name="Join" cname="join" type="DiaJoinStyle" readable="true" writeable="true"/>
+      <property name="Cyclic" cname="cyclic" type="gboolean" readable="true" writeable="true"/>
+      <property name="Orthogonal" cname="orthogonal" type="gboolean" readable="true" writeable="true"/>
+      <property name="Horizontal" cname="horizontal" type="gboolean" readable="true" writeable="true"/>
+      <property name="AddPoint" cname="add_point" type="DiaPoint" writeable="true"/>
+      <property name="AddSegment" cname="add_segment" type="guint" writeable="true"/>
+      <property name="DelSegment" cname="del_segment" type="guint" writeable="true"/>
+      <property name="Dash" cname="dash" type="DiaDashStyle" readable="true" writeable="true"/>
+      <property name="HeadPos" cname="head_pos" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="TailPos" cname="tail_pos" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="HasHead" cname="has_head" type="gboolean" readable="true" writeable="true"/>
+      <property name="HasTail" cname="has_tail" type="gboolean" readable="true" writeable="true"/>
+      <property name="HeadColor" cname="head_color" type="ulong" readable="true" writeable="true"/>
+      <property name="TailColor" cname="tail_color" type="ulong" readable="true" writeable="true"/>
+      <property name="HeadFillColor" cname="head_fill_color" type="ulong" readable="true" writeable="true"/>
+      <property name="TailFillColor" cname="tail_fill_color" type="ulong" readable="true" writeable="true"/>
+      <property name="HeadA" cname="head_a" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadB" cname="head_b" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadC" cname="head_c" type="gdouble" readable="true" writeable="true"/>
+      <property name="HeadD" cname="head_d" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailA" cname="tail_a" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailB" cname="tail_b" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailC" cname="tail_c" type="gdouble" readable="true" writeable="true"/>
+      <property name="TailD" cname="tail_d" type="gdouble" readable="true" writeable="true"/>
       <method name="GetClosestSegment" cname="dia_canvas_line_get_closest_segment">
         <return-type type="gint"/>
         <parameters>
@@ -799,18 +799,18 @@
           <parameter type="const-gchar*" name="text"/>
         </parameters>
       </signal>
-      <property name="Font" cname="font" type="PangoFontDescription" doc-string=" _()" writeable="true"/>
-      <property name="Text" cname="text" type="gchar*" doc-string=" _(Text to be displayed)" readable="true" writeable="true"/>
-      <property name="Cursor" cname="cursor" type="gint" doc-string=" _(Position of the cursor in the text)" readable="true" writeable="true"/>
-      <property name="Width" cname="width" type="gdouble" doc-string=" _(Width of the text)" readable="true" writeable="true"/>
-      <property name="Height" cname="height" type="gdouble" doc-string=" _(Height of the text)" readable="true" writeable="true"/>
-      <property name="Editable" cname="editable" type="gboolean" doc-string=" _(Text is editable)" readable="true" writeable="true"/>
-      <property name="Markup" cname="markup" type="gboolean" doc-string=" _(Text has markup symbols)" readable="true" writeable="true"/>
-      <property name="WrapWord" cname="wrap-word" type="gboolean" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="Multiline" cname="multiline" type="gboolean" doc-string=" _(Multiline text)" readable="true" writeable="true"/>
-      <property name="Color" cname="color" type="ulong" doc-string=" _(Color of the text in RGBA)" readable="true" writeable="true"/>
-      <property name="Alignment" cname="alignment" type="PangoAlignment" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="Layout" cname="layout" type="PangoLayout" doc-string=" _(Layout of the text)" readable="true"/>
+      <property name="Font" cname="font" type="PangoFontDescription" writeable="true"/>
+      <property name="Text" cname="text" type="gchar*" readable="true" writeable="true"/>
+      <property name="Cursor" cname="cursor" type="gint" readable="true" writeable="true"/>
+      <property name="Width" cname="width" type="gdouble" readable="true" writeable="true"/>
+      <property name="Height" cname="height" type="gdouble" readable="true" writeable="true"/>
+      <property name="Editable" cname="editable" type="gboolean" readable="true" writeable="true"/>
+      <property name="Markup" cname="markup" type="gboolean" readable="true" writeable="true"/>
+      <property name="WrapWord" cname="wrap-word" type="gboolean" readable="true" writeable="true"/>
+      <property name="Multiline" cname="multiline" type="gboolean" readable="true" writeable="true"/>
+      <property name="Color" cname="color" type="ulong" readable="true" writeable="true"/>
+      <property name="Alignment" cname="alignment" type="PangoAlignment" readable="true" writeable="true"/>
+      <property name="Layout" cname="layout" type="PangoLayout" readable="true"/>
       <method name="GetType" cname="dia_canvas_text_get_type" shared="true">
         <return-type type="GType"/>
       </method>
@@ -848,11 +848,11 @@
           <parameter type="DiaCanvasViewItem*" name="unselected_item"/>
         </parameters>
       </signal>
-      <property name="Aa" cname="aa" type="gboolean" doc-string=" _(Set the canvas to anti-alias or X render mode. Only during initialization. You should also have pushed the right colormap (gdk_rgb_get_cmap() for AA, gdk_imlib_cmap() for X).)" readable="true" writeable="true"/>
-      <property name="Canvas" cname="canvas" type="DiaCanvas" doc-string=" _(Canvas to be displayed in the view)" readable="true" writeable="true"/>
-      <property name="ActiveView" cname="active_view" type="DiaCanvasView" doc-string=" _(Returns the active view, even if the view itself is not the active view.)" readable="true"/>
-      <property name="Zoom" cname="zoom" type="gdouble" doc-string=" _(Set the zoom factor)" readable="true" writeable="true"/>
-      <property name="Tool" cname="tool" type="DiaTool" doc-string=" _(Set a tool, may be NULL)" readable="true" writeable="true"/>
+      <property name="Aa" cname="aa" type="gboolean" readable="true" writeable="true"/>
+      <property name="Canvas" cname="canvas" type="DiaCanvas" readable="true" writeable="true"/>
+      <property name="ActiveView" cname="active_view" type="DiaCanvasView" readable="true"/>
+      <property name="Zoom" cname="zoom" type="gdouble" readable="true" writeable="true"/>
+      <property name="Tool" cname="tool" type="DiaTool" readable="true" writeable="true"/>
       <method name="AaNew" cname="dia_canvas_view_aa_new" shared="true">
         <return-type type="GtkWidget*"/>
       </method>
@@ -957,7 +957,7 @@
       <field cname="n_handle_pos" type="guint"/>
       <field cname="handle_pos" type="gint*"/>
       <field cname="event_time" type="guint32"/>
-      <property name="Item" cname="item" type="DiaCanvasItem" doc-string=" _(DiaCanvasItem that should be visualized)" readable="true" writeable="true"/>
+      <property name="Item" cname="item" type="DiaCanvasItem" readable="true" writeable="true"/>
       <method name="AddItems" cname="dia_canvas_view_item_add_items" shared="true">
         <return-type type="void"/>
         <parameters>
@@ -1070,15 +1070,15 @@
       <field cname="pos_w" type="DiaSPoint"/>
       <field cname="connected_to" type="DiaCanvasItem*"/>
       <field cname="constraints" type="GSList*"/>
-      <property name="Owner" cname="owner" type="DiaCanvasItem" doc-string=" _(Item owning the handle.)" readable="true" writeable="true"/>
-      <property name="PosI" cname="pos_i" type="DiaPoint" doc-string=" _(Item relative position.)" readable="true" writeable="true"/>
-      <property name="PosW" cname="pos_w" type="DiaPoint" doc-string=" _(Items world position.)" readable="true" writeable="true"/>
-      <property name="Strength" cname="strength" type="DiaStrength" doc-string=" _(Strength of the handle.)" readable="true" writeable="true"/>
-      <property name="Connect" cname="connect" type="DiaCanvasItem" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" doc-string=" _()" readable="true" writeable="true"/>
-      <property name="ConnectedTo" cname="connected_to" type="DiaCanvasItem" doc-string=" _(Item connected to the handle)" readable="true"/>
-      <property name="Connectable" cname="connectable" type="gboolean" doc-string=" _(Handle can be connected to other items.)" readable="true" writeable="true"/>
-      <property name="Movable" cname="movable" type="gboolean" doc-string=" _(Handle can be moved independend from the owner.)" readable="true" writeable="true"/>
+      <property name="Owner" cname="owner" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="PosI" cname="pos_i" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="PosW" cname="pos_w" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="Strength" cname="strength" type="DiaStrength" readable="true" writeable="true"/>
+      <property name="Connect" cname="connect" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Disconnect" cname="disconnect" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="ConnectedTo" cname="connected_to" type="DiaCanvasItem" readable="true"/>
+      <property name="Connectable" cname="connectable" type="gboolean" readable="true" writeable="true"/>
+      <property name="Movable" cname="movable" type="gboolean" readable="true" writeable="true"/>
       <method name="AddConstraint" cname="dia_handle_add_constraint">
         <return-type type="void"/>
         <parameters>
@@ -1259,10 +1259,10 @@
       <field cname="y1" type="gdouble"/>
       <field cname="x2" type="gdouble"/>
       <field cname="y2" type="gdouble"/>
-      <property name="X1" cname="x1" type="gint" doc-string=" _(Selector upper left X.)" readable="true" writeable="true"/>
-      <property name="Y1" cname="y1" type="gint" doc-string=" _(Selector upper left Y.)" readable="true" writeable="true"/>
-      <property name="X2" cname="x2" type="gint" doc-string=" _(Selector lower right X.)" readable="true" writeable="true"/>
-      <property name="Y2" cname="y2" type="gint" doc-string=" _(Selector lower right Y.)" readable="true" writeable="true"/>
+      <property name="X1" cname="x1" type="gint" readable="true" writeable="true"/>
+      <property name="Y1" cname="y1" type="gint" readable="true" writeable="true"/>
+      <property name="X2" cname="x2" type="gint" readable="true" writeable="true"/>
+      <property name="Y2" cname="y2" type="gint" readable="true" writeable="true"/>
       <method name="GetType" cname="dia_selector_get_type" shared="true">
         <return-type type="GtkType"/>
       </method>
