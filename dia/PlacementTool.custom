@@ -8,7 +8,63 @@
 
 [DllImport("diacanvas2")]
 extern static IntPtr dia_placement_tool_new (uint object_type, IntPtr dummy);
-public PlacementTool (uint object_type)
-{	
-	Raw = dia_placement_tool_new (object_type, IntPtr.Zero);
+
+public static PlacementTool Line()
+{
+	return new PlacementTool (dia_placement_tool_new (CanvasLine.GType, 
+							  IntPtr.Zero));
+}
+
+public static PlacementTool Box()
+{
+	return new PlacementTool (dia_placement_tool_new (CanvasBox.GType, 
+							  IntPtr.Zero));
+}
+
+[DllImport("diacanvas2")]
+extern static IntPtr dia_placement_tool_new (uint object_type, 
+					     string font, IntPtr fnt,
+					     string text, string txt,
+					     string cursor, int cur,
+					     string width, double wid,
+					     string height, double hei,
+					     string editable, bool edit,
+					     string markup, bool mark,
+					     string wrapword, bool wrap,
+					     string multiline, bool multi,
+					     string color, ulong col,
+					     string alignment, Pango.Alignment align,
+					     IntPtr dummy);
+public static PlacementTool Text()
+{
+	Pango.FontDescription description = Pango.FontDescription.FromString ("helvetica 20");
+	Pango.Alignment alignment = Pango.Alignment.Left;
+
+	return new PlacementTool (dia_placement_tool_new (CanvasText.GType,
+							  "font", description.Handle,
+							  "text", "foobar",
+							  "cursor", 1,
+							  "width", 100,
+							  "height", 50,
+							  "editable", true,
+							  "markup", false,
+							  "wrap-word", true,
+							  "multiline", true,
+							  "color", 0,
+							  "alignment", alignment,
+							  IntPtr.Zero));
+}
+
+// TODO
+[DllImport("diacanvas2")]
+extern static IntPtr dia_placement_tool_new (uint object_type, 
+					     string image, IntPtr pixbuf, 
+					     IntPtr dummy);
+public static PlacementTool Image (string filename)
+{
+	Gdk.Pixbuf pixbuf = new Gdk.Pixbuf (filename);
+
+	return new PlacementTool (dia_placement_tool_new (CanvasImage.GType,
+							  "image", pixbuf.Handle,
+							  IntPtr.Zero));
 }

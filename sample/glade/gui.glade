@@ -380,6 +380,29 @@
 		  </child>
 		</widget>
 	      </child>
+
+	      <child>
+		<widget class="GtkRadioButton" id="tool6">
+		  <property name="visible">True</property>
+		  <property name="can_focus">True</property>
+		  <property name="relief">GTK_RELIEF_NORMAL</property>
+		  <property name="active">False</property>
+		  <property name="inconsistent">False</property>
+		  <property name="draw_indicator">False</property>
+		  <property name="group">tool1</property>
+		  <signal name="clicked" handler="ImageTool" last_modification_time="Sat, 12 Jul 2003 09:15:54 GMT"/>
+
+		  <child>
+		    <widget class="GtkImage" id="image6">
+		      <property name="visible">True</property>
+		      <property name="xalign">0.5</property>
+		      <property name="yalign">0.5</property>
+		      <property name="xpad">0</property>
+		      <property name="ypad">0</property>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
 	    </widget>
 	    <packing>
 	      <property name="padding">0</property>

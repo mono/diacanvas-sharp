@@ -32,7 +32,7 @@ public class Sample {
 		main.ShowAll();
 	}
 
-	[Glade.Widget] Gtk.Image image1, image2, image3, image4, image5;
+	[Glade.Widget] Gtk.Image image1, image2, image3, image4, image5, image6;
 	void SetupTools()
 	{
 		image1.Pixbuf = new Pixbuf (null, "pixmaps/selection.png");
@@ -40,6 +40,7 @@ public class Sample {
 		image3.Pixbuf = new Pixbuf (null, "pixmaps/line.png");
 		image4.Pixbuf = new Pixbuf (null, "pixmaps/box.png");
 		image5.Pixbuf = new Pixbuf (null, "pixmaps/text.png");
+		image6.Pixbuf = new Pixbuf (null, "pixmaps/text.png");
 	}
 
 	void SelectionTool (object sender, EventArgs args)
@@ -58,21 +59,28 @@ public class Sample {
 	void LineTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = new PlacementTool (Dia.CanvasLine.GType);
+		view.Tool = PlacementTool.Line();
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void BoxTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = new PlacementTool (Dia.CanvasBox.GType);
+		view.Tool = PlacementTool.Box();
+		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
+	}
+
+	void ImageTool (object sender, EventArgs args)
+	{
+		ToolCleanUp();
+		view.Tool = PlacementTool.Image ("pixmaps/logo.png");
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void TextTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		view.Tool = new PlacementTool (Dia.CanvasText.GType);
+		view.Tool = PlacementTool.Text();
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
