@@ -1,0 +1,17 @@
+? Method.cs.diff
+Index: Method.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Method.cs,v
+retrieving revision 1.31
+diff -u -r1.31 Method.cs
+--- Method.cs	23 Jul 2003 17:19:19 -0000	1.31
++++ Method.cs	14 Aug 2003 13:57:51 -0000
+@@ -217,7 +217,7 @@
+ 				sw.Write("static ");
+ 			sw.Write(safety);
+ 			Method dup = null;
+-			if (Name == "ToString")
++			if (Name == "ToString" && Params == null)
+ 				sw.Write("override ");
+ 			else if (Name == "GetGType" && container_type is ObjectGen)
+ 				sw.Write("new ");
