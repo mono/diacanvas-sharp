@@ -61,11 +61,7 @@ public class Sample {
 		box.Color = 2134231;
 		canvas.Root.Add (box);
 
-		CanvasImage image = new CanvasImage();
-		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
-		image.Image = pixbuf;
-		image.Height = pixbuf.Height;
-		image.Width = pixbuf.Width;
+		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);
 		canvas.Root.Add (image);
 

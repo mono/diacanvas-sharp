@@ -1,3 +1,9 @@
+2003-07-26  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* dia/CanvasImage.custom: Changed public Ctor to use a pixmap parameter
+	  now height and width are automagically set.
+	* sample/sample.cs: Updated to reflect CanvasImage.custom changes
+
 2003-07-23  Martin Willemoes Hansen <mwh@sysrq.dk>
 
 	* dia/Point.custom: Added, convenience ctor

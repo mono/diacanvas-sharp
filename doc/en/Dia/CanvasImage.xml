@@ -66,12 +66,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CanvasImage ();" />
+      <MemberSignature Language="C#" Value="public CanvasImage (Gdk.Pixbuf pixbuf);" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
-      <Parameters />
+      <Parameters>
+        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
+        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
         <returns>a <see cref="T:Dia.CanvasImage" /></returns>
         <remarks>To be added</remarks>
       </Docs>
