@@ -4,7 +4,7 @@ diacanvasdoc_DATA = diacanvas-docs.zip diacanvas-docs.tree diacanvas-docs.source
 CLEANFILES= *.tree *.zip tmp ..zip
 EXTRA_DIST= diacanvas-docs.source
 
-ASSEMBLER=../../monodoc/browser/assembler.exe
+ASSEMBLER=@prefix@/lib/monodoc/assembler.exe
 UPDATER=../../monodoc/generator/updater.exe
 
 all: diacanvas-docs.zip diacanvas-docs.tree
