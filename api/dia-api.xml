@@ -114,7 +114,7 @@
     <callback name="ConstraintFunc" cname="DiaConstraintFunc">
       <return-type type="void"/>
       <parameters>
-        <parameter type="*" name=""/>
+        <parameter type="DiaConstraint*" name="constraint"/>
         <parameter type="DiaVariable*" name="variable"/>
         <parameter type="gdouble" name="constant"/>
         <parameter type="gpointer" name="user_data"/>
@@ -1133,7 +1133,7 @@
       <signal name="NeedResolve" cname="need_resolve" when="LAST">
         <return-type type="void"/>
         <parameters>
-          <parameter type="*" name=""/>
+          <parameter type="DiaConstraint*" name="constraint"/>
           <parameter type="DiaVariable*" name="var"/>
         </parameters>
       </signal>
@@ -1426,7 +1426,7 @@
       <method name="AddConstraint" cname="dia_solver_add_constraint">
         <return-type type="void"/>
         <parameters>
-          <parameter type="*" name=""/>
+          <parameter type="DiaConstraint*" name="constraint"/>
         </parameters>
       </method>
       <method name="GetType" cname="dia_solver_get_type" shared="true">
@@ -1436,7 +1436,7 @@
       <method name="RemoveConstraint" cname="dia_solver_remove_constraint">
         <return-type type="void"/>
         <parameters>
-          <parameter type="*" name=""/>
+          <parameter type="DiaConstraint*" name="constraint"/>
         </parameters>
       </method>
       <method name="Resolve" cname="dia_solver_resolve">
@@ -2444,7 +2444,7 @@
         <parameters>
           <parameter type="DiaAttributeNode*" name="attr"/>
           <parameter type="DiaPersistent*" name="object"/>
-          <parameter type="GtkArg*" name="value"/>
+          <parameter type="/*&lt;" name="INOUT"/>
         </parameters>
       </method>
       <method name="AttributeGetValueRaw" cname="dia_storage_attribute_get_value_raw">
@@ -2627,7 +2627,7 @@
       <method name="ToBuffer" cname="dia_storage_to_buffer">
         <return-type type="gchar*"/>
         <parameters>
-          <parameter type="gint*" name="size"/>
+          <parameter type="/*out*/gint*" name="size"/>
         </parameters>
       </method>
     </struct>
@@ -2674,79 +2674,5 @@
         </parameters>
       </callback>
     </struct>
-    <class name="Distance" cname="DiaDistance_">
-      <method name="LinePoint" cname="dia_distance_line_point" shared="true">
-        <return-type type="gdouble"/>
-        <parameters>
-          <parameter type="DiaPoint*" name="line_start"/>
-          <parameter type="DiaPoint*" name="line_end"/>
-          <parameter type="DiaPoint*" name="point"/>
-          <parameter type="gdouble" name="line_width"/>
-          <parameter type="DiaCapStyle" name="style"/>
-          <parameter type="DiaPoint*" name="point_on_line"/>
-        </parameters>
-      </method>
-      <method name="PointPoint" cname="dia_distance_point_point" shared="true">
-        <return-type type="gdouble"/>
-        <parameters>
-          <parameter type="DiaPoint*" name="p1"/>
-          <parameter type="DiaPoint*" name="p2"/>
-        </parameters>
-      </method>
-      <method name="PointPointManhattan" cname="dia_distance_point_point_manhattan" shared="true">
-        <return-type type="gdouble"/>
-        <parameters>
-          <parameter type="DiaPoint*" name="p1"/>
-          <parameter type="DiaPoint*" name="p2"/>
-        </parameters>
-      </method>
-      <method name="RectanglePoint" cname="dia_distance_rectangle_point" shared="true">
-        <return-type type="gdouble"/>
-        <parameters>
-          <parameter type="DiaRectangle*" name="rect"/>
-          <parameter type="DiaPoint*" name="point"/>
-        </parameters>
-      </method>
-    </class>
-    <class name="Global" cname="DiaGlobal">
-      <method name="EventGetType" cname="dia_event_get_type" shared="true">
-        <return-type type="GType"/>
-      </method>
-      <method name="ExportPrint" cname="dia_export_print" shared="true">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="gpointer" name="gpm"/>
-          <parameter type="DiaCanvas*" name="canvas"/>
-        </parameters>
-      </method>
-    </class>
-    <class name="Intersection" cname="DiaIntersection_">
-      <method name="LineLine" cname="dia_intersection_line_line" shared="true">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPoint*" name="start1"/>
-          <parameter type="DiaPoint*" name="end1"/>
-          <parameter type="DiaPoint*" name="start2"/>
-          <parameter type="DiaPoint*" name="end2"/>
-          <parameter type="DiaPoint*" name="intersect"/>
-        </parameters>
-      </method>
-      <method name="LineRectangle" cname="dia_intersection_line_rectangle" shared="true">
-        <return-type type="gint"/>
-        <parameters>
-          <parameter type="DiaPoint*" name="start"/>
-          <parameter type="DiaPoint*" name="end"/>
-          <parameter type="DiaRectangle*" name="rect"/>
-          <parameter type="DiaPoint" array="true" name="intersect"/>
-        </parameters>
-      </method>
-      <method name="RectangleRectangle" cname="dia_intersection_rectangle_rectangle" shared="true">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaRectangle*" name="r1"/>
-          <parameter type="DiaRectangle*" name="r2"/>
-        </parameters>
-      </method>
-    </class>
   </namespace>
 </api>
