@@ -91,18 +91,18 @@ public class Sample {
 		textbox.Move (50, 150);
 		canvas.Root.Add (textbox);
 
-		CanvasFigure figure = new CanvasFigure();
-		figure.Move (50, 250);
-		canvas.Root.Add (figure);
+		//Exposes some bug
+		//CanvasFigure figure = new CanvasFigure();
+		//figure.Move (50, 250);
+		//canvas.Root.Add (figure);
 
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);
 		canvas.Root.Add (image);
 
 	        view.UnselectAll();
-		// Trigers a bug, same as in gtksourceview-sharp
-		//CanvasViewItem vitem = view.FindViewItem (image);
-		//view.Focus (vitem);
+		CanvasViewItem vitem = view.FindViewItem (image);
+		view.Focus (vitem);
 	}
 
 	void SelectionTool (object sender, EventArgs args)
@@ -266,6 +266,7 @@ with this program.",
 	static void Main()
 	{
 		Application.Init();
+		DiaCanvas.Init();
 		new Sample();
 		Application.Run();
 	}

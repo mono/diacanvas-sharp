@@ -1,7 +1,16 @@
+2004-02-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/DiaCanvas.cs: Added, this is the module class for for 
+	  DiaCanvas#, it has a DiaCanvas.Init method which 
+	  initializes the module.
+	* sample/sample.cs: Uses DiaCanvas.Init()
+	* PROBLEMS: One problem whent away with gtk#-0.16 some others
+          entered ;)
+
 2004-02-07  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* autogen.sh: Executes aclocal first, this fixes a lot of warnings and
-	build errors.
+	  build errors.
 	* sample/CanvasFigure.cs: Added
 	* sample/sample.cs: Exercises CanvasFigure
 	* sample/makefile.am: Reduced code
@@ -24,7 +33,7 @@
 2004-01-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* PROBLEMS: Removed problem with array fields not generated
-	properly, they are now generated properly in latest gtk# cvs.
+	  properly, they are now generated properly in latest gtk# cvs.
 
 2004-01-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
@@ -106,8 +115,8 @@
 2003-11-15  Gonzalo Paniagua Javier <gonzalo@ximian.com>
 
 	* configure.in: use pkg-config to get diacanvas2 flags, check if needed
-	mono applications can be run as 'xx' or 'xx.exe' and prepend 'mono' in
-	the latter case, added 2 new output files.
+	  mono applications can be run as 'xx' or 'xx.exe' and prepend 'mono' in
+	  the latter case, added 2 new output files.
 	* makefile.am: automake-ized.
 	* dia/makefile.am:
 	* doc/makefile.am:
@@ -116,7 +125,7 @@
 	* glue/makefile.am: use libtool.
 	* sample/glade/makefile.am:
 	* sample/pixmaps/makefile.am: needed for make dist to produce a valid
-	tarball.
+	  tarball.
 
 2003-11-11  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
@@ -404,7 +413,7 @@
 2003-09-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* makefile: shortend a bit, and disabled auto generation of 
-	api xml files
+	  api xml files
 	* api/makefile: Added installation target
 	* sample/makefile: Added installation target
 
@@ -437,14 +446,14 @@
 	* dia/PlacementTool.custom: Removed
 	* dia/PlacementTool.cs: Added
 	* sources/Dia.metadata: Hide PlacementTool and
-	Added out parameters rules for CanvasItem method
-	AffinePointI2w and AffinePointW2i.
+	  Added out parameters rules for CanvasItem method
+	  AffinePointI2w and AffinePointW2i.
 
 2003-09-03  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* api/dia-api.xml:
 	* sources/Dia.metadata: Hidden the default ctor of 
-	the PlacementTool.
+	  the PlacementTool.
 	* dia/CanvasBox.custom:
 	* dia/CanvasImage.custom:
 	* dia/CanvasLine.custom: Added creation of PlacementTool for the item.
@@ -456,7 +465,7 @@
 
 	* api/dia-api.xml:
 	* sources/Dia.metadata: Hide DiaShapeItemInfo and
-	DiaShapeViewInfo cause they are only used internally.
+	  DiaShapeViewInfo cause they are only used internally.
 	* PROBLEMS: Updated info on GDestroyNotify
 
 2003-08-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
@@ -467,7 +476,7 @@
 	* doc/en/Dia/CanvasViewItem.xml: Partially documented
 	* TODO: Added
 	* dia/makefile: Added compile options to suppres warnings about
-	missing Equals and GetHashcode functions.
+	  missing Equals and GetHashcode functions.
 
 2003-08-25  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

@@ -11,24 +11,11 @@ Property has unknown Type DiaCanvasItemHandles in Object Dia.CanvasItem
 
 ================================================================================
 
-CanvasView.FindViewItem casting problem
----------------------------------------
-
-Unhandled Exception: System.InvalidCastException: Cannot cast from source type to destination typein <0x0007c> Dia.CanvasView:FindViewItem (Dia.CanvasItem)
-in <0x0044d> .Sample:CreateItemsProgramatically ()
-in <0x001a3> .Sample:.ctor ()
-in <0x00023> .Sample:Main ()
-
-Seems to be the same problem as gtksourceview-sharp.
-The type DiaCanvasViewItem has not been registred properly by GLib.ObjectManager.
-There is a patch underway to fix this in Gtk#
-
-================================================================================
-
 Crashes
 -------
 
 o Select all, then try to move stuff around.
+o Try adding a line
 
 ================================================================================
 
