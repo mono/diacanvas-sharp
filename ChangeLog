@@ -1,3 +1,12 @@
+2003-08-19  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* WISHLIST: Autoconf wish added.
+	* glue/dia-canvas-line.c: Added HeadPos and TailPos set properties, as
+	  a workaround for gtk# bug 47168.
+	* dia/CanvasLine.custom: Added get/set property for HeadPos and TailPos
+	* sources/Dia.metadata: Hide HeadPos and TailPos in CanvasLine
+	* PROBLEMS: Updated with solutions
+
 2003-08-12  Martin Willemoes Hansen  <mwh@sysrq.dk>
 	
 	* WISHLIST: Added

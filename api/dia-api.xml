@@ -868,8 +868,8 @@
       <property name="AddSegment" cname="add_segment" type="guint" writeable="true"/>
       <property name="DelSegment" cname="del_segment" type="guint" writeable="true"/>
       <property name="Dash" cname="dash" type="DiaDashStyle" readable="true" writeable="true"/>
-      <property name="HeadPos" cname="head_pos" type="DiaPoint" readable="true" writeable="true"/>
-      <property name="TailPos" cname="tail_pos" type="DiaPoint" readable="true" writeable="true"/>
+      <property name="HeadPos" cname="head_pos" type="DiaPoint" readable="true" writeable="true" hidden="1"/>
+      <property name="TailPos" cname="tail_pos" type="DiaPoint" readable="true" writeable="true" hidden="1"/>
       <property name="HasHead" cname="has_head" type="gboolean" readable="true" writeable="true"/>
       <property name="HasTail" cname="has_tail" type="gboolean" readable="true" writeable="true"/>
       <property name="HeadColor" cname="head_color" type="ulong" readable="true" writeable="true"/>

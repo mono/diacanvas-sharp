@@ -50,17 +50,11 @@ public class Sample {
 		line.Color = 8327327;
 
 		Dia.Point p1 = new Dia.Point (50, 50);
-		Dia.Point p2 = new Dia.Point (100, 100);
+		Dia.Point p2 = new Dia.Point (100, 150);
 
-		/*
-		try {
-			line.HeadPos = p1;
-			line.TailPos = p2;
-		} catch (Exception ex) {
-			Console.WriteLine (ex);
-		}
-		*/
-		line.Move (200, 200);
+		line.HeadPos = p1;
+		line.TailPos = p2;
+		line.Move (100, 150);
 		canvas.Root.Add (line);
 
 		CanvasBox box = new CanvasBox();
@@ -77,9 +71,9 @@ public class Sample {
 		text.Width = 100;
 		canvas.Root.Add (text);
 
-		CanvasTextBox textbox = new CanvasTextBox();
-		textbox.Move (50, 225);
-		canvas.Root.Add (textbox);
+		//CanvasTextBox textbox = new CanvasTextBox();
+		//textbox.Move (50, 225);
+		//canvas.Root.Add (textbox);
 
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);

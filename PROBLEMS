@@ -35,8 +35,33 @@ Field has unknown Type GDestroyNotify
 ================================================================================
 
 
-Character encoding problem
---------------------------
+Pango.FontDescription problem
+-----------------------------
+
+CanvasText text = new CanvasText();
+text.Font = FontDescription.FromString ("sans 20");
+
+Results in this:
+
+(<unknown>:972): GLib-GObject-WARNING **: gvalue.c:93: cannot initialize GValue with type `GBoxed', this type has no GTypeValueTable implementation                                                                                                                            
+(<unknown>:972): GLib-GObject-CRITICAL **: file gboxed.c: line 487 (g_value_set_boxed): assertion `G_VALUE_HOLDS_BOXED (value)' failed
+                                                                                                                           
+(<unknown>:972): GLib-GObject-CRITICAL **: file gobject.c: line 1019 (g_object_set_property): assertion `G_IS_VALUE (value)' failed
+
+================================================================================
+
+
+Crashes
+-------
+
+o Select all, then try to move stuff around.
+o Place an image 3 times.
+
+================================================================================
+
+
+Character encoding problem (FIXED)
+----------------------------------
 
 When calling DiaPlacementTool (DiaCanvasImage.GType ...) the following error
 occours:
@@ -61,11 +86,17 @@ in <0x0002b> 00 .Sample:Main ()
 
 It probably is a character encoding problem from Uni16 to utf-8/ascii.
 
+************
+* Solution *
+************
+
+Marshal.StringToHGlobalAnsi ("string")
+
 ================================================================================
 
 
-DiaPoint Boxing problem
------------------------
+DiaPoint Boxing problem (Fixed)
+-------------------------------
 
 The following code (DiaCanvas#):
 	CanvasLine line = new CanvasLine();
@@ -106,27 +137,11 @@ valid handle, it has not been marshalled yet.
 So some kind of magic needs to be done, to marshall the Boxed value and keep
 track of resources etc.
 
-================================================================================
+************
+* Solution *
+************
 
-
-Pango.FontDescription problem
------------------------------
-
-CanvasText text = new CanvasText();
-text.Font = FontDescription.FromString ("sans 20");
-
-Results in this:
-
-(<unknown>:972): GLib-GObject-WARNING **: gvalue.c:93: cannot initialize GValue with type `GBoxed', this type has no GTypeValueTable implementation                                                                                                                            
-(<unknown>:972): GLib-GObject-CRITICAL **: file gboxed.c: line 487 (g_value_set_boxed): assertion `G_VALUE_HOLDS_BOXED (value)' failed
-                                                                                                                           
-(<unknown>:972): GLib-GObject-CRITICAL **: file gobject.c: line 1019 (g_object_set_property): assertion `G_IS_VALUE (value)' failed
+Glue code to create a native c DiaPoint, this is a workaround, bug 47168 
+has been posted.
 
 ================================================================================
-
-
-Crashes
--------
-
-o Select all, then try to move stuff around.
-o Place an image 3 times.

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <metadata>
 
-<!-- hides -->
+<!-- Type hides -->
 <rule>
   <class name="DiaExpression"/>
   <class name="DiaVariableClass"/>
@@ -12,6 +12,8 @@
     </attribute>
   </data>
 </rule>
+
+<!-- Method hides -->
 <rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>
@@ -29,6 +31,20 @@
    </class>
    <data>
     <attribute target="signal">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+   </data>
+</rule>
+
+<!-- property hides -->
+<rule>
+  <class name="DiaCanvasLine">
+    <property>HeadPos</property>
+    <property>TailPos</property>
+   </class>
+   <data>
+    <attribute target="property">
       <name>hidden</name>
       <value>1</value>
     </attribute>
