@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct EventMask;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -38,10 +39,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Shift event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -50,10 +53,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Lock event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ctrl">
@@ -62,10 +67,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Ctrl event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mod1">
@@ -74,10 +81,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Mod1 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Alt">
@@ -86,10 +95,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Alt event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mod2">
@@ -98,10 +109,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Mod2 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mod3">
@@ -110,10 +123,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Mod3 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mod4">
@@ -122,10 +137,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Mod4 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Mod5">
@@ -134,10 +151,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Mod5 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Button1">
@@ -146,10 +165,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Button 1 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Button2">
@@ -158,10 +179,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Button2 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Button3">
@@ -170,10 +193,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Button 3 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Button4">
@@ -182,10 +207,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Button 4 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Button5">
@@ -194,10 +221,12 @@
       <ReturnValue>
         <ReturnType>Dia.EventMask</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Button 5 event.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -206,7 +235,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

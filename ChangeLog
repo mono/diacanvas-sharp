@@ -53,6 +53,7 @@
 	* doc/en/Dia/UnselectedItemHandler.xml: Ditto
 	* doc/en/Dia/ZOrderArgs.xml: Ditto
 	* doc/en/Dia/ZOrderHandler.xml: Ditto
+	* doc/en/Dia/*.xml: Ran through scan-deprecations.exe
 
 2004-02-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 

@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct ShapeType;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -33,10 +34,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A null shape type, should never be used.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -45,10 +48,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A Path shape, like: Line, polygon, rectangle.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Bezier">
@@ -57,10 +62,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A Bezier shape.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ellipse">
@@ -69,10 +76,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>An Ellipse shape, like: ellipse and circle.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -81,10 +90,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A Text shape.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -93,10 +104,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>An Image shape.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Widget">
@@ -105,10 +118,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A Widget shape. Only widgets with a model/view architecture.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Clip">
@@ -117,10 +132,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeType</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>A Clip shape. Set a clip path.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -129,7 +146,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

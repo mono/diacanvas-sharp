@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct ShapeVisibility;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -37,10 +38,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Hidden state.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -49,10 +52,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Visible state.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfSelected">
@@ -61,10 +66,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Visible if selected state.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfFocused">
@@ -73,10 +80,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Visible if focused state.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleIfGrabbed">
@@ -85,10 +94,12 @@
       <ReturnValue>
         <ReturnType>Dia.ShapeVisibility</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Visible if grabbed state.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -97,7 +108,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

@@ -410,7 +410,8 @@
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.ShapeText" /></summary>
         <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="font_desc">
@@ -432,7 +433,8 @@
       <ReturnValue>
         <ReturnType>Dia.WrapMode</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

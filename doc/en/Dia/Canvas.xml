@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public class Canvas : GLib.Object, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -179,7 +180,8 @@
       <Docs>
         <summary>Remove a constraint from the <see cref="T:Dia.Canvas" />.</summary>
         <param name="c">a <see cref="T:Dia.Constraint" /> to be removed.</param>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddConstraint">
@@ -197,7 +199,8 @@
 	<see cref="T:Dia.Canvas" />' constraint <see cref="T:Dia.Solver" />.
 	</summary>
         <param name="c">a <see cref="T:Dia.Constraint" /> to be added.</param>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearUndo">
@@ -209,7 +212,8 @@
       <Parameters />
       <Docs>
         <summary>Clear the undo stack.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Preserve">
@@ -321,7 +325,8 @@
 	Ask the constraint <see cref="T:Dia.Solver" /> 
 	to resolve it's constraints.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FindObjectsInRectangle">
@@ -377,7 +382,8 @@
       <Docs>
         <summary>Gets the type for the <see cref="T:Dia.Canvas" /></summary>
         <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridColor">
@@ -393,7 +399,8 @@
         <summary>Gets or sets the color of the grid points.</summary>
         <param name="value">a <see cref="T:System.UInt64" /></param>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridOfsX">
@@ -464,7 +471,8 @@
         <summary>Gets or sets the allowance of undo on the <see cref="T:Dia.Canvas" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SnapToGrid">
@@ -480,7 +488,8 @@
         <summary>Sets or gets the snap to grid ability of the <see cref="T:Dia.Canvas" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowStateRequests">
@@ -499,7 +508,8 @@
 	</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extents">
@@ -531,7 +541,8 @@
         <summary>Gets or sets the X interval for the grid, in other words the space between grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridIntY">
@@ -547,7 +558,8 @@
         <summary>Gets or set the Y interval for the grid, in other words the space between grid points.</summary>
         <param name="value">a <see cref="T:System.Double" /></param>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridBg">
@@ -575,7 +587,8 @@
       <Docs>
         <summary>Gets the amount of undo entries on the undo stack.</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UndoStackDepth">
@@ -603,7 +616,8 @@
       <Docs>
         <summary>Gets the amount of undo entries on the redo stack.</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -615,7 +629,8 @@
       <Docs>
         <summary>Gets the root item in the <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PangoLayout">
@@ -628,7 +643,8 @@
       <Docs>
         <summary>Gets the <see cref="T:Pango.Layout" /> of the <see cref="T:Dia.Canvas" />.</summary>
         <returns>a <see cref="T:Pango.Layout" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -640,7 +656,8 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -683,7 +700,8 @@
 	This event is fired when the <see cref="P:Dia.Canvas.Extents" /> 
 	of the <see cref="T:Dia.Canvas" /> changes.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RedrawView">
@@ -698,7 +716,8 @@
 	When this event is fired all <see cref="T:Dia.CanvasView" />s 
         are forced to redraw.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Undo">

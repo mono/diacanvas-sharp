@@ -49,7 +49,8 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetClosestSegment">
@@ -108,7 +109,8 @@
       <Docs>
         <summary>Create a new <see cref="T:Dia.CanvasLine" />.</summary>
         <returns>a <see cref="T:Dia.CanvasLine" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GType">
@@ -121,7 +123,8 @@
       <Docs>
         <summary>Gets the Type for the <see cref="T:Dia.CanvasLine" /></summary>
         <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddPoint">
@@ -132,7 +135,8 @@
       </ReturnValue>
       <Docs>
         <summary>Add a point to the end of the line.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailColor">
@@ -145,7 +149,8 @@
       <Docs>
         <summary>Gets or sets the color (RGBA) of the tail of the line.</summary>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cyclic">
@@ -158,7 +163,8 @@
       <Docs>
         <summary>Sets or gets, if the line is cyclic ie. a polygon.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadColor">
@@ -171,7 +177,8 @@
       <Docs>
         <summary>Sets or gets the color (RGBA) of the head of the line.</summary>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadB">
@@ -187,7 +194,8 @@
 	to trailing point, measured along the shaft.
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadC">
@@ -203,7 +211,8 @@
 	from the shaft (bottom half).
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadD">
@@ -219,7 +228,8 @@
 	from the shaft (top half).
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DelSegment">
@@ -230,7 +240,8 @@
       </ReturnValue>
       <Docs>
         <summary>Delete line segment.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -243,7 +254,8 @@
       <Docs>
         <summary>Sets or gets the color (RGBA) of the line.</summary>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailB">
@@ -259,7 +271,8 @@
 	to trailing point, measured along the shaft.
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineWidth">
@@ -272,7 +285,8 @@
       <Docs>
         <summary>Sets or gets the width of the line.</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cap">
@@ -285,7 +299,8 @@
       <Docs>
         <summary>Sets or gets the <see cref="T:Dia.CapStyle" /> for the line-end.</summary>
         <returns>a <see cref="T:Dia.CapStyle" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailFillColor">
@@ -298,7 +313,8 @@
       <Docs>
         <summary>Sets or gets the color (RGBA) of the interior of the line tail.</summary>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadA">
@@ -311,7 +327,8 @@
       <Docs>
         <summary>Sets or gets the distance from tip of arrowhead to the center point.</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Dash">
@@ -323,7 +340,8 @@
       <Parameters />
       <Docs>
         <summary>Set <see cref="T:Dia.DashStyle" /> for the line.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orthogonal">
@@ -336,7 +354,8 @@
       <Docs>
         <summary>Sets or gets if the line should be an orthogonal line or not.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailA">
@@ -349,7 +368,8 @@
       <Docs>
         <summary>Sets or gets the distance from tip of arrowhead to the center point.</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailC">
@@ -365,7 +385,8 @@
 	from the shaft (bottom half).
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailD">
@@ -381,7 +402,8 @@
 	from the shaft (top half).
 	</summary>
         <returns>a <see cref="T:System.Double" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadFillColor">
@@ -394,7 +416,8 @@
       <Docs>
         <summary>Sets or gets the color (RGBA) of the interior of the line head.</summary>
         <returns>a <see cref="T:System.UInt64" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSegment">
@@ -406,7 +429,8 @@
       <Docs>
         <summary>Add a segment by splitting the given segment into two.</summary>
         <returns>a <see cref="T:System.UInt32" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTail">
@@ -419,7 +443,8 @@
       <Docs>
         <summary>Sets or gets if the line has a tail.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasHead">
@@ -432,7 +457,8 @@
       <Docs>
         <summary>Sets or gets if the line has a head.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -448,7 +474,8 @@
 	of the line's corners.
 	</summary>
         <returns>a <see cref="T:Dia.JoinStyle" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Horizontal">
@@ -464,7 +491,8 @@
 	orthogonal line should be horizontal.
 	</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HeadPos">
@@ -477,7 +505,8 @@
       <Docs>
         <summary>Sets or gets the position of the line head.</summary>
         <returns>a <see cref="T:Dia.Point" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TailPos">
@@ -490,7 +519,8 @@
       <Docs>
         <summary>Sets or gets the position of the line tail.</summary>
         <returns>a <see cref="T:Dia.Point" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

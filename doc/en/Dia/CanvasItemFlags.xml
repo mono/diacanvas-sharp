@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct CanvasItemFlags;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -38,10 +39,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is visible.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -50,10 +53,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is Interactive.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Composite">
@@ -62,10 +67,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is a composite.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NeedUpdate">
@@ -74,10 +81,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> needs an Update</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateAll">
@@ -86,10 +95,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> needs an UpdateAll</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -98,7 +109,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

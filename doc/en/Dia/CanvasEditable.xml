@@ -13,7 +13,8 @@
       <see cref="T:Dia.CanvasItem" />'s which support 
     editable text implements this interface.
     </summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Base />
   <Interfaces>
@@ -102,7 +103,8 @@
       <Parameters />
       <Docs>
         <summary>Editing has started.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextChanged">

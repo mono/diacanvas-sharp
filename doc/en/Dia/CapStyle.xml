@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct CapStyle;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -34,13 +35,15 @@
       <ReturnValue>
         <ReturnType>Dia.CapStyle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>
 	The ends are drawn squared off, extending to the <see cref="P:Dia.CanvasLine.HeadPos" /> 
 	and <see cref="P:Dia.CanvasLine.TailPos" /> points.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Round">
@@ -49,13 +52,15 @@
       <ReturnValue>
         <ReturnType>Dia.CapStyle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>
 	The ends are drawn as half circles, with the diameter equal to the line width and centered at the
 	<see cref="P:Dia.CanvasLine.HeadPos" /> and <see cref="P:Dia.CanvasLine.TailPos" /> points.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Square">
@@ -64,14 +69,16 @@
       <ReturnValue>
         <ReturnType>Dia.CapStyle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>
 	The ends are drawn squared off, extending beyond the two end points,
 	<see cref="P:Dia.CanvasLine.HeadPos" /> and <see cref="P:Dia.CanvasLine.TailPos" /> points,
 	with the width of the <see cref="T:Dia.CanvasLine" />.
 	</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -80,7 +87,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

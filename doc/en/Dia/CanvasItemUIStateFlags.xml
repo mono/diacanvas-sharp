@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct CanvasItemUIStateFlags;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -34,10 +35,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is unselected.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -46,7 +49,8 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is selected.</summary>
         <remarks>To be added</remarks>
@@ -58,10 +62,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is focused.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Grabbed">
@@ -70,7 +76,8 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is grabbed.</summary>
         <remarks>To be added</remarks>
@@ -82,10 +89,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasItemUIStateFlags</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>Flags that the <see cref="T:Dia.CanvasItem" /> is unchanged.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -94,7 +103,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>

@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public class CanvasViewItem : Gnome.CanvasGroup, IWrapper, IDisposable" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -39,10 +40,12 @@
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
-        <summary></summary>
+        <summary>
+        </summary>
         <param name="vitem">a <see cref="T:Gnome.CanvasGroup" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Foreach">
@@ -58,7 +61,8 @@
         <summary>This method iterates through all the children of the <see cref="T:Dia.CanvasViewItem" /></summary>
         <param name="func">a <see cref="T:Dia.CanvasViewItemForeachFunc" /></param>
         <returns>a <see cref="T:System.Int32" /> if 0 the foreach loop will stop.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmitEvent">
@@ -101,7 +105,8 @@
       <Docs>
         <summary>Gets the type for the <see cref="Dia.CanvasViewItem" /></summary>
         <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interactive">
@@ -117,7 +122,8 @@
         <summary>Gets or sets the ability of the <see cref="T:Dia.CanvasViewItem" /> to interact.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsSelected">
@@ -130,7 +136,8 @@
       <Docs>
         <summary>Is the <see cref="T:Dia.CanvasViewItem" /> selected.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsFocused">
@@ -143,7 +150,8 @@
       <Docs>
         <summary>Is the <see cref="T:Dia.CanvasViewItem" /> focused.</summary>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -159,7 +167,8 @@
         <summary>Gets or sets the visibility of the <see cref="T:Dia.CanvasViewItem" />.</summary>
         <param name="value">a <see cref="T:System.Boolean" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -175,7 +184,8 @@
         <summary>Gets or sets the <see cref="T:Dia.CanvasItem" /> of the <see cref="T:Dia.CanvasViewItem" />.</summary>
         <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:Dia.CanvasItem" /></returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -187,7 +197,8 @@
       <Parameters />
       <Docs>
         <summary>Disposes the resources associated with the object.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

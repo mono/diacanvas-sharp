@@ -15,7 +15,8 @@
     which will be displayed on the 
     <see cref="T:Dia.CanvasView" /> as a seperate object.
     </summary>
-    <remarks></remarks>
+    <remarks>
+    </remarks>
   </Docs>
   <Base />
   <Interfaces>
@@ -38,7 +39,8 @@
         <summary>Remove an item from the <see cref="T:Dia.CanvasGroupable" /> object.</summary>
         <param name="item">The <see cref="T:Dia.CanvasItem" /> which should removed.</param>
         <returns>a <see cref="T:System.Boolean" /> which is true if the item is removed, false otherwise.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddConstruction">
@@ -167,7 +169,8 @@
 	the groupable object holds.
 	</summary>
         <returns>a <see cref="T:System.Int32" />, which is the length, if error -1.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -183,7 +186,8 @@
         <summary>Retrieve the value pointed to by the iterator.</summary>
         <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:Dia.CanvasItem" /> which is the value.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pos">
@@ -199,7 +203,8 @@
         <summary>Get the position of item in  the groupable object.</summary>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:System.Int32" />, which is the position, on error -1.</returns>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Removed">
@@ -211,7 +216,8 @@
       <Parameters />
       <Docs>
         <summary>A child has been removed.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Added">
@@ -223,7 +229,8 @@
       <Parameters />
       <Docs>
         <summary>A child has been added.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

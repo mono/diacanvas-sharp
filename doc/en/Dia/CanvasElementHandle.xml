@@ -2,7 +2,8 @@
   <TypeSignature Language="C#" Value="public sealed struct CanvasElementHandle;" Maintainer="auto" />
   <AssemblyInfo>
     <AssemblyName>diacanvas-sharp</AssemblyName>
-    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyPublicKey>
+    </AssemblyPublicKey>
     <AssemblyVersion>0.0.0.0</AssemblyVersion>
     <AssemblyCulture>neutral</AssemblyCulture>
     <Attributes />
@@ -39,10 +40,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The North <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nw">
@@ -51,10 +54,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The North West <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Ne">
@@ -63,10 +68,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The North Eeast <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -75,10 +82,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The South <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="W">
@@ -87,10 +96,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The West <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -99,10 +110,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The East <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sw">
@@ -111,10 +124,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The South West <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Se">
@@ -123,10 +138,12 @@
       <ReturnValue>
         <ReturnType>Dia.CanvasElementHandle</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>The South East <see cref="T:Dia.Handle" />.</summary>
-        <remarks></remarks>
+        <remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="value__">
@@ -135,7 +152,8 @@
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters></Parameters>
+      <Parameters>
+      </Parameters>
       <Docs>
         <summary>To be added</summary>
         <remarks>To be added</remarks>
