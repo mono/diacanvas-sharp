@@ -1,0 +1,80 @@
+Index: parser/gapi.pl
+===================================================================
+RCS file: /cvs/public/gtk-sharp/parser/gapi.pl,v
+retrieving revision 1.1
+diff -u -r1.1 gapi.pl
+--- parser/gapi.pl	20 Aug 2002 20:35:42 -0000	1.1
++++ parser/gapi.pl	31 Aug 2003 08:15:07 -0000
+@@ -28,10 +28,10 @@
+ }
+ 
+ foreach $entry (@srcs) {
+-	($dir, $ns, $lib) = @$entry;
++	($dir, $ns, $lib, $assembly) = @$entry;
+ 	print "hi $ns\n";
+ 	$file = $files{$ns};
+-	system ("gapi_pp.pl $dir | gapi2xml.pl $ns $file $lib");
++	system ("gapi_pp.pl $dir | gapi2xml.pl $ns $file $lib $assembly");
+ }
+ 
+ foreach $ns (keys (%files)) {
+Index: parser/gapi2xml.pl
+===================================================================
+RCS file: /cvs/public/gtk-sharp/parser/gapi2xml.pl,v
+retrieving revision 1.40
+diff -u -r1.40 gapi2xml.pl
+--- parser/gapi2xml.pl	15 Jul 2003 05:52:08 -0000	1.40
++++ parser/gapi2xml.pl	31 Aug 2003 08:15:07 -0000
+@@ -3,8 +3,10 @@
+ # gapi2xml.pl : Generates an XML representation of GObject based APIs.
+ #
+ # Author: Mike Kestner <mkestner@speakeasy.net>
++# Author: Martin Willemoes Hansen <mwh@sysrq.dk>
+ #
+ # <c> 2001-2003 Mike Kestner
++# <c> 2003 Martin Willemoes Hansen
+ ##############################################################
+ 
+ $debug=1;
+@@ -12,12 +14,13 @@
+ use XML::LibXML;
+ use GAPI::Metadata;
+ 
+-if (!$ARGV[2]) {
+-	die "Usage: gapi_pp.pl <srcdir> | gapi2xml.pl <namespace> <outfile> <libname>\n";
++if (!$ARGV[2] && !$ARGV[3]) {
++	die "Usage: gapi_pp.pl <srcdir> | gapi2xml.pl <namespace> <outfile> <libname> [assembly]\n";
+ }
+ 
+ $ns = $ARGV[0];
+ $libname = $ARGV[2];
++$assembly = $ARGV[3];
+ 
+ ##############################################################
+ # Check if the filename provided exists.  We parse existing files into
+@@ -40,6 +43,9 @@
+ $ns_elem = $doc->createElement('namespace');
+ $ns_elem->setAttribute('name', $ns);
+ $ns_elem->setAttribute('library', $libname);
++if ($assembly ne "") {
++	$ns_elem->setAttribute('assembly', $assembly);
++}
+ $root->appendChild($ns_elem);
+ 
+ ##############################################################
+Index: sources/gtk-sharp.sources
+===================================================================
+RCS file: /cvs/public/gtk-sharp/sources/gtk-sharp.sources,v
+retrieving revision 1.20
+diff -u -r1.20 gtk-sharp.sources
+--- sources/gtk-sharp.sources	26 Aug 2003 21:35:28 -0000	1.20
++++ sources/gtk-sharp.sources	31 Aug 2003 08:15:07 -0000
+@@ -9,7 +9,7 @@
+ libgnomeprint-2.2.1.3/libgnomeprint Gnome gnomeprint-2-2
+ libgnomeprintui-2.2.1.3/libgnomeprintui Gnome gnomeprint-2-2
+ libgnomeprintui-2.2.1.3/libgnomeprintui/gpaui Gnome gnomeprint-2.2
+-gtkhtml-3.0.8/src Gtk gtkhtml-3.0
++gtkhtml-3.0.8/src Gtk gtkhtml-3.0 gtkhtml
+ libglade-2.0.0/glade Glade libglade-2.0-0.dll
+ libart_lgpl-2.3.10 Art art_lgpl
+ libgda-0.90.0/libgda Gda gda-2

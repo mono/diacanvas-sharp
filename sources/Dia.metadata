@@ -4,6 +4,8 @@
 <!-- type hides -->
 <rule>
   <class name="DiaExpression"/>
+  <class name="DiaShapeItemInfo"/>
+  <class name="DiaShapeViewInfo"/>
   <class name="DiaVariableClass"/>
   <data>
     <attribute target="class">
@@ -17,6 +19,17 @@
 <rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>
+   </class>
+   <data>
+    <attribute target="method">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+   </data>
+</rule>
+<rule>
+  <class name="DiaShapeViewInfo">
+    <method>GetViewInfo</method>
    </class>
    <data>
     <attribute target="method">

@@ -1,0 +1,267 @@
+? AssemblyTagGenerator.diff
+? AssemblyTagGenerator2.diff
+Index: CallbackGen.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/CallbackGen.cs,v
+retrieving revision 1.24
+diff -u -r1.24 CallbackGen.cs
+--- CallbackGen.cs	23 Jul 2003 17:19:19 -0000	1.24
++++ CallbackGen.cs	31 Aug 2003 10:34:34 -0000
+@@ -17,7 +17,7 @@
+ 		public CallbackGen (XmlElement ns, XmlElement elem) : base (ns, elem) 
+ 		{
+ 			if (elem ["parameters"] != null)
+-				parms = new Parameters (elem ["parameters"], NS);
++				parms = new Parameters (elem ["parameters"], NS, Assembly);
+ 		}
+ 
+ 		public string MarshalType {
+@@ -54,10 +54,10 @@
+ 			return CallByName (var);
+ 		}
+ 		
+-		public string GenWrapper (string ns)
++		public string GenWrapper (string ns, string assembly)
+ 		{
+ 			char sep = Path.DirectorySeparatorChar;
+-			string dir = ".." + sep + ns.ToLower() + sep + "generated";
++			string dir = ".." + sep + assembly + sep + "generated";
+ 
+ 			if (!Directory.Exists (dir))
+ 				Directory.CreateDirectory (dir);
+@@ -238,7 +238,7 @@
+ 
+ 			CloseWriter (sw);
+ 			
+-			GenWrapper (NS);
++			GenWrapper (NS, Assembly);
+ 
+ 			Statistics.CBCount++;
+ 		}
+Index: Ctor.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Ctor.cs,v
+retrieving revision 1.12
+diff -u -r1.12 Ctor.cs
+--- Ctor.cs	14 Jun 2003 17:30:32 -0000	1.12
++++ Ctor.cs	31 Aug 2003 10:34:34 -0000
+@@ -41,7 +41,7 @@
+ 			this.container_type = container_type;
+ 			XmlElement parms_elem = elem ["parameters"];
+ 			if (parms_elem != null)
+-				parms = new Parameters (parms_elem, container_type.NS);
++				parms = new Parameters (parms_elem, container_type.NS, container_type.Assembly);
+ 			if (elem.HasAttribute ("preferred"))
+ 				preferred = true;
+ 		}
+Index: GenBase.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/GenBase.cs,v
+retrieving revision 1.11
+diff -u -r1.11 GenBase.cs
+--- GenBase.cs	2 Jul 2003 18:13:24 -0000	1.11
++++ GenBase.cs	31 Aug 2003 10:34:35 -0000
+@@ -52,6 +52,15 @@
+ 			}
+ 		}
+ 
++		public string Assembly {
++			get { 
++				if (ns.HasAttribute ("assembly"))
++					return ns.GetAttribute ("assembly");
++				else
++					return NS.ToLower();
++			}
++		}
++
+ 		public string QualifiedName {
+ 			get {
+ 				return NS + "." + Name;
+@@ -66,7 +75,7 @@
+ 		protected StreamWriter CreateWriter () 
+ 		{
+ 			char sep = Path.DirectorySeparatorChar;
+-			string dir = ".." + sep + NS.ToLower() + sep + "generated";
++			string dir = ".." + sep + Assembly + sep + "generated";
+ 			if (!Directory.Exists(dir)) {
+ 				Console.WriteLine ("creating " + dir);
+ 				Directory.CreateDirectory(dir);
+@@ -99,7 +108,7 @@
+ 		public void AppendCustom (StreamWriter sw)
+ 		{
+ 			char sep = Path.DirectorySeparatorChar;
+-			string custom = ".." + sep + NS.ToLower() + sep + Name + ".custom";
++			string custom = ".." + sep + Assembly + sep + Name + ".custom";
+ 			if (File.Exists(custom)) {
+ 				sw.WriteLine ("#region Customized extensions");
+ 				sw.WriteLine ("#line 1 \"" + Name + ".custom\"");
+Index: Method.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Method.cs,v
+retrieving revision 1.32
+diff -u -r1.32 Method.cs
+--- Method.cs	19 Aug 2003 10:51:33 -0000	1.32
++++ Method.cs	31 Aug 2003 10:34:35 -0000
+@@ -31,7 +31,7 @@
+ 		{
+ 			this.elem = elem;
+ 			if (elem["parameters"] != null)
+-				parms = new Parameters (elem["parameters"], container_type.NS);
++				parms = new Parameters (elem["parameters"], container_type.NS, container_type.Assembly);
+ 			this.container_type = container_type;
+ 			this.name = elem.GetAttribute("name");
+ 			if (name == "GetType")
+Index: ObjectGen.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/ObjectGen.cs,v
+retrieving revision 1.44
+diff -u -r1.44 ObjectGen.cs
+--- ObjectGen.cs	19 May 2003 02:45:17 -0000	1.44
++++ ObjectGen.cs	31 Aug 2003 10:34:35 -0000
+@@ -16,6 +16,7 @@
+ 
+ 		private ArrayList strings = new ArrayList();
+ 		private static Hashtable namespaces = new Hashtable ();
++		private static string assembly;
+ 
+ 		public ObjectGen (XmlElement ns, XmlElement elem) : base (ns, elem) 
+ 		{
+@@ -49,6 +50,7 @@
+ 					break;
+ 				}
+ 			}
++			assembly = Assembly;
+ 		}
+ 
+ 		public void Generate ()
+@@ -189,10 +191,10 @@
+ 					continue;
+ 	
+ 				char sep = Path.DirectorySeparatorChar;
+-				string dir = ".." + sep + ns.ToLower () + sep + "generated";
++				string dir = ".." + sep + assembly + sep + "generated";
+ 				if (!Directory.Exists(dir)) {
+         			Console.WriteLine ("creating " + dir);
+-      		  	Directory.CreateDirectory(dir);
++				Directory.CreateDirectory(dir);
+ 				}
+ 				String filename = dir + sep + "ObjectManager.cs";
+ 
+Index: Parameters.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Parameters.cs,v
+retrieving revision 1.33
+diff -u -r1.33 Parameters.cs
+--- Parameters.cs	28 Aug 2003 16:49:29 -0000	1.33
++++ Parameters.cs	31 Aug 2003 10:34:35 -0000
+@@ -112,6 +112,7 @@
+ 		
+ 		private XmlElement elem;
+ 		private string impl_ns;
++		private string impl_assembly;
+ 		private string import_sig;
+ 		private string call_string;
+ 		private string signature;
+@@ -119,10 +120,11 @@
+ 		private bool hide_data;
+ 		private bool is_static;
+ 
+-		public Parameters (XmlElement elem, string impl_ns) {
++		public Parameters (XmlElement elem, string impl_ns, string impl_assembly) {
+ 			
+ 			this.elem = elem;
+ 			this.impl_ns = impl_ns;
++			this.impl_assembly = impl_assembly;
+ 		}
+ 
+ 		public string CallString {
+@@ -357,7 +359,7 @@
+ 
+ 				if (gen is CallbackGen) {
+ 					CallbackGen cbgen = gen as CallbackGen;
+-					string wrapper = cbgen.GenWrapper(impl_ns);
++					string wrapper = cbgen.GenWrapper(impl_ns, impl_assembly);
+ 					sw.WriteLine (indent + "\t\t\t{0} {1}_wrapper = null;", wrapper, name);
+ 					sw.Write (indent + "\t\t\t");
+ 					if (p.NullOk)
+Index: Signal.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/Signal.cs,v
+retrieving revision 1.15
+diff -u -r1.15 Signal.cs
+--- Signal.cs	14 Jun 2003 17:30:32 -0000	1.15
++++ Signal.cs	31 Aug 2003 10:34:35 -0000
+@@ -24,7 +24,7 @@
+ 			this.elem = elem;
+ 			this.name = elem.GetAttribute ("name");
+ 			if (elem["parameters"] != null)
+-				parms = new Parameters (elem["parameters"], container_type.NS);
++				parms = new Parameters (elem["parameters"], container_type.NS, container_type.Assembly);
+ 			this.container_type = container_type;
+ 		}
+ 
+@@ -39,7 +39,7 @@
+ 
+ 		public bool Validate ()
+ 		{
+-			marsh = SignalHandler.GetName(elem, container_type.NS, false);
++			marsh = SignalHandler.GetName(elem, container_type.NS, container_type.Assembly, false);
+ 			if ((Name == "") || (marsh == "")) {
+ 				Console.Write ("bad signal " + Name);
+ 				Statistics.ThrottledCount++;
+@@ -83,8 +83,9 @@
+ 				return handler;
+ 
+ 			string ns = container_type.NS;
++			string assembly = container_type.Assembly;
+ 			char sep = Path.DirectorySeparatorChar;
+-			string dir = ".." + sep + ns.ToLower() + sep + "generated";
++			string dir = ".." + sep + assembly + sep + "generated";
+ 
+ 			if (!Directory.Exists (dir))
+ 				Directory.CreateDirectory (dir);
+@@ -126,12 +127,16 @@
+ 		{
+ 			string cname = "\"" + elem.GetAttribute("cname") + "\"";
+ 			string ns;
+-			if (implementor == null)
++			string assembly;
++			if (implementor == null) {
+ 				ns = container_type.NS;
+-			else
++				assembly = container_type.Assembly;
++			} else {
+ 				ns = implementor.NS;
++				assembly = implementor.Assembly;
++			}
+ 
+-			string qual_marsh = SignalHandler.GetName(elem, ns, container_type.DoGenerate);
++			string qual_marsh = SignalHandler.GetName(elem, ns, assembly, container_type.DoGenerate);
+ 
+ 			string argsname;
+ 			string handler = GenHandler (out argsname);
+Index: SignalHandler.cs
+===================================================================
+RCS file: /cvs/public/gtk-sharp/generator/SignalHandler.cs,v
+retrieving revision 1.30
+diff -u -r1.30 SignalHandler.cs
+--- SignalHandler.cs	19 Aug 2003 04:52:25 -0000	1.30
++++ SignalHandler.cs	31 Aug 2003 10:34:35 -0000
+@@ -13,7 +13,7 @@
+ 
+ 	public class SignalHandler {
+ 		
+-		public static string GetName(XmlElement sig, string ns, bool generate)
++		public static string GetName(XmlElement sig, string ns, string assembly, bool generate)
+ 		{
+ 			XmlElement ret_elem = sig["return-type"];
+ 			if (ret_elem == null) {
+@@ -84,7 +84,7 @@
+ 				return ns + "." + sname;
+ 
+ 			char sep = Path.DirectorySeparatorChar;
+-			String dir = ".." + sep + ns.ToLower() + sep + "generated";
++			String dir = ".." + sep + assembly + sep + "generated";
+ 
+ 			if (!Directory.Exists(dir)) {
+ 				Directory.CreateDirectory(dir);

@@ -16,6 +16,5 @@ public class CanvasTextBox : CanvasBox {
 		text.Width =  200;
 		text.Height = 40;
 		text.Move (10, 30);
-		AddConstruction (text);
 	}
 }

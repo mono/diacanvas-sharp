@@ -1,3 +1,10 @@
+2003-08-31  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* api/dia-api.xml:
+	* sources/Dia.metadata: Hide DiaShapeItemInfo and
+	DiaShapeViewInfo cause they are only used internally.
+	* PROBLEMS: Updated info on GDestroyNotify
+
 2003-08-26  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* doc/en/Dia/CanvasItemForeachFunc:
