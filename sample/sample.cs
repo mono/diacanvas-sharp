@@ -33,8 +33,8 @@ public class Sample {
 	static void UnsetTool (object sender, DiaSharp.ButtonReleaseEventArgs args)
 	{
 		Console.WriteLine ("Event worked!");
-		Console.WriteLine (args);
-		//args.View.Tool = null;
+		Console.WriteLine (args.View.Tool);
+		args.View.Tool = new StackTool();
 	}
 
 	static void Quit (object sender, DeleteEventArgs args) 

@@ -7,7 +7,7 @@ ASSEMBLIES=	-r gtk-sharp.dll \
 
 LIBRARY=	dia-sharp.dll
 
-all:	*.cs generated/*.cs
+all:	generated/*.cs
 	mcs --unsafe --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
