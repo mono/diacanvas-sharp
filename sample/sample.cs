@@ -37,7 +37,7 @@ public class Sample {
 
 	public Sample() 
 	{
-		XML gui = new XML (null, "glade/gui.glade", "main", null);
+		XML gui = new XML (null, "gui.glade", "main", null);
 		gui.Autoconnect (this);
 
 		canvas = new Dia.Canvas();
@@ -53,11 +53,11 @@ public class Sample {
 	[Glade.Widget] Gtk.Image image1, image2, image3, image4, image5;
 	void SetupTools()
 	{
-		image1.Pixbuf = new Pixbuf (null, "pixmaps/selection.png");
-		image2.Pixbuf = new Pixbuf (null, "pixmaps/gimp-zoom.png");
-		image3.Pixbuf = new Pixbuf (null, "pixmaps/line.png");
-		image4.Pixbuf = new Pixbuf (null, "pixmaps/box.png");
-		image5.Pixbuf = new Pixbuf (null, "pixmaps/glade-image.png");
+		image1.Pixbuf = new Pixbuf (null, "selection.png");
+		image2.Pixbuf = new Pixbuf (null, "gimp-zoom.png");
+		image3.Pixbuf = new Pixbuf (null, "line.png");
+		image4.Pixbuf = new Pixbuf (null, "box.png");
+		image5.Pixbuf = new Pixbuf (null, "glade-image.png");
 	}
 
 	void CreateItemsProgramatically() {
@@ -95,7 +95,7 @@ public class Sample {
 		//figure.Move (50, 250);
 		//canvas.Root.Add (figure);
 
-		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
+		CanvasImage image = new CanvasImage (new Pixbuf (null, "logo.png"));
 		image.Move (50, 50);
 		canvas.Root.Add (image);
 
@@ -137,7 +137,7 @@ public class Sample {
 
 	void ImageTool (object sender, EventArgs args)
 	{
-		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
+		Pixbuf pixbuf = new Pixbuf (null, "logo.png");
 		view.Tool = new PlacementTool (typeof (CanvasImage), 
 					       "Image", pixbuf,
 					       "Width", pixbuf.Width,
@@ -247,7 +247,7 @@ public class Sample {
 
 		string [] documenters = new String [] {};
 		string translators = null;
-		Pixbuf pixbuf = new Pixbuf(null, "pixmaps/logo.png");
+		Pixbuf pixbuf = new Pixbuf(null, "logo.png");
 			
 		new Gnome.About ("DiaCanvas# Sample", "0.1",
 				 @"Copyright (C) 2003 Martin Willemoes Hansen

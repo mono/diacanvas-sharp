@@ -179,22 +179,22 @@
       </method>
     </interface>
     <interface name="CanvasGroupable" cname="DiaCanvasGroupable">
-      <signal cname="add" when="LAST" name="Added">
-        <return-type type="gboolean" />
+      <signal cname="add" when="FIRST" name="Added">
+        <return-type type="void" />
         <parameters>
           <parameter type="DiaCanvasGroupable*" name="group" />
           <parameter type="DiaCanvasItem*" name="item" />
         </parameters>
       </signal>
-      <signal cname="remove" when="LAST" name="Removed">
-        <return-type type="gboolean" />
+      <signal cname="remove" when="FIRST" name="Removed">
+        <return-type type="void" />
         <parameters>
           <parameter type="DiaCanvasGroupable*" name="group" />
           <parameter type="DiaCanvasItem*" name="item" />
         </parameters>
       </signal>
       <method name="Add" cname="dia_canvas_groupable_add">
-        <return-type type="gboolean" />
+        <return-type type="void" />
         <parameters>
           <parameter type="DiaCanvasItem*" name="item" />
         </parameters>
@@ -230,7 +230,7 @@
         </parameters>
       </method>
       <method name="Remove" cname="dia_canvas_groupable_remove">
-        <return-type type="gboolean" />
+        <return-type type="void" />
         <parameters>
           <parameter type="DiaCanvasItem*" name="item" />
         </parameters>
@@ -299,6 +299,12 @@
       <property name="GridColor" cname="grid_color" type="ulong" readable="true" writeable="true" />
       <property name="GridBg" cname="grid_bg" type="ulong" readable="true" writeable="true" />
       <property name="PangoLayout" cname="pango_layout" type="PangoLayout" readable="true" />
+      <virtual_method name="Update" cname="update">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="DiaCanvas*" name="canvas" />
+        </parameters>
+      </virtual_method>
       <method name="AddConstraint" cname="dia_canvas_add_constraint">
         <return-type type="void" />
         <parameters>
@@ -585,6 +591,37 @@
       <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true" />
       <property name="Affine" cname="affine" type="DiaAffine" readable="true" writeable="true" />
       <property name="Handles" cname="handles" type="DiaCanvasItemHandles" readable="true" writeable="true" />
+      <virtual_method name="Update" cname="update">
+        <return-type type="void" />
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="gdouble" array="true" name="affine" />
+        </parameters>
+      </virtual_method>
+      <virtual_method name="ShapeNext" cname="shape_next">
+        <return-type type="gboolean" />
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaCanvasIter*" name="iter" />
+        </parameters>
+      </virtual_method>
+      <virtual_method name="Point" cname="point">
+        <return-type type="gdouble" />
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="gdouble" name="x" />
+          <parameter type="gdouble" name="y" />
+        </parameters>
+      </virtual_method>
+      <virtual_method name="Glue" cname="glue">
+        <return-type type="gdouble" />
+        <parameters>
+          <parameter type="DiaCanvasItem*" name="item" />
+          <parameter type="DiaHandle*" name="handle" />
+          <parameter type="gdouble*" name="wx" />
+          <parameter type="gdouble*" name="wy" />
+        </parameters>
+      </virtual_method>
       <method name="AffineGetType" cname="dia_canvas_item_affine_get_type" shared="true">
         <return-type type="GType" />
       </method>

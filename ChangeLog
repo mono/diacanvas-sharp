@@ -1,3 +1,12 @@
+2004-04-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sources/makefile: Targets DiaCanvas2-0.12.0
+	* sources/diacanvas-sharp-sources.xml: Ditto
+	* NEWS: Ditto
+	* configure.in: Targets new Mono, Gtk# and DiaCanvas2
+	* sample/makefile.am: Uses resource id's
+	* sample/sample.cs: Ditto
+	
 2004-03-02  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/Dia.metadata: Marked Shape and Variable opaque.

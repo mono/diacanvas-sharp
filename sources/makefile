@@ -1,10 +1,10 @@
-PACKAGE=diacanvas2-0.10.0
+PACKAGE=diacanvas2-0.12.0
 
 all:
 	gapi-parser diacanvas-sharp-sources.xml
 
 get-source-code:
-	wget http://aleron.dl.sourceforge.net/sourceforge/diacanvas/$(PACKAGE).tar.gz \
+	wget http://dl.sourceforge.net/sourceforge/diacanvas/$(PACKAGE).tar.gz \
 	--output-document=- | tar -xz;
 
 #export CVS_PASSWORD=""
