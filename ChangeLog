@@ -1,3 +1,8 @@
+2003-12-03  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* doc/en/Dia/CanvasLine.xml: Documented
+	* doc/en/Dia/*.xml: Gettified all GType properties
+
 2003-11-22  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sample/sample.cs: Check for ctrl modifier the proper way.

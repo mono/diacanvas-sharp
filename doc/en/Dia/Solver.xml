@@ -96,7 +96,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>The Type for the <see cref="T:Dia.Solver" /></summary>
+        <summary>Gets the type for the <see cref="T:Dia.Solver" /></summary>
         <returns>A <see cref="T:System.UInt32" /> number representing the <see cref="GLib.Type" /></returns>
         <remarks></remarks>
       </Docs>
