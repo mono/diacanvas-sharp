@@ -5,13 +5,14 @@ ASSEMBLIES=	-r glib-sharp 		\
 		-r gnome-sharp		\
 		-r ../dia/dia-sharp.dll
 
-RESOURCES=	-resource:glade/gui.glade	\
-		-resource:pixmaps/logo.png	\
-		-resource:pixmaps/selection.png	\
-		-resource:pixmaps/gimp-zoom.png	\
-		-resource:pixmaps/line.png	\
-		-resource:pixmaps/box.png	\
-		-resource:pixmaps/text.png	\
+RESOURCES=	-resource:glade/gui.glade		\
+		-resource:pixmaps/logo.png		\
+		-resource:pixmaps/selection.png		\
+		-resource:pixmaps/gimp-zoom.png		\
+		-resource:pixmaps/line.png		\
+		-resource:pixmaps/box.png		\
+		-resource:pixmaps/glade-image.png 	\
+		-resource:pixmaps/text.png
 
 SAMPLE=		sample.exe
 

@@ -29,7 +29,8 @@ public class Sample {
 		scrolledwindow.Add (view);
 		SetupTools();
 
-		Dia.CanvasItem item = Dia.CanvasItem.ItemCreate (CanvasBox.GType);
+		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
+		Dia.CanvasItem item = Dia.CanvasItem.ItemCreate (CanvasImage.GType, pixbuf);
 		item.Move (200, 200);
 		canvas.Root.Add (item, item);
 
@@ -40,15 +41,14 @@ public class Sample {
 		main.ShowAll();
 	}
 
-	[Glade.Widget] Gtk.Image image1, image2, image3, image4, image5, image6;
+	[Glade.Widget] Gtk.Image image1, image2, image3, image4, image5;
 	void SetupTools()
 	{
 		image1.Pixbuf = new Pixbuf (null, "pixmaps/selection.png");
 		image2.Pixbuf = new Pixbuf (null, "pixmaps/gimp-zoom.png");
 		image3.Pixbuf = new Pixbuf (null, "pixmaps/line.png");
 		image4.Pixbuf = new Pixbuf (null, "pixmaps/box.png");
-		image5.Pixbuf = new Pixbuf (null, "pixmaps/text.png");
-		image6.Pixbuf = new Pixbuf (null, "pixmaps/text.png");
+		image5.Pixbuf = new Pixbuf (null, "pixmaps/glade-image.png");
 	}
 
 	void SelectionTool (object sender, EventArgs args)
@@ -78,20 +78,13 @@ public class Sample {
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
-	Gdk.Pixbuf pixbuf;
+	Pixbuf pixbuf;
 	void ImageTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		pixbuf = new Gdk.Pixbuf ("pixmaps/logo.png");
+		pixbuf = new Pixbuf (null, "pixmaps/logo.png");
 		view.Tool = PlacementTool.Image (pixbuf);
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
-	}
-
-	void TextTool (object sender, EventArgs args)
-	{
-		//ToolCleanUp();
-		//view.Tool = PlacementTool.Text();
-		//view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
 	void ToolCleanUp()

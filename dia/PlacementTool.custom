@@ -32,7 +32,7 @@ public static PlacementTool Image (Gdk.Pixbuf pixbuf)
 {
 	return new PlacementTool (dia_placement_tool_new (CanvasImage.GType,
 							  "image", pixbuf.Handle,
-							  "width", 100,
-							  "height", 100,
+							  "width", pixbuf.Width,
+							  "height", pixbuf.Height,
 							  IntPtr.Zero));
 }
