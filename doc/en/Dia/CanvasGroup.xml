@@ -50,158 +50,139 @@
       </Docs>
     </Member>
     <Member MemberName="Pos">
-      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem group, Dia.CanvasItem item);" />
+      <MemberSignature Language="C#" Value="public virtual int Pos (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
-      <MemberSignature Language="C#" Value="public virtual Dia.CanvasItem Value (Dia.CanvasItem group, Dia.CanvasIter iter);" />
+      <MemberSignature Language="C#" Value="public virtual Dia.CanvasItem Value (Dia.CanvasIter iter);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>Dia.CanvasItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="iter" Type="Dia.CanvasIter" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public virtual int Length (Dia.CanvasItem group);" />
+      <MemberSignature Language="C#" Value="public virtual int Length ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:System.Int32" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveDestruction">
-      <MemberSignature Language="C#" Value="public virtual void RemoveDestruction (Dia.CanvasItem group, Dia.CanvasItem item);" />
+      <MemberSignature Language="C#" Value="public virtual void RemoveDestruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="public virtual bool Add (Dia.CanvasItem group, Dia.CanvasItem item);" />
+      <MemberSignature Language="C#" Value="public virtual bool Add (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
-      <MemberSignature Language="C#" Value="public virtual bool Next (Dia.CanvasItem group, Dia.CanvasIter iter);" />
+      <MemberSignature Language="C#" Value="public virtual bool Next (Dia.CanvasIter iter);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="iter" Type="Dia.CanvasIter" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetIter">
-      <MemberSignature Language="C#" Value="public virtual bool GetIter (Dia.CanvasItem group, Dia.CanvasIter iter);" />
+      <MemberSignature Language="C#" Value="public virtual bool GetIter (Dia.CanvasIter iter);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="iter" Type="Dia.CanvasIter" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="iter">a <see cref="T:Dia.CanvasIter" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="AddConstruction">
-      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem group, Dia.CanvasItem item);" />
+      <MemberSignature Language="C#" Value="public virtual void AddConstruction (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
-      <MemberSignature Language="C#" Value="public virtual bool Remove (Dia.CanvasItem group, Dia.CanvasItem item);" />
+      <MemberSignature Language="C#" Value="public virtual bool Remove (Dia.CanvasItem item);" />
       <MemberType>Method</MemberType>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="group" Type="Dia.CanvasItem" />
         <Parameter Name="item" Type="Dia.CanvasItem" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="group">a <see cref="T:Dia.CanvasItem" /></param>
         <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
         <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>

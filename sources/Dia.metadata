@@ -1,6 +1,17 @@
 <?xml version="1.0"?>
 <metadata>
 
+<!-- hides -->
+<rule>
+  <class name="DiaVariableClass"/>
+  <data>
+    <attribute target="class">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+  </data>
+</rule>
+
 <!-- renames -->
 <rule>
   <class name="DiaCanvasGroupable">

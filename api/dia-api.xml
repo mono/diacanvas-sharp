@@ -2068,7 +2068,7 @@
         </parameters>
       </method>
     </struct>
-    <struct name="VariableClass" cname="DiaVariableClass">
+    <struct name="VariableClass" cname="DiaVariableClass" hidden="1">
       <field cname="parent_class" type="GObjectClass"/>
       <callback cname="changed">
         <return-type type="void"/>
