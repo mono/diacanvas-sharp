@@ -1,14 +1,6 @@
 SUBDIRS=pixmaps glade
 EXTRA_DIST= *.cs
 
-ASSEMBLIES=	-r glib-sharp 			\
-		-r gtk-sharp			\
-		-r glade-sharp			\
-		-r gdk-sharp			\
-		-r pango-sharp			\
-		-r gnome-sharp			\
-		-r ../dia/diacanvas-sharp.dll
-
 RESOURCES=	-resource:glade/gui.glade,gui.glade			\
 		-resource:pixmaps/logo.png,logo.png			\
 		-resource:pixmaps/selection.png,selection.png		\
@@ -23,7 +15,7 @@ SAMPLE=		sample.exe
 all: $(SAMPLE)
 
 $(SAMPLE): *.cs ../dia/diacanvas-sharp.dll
-	mcs $(ASSEMBLIES) $(RESOURCES) *.cs -o $(SAMPLE)
+	mcs -pkg:gnome-sharp,glade-sharp -r ../dia/diacanvas-sharp $(RESOURCES) *.cs -o $(SAMPLE)
 
 clean:
 	rm -f $(SAMPLE)

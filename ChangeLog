@@ -2,6 +2,7 @@
 
 	* dia/Dia.metadata: replaced disabledefaultconstructor 
 	  with disable_void_ctor, thanks tberman
+	* sample/makefile.am: Use -pkg for assemblies
 
 2004-07-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
