@@ -168,6 +168,50 @@
     </attribute>
   </data>
 </rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <property>Parent</property>
+  </class>
+  <data>
+    <attribute target="property">
+      <name>type</name>
+      <value>DiaCanvasGroup</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasView">
+    <signal>FocusItem</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>FocusedItem</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasView">
+    <signal>SelectItem</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>SelectedItem</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasView">
+    <signal>UnselectItem</signal>
+  </class>
+  <data>
+    <attribute target="signal">
+      <name>name</name>
+      <value>UnselectedItem</value>
+    </attribute>
+  </data>
+</rule>
 
 <!-- disable default constructor -->
 <rule>

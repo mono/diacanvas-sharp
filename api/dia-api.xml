@@ -619,7 +619,7 @@
           <parameter type="DiaHandle*" name="handle"/>
         </parameters>
       </signal>
-      <property name="Parent" cname="parent" type="DiaCanvasItem" readable="true" writeable="true"/>
+      <property name="Parent" cname="parent" type="DiaCanvasGroup" readable="true" writeable="true"/>
       <property name="Visible" cname="visible" type="gboolean" readable="true" writeable="true"/>
       <property name="Connect" cname="connect" type="DiaHandle" writeable="true"/>
       <property name="Disconnect" cname="disconnect" type="DiaHandle" writeable="true"/>
@@ -947,21 +947,21 @@
       <field cname="old_x" type="gdouble"/>
       <field cname="old_y" type="gdouble"/>
       <field cname="button_press_handled" type="gboolean"/>
-      <signal name="FocusItem" cname="focus_item" when="FIRST">
+      <signal name="FocusedItem" cname="focus_item" when="FIRST">
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasView*" name="view"/>
           <parameter type="DiaCanvasViewItem*" name="focused_item"/>
         </parameters>
       </signal>
-      <signal name="SelectItem" cname="select_item" when="FIRST">
+      <signal name="SelectedItem" cname="select_item" when="FIRST">
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasView*" name="view"/>
           <parameter type="DiaCanvasViewItem*" name="selected_item"/>
         </parameters>
       </signal>
-      <signal name="UnselectItem" cname="unselect_item" when="FIRST">
+      <signal name="UnselectedItem" cname="unselect_item" when="FIRST">
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaCanvasView*" name="view"/>

@@ -314,6 +314,30 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FocusItem">
+      <MemberSignature Language="C#" Value="public Dia.CanvasViewItem FocusItem { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasViewItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.CanvasViewItem" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItems">
+      <MemberSignature Language="C#" Value="public Collections.IList SelectedItems { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.Collections.IList" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Canvas">
       <MemberSignature Language="C#" Value="public Dia.Canvas Canvas { set; get; };" />
       <MemberType>Property</MemberType>
@@ -390,8 +414,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UnselectItem">
-      <MemberSignature Language="C#" Value="public event DiaSharp.UnselectItemHandler UnselectItem;" />
+    <Member MemberName="UnselectedItem">
+      <MemberSignature Language="C#" Value="public event DiaSharp.UnselectedItemHandler UnselectedItem;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -400,8 +424,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="FocusItem">
-      <MemberSignature Language="C#" Value="public event DiaSharp.FocusItemHandler FocusItem;" />
+    <Member MemberName="FocusedItem">
+      <MemberSignature Language="C#" Value="public event DiaSharp.FocusedItemHandler FocusedItem;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />
@@ -410,8 +434,8 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SelectItem">
-      <MemberSignature Language="C#" Value="public event DiaSharp.SelectItemHandler SelectItem;" />
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public event DiaSharp.SelectedItemHandler SelectedItem;" />
       <MemberType>Event</MemberType>
       <ReturnValue />
       <Parameters />

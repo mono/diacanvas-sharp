@@ -1,7 +1,18 @@
+2003-08-08  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* NEWS: Added
+	* sample/sample.cs: Added SelectAll, UnselectAll and DeleteSelected
+	* PROBLEMS: Added a couple of crashes
+	* glue/makefile: Added libgnomeui-2.0 to libs
+	* glue/dia-canvas-view.c:
+	* dia/CanvasView.custom: Added get accessors for SelectedItems and FocusItem
+	* sources/Dia.metadata: Renamed signals in CanvasView, to avoid clashes
+	  Changed type of property Parent in CanvasItem to CanvasGroup
+
 2003-08-07  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/PlacementTool.custom: Fixed Uni16 to Ansi conversion bug
-	* sample/sample.cs: Added start of printing sample, gnomeprint wrapper needed.
+	* sample/sample.cs: Added start of printing sample, gnomeprint wrapper needed
 
 2003-08-06  Martin Willemoes Hansen <mwh@sysrq.dk>
 

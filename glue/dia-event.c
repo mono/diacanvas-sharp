@@ -2,7 +2,7 @@
  *
  * Author: Martin Willemoes Hansen  <mwh@sysrq.dk>
  *
- * (C) 2003 Martin Willemoes Hansen
+ * Copyright (C) 2003 Martin Willemoes Hansen
  *
  */
 
@@ -10,11 +10,11 @@
 #include <diacanvas/dia-event.h>
 
 /* Forward declarations */
-DiaEventType diasharp_dia_event_get_event_type (DiaEvent *event);
+DiaEventType diasharp_dia_event_get_event_type (DiaEvent * event);
 /* */
 
 DiaEventType
-diasharp_dia_event_get_event_type (DiaEvent *event)
+diasharp_dia_event_get_event_type (DiaEvent * event)
 {
 	return event->type;
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 using Dia;
 using GLib;
@@ -51,12 +52,14 @@ public class Sample {
 		Dia.Point p1 = new Dia.Point (50, 50);
 		Dia.Point p2 = new Dia.Point (100, 100);
 
+		/*
 		try {
 			line.HeadPos = p1;
 			line.TailPos = p2;
 		} catch (Exception ex) {
 			Console.WriteLine (ex);
 		}
+		*/
 		line.Move (200, 200);
 		canvas.Root.Add (line);
 
@@ -153,6 +156,23 @@ public class Sample {
 			svg.Save ("test.svg");
 		} catch (GException ex) {
 			Console.WriteLine (ex);
+		}
+	}
+
+	void SelectAll (object sender, EventArgs args)
+	{
+		view.SelectAll();
+	}
+
+	void UnselectAll (object sender, EventArgs args)
+	{
+		view.UnselectAll();
+	}
+
+	void DeleteSelectedItems (object sender, EventArgs args)
+	{
+		foreach (CanvasViewItem view_item in view.SelectedItems) {
+			view_item.Item.Parent.Remove (view_item.Item);
 		}
 	}
 

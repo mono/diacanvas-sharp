@@ -699,18 +699,18 @@
       </Docs>
     </Member>
     <Member MemberName="Parent">
-      <MemberSignature Language="C#" Value="public Dia.CanvasItem Parent { set; get; };" />
+      <MemberSignature Language="C#" Value="public Dia.CanvasGroup Parent { set; get; };" />
       <MemberType>Property</MemberType>
       <ReturnValue>
-        <ReturnType>Dia.CanvasItem</ReturnType>
+        <ReturnType>Dia.CanvasGroup</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="Dia.CanvasItem" />
+        <Parameter Name="value" Type="Dia.CanvasGroup" />
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
+        <param name="value">a <see cref="T:Dia.CanvasGroup" /></param>
+        <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -1,0 +1,14 @@
+0.1.0
+=====
+
+* SelectionTool
+* Undo / Redo
+* SVG export
+* CanvasLine, CanvasBox, CanvasText, CanvasImage can
+  be created programatically and placed with the
+  PlacementTool.
+* Zoom (in/out/100%)
+* SelectAll / UnselectAll
+* DeleteSelected
+* Snap to grid
+* API (Not documented yet, though its still usefull)
