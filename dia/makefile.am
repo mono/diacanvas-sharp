@@ -41,7 +41,3 @@ clean:
 	rm -f $(LIBRARY)
 	rm -rf generated
 	rm -f generated-stamp
-
-distclean:
-	rm -r CVS
-	rm .cvsignore

@@ -11,8 +11,3 @@ get-source-code:
 
 #export CVS_PASSWORD=""
 #cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/diacanvas co $(PACKAGE)
-
-distclean:
-	rm -rf $(PACKAGE)
-	rm -r CVS
-	rm -r .cvsignore

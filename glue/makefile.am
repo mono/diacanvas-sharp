@@ -10,4 +10,3 @@ libdiacanvassharpglue_la_SOURCES = \
 
 libdiacanvassharpglue_la_LIBADD = $(DIACANVAS2_LIBS)
 INCLUDES = $(DIACANVAS2_CFLAGS)
- 

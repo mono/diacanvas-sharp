@@ -1,7 +1,8 @@
+SUBDIRS=en
 diacanvasdocdir=$(MONODOC_SOURCESDIR)
 diacanvasdoc_DATA = diacanvas-docs.zip diacanvas-docs.tree diacanvas-docs.source
 CLEANFILES= *.tree *.zip tmp ..zip
-EXTRA_DIST= makefile.am makefile.in
+EXTRA_DIST= diacanvas-docs.source diacanvas-docs.tree diacanvas-docs.zip
 
 ASSEMBLER=../../monodoc/browser/assembler.exe
 UPDATER=../../monodoc/generator/updater.exe
@@ -13,16 +14,3 @@ diacanvas-docs.zip diacanvas-docs.tree: en/*/*.xml
 
 update:
 	mono $(UPDATER) ../dia/diacanvas-sharp.dll -o ./en -f
-
-clean:
-	rm -f *.tree
-	rm -f *.zip
-	rm -f tmp
-	rm -f ..zip
-
-distclean:
-	rm -r CVS
-	rm -r en/CVS
-	rm -r en/Dia/CVS
-	rm -r en/DiaSharp/CVS
-	rm .cvsignore
