@@ -37,19 +37,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HasVariables">
-      <MemberSignature Language="C#" Value="public bool HasVariables ();" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <returns>a <see cref="T:System.Boolean" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Foreach">
       <MemberSignature Language="C#" Value="public void Foreach (Dia.ConstraintFunc func);" />
       <MemberType>Method</MemberType>
@@ -82,18 +69,16 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AddExpression">
-      <MemberSignature Language="C#" Value="public void AddExpression (Dia.Expression expr);" />
+    <Member MemberName="HasVariables">
+      <MemberSignature Language="C#" Value="public bool HasVariables ();" />
       <MemberType>Method</MemberType>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="expr" Type="Dia.Expression" />
-      </Parameters>
+      <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <param name="expr">a <see cref="T:Dia.Expression" /></param>
+        <returns>a <see cref="T:System.Boolean" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

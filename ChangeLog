@@ -1,6 +1,13 @@
+2003-07-22  Martin Willemoes Hansen <mwh@sysrq.dk>
+	
+	* PROBLEMS: Added
+	* sources/Dia.metadata: Hide DiaExpression type, 
+	  and hide the AddExpression method in DiaConstraint
+	* doc/en/Dia/Expression.xml: Removed
+
 2003-07-21  Martin Willemoes Hansen <mwh@sysrq.dk>
 
 	* ChangeLog: Added
 	* dia/Event.cs: Added 
-	* glue/dia-event.cs Added
+	* glue/dia-event.c Added
 	

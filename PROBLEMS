@@ -1,0 +1,31 @@
+Array fields are not generated properly
+---------------------------------------
+
+warning: array field Dia.ShapeText.affine probably incorrectly generated
+warning: array field Dia.CanvasIter.data probably incorrectly generated
+warning: array field Dia.DashStyle.dash probably incorrectly generated
+warning: array field Dia.ShapeImage.affine probably incorrectly generated
+
+This seems to be a problem with the generator.
+
+The xml has a format of:
+      	<field cname="dash" array_len="1" type="gdouble"/>
+
+The generated C# code is like this:
+      	public IntPtr dash;
+
+================================================================================
+
+
+Type missing problems
+---------------------
+
+Property has unknown Type DiaAffine in Object Dia.CanvasItem
+      	DiaAffine is not a real type, kind of halfish.
+	Its realy a double [6] array.
+
+Property has unknown Type DiaCanvasItemHandles in Object Dia.CanvasItem
+	Defined in diatypes.c and diacanvas.h
+	Maybe make a real type in c or make a manual wrapper class in C#
+
+================================================================================

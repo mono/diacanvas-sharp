@@ -4,12 +4,24 @@
 <!-- hides -->
 <rule>
   <class name="DiaVariableClass"/>
+  <class name="DiaExpression"/>
   <data>
     <attribute target="class">
       <name>hidden</name>
       <value>1</value>
     </attribute>
   </data>
+</rule>
+<rule>
+  <class name="DiaConstraint">
+    <method>AddExpression</method>
+   </class>
+   <data>
+    <attribute target="method">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+   </data>
 </rule>
 
 <!-- renames -->

@@ -988,7 +988,7 @@
           <parameter type="gdouble" name="c"/>
         </parameters>
       </method>
-      <method name="AddExpression" cname="dia_constraint_add_expression">
+      <method name="AddExpression" cname="dia_constraint_add_expression" hidden="1">
         <return-type type="void"/>
         <parameters>
           <parameter type="DiaExpression*" name="expr"/>
@@ -1416,7 +1416,7 @@
       <field cname="dx" type="gdouble"/>
       <field cname="dy" type="gdouble"/>
     </struct>
-    <struct name="Expression" cname="DiaExpression">
+    <struct name="Expression" cname="DiaExpression" hidden="1">
       <field cname="len" type="guint"/>
       <field cname="variable" type="struct-_DiaExpressionElem{DiaVariable*"/>
       <field cname="constant" type="gdouble"/>
