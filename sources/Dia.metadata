@@ -8,6 +8,7 @@
   <class name="DiaShapeItemInfo"/>
   <class name="DiaShapeViewInfo"/>
   <class name="DiaVariableClass"/>
+  <class name="DiaShapeViewInfoFree"/>
   <data>
     <attribute target="class">
       <name>hidden</name>
@@ -29,7 +30,7 @@
    </data>
 </rule>
 <rule>
-  <class name="DiaShapeViewInfo">
+  <class name="DiaShape">
     <method>GetViewInfo</method>
    </class>
    <data>

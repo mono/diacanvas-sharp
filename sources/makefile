@@ -10,7 +10,5 @@ get-source-code:
 	export CVS_PASSWORD=""
 	cvs -z3 -d:pserver:anonymous@cvs.sf.net:/cvsroot/diacanvas co $(PACKAGE)
 
-	patch $(PACKAGE)/src/dia-storage.h ../patches/dia-storage.h.diff
-
 distclean:
 	rm -rf $(PACKAGE)

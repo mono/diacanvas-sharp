@@ -1,3 +1,13 @@
+2003-09-13  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* sources/Dia.metadata: Hide references to DiaShapeViewInfo, cause
+	  its internal.
+	* sources/makefile: Removed old appliance of patch
+	* patches/dia-storage.h.diff: Removed not needed anymore
+	* patches/removal_of_persistens.diff: Patch to remove persistens 
+	  functionality in DiaCanvas, should be in DiaCanvas cvs soon.
+	* api/dia-api.xml: Reflects latest changes
+
 2003-09-09  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sample/sample.cs: 

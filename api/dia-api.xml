@@ -120,34 +120,10 @@
         <parameter type="gpointer" name="user_data"/>
       </parameters>
     </callback>
-    <callback name="ShapeViewInfoFree" cname="DiaShapeViewInfoFree">
+    <callback name="ShapeViewInfoFree" cname="DiaShapeViewInfoFree" hidden="1">
       <return-type type="void"/>
       <parameters>
         <parameter type="DiaShapeViewInfo*" name="item_info"/>
-      </parameters>
-    </callback>
-    <callback name="StorageFreeFunc" cname="DiaStorageFreeFunc">
-      <return-type type="void"/>
-      <parameters>
-        <parameter type="GtkArg*" name="value"/>
-      </parameters>
-    </callback>
-    <callback name="StorageLoadFunc" cname="DiaStorageLoadFunc">
-      <return-type type="gboolean"/>
-      <parameters>
-        <parameter type="DiaStorage*" name="storage"/>
-        <parameter type="DiaAttributeNode*" name="attr"/>
-        <parameter type="DiaPersistent*" name="object"/>
-        <parameter type="GtkArg*" name="value"/>
-      </parameters>
-    </callback>
-    <callback name="StorageSaveFunc" cname="DiaStorageSaveFunc">
-      <return-type type="gboolean"/>
-      <parameters>
-        <parameter type="DiaStorage*" name="storage"/>
-        <parameter type="DiaAttributeNode*" name="attr"/>
-        <parameter type="DiaPersistent*" name="object"/>
-        <parameter type="GtkArg*" name="value"/>
       </parameters>
     </callback>
     <interface name="CanvasEditable" cname="DiaCanvasEditable">
@@ -903,13 +879,6 @@
       <field cname="editable" type="gboolean"/>
       <field cname="markup" type="gboolean"/>
       <field cname="text_shape" type="DiaShape*"/>
-      <signal name="TextChanged" cname="text_changed" when="LAST" hidden="1">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaCanvasText*" name="canvas_text"/>
-          <parameter type="const-gchar*" name="text"/>
-        </parameters>
-      </signal>
       <property name="Font" cname="font" type="PangoFontDescription" writeable="true"/>
       <property name="Text" cname="text" type="gchar*" readable="true" writeable="true"/>
       <property name="Cursor" cname="cursor" type="gint" readable="true" writeable="true"/>
@@ -1599,118 +1568,6 @@
         </parameters>
       </method>
     </object>
-    <object name="Persistent" cname="DiaPersistent" parent="GtkObject">
-      <field cname="id" type="DiaId"/>
-      <field cname="rev" type="DiaRev"/>
-      <field cname="conn_signals" type="GSList*"/>
-      <method name="GetType" cname="dia_persistent_get_type" shared="true">
-        <return-type type="GtkType"/>
-      </method>
-      <method name="MoveObject" cname="dia_persistent_move_object" shared="true">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-          <parameter type="DiaPersistentFactory*" name="dest"/>
-          <parameter type="DiaPersistent*" name="object"/>
-        </parameters>
-      </method>
-      <method name="SignalConnectFull" cname="dia_persistent_signal_connect_full">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="gchar*" name="name"/>
-          <parameter type="GtkSignalFunc" name="func"/>
-          <parameter type="gchar*" name="func_name"/>
-          <parameter type="DiaPersistent*" name="slot_object"/>
-        </parameters>
-      </method>
-      <method name="SignalDisconnectByFunc" cname="dia_persistent_signal_disconnect_by_func">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="GtkSignalFunc" name="func"/>
-          <parameter type="DiaPersistent*" name="slot_object"/>
-        </parameters>
-      </method>
-      <method name="SignalDisconnectByObject" cname="dia_persistent_signal_disconnect_by_object">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaPersistent*" name="slot_object"/>
-        </parameters>
-      </method>
-    </object>
-    <object name="PersistentFactory" cname="DiaPersistentFactory" parent="GtkObject">
-      <field cname="next_id" type="DiaId"/>
-      <field cname="object_hash" type="GHashTable*"/>
-      <signal name="SaveStart" cname="save_start" when="LAST">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-        </parameters>
-      </signal>
-      <signal name="SaveEnd" cname="save_end" when="LAST">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-        </parameters>
-      </signal>
-      <signal name="LoadStart" cname="load_start" when="LAST">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-        </parameters>
-      </signal>
-      <signal name="LoadEnd" cname="load_end" when="LAST">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-        </parameters>
-      </signal>
-      <signal name="SaveObject" cname="save_object" when="LAST">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-          <parameter type="DiaPersistent*" name="obj"/>
-        </parameters>
-      </signal>
-      <signal name="LoadObject" cname="load_object" when="LAST">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-          <parameter type="DiaPersistent*" name="obj"/>
-        </parameters>
-      </signal>
-      <method name="Dump" cname="dia_persistent_factory_dump">
-        <return-type type="void"/>
-      </method>
-      <method name="GetType" cname="dia_persistent_factory_get_type" shared="true">
-        <return-type type="GtkType"/>
-      </method>
-      <method name="Load" cname="dia_persistent_factory_load">
-        <return-type type="gchar*"/>
-        <parameters>
-          <parameter type="const-gchar*" name="filename"/>
-        </parameters>
-      </method>
-      <method name="Lookup" cname="dia_persistent_factory_lookup">
-        <return-type type="DiaPersistent*"/>
-        <parameters>
-          <parameter type="DiaId" name="id"/>
-        </parameters>
-      </method>
-      <constructor cname="dia_persistent_factory_new"/>
-      <constructor cname="dia_persistent_factory_new_object">
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-          <parameter type="GtkType" name="type"/>
-        </parameters>
-      </constructor>
-      <method name="Save" cname="dia_persistent_factory_save">
-        <return-type type="gchar*"/>
-        <parameters>
-          <parameter type="const-gchar*" name="filename"/>
-        </parameters>
-      </method>
-    </object>
-    <alias name="AttributeNode" cname="DiaAttributeNode" type="int"/>
     <boxed name="CanvasIter" cname="DiaCanvasIter">
       <field cname="data" array_len="3" type="gpointer"/>
       <field cname="destroy_func" type="GDestroyNotify"/>
@@ -1726,27 +1583,6 @@
       </method>
     </boxed>
     <alias name="Color" cname="DiaColor" type="guint32"/>
-    <struct name="Copy" cname="DiaCopy">
-      <field cname="objects" type="GList*"/>
-      <field cname="factory" type="DiaPersistentFactory*"/>
-      <method name="Add" cname="dia_copy_add">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-          <parameter type="DiaCanvasItem*" name="item"/>
-        </parameters>
-      </method>
-      <method name="Clear" cname="dia_copy_clear">
-        <return-type type="void"/>
-      </method>
-      <constructor cname="dia_copy_new"/>
-      <method name="Paste" cname="dia_copy_paste">
-        <return-type type="DiaCopy*"/>
-        <parameters>
-          <parameter type="DiaPersistentFactory*" name="factory"/>
-        </parameters>
-      </method>
-    </struct>
     <boxed name="DashStyle" cname="DiaDashStyle">
       <field cname="n_dash" type="guint"/>
       <field cname="dash" array_len="1" type="gdouble"/>
@@ -1754,7 +1590,6 @@
         <return-type type="GType"/>
       </method>
     </boxed>
-    <alias name="Document" cname="DiaDocument" type="int"/>
     <struct name="EventButton" cname="DiaEventButton">
       <field cname="type" type="DiaEventType"/>
       <field cname="x" type="gdouble"/>
@@ -1808,8 +1643,6 @@
         </parameters>
       </method>
     </struct>
-    <alias name="Id" cname="DiaId" type="guint32"/>
-    <alias name="ObjectNode" cname="DiaObjectNode" type="int"/>
     <boxed name="Point" cname="DiaPoint">
       <field cname="x" type="gdouble"/>
       <field cname="y" type="gdouble"/>
@@ -1832,7 +1665,6 @@
         <return-type type="GType"/>
       </method>
     </boxed>
-    <alias name="Rev" cname="DiaRev" type="guint16"/>
     <struct name="SPoint" cname="DiaSPoint">
       <field cname="x" type="DiaVariable*"/>
       <field cname="y" type="DiaVariable*"/>
@@ -1907,7 +1739,7 @@
       <method name="GetType" cname="dia_shape_get_type">
         <return-type type="GType"/>
       </method>
-      <method name="GetViewInfo" cname="dia_shape_get_view_info">
+      <method name="GetViewInfo" cname="dia_shape_get_view_info" hidden="1">
         <return-type type="DiaShapeViewInfo*"/>
         <parameters>
           <parameter type="gpointer" name="key"/>
@@ -2408,228 +2240,6 @@
         </parameters>
       </method>
     </struct>
-    <alias name="SignalNode" cname="DiaSignalNode" type="int"/>
-    <struct name="Storage" cname="DiaStorage">
-      <field cname="filename" type="gchar*"/>
-      <field cname="doc_node" type="DiaDocument*"/>
-      <field cname="factory" type="DiaPersistentFactory*"/>
-      <method name="ArgFree" cname="dia_storage_arg_free" shared="true">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="GtkArg*" name="arg"/>
-        </parameters>
-      </method>
-      <method name="ArgReset" cname="dia_storage_arg_reset" shared="true">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="GtkArg*" name="arg"/>
-        </parameters>
-      </method>
-      <method name="AttributeGetName" cname="dia_storage_attribute_get_name">
-        <return-type type="const-gchar*"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeGetType" cname="dia_storage_attribute_get_type">
-        <return-type type="GtkType"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeGetValue" cname="dia_storage_attribute_get_value">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-          <parameter type="DiaPersistent*" name="object"/>
-          <parameter type="GtkArg*" name="value"/>
-        </parameters>
-      </method>
-      <method name="AttributeGetValueRaw" cname="dia_storage_attribute_get_value_raw">
-        <return-type type="const-gchar*"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeInvalid" cname="dia_storage_attribute_invalid">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeIsNil" cname="dia_storage_attribute_is_nil">
-        <return-type type="gboolean"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeNext" cname="dia_storage_attribute_next">
-        <return-type type="DiaAttributeNode*"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeSetNil" cname="dia_storage_attribute_set_nil">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="AttributeSetValue" cname="dia_storage_attribute_set_value">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaAttributeNode*" name="attr"/>
-          <parameter type="const-gchar*" name="value"/>
-        </parameters>
-      </method>
-      <method name="Free" cname="dia_storage_free">
-        <return-type type="void"/>
-      </method>
-      <method name="GetAttribute" cname="dia_storage_get_attribute">
-        <return-type type="DiaAttributeNode*"/>
-        <parameters>
-          <parameter type="DiaStorageNode*" name="node"/>
-        </parameters>
-      </method>
-      <method name="GetObject" cname="dia_storage_get_object">
-        <return-type type="DiaObjectNode*"/>
-      </method>
-      <method name="GetSignal" cname="dia_storage_get_signal">
-        <return-type type="DiaSignalNode*"/>
-        <parameters>
-          <parameter type="DiaObjectNode*" name="node"/>
-        </parameters>
-      </method>
-      <method name="Init" cname="dia_storage_init" shared="true">
-        <return-type type="void"/>
-      </method>
-      <method name="Load" cname="dia_storage_load" shared="true">
-        <return-type type="DiaStorage*"/>
-        <parameters>
-          <parameter type="const-gchar*" name="filename"/>
-        </parameters>
-      </method>
-      <constructor cname="dia_storage_new">
-        <parameters>
-          <parameter type="const-gchar*" name="filename"/>
-          <parameter type="gboolean" name="compressed"/>
-        </parameters>
-      </constructor>
-      <constructor cname="dia_storage_new_attribute">
-        <parameters>
-          <parameter type="DiaStorage*" name="storage"/>
-          <parameter type="DiaStorageNode*" name="parent"/>
-          <parameter type="DiaPersistent*" name="object"/>
-          <parameter type="GtkArg*" name="value"/>
-        </parameters>
-      </constructor>
-      <constructor cname="dia_storage_new_object">
-        <parameters>
-          <parameter type="DiaStorage*" name="storage"/>
-          <parameter type="GtkType" name="type"/>
-          <parameter type="DiaId" name="id"/>
-          <parameter type="DiaRev" name="rev"/>
-        </parameters>
-      </constructor>
-      <constructor cname="dia_storage_new_signal">
-        <parameters>
-          <parameter type="DiaStorage*" name="storage"/>
-          <parameter type="DiaObjectNode*" name="node"/>
-          <parameter type="gchar*" name="signal_name"/>
-          <parameter type="const-gchar*" name="callback_name"/>
-          <parameter type="DiaId" name="data_id"/>
-        </parameters>
-      </constructor>
-      <method name="NodeDelete" cname="dia_storage_node_delete">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaStorageNode*" name="attr"/>
-        </parameters>
-      </method>
-      <method name="ObjectGetClass" cname="dia_storage_object_get_class">
-        <return-type type="GtkType"/>
-        <parameters>
-          <parameter type="DiaObjectNode*" name="node"/>
-        </parameters>
-      </method>
-      <method name="ObjectGetId" cname="dia_storage_object_get_id">
-        <return-type type="DiaId"/>
-        <parameters>
-          <parameter type="DiaObjectNode*" name="node"/>
-        </parameters>
-      </method>
-      <method name="ObjectGetRev" cname="dia_storage_object_get_rev">
-        <return-type type="DiaRev"/>
-        <parameters>
-          <parameter type="DiaObjectNode*" name="node"/>
-        </parameters>
-      </method>
-      <method name="ObjectNext" cname="dia_storage_object_next">
-        <return-type type="DiaObjectNode*"/>
-        <parameters>
-          <parameter type="DiaObjectNode*" name="object"/>
-        </parameters>
-      </method>
-      <method name="RegisterNewType" cname="dia_storage_register_new_type" shared="true">
-        <return-type type="GtkType"/>
-        <parameters>
-          <parameter type="const-gchar*" name="name"/>
-          <parameter type="DiaStorageLoadFunc" name="load"/>
-          <parameter type="DiaStorageSaveFunc" name="save"/>
-          <parameter type="DiaStorageFreeFunc" name="free"/>
-        </parameters>
-      </method>
-      <method name="RegisterType" cname="dia_storage_register_type" shared="true">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="GtkType" name="type"/>
-          <parameter type="DiaStorageLoadFunc" name="load"/>
-          <parameter type="DiaStorageSaveFunc" name="save"/>
-          <parameter type="DiaStorageFreeFunc" name="free"/>
-        </parameters>
-      </method>
-      <method name="Save" cname="dia_storage_save">
-        <return-type type="gboolean"/>
-      </method>
-      <method name="SignalGetCallback" cname="dia_storage_signal_get_callback">
-        <return-type type="const-gchar*"/>
-        <parameters>
-          <parameter type="DiaSignalNode*" name="sig"/>
-        </parameters>
-      </method>
-      <method name="SignalGetDataId" cname="dia_storage_signal_get_data_id">
-        <return-type type="DiaId"/>
-        <parameters>
-          <parameter type="DiaSignalNode*" name="sig"/>
-        </parameters>
-      </method>
-      <method name="SignalGetName" cname="dia_storage_signal_get_name">
-        <return-type type="const-gchar*"/>
-        <parameters>
-          <parameter type="DiaSignalNode*" name="sig"/>
-        </parameters>
-      </method>
-      <method name="SignalNext" cname="dia_storage_signal_next">
-        <return-type type="DiaSignalNode*"/>
-        <parameters>
-          <parameter type="DiaSignalNode*" name="sig"/>
-        </parameters>
-      </method>
-      <method name="SignalSetDataId" cname="dia_storage_signal_set_data_id">
-        <return-type type="void"/>
-        <parameters>
-          <parameter type="DiaSignalNode*" name="sig"/>
-          <parameter type="DiaId" name="id"/>
-        </parameters>
-      </method>
-      <method name="ToBuffer" cname="dia_storage_to_buffer">
-        <return-type type="gchar*"/>
-        <parameters>
-          <parameter type="gint*" name="size"/>
-        </parameters>
-      </method>
-    </struct>
-    <alias name="StorageNode" cname="DiaStorageNode" type="int"/>
     <struct name="Variable" cname="DiaVariable">
       <field cname="parent" type="GObject"/>
       <field cname="value" type="gdouble"/>
