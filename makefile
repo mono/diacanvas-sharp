@@ -1,4 +1,4 @@
-DIRS=glue api dia sample doc
+DIRS=glue api dia sample
 
 all: build
 
@@ -11,6 +11,8 @@ install:
 	for i in $(DIRS); do                     	\
 		$(MAKE) -C $$i install || exit 1;	\
 	done
+
+	$(MAKE) -C doc install;
 
 clean:
 	for i in $(DIRS); do        	     		\

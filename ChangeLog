@@ -20,6 +20,9 @@
 	* doc/en/DiaSharp/SaveObjectHandler.xml: Removed
 	* doc/en/DiaSharp/SaveStartArgs.xml: Removed
 	* doc/en/DiaSharp/SaveStartHandler.xml: Removed
+	* doc/diacanvas-docs.tree: Added
+	* doc/diacanvas-docs.zip: Added
+	* makefile: Do not build docs anymore
 
 2003-09-15  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
