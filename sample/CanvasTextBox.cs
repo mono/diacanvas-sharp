@@ -23,15 +23,9 @@ using Pango;
 
 public class CanvasTextBox : CanvasGroup {
 	
-	static GLib.GType gtype;
 	CanvasText text;
 
-	static CanvasTextBox()
-	{
-		gtype = RegisterGType (typeof (CanvasTextBox));
-	}
-
-	public CanvasTextBox() : base (gtype)
+	public CanvasTextBox()
 	{
 		text = new CanvasText();
 		text.Font = FontDescription.FromString ("sans 20");

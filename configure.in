@@ -1,10 +1,10 @@
 AC_INIT(README)
 AC_CANONICAL_SYSTEM
-AM_INIT_AUTOMAKE(diacanvas-sharp, 0.4.1)
+AM_INIT_AUTOMAKE(diacanvas-sharp, 0.5.0)
 AM_MAINTAINER_MODE
 AM_PROG_LIBTOOL
 
-API_VERSION=0.4.1.0
+API_VERSION=0.5.0.0
 AC_SUBST(API_VERSION)
 
 dnl Defines CC to avoid warnings
@@ -133,6 +133,7 @@ dia/glue/makefile
 doc/makefile
 doc/en/makefile
 doc/en/Dia/makefile
+sample/AssemblyInfo.cs
 sample/diacanvas-sharp-sample
 sample/makefile
 sample/pixmaps/makefile

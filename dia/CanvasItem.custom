@@ -139,15 +139,19 @@ protected virtual bool ShapeNextFunc (ref CanvasIter iter)
 	return ret_val;
 }
 
-delegate Shape ShapeValueDelegate (IntPtr item, ref CanvasIter iter);
+delegate IntPtr ShapeValueDelegate (IntPtr item, ref CanvasIter iter);
 
 static ShapeValueDelegate ShapeValueCallback;
 
-static Shape ShapeValue_Callback (IntPtr item, ref CanvasIter iter)
+static IntPtr ShapeValue_Callback (IntPtr item, ref CanvasIter iter)
 {
 	CanvasItem obj = GLib.Object.GetObject (item, false) as CanvasItem;
 
-	return obj.ShapeValueFunc (ref iter);
+	Shape shape = obj.ShapeValueFunc (ref iter);
+
+	if (shape == null)
+		return IntPtr.Zero;
+	return shape.Handle;	
 }
 
 [DllImport("diacanvassharpglue")]
@@ -167,15 +171,15 @@ static extern IntPtr dia_canvas_item_base_shape_value (IntPtr raw, ref Dia.Canva
 [GLib.DefaultSignalHandler (Type=typeof(Dia.CanvasItem), ConnectionMethod="OverrideShapeValue")]
 protected virtual Shape ShapeValueFunc (ref CanvasIter iter)
 {
-	Console.WriteLine ("protected virtual Shape ShapeValueFunc (ref CanvasIter iter)");
 	IntPtr raw_ret = dia_canvas_item_base_shape_value (Handle, ref iter);
+	
 	Shape ret;
 	
 	if (raw_ret == IntPtr.Zero)
 		ret = null;
 	else
 		ret = new Dia.Shape(raw_ret);
-
+	
 	return ret;
 }
 

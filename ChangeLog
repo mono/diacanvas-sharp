@@ -1,3 +1,24 @@
+2004-08-04  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* configure.in: Bump version
+	  Add AssemblyInfo.cs
+	* sample/AssemblyInfo.cs.in: Added
+	* sample/sample.cs: Cleaned up a bit
+	* sample/CanvasClock.cs: Added IntPtr ctor
+	* sample/CanvasClock.cs: Removed RegisterGType, not needed anymore
+	* sample/CanvasFigure.cs: Ditto
+	* sample/CanvasTextBox.cs: Ditto
+	* NEWS: Updated with new customizing feature
+
+2004-08-03  Mario Fuentes  <mario@gnome.cl>
+
+	* dia/CanvasItem.custom: Change return type in delegate 'ShapeValueDelegate'
+	  and method 'ShapeValue_Callback' from Shape to IntPtr, for fixed bug
+	  produced when method ShapeValueFunc are override.
+	* sample/CanvasClock.cs: Added a custom item.
+	* sample/sample.cs: Added a Clock item.
+	* sample/makefile.am: Added CanvasClock.cs.
+
 2004-08-01  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* dia/glue/dia-canvas-line.c: Added, more than one dash, test code.

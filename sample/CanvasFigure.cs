@@ -20,14 +20,7 @@ using Dia;
 
 public class CanvasFigure : CanvasBox {
 	
-	static GLib.GType gtype;
-
-	static CanvasFigure()
-	{
-		gtype = RegisterGType (typeof (CanvasFigure));
-	}
-
-	public CanvasFigure() : base (gtype)
+	public CanvasFigure()
 	{
 		ShapeEllipse ellipse = new ShapeEllipse();
 		ellipse.Center = new Point (20, 20);

@@ -17,6 +17,7 @@
 
 using System;
 using System.Collections;
+using System.Reflection;
 
 using Dia;
 using GLib;
@@ -60,6 +61,26 @@ public class Sample {
 	}
 
 	void CreateItemsProgramatically() {
+		// Adding image
+		CanvasImage image = new CanvasImage (new Pixbuf (null, "logo.png"));
+		image.Move (50, 50);
+		canvas.Root.Add (image);
+
+		// Adding textbox
+		CanvasTextBox textbox = new CanvasTextBox();
+		textbox.Move (50, 150);
+		canvas.Root.Add (textbox);
+
+		// Adding text
+		Dia.CanvasText text = new Dia.CanvasText();
+		text.Text = "Hello, World!";
+		text.Font = FontDescription.FromString ("sans 20");
+		text.Height = 50;
+		text.Width = 190;
+		text.Move (300, 150);
+		canvas.Root.Add (text);
+
+		// Adding line
 		Dia.CanvasLine line = new Dia.CanvasLine();
 		line.LineWidth = 10;
 		line.Color = 8327327;
@@ -68,37 +89,29 @@ public class Sample {
 		line.HeadPos = new Dia.Point (50, 70);;
 		line.TailPos = new Dia.Point (100, 170);
 		line.Cap = Dia.CapStyle.Butt;
-		line.Move (100, 150);
+		line.Move (50, 150);
 		canvas.Root.Add (line);
 
+		// Adding box
 		CanvasBox box = new CanvasBox();
-		box.Move (300, 200);
 		box.BorderWidth = 8.5;
 		box.Color = 2134231;
+		box.Move (250, 225);
 		canvas.Root.Add (box);
 
-		Dia.CanvasText text = new Dia.CanvasText();
-		text.Move (250, 150);
-		text.Text = "Hello, World!";
-		text.Font = FontDescription.FromString ("sans 20");
-		text.Height = 50;
-		text.Width = 190;
-		canvas.Root.Add (text);
+		// Adding custom clock
+		CanvasClock clock = new CanvasClock ();
+		clock.Width = 100;
+		clock.Height = 100;
+		clock.Move (450, 225);
+		canvas.Root.Add (clock);
+		
+		// Adding custom figure
+		CanvasFigure figure = new CanvasFigure();
+		figure.Move (50, 325);
+		canvas.Root.Add (figure);
 
-		CanvasTextBox textbox = new CanvasTextBox();
-		textbox.Move (50, 120);
-		canvas.Root.Add (textbox);
-
-		//Exposes some bug
-		//CanvasFigure figure = new CanvasFigure();
-		//figure.Move (50, 250);
-		//canvas.Root.Add (figure);
-
-		CanvasImage image = new CanvasImage (new Pixbuf (null, "logo.png"));
-		image.Move (50, 50);
-		canvas.Root.Add (image);
-
-	        view.UnselectAll();
+		view.UnselectAll();
 		CanvasViewItem vitem = view.FindViewItem (image);
 		view.Focus (vitem);
 	}
@@ -240,22 +253,25 @@ public class Sample {
 
 	void About (object sender, EventArgs args)
 	{
+		Assembly assembly = Assembly.GetExecutingAssembly();
+
 		string [] authors = new String [] {
-			"Martin Willemoes Hansen",
+			"Martin Willemoes Hansen <mwh@sysrq.dk> (Maintainer and founder)",
+			"Mario Fuentes <mario@gnome.cl>",
 		};
 
 		string [] documenters = new String [] {};
 		string translators = null;
 		Pixbuf pixbuf = new Pixbuf(null, "logo.png");
 			
-		new Gnome.About ("DiaCanvas# Sample", "0.1",
+		new Gnome.About ("DiaCanvas# Sample", assembly.GetName().Version.ToString(),
 				 @"Copyright (C) 2003 2004 Martin Willemoes Hansen
 DiaCanvas# Sample comes with ABSOLUTELY NO WARRANTY;
 This is free software, and you are welcome to
 redistribute it under certain conditions;
 see the text file: COPYRIGHT, distributed
 with this program.",
-				 "DiaCanvas, Mono and Gtk# rocks!", 
+				 "DiaCanvas, Mono and Gtk# rock!", 
 				 authors, documenters, translators, pixbuf).Show();
 	}
 

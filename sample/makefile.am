@@ -4,7 +4,7 @@ assemblydir= 	$(bindir)
 assembly_DATA=	diacanvas-sharp-sample.exe
 bin_SCRIPTS=	diacanvas-sharp-sample
 CLEANFILES= 	$(assembly_DATA)
-DISTCLEANFILES= $(bin_SCRIPTS)
+DISTCLEANFILES= $(bin_SCRIPTS) AssemblyInfo.cs
 
 resources=	-resource:glade/gui.glade,gui.glade			\
 		-resource:pixmaps/logo.png,logo.png			\
@@ -19,12 +19,13 @@ references=	-pkg:gnome-sharp,glade-sharp -r:../dia/diacanvas-sharp.dll
 
 sources=	CanvasFigure.cs		\
 		CanvasTextBox.cs	\
+		CanvasClock.cs		\
 		sample.cs
 
-build_sources = $(addprefix $(srcdir)/, $(sources))
-dist_sources = $(sources)
+build_sources = $(addprefix $(srcdir)/, $(sources)) AssemblyInfo.cs
 
-EXTRA_DIST= 	$(dist_sources)
+EXTRA_DIST= 	$(sources)	\
+		AssemblyInfo.cs.in
 
 $(assembly_DATA): *.cs ../dia/diacanvas-sharp.dll
 	$(CSC) /out:$(assembly_DATA) $(resources) $(references) $(build_sources)
