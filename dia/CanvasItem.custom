@@ -12,18 +12,3 @@ extern static IntPtr dia_canvas_item_create (uint object_type, IntPtr dummy);
 public static CanvasItem ItemCreate (uint object_type) {
 	return new CanvasItem (dia_canvas_item_create (object_type, IntPtr.Zero));
 }
-
-[DllImport("diacanvas2")]
-extern static IntPtr dia_canvas_item_create (uint object_type, 
-					     string pixbufs, IntPtr pixbuf, 
-					     string widths, double width, 
-					     string heights, double height, 
-					     IntPtr dummy);
-
-public static CanvasItem ItemCreate (uint object_type, Gdk.Pixbuf pixbuf) {
-	return new CanvasItem (dia_canvas_item_create (object_type,
-						       "image", pixbuf.Handle,
-						       "width", pixbuf.Width,
-						       "height", pixbuf.Height,
-						       IntPtr.Zero));
-}

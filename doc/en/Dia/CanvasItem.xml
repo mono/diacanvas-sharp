@@ -26,24 +26,6 @@
   <Attributes />
   <Members>
     <Member MemberName="ItemCreate">
-      <MemberSignature Language="C#" Value="public static Dia.CanvasItem ItemCreate (uint object_type, Gdk.Pixbuf pixbuf);" />
-      <MemberType>Method</MemberType>
-      <ReturnValue>
-        <ReturnType>Dia.CanvasItem</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="object_type" Type="System.UInt32" />
-        <Parameter Name="pixbuf" Type="Gdk.Pixbuf" />
-      </Parameters>
-      <Docs>
-        <summary>To be added</summary>
-        <param name="object_type">a <see cref="T:System.UInt32" /></param>
-        <param name="pixbuf">a <see cref="T:Gdk.Pixbuf" /></param>
-        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ItemCreate">
       <MemberSignature Language="C#" Value="public static Dia.CanvasItem ItemCreate (uint object_type);" />
       <MemberType>Method</MemberType>
       <ReturnValue>

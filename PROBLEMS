@@ -30,3 +30,53 @@ Property has unknown Type DiaCanvasItemHandles in Object Dia.CanvasItem
 	Maybe make a real type in c or make a manual wrapper class in C#
 
 ================================================================================
+
+
+Character encoding problem
+--------------------------
+
+When calling DiaPlacementTool (DiaCanvasImage.GType ...) the following error
+occours:
+
+(<unknown>:1938): GLib-GObject-WARNING **: gobject.c:663: object class `DiaCanvasImage' has no property named `'
+ 
+(<unknown>:1938): GLib-GObject-WARNING **: gobject.c:663: object class `DiaCanvasImage' has no property named `'
+ 
+(<unknown>:1938): GLib-GObject-WARNING **: gobject.c:663: object class `DiaCanvasImage' has no property named `'
+ 
+(<unknown>:1938): GdkPixbuf-CRITICAL **: file gdk-pixbuf.c: line 389 (gdk_pixbuf_get_height): assertion `pixbuf != NULL' failed
+ 
+(<unknown>:1938): GdkPixbuf-CRITICAL **: file gdk-pixbuf.c: line 373 (gdk_pixbuf_get_width): assertion `pixbuf != NULL' failed
+ 
+** (<unknown>:1938): CRITICAL **: file dia-shape.c: line 1455 (dia_shape_image): assertion `GDK_IS_PIXBUF (image)' failed
+ 
+Unhandled Exception: System.NullReferenceException: A null value was found where an object instance was required
+in (unmanaged) 06 Gtk.Application:gtk_main ()
+in <0x00004> 06 Gtk.Application:gtk_main ()
+in <0x00007> 00 Gtk.Application:Run ()
+in <0x0002b> 00 .Sample:Main ()
+
+It probably is a character encoding problem from Uni16 to utf-8/ascii.
+
+================================================================================
+
+
+DiaPoint Boxing problem
+-----------------------
+
+The following code:
+	CanvasLine line = new CanvasLine();
+  	line.HeadPos = new Dia.Point (50, 50);
+produces this:
+
+Unhandled Exception: System.NullReferenceException: A null value was found where an object instance was required
+in (unmanaged) 06 GLib.Object:g_object_set_property (intptr,string,intptr)
+in <0x00004> 06 GLib.Object:g_object_set_property (intptr,string,intptr)
+in <0x00040> 00 GLib.Object:SetProperty (string,GLib.Value)
+in <0x000bc> 00 Dia.CanvasLine:set_HeadPos (Dia.Point)
+in <0x000e5> 00 .Sample:CreateItemsProgramatically ()
+in <0x001a5> 00 .Sample:.ctor ()
+in <0x00023> 00 .Sample:Main ()
+
+It might has something to do with how the DiaPoint is boxed .. the boxed version 
+does not have a valid .Handle

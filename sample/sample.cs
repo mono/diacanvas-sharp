@@ -62,14 +62,15 @@ public class Sample {
 		canvas.Root.Add (box);
 
 		CanvasImage image = new CanvasImage();
-
 		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
-		CanvasItem item = CanvasItem.ItemCreate (CanvasImage.GType, pixbuf);
-		item.Move (50, 50);
-		canvas.Root.Add (item);
+		image.Image = pixbuf;
+		image.Height = pixbuf.Height;
+		image.Width = pixbuf.Width;
+		image.Move (50, 50);
+		canvas.Root.Add (image);
 
 		view.UnselectAll();
-		CanvasViewItem vitem = view.FindViewItem (item);
+		CanvasViewItem vitem = view.FindViewItem (image);
 		view.Focus (vitem);
 	}
 
