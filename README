@@ -5,6 +5,7 @@ Requirements
 mono-0.28
 gtk-sharp-0.12
 diacanvas2-0.10.0
+automake-1.7
 
 ======
 Sample

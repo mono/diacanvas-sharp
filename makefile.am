@@ -27,4 +27,5 @@ distclean: clean
 	$(MAKE) -C sources distclean;
 	$(MAKE) -C doc distclean;
 
+	rm -f config.log config.status makefile
 	rm -r CVS
