@@ -1,0 +1,116 @@
+<Type Name="Strength" FullName="Dia.Strength">
+  <TypeSignature Language="C#" Value="public sealed struct Strength;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IConvertible</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes />
+  <Members>
+    <Member MemberName="VeryWeak">
+      <MemberSignature Language="C#" Value="public static Dia.Strength VeryWeak;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weak">
+      <MemberSignature Language="C#" Value="public static Dia.Strength Weak;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="public static Dia.Strength Medium;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strong">
+      <MemberSignature Language="C#" Value="public static Dia.Strength Strong;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VeryStrong">
+      <MemberSignature Language="C#" Value="public static Dia.Strength VeryStrong;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="public static Dia.Strength Required;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value__">
+      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

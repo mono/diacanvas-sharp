@@ -1,0 +1,44 @@
+<Type Name="CanvasGroupable" FullName="Dia.CanvasGroupable">
+  <TypeSignature Language="C#" Value="public abstract interface CanvasGroupable;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>GLib.IWrapper</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes />
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.AddHandler Add;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual event DiaSharp.RemoveHandler Remove;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

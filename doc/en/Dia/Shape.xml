@@ -1,0 +1,541 @@
+<Type Name="Shape" FullName="Dia.Shape">
+  <TypeSignature Language="C#" Value="public sealed struct Shape;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes />
+  <Members>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static Dia.Shape Zero;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="type">
+      <MemberSignature Language="C#" Value="public Dia.ShapeType type;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeType</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="visibility">
+      <MemberSignature Language="C#" Value="public uint visibility;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="update_cnt">
+      <MemberSignature Language="C#" Value="public uint update_cnt;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="color">
+      <MemberSignature Language="C#" Value="public uint color;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_view_info">
+      <MemberSignature Language="C#" Value="public IntPtr _view_info;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtNewPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout ArtNewPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Pango.Layout'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XNewPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout XNewPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Pango.Layout'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Shape New (Dia.ShapeType type);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="Dia.ShapeType" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="type">To be added: an object of type 'Dia.ShapeType'</param>
+        <returns>To be added: an object of type 'Dia.Shape'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Shape New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.Shape'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public void Clip (double left, double top, double right, double bottom);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Double" />
+        <Parameter Name="top" Type="System.Double" />
+        <Parameter Name="right" Type="System.Double" />
+        <Parameter Name="bottom" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="left">To be added: an object of type 'double'</param>
+        <param name="top">To be added: an object of type 'double'</param>
+        <param name="right">To be added: an object of type 'double'</param>
+        <param name="bottom">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Polyline">
+      <MemberSignature Language="C#" Value="public void Polyline (uint n_points, Dia.Point points);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n_points" Type="System.UInt32" />
+        <Parameter Name="points" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="n_points">To be added: an object of type 'uint'</param>
+        <param name="points">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUpdate">
+      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Polygon">
+      <MemberSignature Language="C#" Value="public void Polygon (uint n_points, Dia.Point points);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n_points" Type="System.UInt32" />
+        <Parameter Name="points" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="n_points">To be added: an object of type 'uint'</param>
+        <param name="points">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ellipse">
+      <MemberSignature Language="C#" Value="public void Ellipse (Dia.Point center, double width, double height);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="center" Type="Dia.Point" />
+        <Parameter Name="width" Type="System.Double" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="center">To be added: an object of type 'Dia.Point'</param>
+        <param name="width">To be added: an object of type 'double'</param>
+        <param name="height">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtRender">
+      <MemberSignature Language="C#" Value="public void ArtRender (Dia.CanvasViewItem item, Gnome.CanvasBuf buf);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="buf" Type="Gnome.CanvasBuf" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">To be added: an object of type 'Dia.CanvasViewItem'</param>
+        <param name="buf">To be added: an object of type 'Gnome.CanvasBuf'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedUpdate">
+      <MemberSignature Language="C#" Value="public bool NeedUpdate ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bezier">
+      <MemberSignature Language="C#" Value="public void Bezier (Dia.Point start, uint n_points, Dia.Point points);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="Dia.Point" />
+        <Parameter Name="n_points" Type="System.UInt32" />
+        <Parameter Name="points" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="start">To be added: an object of type 'Dia.Point'</param>
+        <param name="n_points">To be added: an object of type 'uint'</param>
+        <param name="points">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Free">
+      <MemberSignature Language="C#" Value="public void Free ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public void Text (Pango.FontDescription font_desc, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="font_desc" Type="Pango.FontDescription" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="font_desc">To be added: an object of type 'Pango.FontDescription'</param>
+        <param name="text">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpdated">
+      <MemberSignature Language="C#" Value="public void IsUpdated ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arc">
+      <MemberSignature Language="C#" Value="public void Arc (Dia.Point begin, Dia.Point middle, Dia.Point end);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="begin" Type="Dia.Point" />
+        <Parameter Name="middle" Type="Dia.Point" />
+        <Parameter Name="end" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="begin">To be added: an object of type 'Dia.Point'</param>
+        <param name="middle">To be added: an object of type 'Dia.Point'</param>
+        <param name="end">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewInfo">
+      <MemberSignature Language="C#" Value="public Dia.ShapeViewInfo GetViewInfo (IntPtr key);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeViewInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="key">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.ShapeViewInfo'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="public void Line (Dia.Point start, Dia.Point end);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="Dia.Point" />
+        <Parameter Name="end" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="start">To be added: an object of type 'Dia.Point'</param>
+        <param name="end">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rectangle">
+      <MemberSignature Language="C#" Value="public void Rectangle (Dia.Point upper_left, Dia.Point lower_right);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="upper_left" Type="Dia.Point" />
+        <Parameter Name="lower_right" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="upper_left">To be added: an object of type 'Dia.Point'</param>
+        <param name="lower_right">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public bool GetBounds (Dia.Rectangle bb);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bb" Type="Dia.Rectangle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="bb">To be added: an object of type 'Dia.Rectangle'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XRender">
+      <MemberSignature Language="C#" Value="public void XRender (Dia.CanvasViewItem item, Gdk.Drawable drawable, int x, int y, int width, int height);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="drawable" Type="Gdk.Drawable" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">To be added: an object of type 'Dia.CanvasViewItem'</param>
+        <param name="drawable">To be added: an object of type 'Gdk.Drawable'</param>
+        <param name="x">To be added: an object of type 'int'</param>
+        <param name="y">To be added: an object of type 'int'</param>
+        <param name="width">To be added: an object of type 'int'</param>
+        <param name="height">To be added: an object of type 'int'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtUpdate">
+      <MemberSignature Language="C#" Value="public Art.SVP ArtUpdate (Dia.CanvasViewItem item, double affine, Art.SVP clip, int flags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Art.SVP</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="affine" Type="System.Double" />
+        <Parameter Name="clip" Type="Art.SVP" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">To be added: an object of type 'Dia.CanvasViewItem'</param>
+        <param name="affine">To be added: an object of type 'double'</param>
+        <param name="clip">To be added: an object of type 'Art.SVP'</param>
+        <param name="flags">To be added: an object of type 'int'</param>
+        <returns>To be added: an object of type 'Art.SVP'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XUpdate">
+      <MemberSignature Language="C#" Value="public Art.SVP XUpdate (Dia.CanvasViewItem item, double affine, Art.SVP clip_path, int flags);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Art.SVP</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Dia.CanvasViewItem" />
+        <Parameter Name="affine" Type="System.Double" />
+        <Parameter Name="clip_path" Type="Art.SVP" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="item">To be added: an object of type 'Dia.CanvasViewItem'</param>
+        <param name="affine">To be added: an object of type 'double'</param>
+        <param name="clip_path">To be added: an object of type 'Art.SVP'</param>
+        <param name="flags">To be added: an object of type 'int'</param>
+        <returns>To be added: an object of type 'Art.SVP'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public void Image (Gdk.Pixbuf image);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="Gdk.Pixbuf" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="image">To be added: an object of type 'Gdk.Pixbuf'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public uint GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visibility">
+      <MemberSignature Language="C#" Value="public Dia.ShapeVisibility Visibility { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeVisibility</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.ShapeVisibility" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.ShapeVisibility'</param>
+        <returns>To be added: an object of type 'Dia.ShapeVisibility'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public uint Color { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'uint'</param>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,542 @@
+<Type Name="CanvasLine" FullName="Dia.CanvasLine">
+  <TypeSignature Language="C#" Value="public class CanvasLine : Dia.CanvasItem, IWrapper, IDisposable" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>Dia.CanvasItem</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>GLib.IWrapper</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes />
+  <Members>
+    <Member MemberName="GetClosestSegment">
+      <MemberSignature Language="C#" Value="public int GetClosestSegment (double x, double y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="x">To be added: an object of type 'double'</param>
+        <param name="y">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'int'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CanvasLine (GLib.Type gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.Type" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
+        <returns>To be added: an object of type 'Dia.CanvasLine'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CanvasLine (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.CanvasLine'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CanvasLine ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Dia.CanvasLine'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="public bool Horizontal { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public Dia.JoinStyle Join { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.JoinStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.JoinStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.JoinStyle'</param>
+        <returns>To be added: an object of type 'Dia.JoinStyle'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasHead">
+      <MemberSignature Language="C#" Value="public bool HasHead { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailPos">
+      <MemberSignature Language="C#" Value="public Dia.Point TailPos { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Point'</param>
+        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSegment">
+      <MemberSignature Language="C#" Value="public uint AddSegment { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'uint'</param>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadFillColor">
+      <MemberSignature Language="C#" Value="public ulong HeadFillColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailA">
+      <MemberSignature Language="C#" Value="public double TailA { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailD">
+      <MemberSignature Language="C#" Value="public double TailD { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTail">
+      <MemberSignature Language="C#" Value="public bool HasTail { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadD">
+      <MemberSignature Language="C#" Value="public double HeadD { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Orthogonal">
+      <MemberSignature Language="C#" Value="public bool Orthogonal { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dash">
+      <MemberSignature Language="C#" Value="public Dia.DashStyle Dash { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.DashStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.DashStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.DashStyle'</param>
+        <returns>To be added: an object of type 'Dia.DashStyle'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadA">
+      <MemberSignature Language="C#" Value="public double HeadA { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailFillColor">
+      <MemberSignature Language="C#" Value="public ulong TailFillColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cap">
+      <MemberSignature Language="C#" Value="public Dia.CapStyle Cap { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CapStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.CapStyle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.CapStyle'</param>
+        <returns>To be added: an object of type 'Dia.CapStyle'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineWidth">
+      <MemberSignature Language="C#" Value="public double LineWidth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailB">
+      <MemberSignature Language="C#" Value="public double TailB { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public ulong Color { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelSegment">
+      <MemberSignature Language="C#" Value="public uint DelSegment { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'uint'</param>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadPos">
+      <MemberSignature Language="C#" Value="public Dia.Point HeadPos { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Point'</param>
+        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadC">
+      <MemberSignature Language="C#" Value="public double HeadC { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadB">
+      <MemberSignature Language="C#" Value="public double HeadB { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadColor">
+      <MemberSignature Language="C#" Value="public ulong HeadColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyclic">
+      <MemberSignature Language="C#" Value="public bool Cyclic { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailColor">
+      <MemberSignature Language="C#" Value="public ulong TailColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPoint">
+      <MemberSignature Language="C#" Value="public Dia.Point AddPoint { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Point'</param>
+        <returns>To be added: an object of type 'Dia.Point'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailC">
+      <MemberSignature Language="C#" Value="public double TailC { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

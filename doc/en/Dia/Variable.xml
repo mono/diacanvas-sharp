@@ -1,0 +1,143 @@
+<Type Name="Variable" FullName="Dia.Variable">
+  <TypeSignature Language="C#" Value="public sealed struct Variable;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes />
+  <Members>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static Dia.Variable Zero;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="parent">
+      <MemberSignature Language="C#" Value="public GLib.Object parent;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.Object</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value">
+      <MemberSignature Language="C#" Value="public double value;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="strength">
+      <MemberSignature Language="C#" Value="public Dia.Strength strength;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Variable New ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Dia.Variable'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.Variable New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.Variable'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Strength">
+      <MemberSignature Language="C#" Value="public Dia.Strength Strength { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Strength</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Strength" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Strength'</param>
+        <returns>To be added: an object of type 'Dia.Strength'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

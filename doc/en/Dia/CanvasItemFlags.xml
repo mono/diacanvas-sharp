@@ -1,0 +1,144 @@
+<Type Name="CanvasItemFlags" FullName="Dia.CanvasItemFlags">
+  <TypeSignature Language="C#" Value="public sealed struct CanvasItemFlags;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IConvertible</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.FlagsAttribute</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Members>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Visible;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interactive">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Interactive;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Composite">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Composite;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedUpdate">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags NeedUpdate;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAll">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags UpdateAll;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Select;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Focus;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Grab">
+      <MemberSignature Language="C#" Value="public static Dia.CanvasItemFlags Grab;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItemFlags</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value__">
+      <MemberSignature Language="C#" Value="public int value__;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

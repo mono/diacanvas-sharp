@@ -1,0 +1,590 @@
+<Type Name="Canvas" FullName="Dia.Canvas">
+  <TypeSignature Language="C#" Value="public class Canvas : GLib.Object, IWrapper, IDisposable" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>GLib.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>GLib.IWrapper</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes />
+  <Members>
+    <Member MemberName="NewPangoLayout">
+      <MemberSignature Language="C#" Value="public static Dia.Canvas NewPangoLayout ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Canvas</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopUndo">
+      <MemberSignature Language="C#" Value="public void PopUndo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindObjectsInRectangle">
+      <MemberSignature Language="C#" Value="public GLib.List FindObjectsInRectangle (Dia.Rectangle rect);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>GLib.List</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Dia.Rectangle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="rect">To be added: an object of type 'Dia.Rectangle'</param>
+        <returns>To be added: an object of type 'GLib.List'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveNow">
+      <MemberSignature Language="C#" Value="public void ResolveNow ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateNow">
+      <MemberSignature Language="C#" Value="public void UpdateNow ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlueHandle">
+      <MemberSignature Language="C#" Value="public double GlueHandle (Dia.Handle handle, double dest_x, double dest_y, double glue_x, double glue_y, Dia.CanvasItem item);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="Dia.Handle" />
+        <Parameter Name="dest_x" Type="System.Double" />
+        <Parameter Name="dest_y" Type="System.Double" />
+        <Parameter Name="glue_x" Type="System.Double" />
+        <Parameter Name="glue_y" Type="System.Double" />
+        <Parameter Name="item" Type="Dia.CanvasItem" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="handle">To be added: an object of type 'Dia.Handle'</param>
+        <param name="dest_x">To be added: an object of type 'double'</param>
+        <param name="dest_y">To be added: an object of type 'double'</param>
+        <param name="glue_x">To be added: an object of type 'double'</param>
+        <param name="glue_y">To be added: an object of type 'double'</param>
+        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedrawViews">
+      <MemberSignature Language="C#" Value="public void RedrawViews ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Preserve">
+      <MemberSignature Language="C#" Value="public void Preserve (GLib.Object objekt, string property_name, GLib.Value value, bool last);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objekt" Type="GLib.Object" />
+        <Parameter Name="property_name" Type="System.String" />
+        <Parameter Name="value" Type="GLib.Value" />
+        <Parameter Name="last" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
+        <param name="value">To be added: an object of type 'GLib.Value'</param>
+        <param name="last">To be added: an object of type 'bool'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearUndo">
+      <MemberSignature Language="C#" Value="public void ClearUndo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConstraint">
+      <MemberSignature Language="C#" Value="public void AddConstraint (Dia.Constraint c);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="c" Type="Dia.Constraint" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveConstraint">
+      <MemberSignature Language="C#" Value="public void RemoveConstraint (Dia.Constraint c);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="c" Type="Dia.Constraint" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapToGridCoordinates">
+      <MemberSignature Language="C#" Value="public void SnapToGridCoordinates (double x, double y);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="x">To be added: an object of type 'double'</param>
+        <param name="y">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUpdate">
+      <MemberSignature Language="C#" Value="public void RequestUpdate ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushUndo">
+      <MemberSignature Language="C#" Value="public void PushUndo (string optional_comment);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="optional_comment" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="optional_comment">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearRedo">
+      <MemberSignature Language="C#" Value="public void ClearRedo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreserveProperty">
+      <MemberSignature Language="C#" Value="public void PreserveProperty (GLib.Object objekt, string property_name);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objekt" Type="GLib.Object" />
+        <Parameter Name="property_name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreservePropertyLast">
+      <MemberSignature Language="C#" Value="public void PreservePropertyLast (GLib.Object objekt, string property_name);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objekt" Type="GLib.Object" />
+        <Parameter Name="property_name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopRedo">
+      <MemberSignature Language="C#" Value="public void PopRedo ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="protected virtual void Finalize ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Canvas (GLib.Type gtype);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="gtype" Type="GLib.Type" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Canvas (IntPtr raw);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Canvas ();" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedoDepth">
+      <MemberSignature Language="C#" Value="public uint RedoDepth { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UndoStackDepth">
+      <MemberSignature Language="C#" Value="public uint UndoStackDepth { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'uint'</param>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UndoDepth">
+      <MemberSignature Language="C#" Value="public uint UndoDepth { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridBg">
+      <MemberSignature Language="C#" Value="public ulong GridBg { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridIntY">
+      <MemberSignature Language="C#" Value="public double GridIntY { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridIntX">
+      <MemberSignature Language="C#" Value="public double GridIntX { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extents">
+      <MemberSignature Language="C#" Value="public Dia.Rectangle Extents { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Dia.Rectangle" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Dia.Rectangle'</param>
+        <returns>To be added: an object of type 'Dia.Rectangle'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapToGrid">
+      <MemberSignature Language="C#" Value="public bool SnapToGrid { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUndo">
+      <MemberSignature Language="C#" Value="public bool AllowUndo { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticExtents">
+      <MemberSignature Language="C#" Value="public bool StaticExtents { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridOfsY">
+      <MemberSignature Language="C#" Value="public double GridOfsY { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridOfsX">
+      <MemberSignature Language="C#" Value="public double GridOfsX { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridColor">
+      <MemberSignature Language="C#" Value="public ulong GridColor { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtentsChanged">
+      <MemberSignature Language="C#" Value="public event DiaSharp.ExtentsChangedHandler ExtentsChanged;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undo">
+      <MemberSignature Language="C#" Value="public event EventHandler Undo;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedrawView">
+      <MemberSignature Language="C#" Value="public event EventHandler RedrawView;" />
+      <MemberType>Event</MemberType>
+      <ReturnValue />
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,560 @@
+<Type Name="ShapeText" FullName="Dia.ShapeText">
+  <TypeSignature Language="C#" Value="public sealed struct ShapeText;" Maintainer="auto" />
+  <AssemblyInfo>
+    <AssemblyName>diacanvas2-sharp</AssemblyName>
+    <AssemblyPublicKey></AssemblyPublicKey>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyCulture>neutral</AssemblyCulture>
+    <Attributes />
+  </AssemblyInfo>
+  <ThreadSafetyStatement>Gtk# is thread aware, but not thread safe; See the &lt;link location="node:gtk-sharp/programming/threads"&gt;Gtk# Thread Programming&lt;/link&gt; for details.</ThreadSafetyStatement>
+  <Docs>
+    <summary>To be added</summary>
+    <remarks>To be added</remarks>
+  </Docs>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes />
+  <Members>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeText Zero;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeText</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="shape">
+      <MemberSignature Language="C#" Value="public Dia.Shape shape;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_font_desc">
+      <MemberSignature Language="C#" Value="public IntPtr _font_desc;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="text">
+      <MemberSignature Language="C#" Value="public string text;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="need_free">
+      <MemberSignature Language="C#" Value="public bool need_free;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="justify">
+      <MemberSignature Language="C#" Value="public bool justify;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="markup">
+      <MemberSignature Language="C#" Value="public bool markup;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="wrap_mode">
+      <MemberSignature Language="C#" Value="public Pango.WrapMode wrap_mode;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.WrapMode</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="line_spacing">
+      <MemberSignature Language="C#" Value="public double line_spacing;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="alignment">
+      <MemberSignature Language="C#" Value="public Pango.Alignment alignment;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Alignment</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="text_width">
+      <MemberSignature Language="C#" Value="public double text_width;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="max_width">
+      <MemberSignature Language="C#" Value="public double max_width;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="max_height">
+      <MemberSignature Language="C#" Value="public double max_height;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="affine">
+      <MemberSignature Language="C#" Value="public IntPtr affine;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cursor">
+      <MemberSignature Language="C#" Value="public int cursor;" />
+      <MemberType>Field</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters></Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextWidth">
+      <MemberSignature Language="C#" Value="public static void SetTextWidth (Dia.Shape shape, double width);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="width" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="width">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStaticText">
+      <MemberSignature Language="C#" Value="public static void SetStaticText (Dia.Shape shape, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="text">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPangoLayout">
+      <MemberSignature Language="C#" Value="public static Pango.Layout ToPangoLayout (Dia.Shape shape, bool fill);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.Layout</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="fill" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="fill">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'Pango.Layout'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FillPangoLayout">
+      <MemberSignature Language="C#" Value="public static void FillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="layout" Type="Pango.Layout" />
+        <Parameter Name="scale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="layout">To be added: an object of type 'Pango.Layout'</param>
+        <param name="scale">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxWidth">
+      <MemberSignature Language="C#" Value="public static void SetMaxWidth (Dia.Shape shape, double width);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="width" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="width">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAlignment">
+      <MemberSignature Language="C#" Value="public static void SetAlignment (Dia.Shape shape, Pango.Alignment alignment);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="alignment" Type="Pango.Alignment" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="alignment">To be added: an object of type 'Pango.Alignment'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMarkup">
+      <MemberSignature Language="C#" Value="public static void SetMarkup (Dia.Shape shape, bool markup);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="markup" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="markup">To be added: an object of type 'bool'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPos">
+      <MemberSignature Language="C#" Value="public static void SetPos (Dia.Shape shape, Dia.Point pos);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="pos" Type="Dia.Point" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="pos">To be added: an object of type 'Dia.Point'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrettyFillPangoLayout">
+      <MemberSignature Language="C#" Value="public static void PrettyFillPangoLayout (Dia.Shape shape, Pango.Layout layout, double scale);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="layout" Type="Pango.Layout" />
+        <Parameter Name="scale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="layout">To be added: an object of type 'Pango.Layout'</param>
+        <param name="scale">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLineSpacing">
+      <MemberSignature Language="C#" Value="public static void SetLineSpacing (Dia.Shape shape, double line_spacing);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="line_spacing" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="line_spacing">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public static void SetText (Dia.Shape shape, string text);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="text">To be added: an object of type 'string'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetJustify">
+      <MemberSignature Language="C#" Value="public static void SetJustify (Dia.Shape shape, bool justify);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="justify" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="justify">To be added: an object of type 'bool'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFontDescription">
+      <MemberSignature Language="C#" Value="public static void SetFontDescription (Dia.Shape shape, Pango.FontDescription font_desc);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="font_desc" Type="Pango.FontDescription" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="font_desc">To be added: an object of type 'Pango.FontDescription'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxHeight">
+      <MemberSignature Language="C#" Value="public static void SetMaxHeight (Dia.Shape shape, double height);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="height" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="height">To be added: an object of type 'double'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAffine">
+      <MemberSignature Language="C#" Value="public static void SetAffine (Dia.Shape shape, double [] affine);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="affine" Type="System.Double[]" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="affine">To be added: an object of type 'double []'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetWrapMode">
+      <MemberSignature Language="C#" Value="public static void SetWrapMode (Dia.Shape shape, Pango.WrapMode wrap_mode);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="wrap_mode" Type="Pango.WrapMode" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="wrap_mode">To be added: an object of type 'Pango.WrapMode'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCursor">
+      <MemberSignature Language="C#" Value="public static void SetCursor (Dia.Shape shape, int cursor);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="cursor" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="cursor">To be added: an object of type 'int'</param>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CursorFromPos">
+      <MemberSignature Language="C#" Value="public static bool CursorFromPos (Dia.Shape shape, Dia.Point pos, int cursor);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="Dia.Shape" />
+        <Parameter Name="pos" Type="Dia.Point" />
+        <Parameter Name="cursor" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="pos">To be added: an object of type 'Dia.Point'</param>
+        <param name="cursor">To be added: an object of type 'int'</param>
+        <returns>To be added: an object of type 'bool'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="public static Dia.ShapeText New (IntPtr raw);" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.ShapeText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raw" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.ShapeText'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GType">
+      <MemberSignature Language="C#" Value="public static uint GType { get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>To be added: an object of type 'uint'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="font_desc">
+      <MemberSignature Language="C#" Value="public Pango.FontDescription font_desc { set; get; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Pango.FontDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="Pango.FontDescription" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="value">To be added: an object of type 'Pango.FontDescription'</param>
+        <returns>To be added: an object of type 'Pango.FontDescription'</returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
