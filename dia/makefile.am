@@ -1,30 +1,28 @@
-diacanvassharpdir = $(libdir)
-diacanvassharp_DATA = diacanvas-sharp.dll
-CLEANFILES = diacanavas-sharp.dll
-EXTRA_DIST = *.cs *.custom *.metadata diacanvas-api.xml diacanvas-symbols.xml
-
+LIBRARY=	diacanvas-sharp.dll
 APIS=		diacanvas-api.xml diacanvas-symbols.xml
+EXTRA_DIST= 	*.cs *.custom *.metadata $(APIS)
 
-INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml                \
-		@prefix@/share/gapi/pango-api.xml              \
-		@prefix@/share/gapi/atk-api.xml                \
-		@prefix@/share/gapi/gnome-api.xml              \
-		@prefix@/share/gapi/gtk-api.xml                \
-		@prefix@/share/gapi/gdk-api.xml                \
+INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml		\
+		@prefix@/share/gapi/pango-api.xml	\
+		@prefix@/share/gapi/atk-api.xml		\
+		@prefix@/share/gapi/gnome-api.xml	\
+		@prefix@/share/gapi/gtk-api.xml		\
+		@prefix@/share/gapi/gdk-api.xml		\
 		@prefix@/share/gapi/gdk-symbols.xml
 
-ASSEMBLIES=	-r gtk-sharp.dll \
-		-r glib-sharp.dll \
-		-r gnome-sharp.dll \
-		-r gdk-sharp.dll \
-		-r pango-sharp.dll \
+ASSEMBLIES=	-r gtk-sharp.dll	\
+		-r glib-sharp.dll	\
+		-r gnome-sharp.dll	\
+		-r gdk-sharp.dll	\
+		-r pango-sharp.dll	\
 		-r art-sharp.dll
 
-LIBRARY=	diacanvas-sharp.dll
+diacanvassharpdir = $(libdir)
+diacanvassharp_DATA = $(LIBRARY)
 
 all: $(LIBRARY)
 
-generated-stamp: $(APIS) *.custom Dia.metadata
+generated-stamp: $(APIS) *.custom *.metadata
 	$(GAPI_FIXUP) --api=diacanvas-api.xml --metadata=Dia.metadata && \
 	$(GAPI_CODEGEN) --include $(INCLUDE_APIS) --generate $(APIS) \
 	--outdir=generated --customdir=. --assembly-name=diacanvas-sharp && touch generated-stamp
@@ -33,11 +31,10 @@ $(LIBRARY): generated-stamp *.cs
 	$(MCS) --unsafe -nowarn:0660,0661 --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
-	$(INSTALL) -m 644 diacanvas-api.xml @prefix@/share/gapi
-	$(INSTALL) -m 644 diacanvas-symbols.xml @prefix@/share/gapi
+	for i in $(APIS); do						\
+		$(INSTALL) -m 644 $$i @prefix@/share/gapi || true;	\
+	done &&								\
 	$(INSTALL) -m 644 $(LIBRARY) $(libdir)
 
 clean:
-	rm -f $(LIBRARY)
-	rm -rf generated
-	rm -f generated-stamp
+	rm -rf $(LIBRARY) generated-stamp generated
