@@ -23,16 +23,16 @@ public static PlacementTool Box()
 
 [DllImport("diacanvas2")]
 extern static IntPtr dia_placement_tool_new (uint object_type, 
-					     string image, IntPtr pixbuf,
-					     string width, double wid,
-					     string height, double hei,
+					     IntPtr image, IntPtr pixbuf,
+					     IntPtr width, double wid,
+					     IntPtr height, double hei,
 					     IntPtr dummy);
 
 public static PlacementTool Image (Gdk.Pixbuf pixbuf)
 {
 	return new PlacementTool (dia_placement_tool_new (CanvasImage.GType,
-							  "image", pixbuf.Handle,
-							  "width", pixbuf.Width,
-							  "height", pixbuf.Height,
-							  IntPtr.Zero));
+			  Marshal.StringToHGlobalAnsi ("image"), pixbuf.Handle,
+			  Marshal.StringToHGlobalAnsi ("width"), pixbuf.Width,
+			  Marshal.StringToHGlobalAnsi ("height"), pixbuf.Height,
+			  IntPtr.Zero));
 }

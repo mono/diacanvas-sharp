@@ -62,7 +62,7 @@ public class Sample {
 
 		CanvasBox box = new CanvasBox();
 		box.Move (300, 200);
-		box.LineWidth = 8.5;
+		box.BorderWidth = 8.5;
 		box.Color = 2134231;
 		canvas.Root.Add (box);
 
@@ -114,12 +114,10 @@ public class Sample {
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
-	Pixbuf pixbuf;
 	void ImageTool (object sender, EventArgs args)
 	{
 		ToolCleanUp();
-		pixbuf = new Pixbuf (null, "pixmaps/logo.png");
-		view.Tool = PlacementTool.Image (pixbuf);
+		view.Tool = PlacementTool.Image (new Pixbuf (null, "pixmaps/logo.png"));
 		view.Tool.ButtonReleaseEvent += new DiaSharp.ButtonReleaseEventHandler (UnsetTool);
 	}
 
@@ -156,6 +154,40 @@ public class Sample {
 		} catch (GException ex) {
 			Console.WriteLine (ex);
 		}
+	}
+
+	void Print (object sender, EventArgs args)
+	{
+		/*
+		GtkWidget *dialog;
+		gint response;
+		GnomePrintJob *pj = gnome_print_job_new(NULL);
+		GnomePrintContext *ctx;
+		//gnome_print_master_print_to_file(pm, "test.ps");
+
+		dialog = gnome_print_dialog_new (pj, "Sample print dialog", 0);
+		// Run the dialog
+		gtk_widget_show (dialog);
+		response = gtk_dialog_run (GTK_DIALOG (dialog));
+		if (response == GNOME_PRINT_DIALOG_RESPONSE_CANCEL) {
+			g_print ("Printing was canceled\n");
+		} else {
+			gnome_print_job_print_to_file(pj, "test.ps");
+			ctx = gnome_print_job_get_context (pj);
+			gnome_print_beginpage(ctx, "demo");
+			dia_export_print (pj, canvas);
+			gnome_print_showpage(ctx);
+			gnome_print_job_close(pj);
+
+			if (response == GNOME_PRINT_DIALOG_RESPONSE_PRINT)
+				gnome_print_job_print(pj);
+			else if (response == GNOME_PRINT_DIALOG_RESPONSE_PREVIEW)
+				gtk_widget_show (GTK_WIDGET (gnome_print_job_preview_new (pj, //gnome_print_job_get_config(pj),
+							"Title goes here")));
+		}
+		gtk_widget_hide(dialog);
+		gtk_widget_destroy (dialog);
+		*/
 	}
 
 	void Undo (object sender, EventArgs args) { canvas.PopUndo(); }
@@ -206,10 +238,7 @@ with this program.",
 				 authors, documenters, translators, pixbuf).Show();
 	}
 
-	void Quit (object sender, EventArgs args)
-	{
-		Application.Quit();
-	}
+	void Quit (object sender, EventArgs args) { Application.Quit(); }
 
 	static void Main()
 	{
