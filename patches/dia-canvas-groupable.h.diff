@@ -1,0 +1,20 @@
+Index: dia-canvas-groupable.h
+===================================================================
+RCS file: /cvsroot/diacanvas/diacanvas2/src/dia-canvas-groupable.h,v
+retrieving revision 1.2
+diff -u -r1.2 dia-canvas-groupable.h
+--- dia-canvas-groupable.h	20 Jul 2003 14:14:21 -0000	1.2
++++ dia-canvas-groupable.h	23 Aug 2003 10:47:03 -0000
+@@ -73,12 +73,6 @@
+ gboolean dia_canvas_groupable_remove	(DiaCanvasGroupable *group,
+ 					 DiaCanvasItem *item);
+ 
+-/* Those methods can be used for compound objects. */
+-void	dia_canvas_groupable_add_construction	(DiaCanvasGroupable *group,
+-						 DiaCanvasItem *item);
+-void	dia_canvas_groupable_remove_destruction	(DiaCanvasGroupable *group,
+-						 DiaCanvasItem *item);
+-
+ /* Z-order is adjusted by dia_canvas_item_raise/lower(). */
+ 
+ gboolean dia_canvas_groupable_get_iter	(DiaCanvasGroupable *group,

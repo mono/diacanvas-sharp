@@ -1,0 +1,19 @@
+? dia-textbox.c.diff
+Index: dia-textbox.c
+===================================================================
+RCS file: /cvsroot/diacanvas/diacanvas2/demos/dia-textbox.c,v
+retrieving revision 1.6
+diff -u -r1.6 dia-textbox.c
+--- dia-textbox.c	20 Jul 2003 14:14:21 -0000	1.6
++++ dia-textbox.c	23 Aug 2003 10:43:31 -0000
+@@ -138,8 +138,8 @@
+ dia_textbox_init (DiaTextbox *textbox)
+ {
+ 	textbox->text = dia_canvas_item_create (DIA_TYPE_CANVAS_TEXT, NULL);
+-	dia_canvas_groupable_add_construction (DIA_CANVAS_GROUPABLE (textbox),
+-						textbox->text);
++	dia_canvas_item_add_construction (DIA_CANVAS_ITEM (textbox),
++					  textbox->text);
+ 	//dia_canvas_item_request_update (textbox->text);
+ 	g_message (__FUNCTION__": %p %p %p %p %p", textbox, textbox->text, textbox->text->parent, DIA_CANVAS_ITEM (textbox)->canvas, textbox->text->canvas);
+ }
