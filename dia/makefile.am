@@ -33,9 +33,9 @@ $(LIBRARY): generated-stamp *.cs
 	$(MCS) --unsafe -nowarn:0660,0661 --target library $(ASSEMBLIES) --recurse '*.cs' -o $(LIBRARY)
 
 install:
-	$(INSTALL) -o root -g root -m 644 diacanvas-api.xml @prefix@/share/gapi
-	$(INSTALL) -o root -g root -m 644 diacanvas-symbols.xml @prefix@/share/gapi
-	$(INSTALL) -o root -g root -m 644 $(LIBRARY) $(libdir)
+	$(INSTALL) -m 644 diacanvas-api.xml @prefix@/share/gapi
+	$(INSTALL) -m 644 diacanvas-symbols.xml @prefix@/share/gapi
+	$(INSTALL) -m 644 $(LIBRARY) $(libdir)
 
 clean:
 	rm -f $(LIBRARY)
