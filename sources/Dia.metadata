@@ -92,4 +92,17 @@
   </data>
 </rule>
 
+<!-- disable default constructor -->
+<rule>
+  <class name="DiaCanvasLine"/>
+  <class name="DiaCanvasBox"/>
+  <class name="DiaCanvasImage"/>
+  <data>
+    <attribute target="class">
+      <name>disabledefaultconstructor</name>
+      <value>1</value>
+    </attribute>
+  </data>
+</rule>
+
 </metadata>

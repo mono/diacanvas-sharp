@@ -70,6 +70,35 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public virtual string ToString ();" />
+      <MemberType>Method</MemberType>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:System.String" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point (double x, double y);" />
+      <MemberType>Constructor</MemberType>
+      <ReturnValue />
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <summary>To be added</summary>
+        <param name="x">a <see cref="T:System.Double" /></param>
+        <param name="y">a <see cref="T:System.Double" /></param>
+        <returns>a <see cref="T:Dia.Point" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GType">
       <MemberSignature Language="C#" Value="public static uint GType { get; };" />
       <MemberType>Property</MemberType>

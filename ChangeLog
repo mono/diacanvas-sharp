@@ -1,3 +1,12 @@
+2003-07-23  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* dia/Point.custom: Added, convenience ctor
+	  and ToString()
+	* dia/CanvasLine.custom: Added, default ctor
+	* dia/CanvasBox.custom: Added, default ctor
+	* dia/CanvasImage.custom: Added, default ctor
+	* sources/Dia.metadata: rule disable default constructor added
+	
 2003-07-22  Martin Willemoes Hansen <mwh@sysrq.dk>
 	
 	* PROBLEMS: Added

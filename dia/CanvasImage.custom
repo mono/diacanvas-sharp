@@ -1,0 +1,12 @@
+// CanvasImage.Custom - customizations
+//
+// Author: Martin Willemoes Hansen <mwh@sysrq.dk>
+//
+// Copyright (C) 2003 Martin Willemoes Hansen
+//
+// This code is inserted after the automatically generated code.
+
+public CanvasImage() {
+        Raw = CanvasItem.ItemCreate (CanvasImage.GType).Handle;
+}
+

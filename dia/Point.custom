@@ -1,0 +1,18 @@
+// Point.Custom - customizations
+//
+// Author: Martin Willemoes Hansen <mwh@sysrq.dk>
+//
+// Copyright (C) 2003 Martin Willemoes Hansen
+//
+// This code is inserted after the automatically generated code.
+
+public Point (double x, double y)
+{
+	this.x = x;
+	this.y = y;
+}
+
+public override string ToString()
+{
+	return String.Format ("({0}, {1})", x, y);
+}

@@ -366,7 +366,7 @@
         <return-type type="void"/>
       </method>
     </object>
-    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement">
+    <object name="CanvasBox" cname="DiaCanvasBox" parent="DiaCanvasElement" disabledefaultconstructor="1">
       <field cname="color" type="DiaColor"/>
       <field cname="bg_color" type="DiaColor"/>
       <field cname="line_width" type="gdouble"/>
@@ -440,7 +440,7 @@
         </parameters>
       </method>
     </object>
-    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement">
+    <object name="CanvasImage" cname="DiaCanvasImage" parent="DiaCanvasElement" disabledefaultconstructor="1">
       <field cname="pixbuf" type="GdkPixbuf*"/>
       <field cname="clip" type="//DiaShape*"/>
       <field cname="image" type="DiaShape*"/>
@@ -706,7 +706,7 @@
         <return-type type="void"/>
       </method>
     </object>
-    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem">
+    <object name="CanvasLine" cname="DiaCanvasLine" parent="DiaCanvasItem" disabledefaultconstructor="1">
       <field cname="line_width" type="gdouble"/>
       <field cname="color" type="DiaColor"/>
       <field cname="cap" type="DiaCapStyle"/>

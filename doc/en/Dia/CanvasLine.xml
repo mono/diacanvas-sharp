@@ -84,7 +84,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasLine ();" />
+      <MemberSignature Language="C#" Value="public CanvasLine ();" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters />

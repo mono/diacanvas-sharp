@@ -6,7 +6,6 @@ using Gtk;
 using GtkSharp;
 using Gdk;
 using Glade;
-using Gnome;
 
 public class Sample {
 
@@ -14,30 +13,22 @@ public class Sample {
 	[Glade.Widget] ScrolledWindow scrolledwindow;
 
 	CanvasView view;
-	Dia.Canvas canvas;
+	Canvas canvas;
 
 	public Sample() 
 	{
 		XML gui = new XML (null, "glade/gui.glade", "main", null);
 		gui.Autoconnect (this);
 
-		canvas = new Dia.Canvas();
+		canvas = new Canvas();
 		canvas.AllowUndo = true;
 		view = new CanvasView (canvas, true);
 		main.KeyPressEvent += new KeyPressEventHandler (CtrlPressed);
 		main.KeyReleaseEvent += new KeyReleaseEventHandler (CtrlReleased);
 		scrolledwindow.Add (view);
+
 		SetupTools();
-
-		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
-		Dia.CanvasItem item = Dia.CanvasItem.ItemCreate (CanvasImage.GType, pixbuf);
-		item.Move (200, 200);
-		canvas.Root.Add (item);
-
-		view.UnselectAll();
-		CanvasViewItem vitem = view.FindViewItem (item);
-		view.Focus (vitem);
-
+		CreateItemsProgramatically();
 		main.ShowAll();
 	}
 
@@ -49,6 +40,37 @@ public class Sample {
 		image3.Pixbuf = new Pixbuf (null, "pixmaps/line.png");
 		image4.Pixbuf = new Pixbuf (null, "pixmaps/box.png");
 		image5.Pixbuf = new Pixbuf (null, "pixmaps/glade-image.png");
+	}
+
+	void CreateItemsProgramatically() {
+		CanvasLine line = new CanvasLine();
+		line.LineWidth = 5.2;
+		line.Color = 8327327;
+
+		Dia.Point p1 = new Dia.Point (50, 50);
+		Dia.Point p2 = new Dia.Point (100, 100);
+
+		//line.HeadPos = p1;
+		//line.TailPos = p2;
+		line.Move (200, 200);
+		canvas.Root.Add (line);
+
+		CanvasBox box = new CanvasBox();
+		box.Move (300, 200);
+		box.LineWidth = 8.5;
+		box.Color = 2134231;
+		canvas.Root.Add (box);
+
+		CanvasImage image = new CanvasImage();
+
+		Pixbuf pixbuf = new Pixbuf (null, "pixmaps/logo.png");
+		CanvasItem item = CanvasItem.ItemCreate (CanvasImage.GType, pixbuf);
+		item.Move (50, 50);
+		canvas.Root.Add (item);
+
+		view.UnselectAll();
+		CanvasViewItem vitem = view.FindViewItem (item);
+		view.Focus (vitem);
 	}
 
 	void SelectionTool (object sender, EventArgs args)

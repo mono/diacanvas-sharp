@@ -66,7 +66,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected CanvasBox ();" />
+      <MemberSignature Language="C#" Value="public CanvasBox ();" />
       <MemberType>Constructor</MemberType>
       <ReturnValue />
       <Parameters />
