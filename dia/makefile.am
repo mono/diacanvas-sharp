@@ -1,6 +1,5 @@
 LIBRARY=	diacanvas-sharp.dll
 APIS=		diacanvas-api.xml diacanvas-symbols.xml
-EXTRA_DIST= 	*.cs *.custom *.metadata $(APIS)
 
 INCLUDE_APIS=	@prefix@/share/gapi/art-api.xml		\
 		@prefix@/share/gapi/pango-api.xml	\
@@ -16,6 +15,8 @@ ASSEMBLIES=	-r gtk-sharp.dll	\
 		-r gdk-sharp.dll	\
 		-r pango-sharp.dll	\
 		-r art-sharp.dll
+
+EXTRA_DIST= 	*.cs *.custom *.metadata *.xml
 
 diacanvassharpdir = $(libdir)
 diacanvassharp_DATA = $(LIBRARY)
