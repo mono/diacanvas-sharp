@@ -6,7 +6,7 @@
 //
 // This code is inserted after the automatically generated code.
 
-[DllImport ("diasharpglue")]
+[DllImport ("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_get_root (IntPtr canvas);
 
 public CanvasGroup Root {

@@ -1,4 +1,4 @@
-DIRS=glue api dia sample
+DIRS=glue dia sample
 
 all: build
 

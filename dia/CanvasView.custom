@@ -6,7 +6,7 @@
 //
 // This code is inserted after the automatically generated code.
 
-[DllImport ("diasharpglue")]
+[DllImport ("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_view_get_selected_items (IntPtr view);
 
 public IList SelectedItems {
@@ -18,7 +18,7 @@ public IList SelectedItems {
 	}
 }
 
-[DllImport ("diasharpglue")]
+[DllImport ("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_view_get_focus_item (IntPtr view);
 
 public CanvasViewItem FocusItem {
@@ -27,7 +27,7 @@ public CanvasViewItem FocusItem {
 	} 
 }
 
-[DllImport ("diasharpglue")]
+[DllImport ("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_view_get_handle_layer (IntPtr view);
 
 public HandleLayer HandleLayer {

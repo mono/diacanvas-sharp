@@ -96,8 +96,9 @@ public class Sample {
 		canvas.Root.Add (image);
 
 	        view.UnselectAll();
-		CanvasViewItem vitem = view.FindViewItem (image);
-		view.Focus (vitem);
+		// Trigers a bug
+		//CanvasViewItem vitem = view.FindViewItem (image);
+		//view.Focus (vitem);
 	}
 
 	void SelectionTool (object sender, EventArgs args)

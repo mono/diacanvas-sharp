@@ -19,6 +19,17 @@
 
 <!-- method hides -->
 <rule>
+  <class name="DiaCanvasItem">
+    <method>SetParent</method>
+   </class>
+   <data>
+    <attribute target="method">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+   </data>
+</rule>
+<rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>
    </class>
@@ -35,6 +46,17 @@
    </class>
    <data>
     <attribute target="method">
+      <name>hidden</name>
+      <value>1</value>
+    </attribute>
+   </data>
+</rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <signal>Event</signal>
+   </class>
+   <data>
+    <attribute target="signal">
       <name>hidden</name>
       <value>1</value>
     </attribute>

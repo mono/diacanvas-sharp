@@ -1,7 +1,7 @@
 PACKAGE=diacanvas2
 
 all:
-	gapi-parser dia-sharp-sources.xml
+	gapi-parser diacanvas-sharp-sources.xml
 
 get-source-code:
 	#wget http://aleron.dl.sourceforge.net/sourceforge/diacanvas/$(PACKAGE).tar.gz \

@@ -11,7 +11,7 @@ install: diacanvas-docs.zip diacanvas-docs.tree
 	install -m 644 diacanvas-docs.source `monodoc --get-sourcesdir`
 
 update:
-	mono $(UPDATER) ../dia/dia-sharp.dll -o ./en -f
+	mono $(UPDATER) ../dia/diacanvas-sharp.dll -o ./en -f
 
 clean:
 	rm -f *.tree

@@ -12,7 +12,7 @@ public CanvasLine() {
 
 // Struct marshalling bug workaround
 
-[DllImport ("diasharpglue")]
+[DllImport ("diacanvassharpglue")]
 extern static void diasharp_canvas_line_set_point_property (IntPtr line,
 							    string property,
 							    double x, double y);

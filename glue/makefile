@@ -1,5 +1,5 @@
 PREFIX=		/usr
-GLUE_LIB=	libdiasharpglue.so
+GLUE_LIB=	libdiacanvassharpglue.so
 
 all: $(GLUE_LIB)
 

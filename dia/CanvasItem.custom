@@ -13,7 +13,7 @@ public static CanvasItem ItemCreate (uint object_type) {
 	return new CanvasItem (dia_canvas_item_create (object_type, IntPtr.Zero));
 }
 
-[DllImport("diasharpglue")]
+[DllImport("diacanvassharpglue")]
 extern static IntPtr diasharp_canvas_item_get_handles (IntPtr item);
 
 public IList Handles {

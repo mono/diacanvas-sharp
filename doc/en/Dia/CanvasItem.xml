@@ -772,16 +772,6 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Event">
-      <MemberSignature Language="C#" Value="public event EventHandler Event;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Moved">
       <MemberSignature Language="C#" Value="public event DiaSharp.MovedHandler Moved;" />
       <MemberType>Event</MemberType>
@@ -836,6 +826,18 @@
       <Docs>
         <summary>To be added</summary>
         <returns>a <see cref="T:System.Collections.IList" /></returns>
+        <remarks>To be added</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildOf">
+      <MemberSignature Language="C#" Value="public Dia.CanvasItem ChildOf { set; };" />
+      <MemberType>Property</MemberType>
+      <ReturnValue>
+        <ReturnType>Dia.CanvasItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added</summary>
+        <returns>a <see cref="T:Dia.CanvasItem" /></returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
