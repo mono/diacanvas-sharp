@@ -11,7 +11,7 @@ namespace Dia {
 
 	public class PlacementTool : Tool {
  
-		static GLib.Type gtype;
+		static GLib.GType gtype;
 		object [] properties;
 		Type type;
 

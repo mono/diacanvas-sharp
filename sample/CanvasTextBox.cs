@@ -6,7 +6,7 @@ using Pango;
 
 public class CanvasTextBox : CanvasGroup {
 	
-	static GLib.Type gtype;
+	static GLib.GType gtype;
 	CanvasText text;
 
 	static CanvasTextBox()

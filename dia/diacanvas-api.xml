@@ -118,7 +118,7 @@
     <callback name="ConstraintFunc" cname="DiaConstraintFunc">
       <return-type type="void" />
       <parameters>
-        <parameter type="DiaConstraint*raint" name="arg1" />
+        <parameter type="DiaConstraint*" name="constraint" />
         <parameter type="DiaVariable*" name="variable" />
         <parameter type="gdouble" name="constant" />
         <parameter type="gpointer" name="user_data" />
@@ -1098,7 +1098,7 @@
       <signal name="NeedResolve" cname="need_resolve" when="LAST">
         <return-type type="void" />
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
+          <parameter type="DiaConstraint*" name="constraint" />
           <parameter type="DiaVariable*" name="var" />
         </parameters>
       </signal>
@@ -1392,7 +1392,7 @@
       <method name="AddConstraint" cname="dia_solver_add_constraint">
         <return-type type="void" />
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
+          <parameter type="DiaConstraint*" name="constraint" />
         </parameters>
       </method>
       <method name="GetType" cname="dia_solver_get_type" shared="true">
@@ -1402,7 +1402,7 @@
       <method name="RemoveConstraint" cname="dia_solver_remove_constraint">
         <return-type type="void" />
         <parameters>
-          <parameter type="DiaConstraint*raint" name="arg1" />
+          <parameter type="DiaConstraint*" name="constraint" />
         </parameters>
       </method>
       <method name="Resolve" cname="dia_solver_resolve">

@@ -7,10 +7,10 @@
 // This code is inserted after the automatically generated code.
 
 [DllImport("diacanvas2")]
-extern static IntPtr dia_canvas_item_create (uint object_type, IntPtr dummy);
+extern static IntPtr dia_canvas_item_create (GLib.GType gtype, IntPtr dummy);
 
-public static CanvasItem ItemCreate (uint object_type) {
-	return new CanvasItem (dia_canvas_item_create (object_type, IntPtr.Zero));
+public static CanvasItem ItemCreate (GLib.GType gtype) {
+	return new CanvasItem (dia_canvas_item_create (gtype, IntPtr.Zero));
 }
 
 [DllImport("diacanvassharpglue")]

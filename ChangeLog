@@ -1,3 +1,12 @@
+2004-01-06  Martin Willemoes Hansen  <mwh@sysrq.dk>
+
+	* dia/diacanvas-api.xml: Regenerated with gtk#-0.15
+	* dia/CanvasItem.custom: Updated to use GLib.GType
+	* dia/PlacementTool.cs: Ditto
+	* sample/CanvasTextBox.cs: Ditto
+	* configure.in: Checks for gtk#-0.15 and 
+	  bumped the diacanvas# version to 0.4.0
+
 2003-12-22  Martin Willemoes Hansen  <mwh@sysrq.dk>
 
 	* sample/CanvasTextBox.cs: Removed not needed using line
