@@ -200,15 +200,5 @@
         <remarks>To be added</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NeedResolve">
-      <MemberSignature Language="C#" Value="public event DiaSharp.NeedResolveHandler NeedResolve;" />
-      <MemberType>Event</MemberType>
-      <ReturnValue />
-      <Parameters />
-      <Docs>
-        <summary>To be added</summary>
-        <remarks>To be added</remarks>
-      </Docs>
-    </Member>
   </Members>
 </Type>

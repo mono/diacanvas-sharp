@@ -51,8 +51,12 @@ public class Sample {
 		Dia.Point p1 = new Dia.Point (50, 50);
 		Dia.Point p2 = new Dia.Point (100, 100);
 
-		//line.HeadPos = p1;
-		//line.TailPos = p2;
+		try {
+			line.HeadPos = p1;
+			line.TailPos = p2;
+		} catch (Exception ex) {
+			Console.WriteLine (ex);
+		}
 		line.Move (200, 200);
 		canvas.Root.Add (line);
 
@@ -65,7 +69,7 @@ public class Sample {
 		CanvasText text = new CanvasText();
 		text.Move (250, 150);
 		text.Text = "Hello, World!";
-		text.Font = FontDescription.FromString ("sans 20");
+		//text.Font = FontDescription.FromString ("sans 20");
 		text.Height = 50;
 		text.Width = 100;
 		canvas.Root.Add (text);

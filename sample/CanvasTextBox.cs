@@ -11,7 +11,7 @@ public class CanvasTextBox : CanvasBox {
 	public CanvasTextBox() : base()
 	{
 		text = new CanvasText();
-		AddConstruction (text);
+		//AddConstruction (text);
 		//text.Font = FontDescription.FromString ("sans 20");
 		text.Text = "Im a Canvas Text Box";
 		text.Width = Width - 20;

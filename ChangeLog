@@ -1,3 +1,7 @@
+2003-07-31  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* Upgraded to latest gtk# cvs
+
 2003-07-28  Martin Willemoes Hansen <mwh@sysrq.dk>
 
 	* dia/CanvasBox.custom
