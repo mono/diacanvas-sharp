@@ -758,10 +758,10 @@
           <parameter type="DiaCanvasItem*" name="new_parent"/>
         </parameters>
       </method>
-      <method name="SetParent" cname="dia_canvas_item_set_parent" hidden="1">
+      <method name="SetParent" cname="dia_canvas_item_set_parent">
         <return-type type="void"/>
         <parameters>
-          <parameter type="DiaCanvasItem*" name="new_parent"/>
+          <parameter type="DiaCanvasGroup" name="new_parent"/>
         </parameters>
       </method>
       <method name="ShapeNext" cname="dia_canvas_item_shape_next">

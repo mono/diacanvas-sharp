@@ -19,17 +19,6 @@
 
 <!-- method hides -->
 <rule>
-  <class name="DiaCanvasItem">
-    <method>SetParent</method>
-   </class>
-   <data>
-    <attribute target="method">
-      <name>hidden</name>
-      <value>1</value>
-    </attribute>
-   </data>
-</rule>
-<rule>
   <class name="DiaConstraint">
     <method>AddExpression</method>
    </class>
@@ -227,6 +216,18 @@
   </class>
   <data>
     <attribute target="property">
+      <name>type</name>
+      <value>DiaCanvasGroup</value>
+    </attribute>
+  </data>
+</rule>
+<rule>
+  <class name="DiaCanvasItem">
+    <method>SetParent</method>
+  </class>
+  <data>
+    <attribute target="param">
+      <filter level="name">new_parent</filter>
       <name>type</name>
       <value>DiaCanvasGroup</value>
     </attribute>

@@ -9,8 +9,7 @@
 	* dia/.cvsignore: Updated with generated-stamp
 	* dia/makefile: Updated to generate c# code from dia-api.xml and dia-symbols.xml
 	* sources/dia-sharp-sources.xml: Updated to put dia-api.xml in dia/ instead of api/
-	* sources/Dia.metadata: Hide event Event and method SetParent in CanvasItem,
-	  to work around bugs.
+	* sources/Dia.metadata: Hide event Event and changed the param type of method SetParent in CanvasItem.
 	* makefile: deleted api as a target
 	* PROBLEMS: Added yet another problem
 	* sample/sample.cs: Uncommented FindViewItem, since it triggers some bug
