@@ -38,9 +38,9 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
-        <param name="x">a <see cref="T:System.Int32" /></param>
-        <param name="y">a <see cref="T:System.Int32" /></param>
+        <param name="handle">To be added: an object of type 'Dia.Handle'</param>
+        <param name="x">To be added: an object of type 'int'</param>
+        <param name="y">To be added: an object of type 'int'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -55,7 +55,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
+        <param name="handle">To be added: an object of type 'Dia.Handle'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -71,8 +71,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Int32" /></param>
-        <param name="y">a <see cref="T:System.Int32" /></param>
+        <param name="x">To be added: an object of type 'int'</param>
+        <param name="y">To be added: an object of type 'int'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -87,7 +87,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
+        <param name="handle">To be added: an object of type 'Dia.Handle'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -102,7 +102,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="item">a <see cref="T:Dia.CanvasViewItem" /></param>
+        <param name="item">To be added: an object of type 'Dia.CanvasViewItem'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -127,8 +127,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /></param>
-        <returns>a <see cref="T:Dia.HandleLayer" /></returns>
+        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
+        <returns>To be added: an object of type 'Dia.HandleLayer'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -141,8 +141,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.HandleLayer" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.HandleLayer'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -153,7 +153,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.HandleLayer" /></returns>
+        <returns>To be added: an object of type 'Dia.HandleLayer'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -165,7 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

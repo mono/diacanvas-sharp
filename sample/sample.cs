@@ -5,6 +5,7 @@ using GLib;
 using Gtk;
 using GtkSharp;
 using Gdk;
+using Pango;
 using Glade;
 
 public class Sample {
@@ -60,6 +61,18 @@ public class Sample {
 		box.LineWidth = 8.5;
 		box.Color = 2134231;
 		canvas.Root.Add (box);
+
+		CanvasText text = new CanvasText();
+		text.Move (250, 150);
+		text.Text = "Hello, World!";
+		text.Font = FontDescription.FromString ("sans 20");
+		text.Height = 50;
+		text.Width = 100;
+		canvas.Root.Add (text);
+
+		CanvasTextBox textbox = new CanvasTextBox();
+		textbox.Move (50, 225);
+		canvas.Root.Add (textbox);
 
 		CanvasImage image = new CanvasImage (new Pixbuf (null, "pixmaps/logo.png"));
 		image.Move (50, 50);

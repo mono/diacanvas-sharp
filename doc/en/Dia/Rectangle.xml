@@ -89,8 +89,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Rectangle" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.Rectangle'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -105,7 +105,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="p">a <see cref="T:Dia.Point" /></param>
+        <param name="p">To be added: an object of type 'Dia.Point'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -117,7 +117,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -31,8 +31,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.EventEnter" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.EventEnter'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -43,7 +43,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.EventEnter" /></returns>
+        <returns>To be added: an object of type 'Dia.EventEnter'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

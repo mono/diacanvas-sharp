@@ -97,6 +97,7 @@
   <class name="DiaCanvasLine"/>
   <class name="DiaCanvasBox"/>
   <class name="DiaCanvasImage"/>
+  <class name="DiaCanvasText"/>
   <data>
     <attribute target="class">
       <name>disabledefaultconstructor</name>

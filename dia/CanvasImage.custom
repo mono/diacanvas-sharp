@@ -7,7 +7,7 @@
 // This code is inserted after the automatically generated code.
 
 public CanvasImage (Gdk.Pixbuf pixbuf) {
-        Raw = CanvasItem.ItemCreate (CanvasImage.GType).Handle;
+        Raw = ItemCreate (CanvasImage.GType).Handle;
 	Image = pixbuf;
 	Width = pixbuf.Width;
 	Height = pixbuf.Height;

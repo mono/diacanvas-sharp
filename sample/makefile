@@ -2,6 +2,7 @@ ASSEMBLIES=	-r glib-sharp 		\
 		-r gtk-sharp		\
 		-r glade-sharp		\
 		-r gdk-sharp		\
+		-r pango-sharp		\
 		-r gnome-sharp		\
 		-r ../dia/dia-sharp.dll
 
@@ -16,10 +17,13 @@ RESOURCES=	-resource:glade/gui.glade		\
 
 SAMPLE=		sample.exe
 
+CODE=		CanvasTextBox.cs	\
+		sample.cs
+
 all: $(SAMPLE)
 
-$(SAMPLE): sample.cs
-	mcs $(ASSEMBLIES) $(RESOURCES) sample.cs -o $(SAMPLE)
+$(SAMPLE): $(CODE)
+	mcs $(ASSEMBLIES) $(RESOURCES) $(CODE) -o $(SAMPLE)
 
 clean:
 	rm -f $(SAMPLE)

@@ -34,7 +34,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -61,8 +61,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="rect">a <see cref="T:Dia.Rectangle" /></param>
-        <returns>a <see cref="T:GLib.List" /></returns>
+        <param name="rect">To be added: an object of type 'Dia.Rectangle'</param>
+        <returns>To be added: an object of type 'GLib.List'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -106,13 +106,13 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="handle">a <see cref="T:Dia.Handle" /></param>
-        <param name="dest_x">a <see cref="T:System.Double" /></param>
-        <param name="dest_y">a <see cref="T:System.Double" /></param>
-        <param name="glue_x">a <see cref="T:System.Double" /></param>
-        <param name="glue_y">a <see cref="T:System.Double" /></param>
-        <param name="item">a <see cref="T:Dia.CanvasItem" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="handle">To be added: an object of type 'Dia.Handle'</param>
+        <param name="dest_x">To be added: an object of type 'double'</param>
+        <param name="dest_y">To be added: an object of type 'double'</param>
+        <param name="glue_x">To be added: an object of type 'double'</param>
+        <param name="glue_y">To be added: an object of type 'double'</param>
+        <param name="item">To be added: an object of type 'Dia.CanvasItem'</param>
+        <returns>To be added: an object of type 'double'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -142,10 +142,10 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
-        <param name="value">a <see cref="T:GLib.Value" /></param>
-        <param name="last">a <see cref="T:System.Boolean" /></param>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
+        <param name="value">To be added: an object of type 'GLib.Value'</param>
+        <param name="last">To be added: an object of type 'bool'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -172,7 +172,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">a <see cref="T:Dia.Constraint" /></param>
+        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -187,7 +187,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="c">a <see cref="T:Dia.Constraint" /></param>
+        <param name="c">To be added: an object of type 'Dia.Constraint'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -203,8 +203,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="x">a <see cref="T:System.Double" /></param>
-        <param name="y">a <see cref="T:System.Double" /></param>
+        <param name="x">To be added: an object of type 'double'</param>
+        <param name="y">To be added: an object of type 'double'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="optional_comment">a <see cref="T:System.String" /></param>
+        <param name="optional_comment">To be added: an object of type 'string'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -259,8 +259,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -276,8 +276,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="objekt">a <see cref="T:GLib.Object" /></param>
-        <param name="property_name">a <see cref="T:System.String" /></param>
+        <param name="objekt">To be added: an object of type 'GLib.Object'</param>
+        <param name="property_name">To be added: an object of type 'string'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -314,8 +314,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="gtype">a <see cref="T:GLib.Type" /></param>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <param name="gtype">To be added: an object of type 'GLib.Type'</param>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -328,8 +328,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -340,7 +340,7 @@
       <Parameters />
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.Canvas" /></returns>
+        <returns>To be added: an object of type 'Dia.Canvas'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -352,7 +352,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -364,7 +364,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:Dia.CanvasGroup" /></returns>
+        <returns>To be added: an object of type 'Dia.CanvasGroup'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -376,7 +376,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -391,8 +391,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt32" /></param>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <param name="value">To be added: an object of type 'uint'</param>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -419,8 +419,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -435,8 +435,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -451,8 +451,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -467,8 +467,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Dia.Rectangle" /></param>
-        <returns>a <see cref="T:Dia.Rectangle" /></returns>
+        <param name="value">To be added: an object of type 'Dia.Rectangle'</param>
+        <returns>To be added: an object of type 'Dia.Rectangle'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -483,8 +483,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -499,8 +499,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -515,8 +515,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Boolean" /></param>
-        <returns>a <see cref="T:System.Boolean" /></returns>
+        <param name="value">To be added: an object of type 'bool'</param>
+        <returns>To be added: an object of type 'bool'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -531,8 +531,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -547,8 +547,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.Double" /></param>
-        <returns>a <see cref="T:System.Double" /></returns>
+        <param name="value">To be added: an object of type 'double'</param>
+        <returns>To be added: an object of type 'double'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -563,8 +563,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:System.UInt64" /></param>
-        <returns>a <see cref="T:System.UInt64" /></returns>
+        <param name="value">To be added: an object of type 'ulong'</param>
+        <returns>To be added: an object of type 'ulong'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

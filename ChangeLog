@@ -1,3 +1,15 @@
+2003-07-28  Martin Willemoes Hansen <mwh@sysrq.dk>
+
+	* dia/CanvasBox.custom
+	  dia/CanvasImage.custom  
+	  dia/CanvasLine.custom: 
+	  Method ItemCreate is inherited so no need to 
+	  call CanvasItem.ItemCreate, just plain ItemCreate.
+	* dia/CanvasText.custom: Added, default ctor
+	* sources/Dia.metadata: Disabled default ctor for CanvasText
+	* sample/sample.cs: Includes sample code to display CanvasText
+	* sample/CanvasTextBox.cs: Added a custom CanvasItem
+
 2003-07-26  Martin Willemoes Hansen <mwh@sysrq.dk>
 
 	* dia/CanvasImage.custom: Changed public Ctor to use a pixmap parameter

@@ -771,7 +771,7 @@
         <return-type type="GType"/>
       </method>
     </object>
-    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem">
+    <object name="CanvasText" cname="DiaCanvasText" parent="DiaCanvasItem" disabledefaultconstructor="1">
       <field cname="text" type="GString*"/>
       <field cname="width" type="gdouble"/>
       <field cname="height" type="gdouble"/>

@@ -7,6 +7,6 @@
 // This code is inserted after the automatically generated code.
 
 public CanvasBox() {
-        Raw = CanvasItem.ItemCreate (CanvasBox.GType).Handle;
+        Raw = ItemCreate (CanvasBox.GType).Handle;
 }
 

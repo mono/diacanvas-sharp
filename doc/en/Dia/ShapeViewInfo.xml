@@ -78,8 +78,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="view_info">a <see cref="T:Dia.ShapeViewInfo" /></param>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="view_info">To be added: an object of type 'Dia.ShapeViewInfo'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -94,8 +94,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeViewInfo" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.ShapeViewInfo'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>

@@ -7,6 +7,6 @@
 // This code is inserted after the automatically generated code.
 
 public CanvasLine() {
-        Raw = CanvasItem.ItemCreate (CanvasLine.GType).Handle;
+        Raw = ItemCreate (CanvasLine.GType).Handle;
 }
 

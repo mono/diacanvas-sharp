@@ -78,8 +78,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="pos">a <see cref="T:Dia.Point" /></param>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="pos">To be added: an object of type 'Dia.Point'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -95,8 +95,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="shape">a <see cref="T:Dia.Shape" /></param>
-        <param name="affine">a <see cref="T:System.Double[]" /></param>
+        <param name="shape">To be added: an object of type 'Dia.Shape'</param>
+        <param name="affine">To be added: an object of type 'double []'</param>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -111,8 +111,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="raw">a <see cref="T:System.IntPtr" /></param>
-        <returns>a <see cref="T:Dia.ShapeImage" /></returns>
+        <param name="raw">To be added: an object of type 'IntPtr'</param>
+        <returns>To be added: an object of type 'Dia.ShapeImage'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -124,7 +124,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added</summary>
-        <returns>a <see cref="T:System.UInt32" /></returns>
+        <returns>To be added: an object of type 'uint'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
       </Parameters>
       <Docs>
         <summary>To be added</summary>
-        <param name="value">a <see cref="T:Gdk.Pixbuf" /></param>
-        <returns>a <see cref="T:Gdk.Pixbuf" /></returns>
+        <param name="value">To be added: an object of type 'Gdk.Pixbuf'</param>
+        <returns>To be added: an object of type 'Gdk.Pixbuf'</returns>
         <remarks>To be added</remarks>
       </Docs>
     </Member>
