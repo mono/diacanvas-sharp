@@ -1,4 +1,4 @@
-DIRS=glue api dia doc
+DIRS=glue api dia sample doc
 
 all: build
 

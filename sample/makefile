@@ -25,5 +25,8 @@ all: $(SAMPLE)
 $(SAMPLE): $(CODE)
 	mcs $(ASSEMBLIES) $(RESOURCES) $(CODE) -o $(SAMPLE)
 
+install:
+	@echo "Have a nice day!"
+
 clean:
 	rm -f $(SAMPLE)
